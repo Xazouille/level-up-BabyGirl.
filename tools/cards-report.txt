@@ -1,100 +1,142 @@
-wx-bloom                           winx.fandom.com · page Bloom → Bloom_S8E5.png
-wx-bloom-charmix                   winx.fandom.com · fichier File:Bloom Charmix - Stock Art 2.png
-wx-bloom-enchantix                 winx.fandom.com · fichier File:Bloom's Enchantix - Stock (2).png
-wx-bloom-believix                  winx.fandom.com · fichier File:Bloom believix stock art1.png
-wx-bloom-harmonix                  winx.fandom.com · fichier File:Bloom Harmonix - Stock Art 8.png
-wx-bloom-sirenix                   winx.fandom.com · fichier File:Bloom sirenix.png
-wx-bloom-bloomix                   winx.fandom.com · fichier File:Bloom bloomix couture stock 2.png
-wx-bloom-mythix                    winx.fandom.com · fichier File:Bloom Mythix 2D.png
-wx-bloom-butterflix                winx.fandom.com · fichier File:Winx Club - Bloom Butterflix 2D (First Look, 2015).jpg
-wx-bloom-cosmix                    winx.fandom.com · fichier File:Bloom Cosmix.jpg
-wx-stella                          winx.fandom.com · page Stella → Stella_S8E16.png
-wx-stella-charmix                  winx.fandom.com · fichier File:Winx Club Specials Stella charmix stock art 4.png
-wx-stella-enchantix                winx.fandom.com · fichier File:Stella S8 Enchantix stock art 2.png
-wx-stella-believix                 winx.fandom.com · fichier File:Believix - Stella stock art.png
-wx-stella-harmonix                 winx.fandom.com · fichier File:Harmonix Stella.png
-wx-stella-sirenix                  winx.fandom.com · fichier File:Sirenix Stella.png
-wx-stella-bloomix                  winx.fandom.com · fichier File:Stella bloomix couture stock 1.png
-wx-stella-mythix                   winx.fandom.com · fichier File:Stella Mythix 2D.png
-wx-stella-butterflix               winx.fandom.com · fichier File:Butterflix Stella.png
-wx-stella-cosmix                   winx.fandom.com · fichier File:Stella Cosmix.jpg
-wx-flora                           winx.fandom.com · page Flora → Flora_S8E7.png
-wx-flora-charmix                   winx.fandom.com · fichier File:Flora Charmix - Stock Art.png
-wx-flora-enchantix                 winx.fandom.com · fichier File:Flora 3D Enchantix stock art 1.png
-wx-flora-believix                  winx.fandom.com · fichier File:Believix - Flora stock art.png
-wx-flora-harmonix                  winx.fandom.com · fichier File:Harmonix Flora.png
-wx-flora-sirenix                   winx.fandom.com · fichier File:Sirenix Flora.png
-wx-flora-bloomix                   winx.fandom.com · fichier File:Flora bloomix couture stock 1.png
-wx-flora-mythix                    winx.fandom.com · fichier File:Flora Mythix 2D.png
-wx-flora-butterflix                winx.fandom.com · fichier File:Butterflix Flora.png
-wx-flora-cosmix                    winx.fandom.com · fichier File:Flora Cosmix.jpg
-wx-musa                            winx.fandom.com · page Musa → Musa_S8E7.png
-wx-musa-charmix                    winx.fandom.com · fichier File:Musa Charmix - Stock Art.png
-wx-musa-enchantix                  winx.fandom.com · fichier File:Winx SOTLK Musa enchantix stock art 1.png
-wx-musa-believix                   winx.fandom.com · fichier File:Musa Believix Stock Art 2.png
-wx-musa-harmonix                   winx.fandom.com · fichier File:Harmonix Musa.png
-wx-musa-sirenix                    winx.fandom.com · fichier File:Sirenix Musa.png
-wx-musa-bloomix                    winx.fandom.com · fichier File:Musa bloomix couture stock 3.png
-wx-musa-mythix                     winx.fandom.com · fichier File:Musa Mythix 2D.png
-wx-musa-butterflix                 winx.fandom.com · fichier File:Butterflix Musa.png
-wx-musa-cosmix                     winx.fandom.com · fichier File:Musa Cosmix.jpg
-wx-tecna                           winx.fandom.com · page Tecna → Tecna_S8E11.png
-wx-tecna-charmix                   winx.fandom.com · fichier File:Tecna Charmix - Stock Art.png
-wx-tecna-enchantix                 winx.fandom.com · fichier File:Enchantix Tecna.png
-wx-tecna-believix                  winx.fandom.com · fichier File:Tecna-Believix-StockArt-1.png
-wx-tecna-harmonix                  winx.fandom.com · fichier File:Harmonix Tecna.png
-wx-tecna-sirenix                   winx.fandom.com · fichier File:Sirenix Tecna.png
-wx-tecna-bloomix                   winx.fandom.com · fichier File:Tecna Bloomix.png
-wx-tecna-mythix                    winx.fandom.com · fichier File:Tecna Mythix 2D.png
-wx-tecna-butterflix                winx.fandom.com · fichier File:Butterflix Tecna.png
-wx-tecna-cosmix                    winx.fandom.com · fichier File:Tecna Cosmix.jpg
-wx-aisha                           winx.fandom.com · page Aisha → Aisha_S8E09.png
-wx-aisha-charmix                   winx.fandom.com · fichier File:Aisha Charmix - Stock Art.png
-wx-aisha-enchantix                 winx.fandom.com · fichier File:Aisha enchantix stock art1.png
-wx-aisha-believix                  winx.fandom.com · fichier File:Believix - Aisha stock art.png
-wx-aisha-harmonix                  winx.fandom.com · fichier File:Aisha's Harmonix - Stock (2).png
-wx-aisha-sirenix                   winx.fandom.com · fichier File:Sirenix Aisha.png
-wx-aisha-bloomix                   winx.fandom.com · fichier File:Winx Aisha Bloomix crouching stock art.png
-wx-aisha-mythix                    winx.fandom.com · fichier File:Aisha Mythix 2D.png
-wx-aisha-butterflix                winx.fandom.com · fichier File:Butterflix Aisha.png
-wx-aisha-cosmix                    winx.fandom.com · fichier File:Aisha Cosmix.jpg
-wx-roxy                            winx.fandom.com · page Roxy → RoxyEp702(10).png
-wx-daphne                          winx.fandom.com · page Daphne → Daphne_S7.png
-wx-faragonda                       winx.fandom.com · page Faragonda → Faragonda_S8E10.png
-wx-griselda                        winx.fandom.com · page Griselda → GriseldaEp801.png
-wx-mirta                           winx.fandom.com · page Mirta → MirtaS3E10.jpg
-wx-diaspro                         winx.fandom.com · page Diaspro → DiasproEp814(1).png
-wx-sky                             winx.fandom.com · page Sky → Sky_S8E4.png
-wx-brandon                         winx.fandom.com · page Brandon → Brandon_S8E1.png
-wx-helia                           winx.fandom.com · page Helia → Helia_S8E10.png
-wx-riven                           winx.fandom.com · page Riven → Riven_S8E10_-2.png
-wx-timmy                           winx.fandom.com · page Timmy → Timmy_S8E1.png
-wx-nabu                            winx.fandom.com · page Nabu → Nabu.jpg
-wx-lockette                        winx.fandom.com · page Lockette → Lockette_season_7_episode_6.png
-wx-amore                           winx.fandom.com · page Amore → Amore_S7.png
-wx-chatta                          winx.fandom.com · page Chatta → Chatta-721-1.png
-wx-tune                            winx.fandom.com · page Tune → Tune_S4E2_1.png
-wx-digit                           winx.fandom.com · page Digit → Digit.png
-wx-piff                            winx.fandom.com · page Piff → Piff.png
-wx-kiko                            winx.fandom.com · page Kiko → Kiko_-_S8E1.png
-wx-icy                             winx.fandom.com · page Icy → Icy_S8.png
-wx-icy-disenchantix                winx.fandom.com · fichier File:Icy Disenchantix - Episode 324.png
-wx-icy-dark-sirenix                winx.fandom.com · fichier File:Icy - Dark Sirenix - Stock Art.jpg
-wx-darcy                           winx.fandom.com · page Darcy → Darcy_S8.png
-wx-darcy-disenchantix              winx.fandom.com · fichier File:Darcy Disenchantix - Stock Art.jpg
-wx-darcy-dark-sirenix              winx.fandom.com · fichier File:Darcy - Dark Sirenix - Stock Art.jpg
-wx-stormy                          winx.fandom.com · page Stormy → Stormy_S8.png
-wx-stormy-disenchantix             winx.fandom.com · fichier File:Stormy Disenchantix - Episode 324.png
-wx-stormy-dark-sirenix             winx.fandom.com · fichier File:Stormy - Dark Sirenix - Stock Art.jpg
-wx-valtor                          winx.fandom.com · page Valtor → Valtor_S8E12.png
-wx-darkar                          winx.fandom.com · fichier File:Lord Darkar.png
-wx-sorcieres                       winx.fandom.com · page Ancestral Witches → AncestralWitchesS1.jpg
-wx-tritannus                       winx.fandom.com · page Tritannus → The-winx-club_202776_1.jpg
-wx-kalshara                        winx.fandom.com · page Kalshara → Kalshara.jpg
-wx-selina                          winx.fandom.com · page Selina → GsfpP_plv_g.jpg
-wx-politea                         winx.fandom.com · page Politea → Politea_-_Episode_523.jpg
-wx-ogron                           winx.fandom.com · page Ogron → OgronEp415.png
-wx-mandragora                      winx.fandom.com · page Mandragora → Mandragora.jpg
+wx-bloom                           image imposée
+wx-bloom-charmix                   image imposée
+wx-bloom-enchantix                 image imposée
+wx-bloom-believix                  image imposée
+wx-bloom-harmonix                  image imposée
+wx-bloom-sirenix                   image imposée
+wx-bloom-bloomix                   image imposée
+wx-bloom-mythix                    image imposée
+wx-bloom-butterflix                image imposée
+wx-bloom-cosmix                    image imposée
+wx-stella                          image imposée
+wx-stella-charmix                  image imposée
+wx-stella-enchantix                image imposée
+wx-stella-believix                 image imposée
+wx-stella-harmonix                 image imposée
+wx-stella-sirenix                  image imposée
+wx-stella-bloomix                  image imposée
+wx-stella-mythix                   image imposée
+wx-stella-butterflix               image imposée
+wx-stella-cosmix                   image imposée
+wx-flora                           image imposée
+wx-flora-charmix                   image imposée
+wx-flora-enchantix                 image imposée
+wx-flora-believix                  image imposée
+wx-flora-harmonix                  image imposée
+wx-flora-sirenix                   image imposée
+wx-flora-bloomix                   image imposée
+wx-flora-mythix                    image imposée
+wx-flora-butterflix                image imposée
+wx-flora-cosmix                    image imposée
+wx-musa                            image imposée
+wx-musa-charmix                    image imposée
+wx-musa-enchantix                  image imposée
+wx-musa-believix                   image imposée
+wx-musa-harmonix                   image imposée
+wx-musa-sirenix                    image imposée
+wx-musa-bloomix                    image imposée
+wx-musa-mythix                     image imposée
+wx-musa-butterflix                 image imposée
+wx-musa-cosmix                     image imposée
+wx-tecna                           image imposée
+wx-tecna-charmix                   image imposée
+wx-tecna-enchantix                 image imposée
+wx-tecna-believix                  image imposée
+wx-tecna-harmonix                  image imposée
+wx-tecna-sirenix                   image imposée
+wx-tecna-bloomix                   image imposée
+wx-tecna-mythix                    image imposée
+wx-tecna-butterflix                image imposée
+wx-tecna-cosmix                    image imposée
+wx-aisha                           image imposée
+wx-aisha-charmix                   image imposée
+wx-aisha-enchantix                 image imposée
+wx-aisha-believix                  image imposée
+wx-aisha-harmonix                  image imposée
+wx-aisha-sirenix                   image imposée
+wx-aisha-bloomix                   image imposée
+wx-aisha-mythix                    image imposée
+wx-aisha-butterflix                image imposée
+wx-aisha-cosmix                    image imposée
+wx-roxy                            image imposée
+wx-daphne                          image imposée
+wx-faragonda                       image imposée
+wx-griselda                        image imposée
+wx-mirta                           image imposée
+wx-diaspro                         image imposée
+wx-sky                             image imposée
+wx-brandon                         image imposée
+wx-helia                           image imposée
+wx-riven                           image imposée
+wx-timmy                           image imposée
+wx-nabu                            image imposée
+wx-lockette                        image imposée
+wx-amore                           image imposée
+wx-chatta                          image imposée
+wx-tune                            image imposée
+wx-digit                           image imposée
+wx-piff                            image imposée
+wx-kiko                            image imposée
+wx-icy                             image imposée
+wx-icy-dark-sirenix                image imposée
+wx-darcy                           image imposée
+wx-darcy-dark-sirenix              image imposée
+wx-stormy                          image imposée
+wx-stormy-dark-sirenix             image imposée
+wx-valtor                          image imposée
+wx-darkar                          image imposée
+wx-sorcieres                       image imposée
+wx-tritannus                       image imposée
+wx-kalshara                        image imposée
+wx-selina                          image imposée
+wx-politea                         image imposée
+wx-ogron                           image imposée
+wx-mandragora                      image imposée
+wx-duman                           image imposée
+wx-gantlos                         image imposée
+wx-anagan                          image imposée
+wx-brafilius                       image imposée
+wx-acheron                         image imposée
+wx-griffin                         image imposée
+wx-reine-marion                    winx.fandom.com · page Marion → Miriam.PNG
+wx-roi-oritel                      winx.fandom.com · page Oritel → Oritel524-1.png
+wx-roi-radius                      winx.fandom.com · page Radius → Radius_S8E17.png
+wx-reine-luna                      winx.fandom.com · page Luna (Solaria) → Luna_S8E17.png
+wx-roi-erendor                     winx.fandom.com · page Erendor → ErendorEp814.png
+wx-krystal                         image imposée
+wx-galatea                         image imposée
+wx-nebula                          image imposée
+wx-morgana                         image imposée
+wx-ligea                           image imposée
+wx-avalon                          image imposée
+wx-andy                            image imposée
+wx-mitzi                           image imposée
+wx-vanessa                         image imposée
+wx-mike                            image imposée
+wx-ortensia                        image imposée
+wx-lucy                            image imposée
+wx-romina                          image imposée
+wx-roy                             image imposée
+wx-thoren                          image imposée
+wx-saladin                         image imposée
+wx-codatorta                       image imposée
+wx-wizgiz                          image imposée
+wx-palladium                       image imposée
+wx-knut                            image imposée
+wx-tressa                          image imposée
+wx-concorda                        image imposée
+wx-ediltrude                       image imposée
+wx-ninfea                          image imposée
+wx-livy                            image imposée
+wx-zing                            image imposée
+wx-cherie                          image imposée
+wx-caramel                         image imposée
+wx-jolly                           image imposée
+wx-amentia                         image imposée
+wx-eldora                          image imposée
+wx-diana                           image imposée
+wx-nex                             winx.fandom.com · page Nex → Nex_S8E1.png
+wx-ho-boe                          winx.fandom.com · page Ho-Boe → Season_8_Ho-Boe.jpg
 mh-frankie                         monsterhigh.fandom.com · page Frankie Stein (G1) → Frankie_Stein™.png
 mh-frankie-g2                      monsterhigh.fandom.com · fichier File:MH-G2 - Frankie Stein 29.png
 mh-frankie-g3                      monsterhigh.fandom.com · fichier File:MH-G3 - Frankie Stein (2D) -1-.png
@@ -146,6 +188,58 @@ mh-neptuna                         monsterhigh.fandom.com · page Neptuna (G1) �
 mh-hissette                        AUCUNE IMAGE (page:Hissette)
 mh-hissette                        FAMILLE RETIRÉE (pas d'image de base)
 mh-perseus                         monsterhigh.fandom.com · page Perseus (G1) → Profile_art_-_Perseus.jpg
+mh-jackson-jekyll                  image imposée
+mh-holt-hyde                       image imposée
+mh-kieran-valentine                image imposée
+mh-wydowna-spider                  image imposée
+mh-amanita-nightshade              image imposée
+mh-jane-boolittle                  image imposée
+mh-marisol-coxi                    image imposée
+mh-scarah-screams                  image imposée
+mh-gil-webber                      image imposée
+mh-bonita-femur                    image imposée
+mh-casta-fierce                    image imposée
+mh-iris-clops                      image imposée
+mh-gooliope-jellington             image imposée
+mh-invisi-billy                    image imposée
+mh-sirena-von-boo                  image imposée
+mh-catrine-demew                   image imposée
+mh-finnegan-wake                   image imposée
+mh-hoodude-voodoo                  image imposée
+mh-silvi-timberwolf                image imposée
+mh-ari-hauntington                 image imposée
+mh-fangelica-vanbat                image imposée
+mh-avea-trotter                    image imposée
+mh-gilda-goldstag                  image imposée
+mh-rockseena                       image imposée
+mh-kala-mer-ri                     image imposée
+mh-slo-mo-deadan                   image imposée
+mh-lorna-mcnessie                  image imposée
+mh-mouscedes-king                  image imposée
+mh-elle-eedee                      image imposée
+mh-batsy-claro                     image imposée
+mh-viperine-gorgon                 image imposée
+mh-clawdia-wolf                    image imposée
+mh-peri-pearl-serpentine           image imposée
+mh-posea-reef                      image imposée
+mh-isi-dawndancer                  image imposée
+mh-treesa-thornwillow              image imposée
+mh-moanica-d-kay                   image imposée
+mh-porter-geiss                    image imposée
+mh-neighthan-rot                   image imposée
+mh-captain-penny                   image imposée
+mh-sir-hoots-a-lot                 image imposée
+mh-memphis-longlegs                image imposée
+mh-shiver                          image imposée
+mh-rhuen                           image imposée
+mh-qing                            image imposée
+mh-nightmare                       image imposée
+mh-river-styxx                     monsterhigh.fandom.com · page River Styxx (G1) → Profile_art_-_River_Styxx.jpg
+mh-vandala-doubloons               monsterhigh.fandom.com · page Vandala Doubloons (G1) → Vandala_Doubloons™.png
+mh-lagoonafire                     monsterhigh.fandom.com · page Lagoonafire's Freaky Fusion - Freaky Fusions diary → Icon_-_Lagoonafire.jpg
+mh-johnny-spirit                   monsterhigh.fandom.com · page Johnny Spirit (G1)/cartoon → Playing_the_Boos_-_Johnny_vs_Bloodgood.jpg
+mh-cy-clops                        monsterhigh.fandom.com · page Cy Clops (G1) → Gf_0409.jpg
+mh-lilith-van-hellscream           monsterhigh.fandom.com · page Lilith Van Hellscream → Lilith_Van_Hellscream.png
 hk-hello-kitty                     hellokitty.fandom.com · page Hello Kitty → Sanrio_Characters_Hello_Kitty_Image026.png
 hk-kuromi                          hellokitty.fandom.com · page Kuromi → List-kuromi.png
 hk-my-melody                       hellokitty.fandom.com · page My Melody → Sanrio_Characters_My_Melody_Image030.png
@@ -174,3 +268,53 @@ hk-corocorokuririn                 hellokitty.fandom.com · page Corocorokuririn
 hk-pandapple                       hellokitty.fandom.com · page Pandapple → Sanrio_Characters_Pandapple_Image001.png
 hk-bonbonribbon                    hellokitty.fandom.com · page Bonbonribbon → Sanrio_Characters_Bonbonribbon_Image005.png
 hk-tabo                            hellokitty.fandom.com · page MINNA NO TABO → List-tabo.png
+hk-monkichi                        image imposée
+hk-patty-jimmy                     image imposée
+hk-tiny-chum                       image imposée
+hk-mocha                           image imposée
+hk-chiffon                         image imposée
+hk-cappuccino                      image imposée
+hk-milk                            image imposée
+hk-espresso                        image imposée
+hk-fifi                            image imposée
+hk-tracy                           image imposée
+hk-joey                            image imposée
+hk-jodie                           image imposée
+hk-tippy                           image imposée
+hk-flat                            image imposée
+hk-baku                            image imposée
+hk-rhythm                          image imposée
+hk-muffin                          image imposée
+hk-scone                           image imposée
+hk-bagel                           image imposée
+hk-keroleen                        image imposée
+hk-hana-maru                       image imposée
+hk-kurousa-shirousa                image imposée
+hk-hummingmint                     image imposée
+hk-fenneko                         image imposée
+hk-haida                           image imposée
+hk-ruby                            image imposée
+hk-garnet                          image imposée
+hk-sapphie                         image imposée
+hk-cheery-chums                    image imposée
+hk-button-nose                     image imposée
+hk-tiny-poem                       image imposée
+hk-spottie-dottie                  image imposée
+hk-winkipinki                      image imposée
+hk-coro-chan                       image imposée
+hk-picke-bicke                     image imposée
+hk-shinkansen                      image imposée
+hk-zashikibuta                     image imposée
+hk-marumofubiyori                  image imposée
+hk-lloromannic                     image imposée
+hk-nya-ni-nyu-nye-nyon             image imposée
+hk-masyumaro                       image imposée
+hk-george-white                    image imposée
+hk-mary-white                      image imposée
+hk-anthony-white                   image imposée
+hk-cocoa-vanilla                   hellokitty.fandom.com · page Cocoa and Vanilla → Sanrio_Characters_Cocoa_Image001.png
+hk-chibimaru                       hellokitty.fandom.com · page Chibimaru → Sanrio_Characters_Chibimaru_Image003.png
+hk-goropikadon                     hellokitty.fandom.com · page Goropikadon → Sanrio_Characters_Goro_(Goropikadon)_Image001.png
+hk-pannapitta                      hellokitty.fandom.com · page Pannapitta → Sanrio_Characters_Pannapitta_Image008.png
+hk-sugarminuet                     hellokitty.fandom.com · page Sugarminuet → Sanrio_Characters_Balletusa--Primausa_Image011.png
+hk-noranekoland                    hellokitty.fandom.com · page Noranekoland → Sanrio_Characters_Noranekoland_Image003.png
