@@ -375,7 +375,7 @@ export function badgeDefs() {
   [[1, 50], [5, 200, 'c'], [10, 400, 'c'], [25, 1000, 'g']].forEach(([n, xp, box]) =>
     add('Objectifs', 'obj' + n, '🎯', n === 1 ? 'Premier objectif atteint' : `${n} objectifs atteints`, `Atteindre ${n} objectif${n > 1 ? 's' : ''}`, xp, c => c.goalsDone >= n, box));
   add('Objectifs', 'obj-an', '👑', 'Objectif de l’année', 'Atteindre un objectif d’un an', 800, c => c.yearGoal, 'g');
-  [[10, 100], [25, 300, 'c'], [50, 600, 'g'], [100, 1200, 'g'], [150, 2000, 'g']].forEach(([n, xp, box]) =>
+  [[10, 100], [25, 300, 'c'], [50, 600, 'g'], [75, 1200, 'g'], [100, 2000, 'g']].forEach(([n, xp, box]) =>
     add('Collection', 'coll' + n, '🎴', `${n} cartes`, `Posséder ${n} cartes différentes`, xp, c => c.forms >= n, box));
   add('Collection', 'first4', '💜', 'Épique !', 'Obtenir une carte 4★', 100, c => c.maxRarity >= 4);
   add('Collection', 'first5', '🌟', 'Légendaire !', 'Obtenir une carte 5★', 300, c => c.maxRarity >= 5);
