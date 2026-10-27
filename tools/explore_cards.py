@@ -3,7 +3,7 @@
 
     python3 tools/explore_cards.py cats DOSSIER                 catégories des wikis (avec leur taille)
     python3 tools/explore_cards.py discover DOSSIER             personnages des catégories de tools/discover.json, avec leur image
-    python3 tools/explore_cards.py candidates DOSSIER [ids…]    jusqu'à 8 images candidates par forme de tools/cards.json
+    python3 tools/explore_cards.py candidates DOSSIER [ids…]    jusqu'à 8 images candidates par forme de tools/cards.json (ids, clé de série ou « new »)
 
 Chaque commande écrit dans DOSSIER un rapport texte / JSON et des planches numérotées (pour choisir à l'œil).
 Une fois l'image choisie, la mettre dans cards.json : "img": { "id-de-la-forme": "url" }.
@@ -77,7 +77,7 @@ def candidates(out, only):
     for s in src['series']:
         w = s['wikis'][0]
         for L, forms in expand(s):
-            if only and not any(f['id'] in only or L['id'] in only for f in forms):
+            if only and not (s['key'] in only or ('new' in only and L.get('new')) or any(f['id'] in only or L['id'] in only for f in forms)):
                 continue
             # Toutes les images de la page du personnage (et de sa galerie), puis une recherche par nom
             files = []

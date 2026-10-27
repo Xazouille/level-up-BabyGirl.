@@ -322,6 +322,321 @@
      "name": "Mandragora",
      "rarity": 3,
      "page": "Mandragora"
+    },
+    {
+     "id": "wx-duman",
+     "name": "Duman",
+     "rarity": 3,
+     "page": "Duman",
+     "new": true
+    },
+    {
+     "id": "wx-gantlos",
+     "name": "Gantlos",
+     "rarity": 3,
+     "page": "Gantlos",
+     "new": true
+    },
+    {
+     "id": "wx-anagan",
+     "name": "Anagan",
+     "rarity": 3,
+     "page": "Anagan",
+     "new": true
+    },
+    {
+     "id": "wx-brafilius",
+     "name": "Brafilius",
+     "rarity": 2,
+     "page": "Brafilius",
+     "new": true
+    },
+    {
+     "id": "wx-acheron",
+     "name": "Acheron",
+     "rarity": 4,
+     "page": "Acheron",
+     "new": true
+    },
+    {
+     "id": "wx-griffin",
+     "name": "Griffin",
+     "rarity": 3,
+     "page": "Griffin (Witch)",
+     "new": true
+    },
+    {
+     "id": "wx-reine-marion",
+     "name": "Reine Marion",
+     "rarity": 3,
+     "page": "Marion",
+     "new": true
+    },
+    {
+     "id": "wx-roi-oritel",
+     "name": "Roi Oritel",
+     "rarity": 3,
+     "page": "Oritel",
+     "new": true
+    },
+    {
+     "id": "wx-roi-radius",
+     "name": "Roi Radius",
+     "rarity": 2,
+     "page": "Radius",
+     "new": true
+    },
+    {
+     "id": "wx-reine-luna",
+     "name": "Reine Luna",
+     "rarity": 2,
+     "page": "Luna",
+     "new": true
+    },
+    {
+     "id": "wx-roi-erendor",
+     "name": "Roi Erendor",
+     "rarity": 2,
+     "page": "Erendor",
+     "new": true
+    },
+    {
+     "id": "wx-krystal",
+     "name": "Krystal",
+     "rarity": 2,
+     "page": "Krystal",
+     "new": true
+    },
+    {
+     "id": "wx-galatea",
+     "name": "Galatea",
+     "rarity": 2,
+     "page": "Galatea",
+     "new": true
+    },
+    {
+     "id": "wx-nebula",
+     "name": "Nebula",
+     "rarity": 3,
+     "page": "Nebula",
+     "new": true
+    },
+    {
+     "id": "wx-morgana",
+     "name": "Morgana",
+     "rarity": 4,
+     "page": "Morgana",
+     "new": true
+    },
+    {
+     "id": "wx-ligea",
+     "name": "Ligea",
+     "rarity": 2,
+     "page": "Ligea",
+     "new": true
+    },
+    {
+     "id": "wx-selkie",
+     "name": "Selkie",
+     "rarity": 2,
+     "page": "Selkie",
+     "new": true
+    },
+    {
+     "id": "wx-avalon",
+     "name": "Avalon",
+     "rarity": 3,
+     "page": "Avalon",
+     "new": true
+    },
+    {
+     "id": "wx-andy",
+     "name": "Andy",
+     "rarity": 1,
+     "page": "Andy",
+     "new": true
+    },
+    {
+     "id": "wx-mitzi",
+     "name": "Mitzi",
+     "rarity": 1,
+     "page": "Mitzi",
+     "new": true
+    },
+    {
+     "id": "wx-vanessa",
+     "name": "Vanessa",
+     "rarity": 1,
+     "page": "Vanessa",
+     "new": true
+    },
+    {
+     "id": "wx-mike",
+     "name": "Mike",
+     "rarity": 1,
+     "page": "Mike",
+     "new": true
+    },
+    {
+     "id": "wx-klaus",
+     "name": "Klaus",
+     "rarity": 1,
+     "page": "Klaus",
+     "new": true
+    },
+    {
+     "id": "wx-ortensia",
+     "name": "Ortensia",
+     "rarity": 1,
+     "page": "Ortensia",
+     "new": true
+    },
+    {
+     "id": "wx-lucy",
+     "name": "Lucy",
+     "rarity": 1,
+     "page": "Lucy",
+     "new": true
+    },
+    {
+     "id": "wx-romina",
+     "name": "Romina",
+     "rarity": 2,
+     "page": "Romina",
+     "new": true
+    },
+    {
+     "id": "wx-roy",
+     "name": "Roy",
+     "rarity": 2,
+     "page": "Roy",
+     "new": true
+    },
+    {
+     "id": "wx-thoren",
+     "name": "Thoren",
+     "rarity": 2,
+     "page": "Thoren",
+     "new": true
+    },
+    {
+     "id": "wx-saladin",
+     "name": "Saladin",
+     "rarity": 2,
+     "page": "Saladin",
+     "new": true
+    },
+    {
+     "id": "wx-codatorta",
+     "name": "Codatorta",
+     "rarity": 2,
+     "page": "Codatorta",
+     "new": true
+    },
+    {
+     "id": "wx-wizgiz",
+     "name": "Wizgiz",
+     "rarity": 2,
+     "page": "Wizgiz",
+     "new": true
+    },
+    {
+     "id": "wx-palladium",
+     "name": "Palladium",
+     "rarity": 2,
+     "page": "Palladium",
+     "new": true
+    },
+    {
+     "id": "wx-knut",
+     "name": "Knut",
+     "rarity": 1,
+     "page": "Knut",
+     "new": true
+    },
+    {
+     "id": "wx-tressa",
+     "name": "Tressa",
+     "rarity": 1,
+     "page": "Tressa",
+     "new": true
+    },
+    {
+     "id": "wx-concorda",
+     "name": "Concorda",
+     "rarity": 1,
+     "page": "Concorda",
+     "new": true
+    },
+    {
+     "id": "wx-ediltrude",
+     "name": "Ediltrude",
+     "rarity": 2,
+     "page": "Ediltrude",
+     "new": true
+    },
+    {
+     "id": "wx-ninfea",
+     "name": "Ninfea",
+     "rarity": 1,
+     "page": "Ninfea",
+     "new": true
+    },
+    {
+     "id": "wx-livy",
+     "name": "Livy",
+     "rarity": 1,
+     "page": "Livy",
+     "new": true
+    },
+    {
+     "id": "wx-zing",
+     "name": "Zing",
+     "rarity": 1,
+     "page": "Zing",
+     "new": true
+    },
+    {
+     "id": "wx-cherie",
+     "name": "Cherie",
+     "rarity": 1,
+     "page": "Cherie",
+     "new": true
+    },
+    {
+     "id": "wx-caramel",
+     "name": "Caramel",
+     "rarity": 1,
+     "page": "Caramel",
+     "new": true
+    },
+    {
+     "id": "wx-jolly",
+     "name": "Jolly",
+     "rarity": 1,
+     "page": "Jolly",
+     "new": true
+    },
+    {
+     "id": "wx-amentia",
+     "name": "Amentia",
+     "rarity": 2,
+     "page": "Amentia",
+     "new": true
+    },
+    {
+     "id": "wx-eldora",
+     "name": "Eldora",
+     "rarity": 3,
+     "page": "Eldora",
+     "new": true
+    },
+    {
+     "id": "wx-diana",
+     "name": "Diana",
+     "rarity": 3,
+     "page": "Diana (Season 4)",
+     "new": true
     }
    ]
   },
@@ -584,6 +899,398 @@
      "name": "Perseus",
      "rarity": 1,
      "page": "Perseus"
+    },
+    {
+     "id": "mh-jackson-jekyll",
+     "name": "Jackson Jekyll",
+     "rarity": 3,
+     "page": "Jackson Jekyll",
+     "new": true
+    },
+    {
+     "id": "mh-holt-hyde",
+     "name": "Holt Hyde",
+     "rarity": 3,
+     "page": "Holt Hyde",
+     "new": true
+    },
+    {
+     "id": "mh-kieran-valentine",
+     "name": "Kieran Valentine",
+     "rarity": 3,
+     "page": "Kieran Valentine",
+     "new": true
+    },
+    {
+     "id": "mh-melody-carver",
+     "name": "Melody Carver",
+     "rarity": 2,
+     "page": "Melody Carver",
+     "new": true
+    },
+    {
+     "id": "mh-wydowna-spider",
+     "name": "Wydowna Spider",
+     "rarity": 3,
+     "page": "Wydowna Spider",
+     "new": true
+    },
+    {
+     "id": "mh-amanita-nightshade",
+     "name": "Amanita Nightshade",
+     "rarity": 2,
+     "page": "Amanita Nightshade",
+     "new": true
+    },
+    {
+     "id": "mh-jane-boolittle",
+     "name": "Jane Boolittle",
+     "rarity": 2,
+     "page": "Jane Boolittle",
+     "new": true
+    },
+    {
+     "id": "mh-marisol-coxi",
+     "name": "Marisol Coxi",
+     "rarity": 2,
+     "page": "Marisol Coxi",
+     "new": true
+    },
+    {
+     "id": "mh-scarah-screams",
+     "name": "Scarah Screams",
+     "rarity": 4,
+     "page": "Scarah Screams",
+     "new": true
+    },
+    {
+     "id": "mh-gil-webber",
+     "name": "Gil Webber",
+     "rarity": 2,
+     "page": "Gillington Webber",
+     "new": true
+    },
+    {
+     "id": "mh-bonita-femur",
+     "name": "Bonita Femur",
+     "rarity": 2,
+     "page": "Bonita Femur",
+     "new": true
+    },
+    {
+     "id": "mh-casta-fierce",
+     "name": "Casta Fierce",
+     "rarity": 4,
+     "page": "Casta Fierce",
+     "new": true
+    },
+    {
+     "id": "mh-andy-beast",
+     "name": "Andy Beast",
+     "rarity": 2,
+     "page": "Andy Beast",
+     "new": true
+    },
+    {
+     "id": "mh-iris-clops",
+     "name": "Iris Clops",
+     "rarity": 2,
+     "page": "Iris Clops",
+     "new": true
+    },
+    {
+     "id": "mh-gooliope-jellington",
+     "name": "Gooliope Jellington",
+     "rarity": 3,
+     "page": "Gooliope Jellington",
+     "new": true
+    },
+    {
+     "id": "mh-invisi-billy",
+     "name": "Invisi Billy",
+     "rarity": 2,
+     "page": "Invisi Billy",
+     "new": true
+    },
+    {
+     "id": "mh-sirena-von-boo",
+     "name": "Sirena Von Boo",
+     "rarity": 2,
+     "page": "Sirena Von Boo",
+     "new": true
+    },
+    {
+     "id": "mh-catrine-demew",
+     "name": "Catrine DeMew",
+     "rarity": 4,
+     "page": "Catrine DeMew",
+     "new": true
+    },
+    {
+     "id": "mh-finnegan-wake",
+     "name": "Finnegan Wake",
+     "rarity": 2,
+     "page": "Finnegan Wake",
+     "new": true
+    },
+    {
+     "id": "mh-hoodude-voodoo",
+     "name": "Hoodude Voodoo",
+     "rarity": 1,
+     "page": "Hoodude Voodoo",
+     "new": true
+    },
+    {
+     "id": "mh-silvi-timberwolf",
+     "name": "Silvi Timberwolf",
+     "rarity": 2,
+     "page": "Silvi Timberwolf",
+     "new": true
+    },
+    {
+     "id": "mh-ari-hauntington",
+     "name": "Ari Hauntington",
+     "rarity": 2,
+     "page": "Ari Hauntington",
+     "new": true
+    },
+    {
+     "id": "mh-fangelica-vanbat",
+     "name": "Fangelica VanBat",
+     "rarity": 2,
+     "page": "Fangelica VanBat",
+     "new": true
+    },
+    {
+     "id": "mh-avea-trotter",
+     "name": "Avea Trotter",
+     "rarity": 2,
+     "page": "Avea Trotter",
+     "new": true
+    },
+    {
+     "id": "mh-gilda-goldstag",
+     "name": "Gilda Goldstag",
+     "rarity": 2,
+     "page": "Gilda Goldstag",
+     "new": true
+    },
+    {
+     "id": "mh-eyera",
+     "name": "Eyera",
+     "rarity": 2,
+     "page": "Eyera",
+     "new": true
+    },
+    {
+     "id": "mh-alivia-stein",
+     "name": "Alivia Stein",
+     "rarity": 2,
+     "page": "Alivia Stein",
+     "new": true
+    },
+    {
+     "id": "mh-rockseena",
+     "name": "Rockseena",
+     "rarity": 2,
+     "page": "Rockseena",
+     "new": true
+    },
+    {
+     "id": "mh-kala-mer-ri",
+     "name": "Kala Mer'ri",
+     "rarity": 2,
+     "page": "Kala Mer'ri",
+     "new": true
+    },
+    {
+     "id": "mh-romulus",
+     "name": "Romulus",
+     "rarity": 2,
+     "page": "Romulus",
+     "new": true
+    },
+    {
+     "id": "mh-bram-de-fanglas",
+     "name": "Bram de Fanglas",
+     "rarity": 2,
+     "page": "Bram de Fanglas",
+     "new": true
+    },
+    {
+     "id": "mh-slo-mo-deadan",
+     "name": "Slo Mo Deadan",
+     "rarity": 2,
+     "page": "Slo Mo Deadan",
+     "new": true
+    },
+    {
+     "id": "mh-lorna-mcnessie",
+     "name": "Lorna McNessie",
+     "rarity": 2,
+     "page": "Lorna McNessie",
+     "new": true
+    },
+    {
+     "id": "mh-mouscedes-king",
+     "name": "Mouscedes King",
+     "rarity": 2,
+     "page": "Mouscedes King",
+     "new": true
+    },
+    {
+     "id": "mh-elle-eedee",
+     "name": "Elle Eedee",
+     "rarity": 2,
+     "page": "Elle Eedee",
+     "new": true
+    },
+    {
+     "id": "mh-batsy-claro",
+     "name": "Batsy Claro",
+     "rarity": 2,
+     "page": "Batsy Claro",
+     "new": true
+    },
+    {
+     "id": "mh-viperine-gorgon",
+     "name": "Viperine Gorgon",
+     "rarity": 3,
+     "page": "Viperine Gorgon",
+     "new": true
+    },
+    {
+     "id": "mh-clawdia-wolf",
+     "name": "Clawdia Wolf",
+     "rarity": 2,
+     "page": "Clawdia Wolf",
+     "new": true
+    },
+    {
+     "id": "mh-peri-pearl-serpentine",
+     "name": "Peri & Pearl Serpentine",
+     "rarity": 3,
+     "page": "Peri and Pearl Serpentine",
+     "new": true
+    },
+    {
+     "id": "mh-posea-reef",
+     "name": "Posea Reef",
+     "rarity": 2,
+     "page": "Posea Reef",
+     "new": true
+    },
+    {
+     "id": "mh-isi-dawndancer",
+     "name": "Isi Dawndancer",
+     "rarity": 2,
+     "page": "Isi Dawndancer",
+     "new": true
+    },
+    {
+     "id": "mh-treesa-thornwillow",
+     "name": "Treesa Thornwillow",
+     "rarity": 2,
+     "page": "Treesa Thornwillow",
+     "new": true
+    },
+    {
+     "id": "mh-moanica-d-kay",
+     "name": "Moanica D'Kay",
+     "rarity": 3,
+     "page": "Moanica D'Kay",
+     "new": true
+    },
+    {
+     "id": "mh-porter-geiss",
+     "name": "Porter Geiss",
+     "rarity": 1,
+     "page": "Porter Geiss",
+     "new": true
+    },
+    {
+     "id": "mh-garrott-duroque",
+     "name": "Garrott DuRoque",
+     "rarity": 1,
+     "page": "Garrott DuRoque",
+     "new": true
+    },
+    {
+     "id": "mh-neighthan-rot",
+     "name": "Neighthan Rot",
+     "rarity": 1,
+     "page": "Neighthan Rot",
+     "new": true
+    },
+    {
+     "id": "mh-captain-penny",
+     "name": "Captain Penny",
+     "rarity": 1,
+     "page": "Captain Penny",
+     "new": true
+    },
+    {
+     "id": "mh-sir-hoots-a-lot",
+     "name": "Sir Hoots A Lot",
+     "rarity": 1,
+     "page": "Sir Hoots A Lot",
+     "new": true
+    },
+    {
+     "id": "mh-memphis-longlegs",
+     "name": "Memphis Longlegs",
+     "rarity": 1,
+     "page": "Memphis Longlegs",
+     "new": true
+    },
+    {
+     "id": "mh-shiver",
+     "name": "Shiver",
+     "rarity": 1,
+     "page": "Shiver",
+     "new": true
+    },
+    {
+     "id": "mh-rhuen",
+     "name": "Rhuen",
+     "rarity": 1,
+     "page": "Rhuen",
+     "new": true
+    },
+    {
+     "id": "mh-qing",
+     "name": "Qing",
+     "rarity": 1,
+     "page": "Qing",
+     "new": true
+    },
+    {
+     "id": "mh-thornton",
+     "name": "Thornton",
+     "rarity": 1,
+     "page": "Thornton",
+     "new": true
+    },
+    {
+     "id": "mh-nightmare",
+     "name": "Nightmare",
+     "rarity": 1,
+     "page": "Nightmare",
+     "new": true
+    },
+    {
+     "id": "mh-tundra",
+     "name": "Tundra",
+     "rarity": 1,
+     "page": "Tundra",
+     "new": true
+    },
+    {
+     "id": "mh-dracula",
+     "name": "Dracula",
+     "rarity": 2,
+     "page": "Dracula",
+     "new": true
     }
    ]
   },
@@ -767,6 +1474,342 @@
      "name": "Tabo",
      "rarity": 1,
      "page": "Tabo"
+    },
+    {
+     "id": "hk-monkichi",
+     "name": "Monkichi",
+     "rarity": 2,
+     "page": "Monkichi",
+     "new": true
+    },
+    {
+     "id": "hk-patty-jimmy",
+     "name": "Patty & Jimmy",
+     "rarity": 2,
+     "page": "Patty & Jimmy",
+     "new": true
+    },
+    {
+     "id": "hk-tiny-chum",
+     "name": "Tiny Chum",
+     "rarity": 1,
+     "page": "Tiny Chum",
+     "new": true
+    },
+    {
+     "id": "hk-mocha",
+     "name": "Mocha",
+     "rarity": 2,
+     "page": "Mocha",
+     "new": true
+    },
+    {
+     "id": "hk-chiffon",
+     "name": "Chiffon",
+     "rarity": 2,
+     "page": "Chiffon (Cinnamoroll)",
+     "new": true
+    },
+    {
+     "id": "hk-cappuccino",
+     "name": "Cappuccino",
+     "rarity": 2,
+     "page": "Cappuccino",
+     "new": true
+    },
+    {
+     "id": "hk-milk",
+     "name": "Milk",
+     "rarity": 2,
+     "page": "Milk",
+     "new": true
+    },
+    {
+     "id": "hk-espresso",
+     "name": "Espresso",
+     "rarity": 2,
+     "page": "Espresso",
+     "new": true
+    },
+    {
+     "id": "hk-fifi",
+     "name": "Fifi",
+     "rarity": 1,
+     "page": "Fifi",
+     "new": true
+    },
+    {
+     "id": "hk-tracy",
+     "name": "Tracy",
+     "rarity": 1,
+     "page": "Tracy",
+     "new": true
+    },
+    {
+     "id": "hk-joey",
+     "name": "Joey",
+     "rarity": 1,
+     "page": "Joey",
+     "new": true
+    },
+    {
+     "id": "hk-jodie",
+     "name": "Jodie",
+     "rarity": 1,
+     "page": "Jodie",
+     "new": true
+    },
+    {
+     "id": "hk-tippy",
+     "name": "Tippy",
+     "rarity": 1,
+     "page": "Tippy",
+     "new": true
+    },
+    {
+     "id": "hk-rory",
+     "name": "Rory",
+     "rarity": 1,
+     "page": "Rory",
+     "new": true
+    },
+    {
+     "id": "hk-cathy",
+     "name": "Cathy",
+     "rarity": 1,
+     "page": "Cathy",
+     "new": true
+    },
+    {
+     "id": "hk-flat",
+     "name": "Flat",
+     "rarity": 1,
+     "page": "Flat",
+     "new": true
+    },
+    {
+     "id": "hk-baku",
+     "name": "Baku",
+     "rarity": 2,
+     "page": "Baku",
+     "new": true
+    },
+    {
+     "id": "hk-rhythm",
+     "name": "Rhythm",
+     "rarity": 1,
+     "page": "Rhythm",
+     "new": true
+    },
+    {
+     "id": "hk-muffin",
+     "name": "Muffin",
+     "rarity": 1,
+     "page": "Muffin",
+     "new": true
+    },
+    {
+     "id": "hk-scone",
+     "name": "Scone",
+     "rarity": 1,
+     "page": "Scone",
+     "new": true
+    },
+    {
+     "id": "hk-bagel",
+     "name": "Bagel",
+     "rarity": 1,
+     "page": "Bagel",
+     "new": true
+    },
+    {
+     "id": "hk-keroleen",
+     "name": "Keroleen",
+     "rarity": 1,
+     "page": "Keroleen",
+     "new": true
+    },
+    {
+     "id": "hk-hana-maru",
+     "name": "Hana-Maru",
+     "rarity": 1,
+     "page": "Hana-Maru",
+     "new": true
+    },
+    {
+     "id": "hk-kurousa-shirousa",
+     "name": "Kurousa & Shirousa",
+     "rarity": 2,
+     "page": "Kurousa and Shirousa",
+     "new": true
+    },
+    {
+     "id": "hk-hummingmint",
+     "name": "Hummingmint",
+     "rarity": 1,
+     "page": "Hummingmint",
+     "new": true
+    },
+    {
+     "id": "hk-fenneko",
+     "name": "Fenneko",
+     "rarity": 2,
+     "page": "Fenneko",
+     "new": true
+    },
+    {
+     "id": "hk-haida",
+     "name": "Haida",
+     "rarity": 2,
+     "page": "Haida",
+     "new": true
+    },
+    {
+     "id": "hk-ruby",
+     "name": "Ruby",
+     "rarity": 2,
+     "page": "Ruby (Jewelpet)",
+     "new": true
+    },
+    {
+     "id": "hk-garnet",
+     "name": "Garnet",
+     "rarity": 2,
+     "page": "Garnet",
+     "new": true
+    },
+    {
+     "id": "hk-sapphie",
+     "name": "Sapphie",
+     "rarity": 2,
+     "page": "Sapphie",
+     "new": true
+    },
+    {
+     "id": "hk-cheery-chums",
+     "name": "Cheery Chums",
+     "rarity": 1,
+     "page": "Cheery Chums",
+     "new": true
+    },
+    {
+     "id": "hk-button-nose",
+     "name": "Button Nose",
+     "rarity": 1,
+     "page": "Button Nose",
+     "new": true
+    },
+    {
+     "id": "hk-tiny-poem",
+     "name": "Tiny Poem",
+     "rarity": 1,
+     "page": "Tiny Poem",
+     "new": true
+    },
+    {
+     "id": "hk-spottie-dottie",
+     "name": "Spottie Dottie",
+     "rarity": 1,
+     "page": "Spottie Dottie",
+     "new": true
+    },
+    {
+     "id": "hk-winkipinki",
+     "name": "Winkipinki",
+     "rarity": 1,
+     "page": "Winkipinki",
+     "new": true
+    },
+    {
+     "id": "hk-coro-chan",
+     "name": "Coro Chan",
+     "rarity": 1,
+     "page": "Coro Chan",
+     "new": true
+    },
+    {
+     "id": "hk-picke-bicke",
+     "name": "Picke Bicke",
+     "rarity": 1,
+     "page": "Picke Bicke",
+     "new": true
+    },
+    {
+     "id": "hk-hapidanbui",
+     "name": "Hapidanbui",
+     "rarity": 1,
+     "page": "Hapidanbui",
+     "new": true
+    },
+    {
+     "id": "hk-shinkansen",
+     "name": "Shinkansen",
+     "rarity": 1,
+     "page": "Shinkansen",
+     "new": true
+    },
+    {
+     "id": "hk-zashikibuta",
+     "name": "Zashikibuta",
+     "rarity": 1,
+     "page": "Zashikibuta",
+     "new": true
+    },
+    {
+     "id": "hk-marumofubiyori",
+     "name": "Marumofubiyori",
+     "rarity": 2,
+     "page": "Marumofubiyori",
+     "new": true
+    },
+    {
+     "id": "hk-lloromannic",
+     "name": "Lloromannic",
+     "rarity": 1,
+     "page": "Lloromannic",
+     "new": true
+    },
+    {
+     "id": "hk-nya-ni-nyu-nye-nyon",
+     "name": "Nya Ni Nyu Nye Nyon",
+     "rarity": 1,
+     "page": "Nya Ni Nyu Nye Nyon",
+     "new": true
+    },
+    {
+     "id": "hk-masyumaro",
+     "name": "Masyumaro",
+     "rarity": 1,
+     "page": "Masyumaro",
+     "new": true
+    },
+    {
+     "id": "hk-george-white",
+     "name": "George White",
+     "rarity": 2,
+     "page": "Papa (Hello Kitty)",
+     "new": true
+    },
+    {
+     "id": "hk-mary-white",
+     "name": "Mary White",
+     "rarity": 2,
+     "page": "Mary White",
+     "new": true
+    },
+    {
+     "id": "hk-anthony-white",
+     "name": "Anthony White",
+     "rarity": 1,
+     "page": "Anthony White",
+     "new": true
+    },
+    {
+     "id": "hk-margaret-white",
+     "name": "Margaret White",
+     "rarity": 1,
+     "page": "Margaret White",
+     "new": true
     }
    ]
   }
