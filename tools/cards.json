@@ -12,48 +12,14 @@
     "color": "#d98fd0",
     "emoji": "🧚"
    },
-   "transfo": [
-    "Winx",
-    "Charmix",
-    "Enchantix",
-    "Believix",
-    "Harmonix",
-    "Sirenix",
-    "Bloomix",
-    "Mythix",
-    "Butterflix",
-    "Cosmix"
-   ],
-   "transfoSaga": [
-    "Saison 1",
-    "Saison 2",
-    "Saison 3",
-    "Saison 4",
-    "Saison 5",
-    "Saison 5",
-    "Saison 6",
-    "Saison 6",
-    "Saison 7",
-    "Saison 8"
-   ],
    "lines": [
     {
      "id": "wx-bloom",
      "name": "Bloom",
      "rarity": 5,
      "page": "Bloom",
-     "transfo": true,
      "img": {
-      "wx-bloom": "https://static.wikia.nocookie.net/winx/images/e/ee/Bloom-Other-StockArt-1.png/revision/latest/scale-to-width-down/600?cb=20250910122525",
-      "wx-bloom-charmix": "https://static.wikia.nocookie.net/winx/images/d/d5/Winx_Nick_Bloom_Charmix_Artwork.png/revision/latest/scale-to-width-down/600?cb=20260622065223",
-      "wx-bloom-enchantix": "https://static.wikia.nocookie.net/winx/images/8/89/Bloom%27s_Enchantix_-_Stock_%281%29.png/revision/latest/scale-to-width-down/600?cb=20251017175453",
-      "wx-bloom-believix": "https://static.wikia.nocookie.net/winx/images/3/3c/Bloom%27s_Believix_-_Stock_%282%29.png/revision/latest/scale-to-width-down/600?cb=20250907224319",
-      "wx-bloom-harmonix": "https://static.wikia.nocookie.net/winx/images/2/20/Bloom_Harmonix_-_Stock_Art_2.png/revision/latest/scale-to-width-down/600?cb=20251006132737",
-      "wx-bloom-sirenix": "https://static.wikia.nocookie.net/winx/images/5/51/Sirenix_bloom_0.jpg/revision/latest/scale-to-width-down/600?cb=20150814122314",
-      "wx-bloom-bloomix": "https://static.wikia.nocookie.net/winx/images/9/9a/Bloom_bloomix_couture_stock_1.png/revision/latest/scale-to-width-down/600?cb=20210321202620",
-      "wx-bloom-mythix": "https://static.wikia.nocookie.net/winx/images/d/db/Bloom-Mythix-StockArt-1.png/revision/latest/scale-to-width-down/600?cb=20210914022137",
-      "wx-bloom-butterflix": "https://static.wikia.nocookie.net/winx/images/7/71/Bloom-Butterflix-StockArt-1.png/revision/latest/scale-to-width-down/600?cb=20210914020439",
-      "wx-bloom-cosmix": "https://static.wikia.nocookie.net/winx/images/5/54/Bloom_Cosmix_stock_art_1.png/revision/latest/scale-to-width-down/600?cb=20210820110232"
+      "wx-bloom": "https://static.wikia.nocookie.net/winx/images/e/ee/Bloom-Other-StockArt-1.png/revision/latest/scale-to-width-down/600?cb=20250910122525"
      }
     },
     {
@@ -61,18 +27,8 @@
      "name": "Stella",
      "rarity": 5,
      "page": "Stella",
-     "transfo": true,
      "img": {
-      "wx-stella": "https://static.wikia.nocookie.net/winx/images/d/d2/Winx_season_8_Stella_stock_artwork_1.png/revision/latest/scale-to-width-down/600?cb=20251229223427",
-      "wx-stella-charmix": "https://static.wikia.nocookie.net/winx/images/0/04/Winx_Club_Specials_Stella_charmix_stock_art_1.png/revision/latest/scale-to-width-down/600?cb=20250828160327",
-      "wx-stella-enchantix": "https://static.wikia.nocookie.net/winx/images/2/21/Stella_S8_Enchantix_stock_art_1.png.png/revision/latest/scale-to-width-down/600?cb=20210820111955",
-      "wx-stella-believix": "https://static.wikia.nocookie.net/winx/images/c/c4/Believix_-_Stella_stock_art_side.png/revision/latest/scale-to-width-down/600?cb=20260102182323",
-      "wx-stella-harmonix": "https://static.wikia.nocookie.net/winx/images/b/b5/Winx_5_Harmonix_Stella_Graphic.png/revision/latest/scale-to-width-down/600?cb=20260722065324",
-      "wx-stella-sirenix": "https://static.wikia.nocookie.net/winx/images/7/76/Winx_s3_Sirenix_Stella_stock_art_half_body.png/revision/latest/scale-to-width-down/600?cb=20250906204114",
-      "wx-stella-bloomix": "https://static.wikia.nocookie.net/winx/images/0/0e/Stella_bloomix_couture_stock_2.png/revision/latest/scale-to-width-down/600?cb=20210321181116",
-      "wx-stella-mythix": "https://static.wikia.nocookie.net/winx/images/a/a1/Stella_Mythix_2D_Fanmade.png/revision/latest/scale-to-width-down/600?cb=20140222150300",
-      "wx-stella-butterflix": "https://static.wikia.nocookie.net/winx/images/f/f0/Winx_7_Stella_Butterflix_Shaded_Artwork_1.png/revision/latest/scale-to-width-down/600?cb=20260730083822",
-      "wx-stella-cosmix": "https://static.wikia.nocookie.net/winx/images/e/e5/Stella_Cosmix_stock_art_1.png.png/revision/latest/scale-to-width-down/600?cb=20251003215124"
+      "wx-stella": "https://static.wikia.nocookie.net/winx/images/d/d2/Winx_season_8_Stella_stock_artwork_1.png/revision/latest/scale-to-width-down/600?cb=20251229223427"
      }
     },
     {
@@ -80,18 +36,8 @@
      "name": "Flora",
      "rarity": 4,
      "page": "Flora",
-     "transfo": true,
      "img": {
-      "wx-flora": "https://static.wikia.nocookie.net/winx/images/b/b4/Winx_4_City_Girl_Flora_Civilian_Artwork.png/revision/latest/scale-to-width-down/600?cb=20260421210744",
-      "wx-flora-charmix": "https://static.wikia.nocookie.net/winx/images/7/7c/Flora_Charmix_-_Stock_Art.png/revision/latest/scale-to-width-down/600?cb=20171118012213",
-      "wx-flora-enchantix": "https://static.wikia.nocookie.net/winx/images/a/a8/Winx_3_Flora_Enchantix_sitting_artwork.png/revision/latest/scale-to-width-down/600?cb=20261020215024",
-      "wx-flora-believix": "https://static.wikia.nocookie.net/winx/images/0/08/Winx_Believix_Flora_stock_art_1.png/revision/latest/scale-to-width-down/600?cb=20250926170010",
-      "wx-flora-harmonix": "https://static.wikia.nocookie.net/winx/images/4/42/Winx_5_Flora_Harmonix_Artwork.png/revision/latest/scale-to-width-down/600?cb=20260905115505",
-      "wx-flora-sirenix": "https://static.wikia.nocookie.net/winx/images/e/e8/Mystery_Of_The_Abyss_Flora_sirenix_stock_art.png/revision/latest/scale-to-width-down/600?cb=20210930144235",
-      "wx-flora-bloomix": "https://static.wikia.nocookie.net/winx/images/1/12/Winx_s6_Couture_Bloomix_Flora_full_artwork.png/revision/latest/scale-to-width-down/600?cb=20251002013403",
-      "wx-flora-mythix": "https://static.wikia.nocookie.net/winx/images/6/6a/2D_Mythix_Flora.png/revision/latest/scale-to-width-down/600?cb=20140901005800",
-      "wx-flora-butterflix": "https://static.wikia.nocookie.net/winx/images/d/dc/Winx_7_Butterflix_Flora_Shaded.png/revision/latest/scale-to-width-down/600?cb=20260914082849",
-      "wx-flora-cosmix": "https://static.wikia.nocookie.net/winx/images/7/7b/Flora_cosmix_stock_art_1.png/revision/latest/scale-to-width-down/600?cb=20251002012251"
+      "wx-flora": "https://static.wikia.nocookie.net/winx/images/b/b4/Winx_4_City_Girl_Flora_Civilian_Artwork.png/revision/latest/scale-to-width-down/600?cb=20260421210744"
      }
     },
     {
@@ -99,18 +45,8 @@
      "name": "Musa",
      "rarity": 4,
      "page": "Musa",
-     "transfo": true,
      "img": {
-      "wx-musa": "https://static.wikia.nocookie.net/winx/images/2/21/Musa_s8_civilian_stock_art.png/revision/latest/scale-to-width-down/600?cb=20251227114033",
-      "wx-musa-charmix": "https://static.wikia.nocookie.net/winx/images/0/02/Musa_Charmix_-_Stock_Art.png/revision/latest/scale-to-width-down/600?cb=20170419043107",
-      "wx-musa-enchantix": "https://static.wikia.nocookie.net/winx/images/f/fa/Winx_SOTLK_Musa_enchantix_stock_art_1.png/revision/latest/scale-to-width-down/600?cb=20250902081802",
-      "wx-musa-believix": "https://static.wikia.nocookie.net/winx/images/f/f9/Musa_Believix_Stock_Art_2.png/revision/latest/scale-to-width-down/600?cb=20250906220047",
-      "wx-musa-harmonix": "https://static.wikia.nocookie.net/winx/images/7/7d/Winx_5_Harmonix_Musa_Flying.png/revision/latest/scale-to-width-down/600?cb=20261020135746",
-      "wx-musa-sirenix": "https://static.wikia.nocookie.net/winx/images/6/68/Winx_Mystery_of_the_Abbys_Sirenix_Musa_stock_art.png/revision/latest?cb=20250902084008",
-      "wx-musa-bloomix": "https://static.wikia.nocookie.net/winx/images/4/45/Musa_bloomix_couture_stock_3.png/revision/latest/scale-to-width-down/600?cb=20260510192235",
-      "wx-musa-mythix": "https://static.wikia.nocookie.net/winx/images/c/cf/2D_Mythix_Musa.png/revision/latest/scale-to-width-down/600?cb=20150108170552",
-      "wx-musa-butterflix": "https://static.wikia.nocookie.net/winx/images/4/40/MusaButterflixStock%283%29.png/revision/latest/scale-to-width-down/600?cb=20210925193554",
-      "wx-musa-cosmix": "https://static.wikia.nocookie.net/winx/images/b/bf/Winx_s8_Cosmix_Musa_full_artwork.png/revision/latest/scale-to-width-down/600?cb=20251002010541"
+      "wx-musa": "https://static.wikia.nocookie.net/winx/images/2/21/Musa_s8_civilian_stock_art.png/revision/latest/scale-to-width-down/600?cb=20251227114033"
      }
     },
     {
@@ -118,18 +54,8 @@
      "name": "Tecna",
      "rarity": 4,
      "page": "Tecna",
-     "transfo": true,
      "img": {
-      "wx-tecna": "https://static.wikia.nocookie.net/winx/images/1/1e/Tecna_Civilian_-_Stock_Art_%281%29.png/revision/latest/scale-to-width-down/600?cb=20260513222811",
-      "wx-tecna-charmix": "https://static.wikia.nocookie.net/winx/images/b/bc/Tecna_Charmix_-_Stock_Art.png/revision/latest/scale-to-width-down/600?cb=20171118012446",
-      "wx-tecna-enchantix": "https://static.wikia.nocookie.net/winx/images/3/37/Winx_s3_Tecna_Enchantix_Concept_Artwork.png/revision/latest?cb=20260518210334",
-      "wx-tecna-believix": "https://static.wikia.nocookie.net/winx/images/3/38/Believix_-_Tecna_stock_art_Back.png/revision/latest/scale-to-width-down/600?cb=20260105102902",
-      "wx-tecna-harmonix": "https://static.wikia.nocookie.net/winx/images/3/38/Harmonix_Tecna.png/revision/latest?cb=20121201104116",
-      "wx-tecna-sirenix": "https://static.wikia.nocookie.net/winx/images/2/20/Winx_s5_Tecna_sirenix_half_body_stock_art.png/revision/latest/scale-to-width-down/600?cb=20251002005806",
-      "wx-tecna-bloomix": "https://static.wikia.nocookie.net/winx/images/5/5f/Tecna_Bloomix.png/revision/latest/scale-to-width-down/600?cb=20260114200621",
-      "wx-tecna-mythix": "https://static.wikia.nocookie.net/winx/images/4/46/2D_Mythix_Tecna.png/revision/latest/scale-to-width-down/600?cb=20140901005732",
-      "wx-tecna-butterflix": "https://static.wikia.nocookie.net/winx/images/2/23/Butterflix_Tecna.png/revision/latest/scale-to-width-down/600?cb=20150828175706",
-      "wx-tecna-cosmix": "https://static.wikia.nocookie.net/winx/images/f/ff/Tecna_Cosmix.jpg/revision/latest/scale-to-width-down/600?cb=20260620191408"
+      "wx-tecna": "https://static.wikia.nocookie.net/winx/images/1/1e/Tecna_Civilian_-_Stock_Art_%281%29.png/revision/latest/scale-to-width-down/600?cb=20260513222811"
      }
     },
     {
@@ -137,18 +63,8 @@
      "name": "Aisha",
      "rarity": 4,
      "page": "Aisha",
-     "transfo": true,
      "img": {
-      "wx-aisha": "https://static.wikia.nocookie.net/winx/images/8/88/Aisha_fight_stock_artwork.png/revision/latest/scale-to-width-down/600?cb=20251005113847",
-      "wx-aisha-charmix": "https://static.wikia.nocookie.net/winx/images/1/1e/Aisha_Charmix_-_Stock_Art.png/revision/latest/scale-to-width-down/600?cb=20171118012239",
-      "wx-aisha-enchantix": "https://static.wikia.nocookie.net/winx/images/1/1a/Winx_3_Aisha_Concept_Enchantix_Stock_Art.png/revision/latest?cb=20260527074349",
-      "wx-aisha-believix": "https://static.wikia.nocookie.net/winx/images/b/b3/Winx_s4_Believix_Aisha_stock_art_1.png/revision/latest/scale-to-width-down/600?cb=20250926154931",
-      "wx-aisha-harmonix": "https://static.wikia.nocookie.net/winx/images/f/f5/Aisha%27s_Harmonix_-_Stock_%281%29.png/revision/latest/scale-to-width-down/600?cb=20260119090944",
-      "wx-aisha-sirenix": "https://static.wikia.nocookie.net/winx/images/3/3d/Aisha%27s_Sirenix_-_Stock_%281%29.png/revision/latest/scale-to-width-down/600?cb=20260101221149",
-      "wx-aisha-bloomix": "https://static.wikia.nocookie.net/winx/images/b/b2/AishaBloomixCouture%282%29.png/revision/latest/scale-to-width-down/600?cb=20260531085546",
-      "wx-aisha-mythix": "https://static.wikia.nocookie.net/winx/images/3/30/2D_Mythix_Aisha.png/revision/latest/scale-to-width-down/600?cb=20140901005953",
-      "wx-aisha-butterflix": "https://static.wikia.nocookie.net/winx/images/7/75/Butterflix_Aisha.png/revision/latest?cb=20150828175530",
-      "wx-aisha-cosmix": "https://static.wikia.nocookie.net/winx/images/0/0d/Aisha_Cosmix.jpg/revision/latest/scale-to-width-down/600?cb=20260620191500"
+      "wx-aisha": "https://static.wikia.nocookie.net/winx/images/8/88/Aisha_fight_stock_artwork.png/revision/latest/scale-to-width-down/600?cb=20251005113847"
      }
     },
     {
@@ -327,29 +243,8 @@
      "name": "Icy",
      "rarity": 3,
      "page": "Icy",
-     "forms": [
-      [
-       "Icy",
-       "Trix",
-       "Saison 1"
-      ],
-      [
-       "Icy Disenchantix",
-       "Disenchantix",
-       "Saison 3"
-      ],
-      [
-       "Icy Dark Sirenix",
-       "Dark Sirenix",
-       "Saison 5"
-      ]
-     ],
-     "skip": [
-      "wx-icy-disenchantix"
-     ],
      "img": {
-      "wx-icy": "https://static.wikia.nocookie.net/winx/images/d/d8/IcyStockArt%281%29.jpg/revision/latest?cb=20191129035338",
-      "wx-icy-dark-sirenix": "https://static.wikia.nocookie.net/winx/images/9/9a/Icy_-_Dark_Sirenix_-_Stock_Art.jpg/revision/latest/scale-to-width-down/600?cb=20190609073645"
+      "wx-icy": "https://static.wikia.nocookie.net/winx/images/d/d8/IcyStockArt%281%29.jpg/revision/latest?cb=20191129035338"
      }
     },
     {
@@ -357,29 +252,8 @@
      "name": "Darcy",
      "rarity": 3,
      "page": "Darcy",
-     "forms": [
-      [
-       "Darcy",
-       "Trix",
-       "Saison 1"
-      ],
-      [
-       "Darcy Disenchantix",
-       "Disenchantix",
-       "Saison 3"
-      ],
-      [
-       "Darcy Dark Sirenix",
-       "Dark Sirenix",
-       "Saison 5"
-      ]
-     ],
-     "skip": [
-      "wx-darcy-disenchantix"
-     ],
      "img": {
-      "wx-darcy": "https://static.wikia.nocookie.net/winx/images/2/2f/DarcyCivilian-StockArt-1.png/revision/latest/scale-to-width-down/600?cb=20210816042300",
-      "wx-darcy-dark-sirenix": "https://static.wikia.nocookie.net/winx/images/c/cf/Darcy_-_Dark_Sirenix_-_Stock_Art.jpg/revision/latest/scale-to-width-down/600?cb=20190609073921"
+      "wx-darcy": "https://static.wikia.nocookie.net/winx/images/2/2f/DarcyCivilian-StockArt-1.png/revision/latest/scale-to-width-down/600?cb=20210816042300"
      }
     },
     {
@@ -387,29 +261,8 @@
      "name": "Stormy",
      "rarity": 3,
      "page": "Stormy",
-     "forms": [
-      [
-       "Stormy",
-       "Trix",
-       "Saison 1"
-      ],
-      [
-       "Stormy Disenchantix",
-       "Disenchantix",
-       "Saison 3"
-      ],
-      [
-       "Stormy Dark Sirenix",
-       "Dark Sirenix",
-       "Saison 5"
-      ]
-     ],
-     "skip": [
-      "wx-stormy-disenchantix"
-     ],
      "img": {
-      "wx-stormy": "https://static.wikia.nocookie.net/winx/images/6/6d/Stormy_Dark_Witch.png/revision/latest/scale-to-width-down/600?cb=20150714144357",
-      "wx-stormy-dark-sirenix": "https://static.wikia.nocookie.net/winx/images/e/ed/Stormy_-_Dark_Sirenix_-_Stock_Art.jpg/revision/latest/scale-to-width-down/600?cb=20190609073941"
+      "wx-stormy": "https://static.wikia.nocookie.net/winx/images/6/6d/Stormy_Dark_Witch.png/revision/latest/scale-to-width-down/600?cb=20150714144357"
      }
     },
     {
@@ -426,13 +279,6 @@
      "name": "Lord Darkar",
      "rarity": 5,
      "page": "Lord Darkar",
-     "q": {
-      "wx-darkar": [
-       "file:Lord Darkar",
-       "file:Darkar 2D",
-       "file:Darkar"
-      ]
-     },
      "img": {
       "wx-darkar": "https://static.wikia.nocookie.net/winx/images/c/ce/Lord_Darkar.png/revision/latest/scale-to-width-down/600?cb=20190711081405"
      }
@@ -499,372 +345,6 @@
      "img": {
       "wx-mandragora": "https://static.wikia.nocookie.net/winx/images/b/bf/Mandragora-icon.png/revision/latest/scale-to-width-down/600?cb=20170902151934"
      }
-    },
-    {
-     "id": "wx-duman",
-     "name": "Duman",
-     "rarity": 3,
-     "page": "Duman",
-     "img": {
-      "wx-duman": "https://static.wikia.nocookie.net/winx/images/a/ae/~Duman~.jpg/revision/latest/scale-to-width-down/600?cb=20200918222552"
-     }
-    },
-    {
-     "id": "wx-gantlos",
-     "name": "Gantlos",
-     "rarity": 3,
-     "page": "Gantlos",
-     "img": {
-      "wx-gantlos": "https://static.wikia.nocookie.net/winx/images/1/13/Gantlos.png/revision/latest/scale-to-width-down/600?cb=20170219093042"
-     }
-    },
-    {
-     "id": "wx-anagan",
-     "name": "Anagan",
-     "rarity": 3,
-     "page": "Anagan",
-     "img": {
-      "wx-anagan": "https://static.wikia.nocookie.net/winx/images/4/46/Anagan.jpg/revision/latest/scale-to-width-down/600?cb=20190502231521"
-     }
-    },
-    {
-     "id": "wx-brafilius",
-     "name": "Brafilius",
-     "rarity": 2,
-     "page": "Brafilius",
-     "img": {
-      "wx-brafilius": "https://static.wikia.nocookie.net/winx/images/6/6b/Brafilius-icon.png/revision/latest/scale-to-width-down/600?cb=20170715092507"
-     }
-    },
-    {
-     "id": "wx-acheron",
-     "name": "Acheron",
-     "rarity": 4,
-     "page": "Acheron",
-     "img": {
-      "wx-acheron": "https://static.wikia.nocookie.net/winx/images/a/a2/AcheronPortrait.jpg/revision/latest/scale-to-width-down/600?cb=20140219215834"
-     }
-    },
-    {
-     "id": "wx-griffin",
-     "name": "Griffin",
-     "rarity": 3,
-     "page": "Griffin (Witch)",
-     "img": {
-      "wx-griffin": "https://static.wikia.nocookie.net/winx/images/f/f1/Griffin.jpg/revision/latest/scale-to-width-down/600?cb=20191005014955"
-     }
-    },
-    {
-     "id": "wx-roi-radius",
-     "name": "Roi Radius",
-     "rarity": 2,
-     "page": "Radius"
-    },
-    {
-     "id": "wx-reine-luna",
-     "name": "Reine Luna",
-     "rarity": 2,
-     "page": "Luna"
-    },
-    {
-     "id": "wx-roi-erendor",
-     "name": "Roi Erendor",
-     "rarity": 2,
-     "page": "Erendor"
-    },
-    {
-     "id": "wx-krystal",
-     "name": "Krystal",
-     "rarity": 2,
-     "page": "Krystal",
-     "img": {
-      "wx-krystal": "https://static.wikia.nocookie.net/winx/images/8/82/Sad_Krystal_.jpg/revision/latest/scale-to-width-down/600?cb=20190504194353"
-     }
-    },
-    {
-     "id": "wx-galatea",
-     "name": "Galatea",
-     "rarity": 2,
-     "page": "Galatea",
-     "img": {
-      "wx-galatea": "https://static.wikia.nocookie.net/winx/images/3/30/Galatea_Winx.jpg/revision/latest?cb=20160712052412"
-     }
-    },
-    {
-     "id": "wx-nebula",
-     "name": "Nebula",
-     "rarity": 3,
-     "page": "Nebula",
-     "img": {
-      "wx-nebula": "https://static.wikia.nocookie.net/winx/images/4/49/NebulaStockArt-1.jpg/revision/latest/scale-to-width-down/600?cb=20210113233154"
-     }
-    },
-    {
-     "id": "wx-morgana",
-     "name": "Morgana",
-     "rarity": 4,
-     "page": "Morgana",
-     "img": {
-      "wx-morgana": "https://static.wikia.nocookie.net/winx/images/6/65/Morgana_S4E26.png/revision/latest/scale-to-width-down/600?cb=20171031075739"
-     }
-    },
-    {
-     "id": "wx-ligea",
-     "name": "Ligea",
-     "rarity": 2,
-     "page": "Ligea",
-     "img": {
-      "wx-ligea": "https://static.wikia.nocookie.net/winx/images/a/a7/LigeaStockArt.png/revision/latest/scale-to-width-down/600?cb=20210319223722"
-     }
-    },
-    {
-     "id": "wx-avalon",
-     "name": "Avalon",
-     "rarity": 3,
-     "page": "Avalon",
-     "img": {
-      "wx-avalon": "https://static.wikia.nocookie.net/winx/images/6/67/AvalonStockArt.png/revision/latest/scale-to-width-down/600?cb=20230506050109"
-     }
-    },
-    {
-     "id": "wx-andy",
-     "name": "Andy",
-     "rarity": 1,
-     "page": "Andy",
-     "img": {
-      "wx-andy": "https://static.wikia.nocookie.net/winx/images/3/3b/AndyStockArt.png/revision/latest/scale-to-width-down/600?cb=20230506050724"
-     }
-    },
-    {
-     "id": "wx-mitzi",
-     "name": "Mitzi",
-     "rarity": 1,
-     "page": "Mitzi",
-     "img": {
-      "wx-mitzi": "https://static.wikia.nocookie.net/winx/images/f/f8/Mitzi_-_Stock_Art.png/revision/latest/scale-to-width-down/600?cb=20230113012010"
-     }
-    },
-    {
-     "id": "wx-vanessa",
-     "name": "Vanessa",
-     "rarity": 1,
-     "page": "Vanessa",
-     "img": {
-      "wx-vanessa": "https://static.wikia.nocookie.net/winx/images/3/32/VanessaNick.png/revision/latest/scale-to-width-down/600?cb=20220305235217"
-     }
-    },
-    {
-     "id": "wx-mike",
-     "name": "Mike",
-     "rarity": 1,
-     "page": "Mike",
-     "img": {
-      "wx-mike": "https://static.wikia.nocookie.net/winx/images/5/51/MikeSp1.png/revision/latest/scale-to-width-down/600?cb=20190228001646"
-     }
-    },
-    {
-     "id": "wx-ortensia",
-     "name": "Ortensia",
-     "rarity": 1,
-     "page": "Ortensia",
-     "img": {
-      "wx-ortensia": "https://static.wikia.nocookie.net/winx/images/e/ed/Ortensia-Winx-StockArt.png/revision/latest/scale-to-width-down/600?cb=20230922212650"
-     }
-    },
-    {
-     "id": "wx-lucy",
-     "name": "Lucy",
-     "rarity": 1,
-     "page": "Lucy",
-     "img": {
-      "wx-lucy": "https://static.wikia.nocookie.net/winx/images/0/0c/Lucy_profile.png/revision/latest?cb=20240308032236"
-     }
-    },
-    {
-     "id": "wx-romina",
-     "name": "Romina",
-     "rarity": 2,
-     "page": "Romina",
-     "img": {
-      "wx-romina": "https://static.wikia.nocookie.net/winx/images/b/bf/Romina_Casual.png/revision/latest?cb=20161228181638"
-     }
-    },
-    {
-     "id": "wx-roy",
-     "name": "Roy",
-     "rarity": 2,
-     "page": "Roy",
-     "img": {
-      "wx-roy": "https://static.wikia.nocookie.net/winx/images/1/12/Roy_%281%29.png/revision/latest/scale-to-width-down/600?cb=20131115133906"
-     }
-    },
-    {
-     "id": "wx-thoren",
-     "name": "Thoren",
-     "rarity": 2,
-     "page": "Thoren",
-     "img": {
-      "wx-thoren": "https://static.wikia.nocookie.net/winx/images/0/05/Thoren_Coronation_Outfit_Artwork.png/revision/latest/scale-to-width-down/600?cb=20150514194549"
-     }
-    },
-    {
-     "id": "wx-saladin",
-     "name": "Saladin",
-     "rarity": 2,
-     "page": "Saladin",
-     "img": {
-      "wx-saladin": "https://static.wikia.nocookie.net/winx/images/7/70/Saladin_profile.png/revision/latest/scale-to-width-down/600?cb=20240308024306"
-     }
-    },
-    {
-     "id": "wx-codatorta",
-     "name": "Codatorta",
-     "rarity": 2,
-     "page": "Codatorta",
-     "img": {
-      "wx-codatorta": "https://static.wikia.nocookie.net/winx/images/2/28/CodatortaS1.png/revision/latest/scale-to-width-down/600?cb=20180425062004"
-     }
-    },
-    {
-     "id": "wx-wizgiz",
-     "name": "Wizgiz",
-     "rarity": 2,
-     "page": "Wizgiz",
-     "img": {
-      "wx-wizgiz": "https://static.wikia.nocookie.net/winx/images/5/52/WizgizStockArt.png/revision/latest/scale-to-width-down/600?cb=20211025211845"
-     }
-    },
-    {
-     "id": "wx-palladium",
-     "name": "Palladium",
-     "rarity": 2,
-     "page": "Palladium",
-     "img": {
-      "wx-palladium": "https://static.wikia.nocookie.net/winx/images/1/18/Palladium%28S2-Present%29_-_Stock_Art.jpg/revision/latest?cb=20181117230527"
-     }
-    },
-    {
-     "id": "wx-knut",
-     "name": "Knut",
-     "rarity": 1,
-     "page": "Knut",
-     "img": {
-      "wx-knut": "https://static.wikia.nocookie.net/winx/images/2/26/Knut_profile_2.png/revision/latest/scale-to-width-down/600?cb=20240308024543"
-     }
-    },
-    {
-     "id": "wx-tressa",
-     "name": "Tressa",
-     "rarity": 1,
-     "page": "Tressa",
-     "img": {
-      "wx-tressa": "https://static.wikia.nocookie.net/winx/images/1/17/TressaStockArt.png/revision/latest/scale-to-width-down/600?cb=20210319223709"
-     }
-    },
-    {
-     "id": "wx-concorda",
-     "name": "Concorda",
-     "rarity": 1,
-     "page": "Concorda",
-     "img": {
-      "wx-concorda": "https://static.wikia.nocookie.net/winx/images/9/9e/ConcordaStockArt-1.png/revision/latest/scale-to-width-down/600?cb=20210508220029"
-     }
-    },
-    {
-     "id": "wx-ediltrude",
-     "name": "Ediltrude",
-     "rarity": 2,
-     "page": "Ediltrude",
-     "img": {
-      "wx-ediltrude": "https://static.wikia.nocookie.net/winx/images/c/c9/~Professor_Ediltrude~.png/revision/latest/scale-to-width-down/600?cb=20110720175007"
-     }
-    },
-    {
-     "id": "wx-ninfea",
-     "name": "Ninfea",
-     "rarity": 1,
-     "page": "Ninfea",
-     "img": {
-      "wx-ninfea": "https://static.wikia.nocookie.net/winx/images/f/f8/NinfeaSp4-1.png/revision/latest/scale-to-width-down/600?cb=20210114015733"
-     }
-    },
-    {
-     "id": "wx-livy",
-     "name": "Livy",
-     "rarity": 1,
-     "page": "Livy",
-     "img": {
-      "wx-livy": "https://static.wikia.nocookie.net/winx/images/a/a7/0livy.jpg/revision/latest?cb=20190908072211"
-     }
-    },
-    {
-     "id": "wx-zing",
-     "name": "Zing",
-     "rarity": 1,
-     "page": "Zing",
-     "img": {
-      "wx-zing": "https://static.wikia.nocookie.net/winx/images/8/8c/ZingStockArt.png/revision/latest/scale-to-width-down/600?cb=20190802222452"
-     }
-    },
-    {
-     "id": "wx-cherie",
-     "name": "Cherie",
-     "rarity": 1,
-     "page": "Cherie",
-     "img": {
-      "wx-cherie": "https://static.wikia.nocookie.net/winx/images/3/37/Cherie_stock_art.png/revision/latest?cb=20230908175852"
-     }
-    },
-    {
-     "id": "wx-caramel",
-     "name": "Caramel",
-     "rarity": 1,
-     "page": "Caramel",
-     "img": {
-      "wx-caramel": "https://static.wikia.nocookie.net/winx/images/5/5a/CaramelPP-StockArt-1.png/revision/latest/scale-to-width-down/600?cb=20211210170042"
-     }
-    },
-    {
-     "id": "wx-jolly",
-     "name": "Jolly",
-     "rarity": 1,
-     "page": "Jolly",
-     "img": {
-      "wx-jolly": "https://static.wikia.nocookie.net/winx/images/8/85/Jolly.png/revision/latest/scale-to-width-down/600?cb=20100428233857"
-     }
-    },
-    {
-     "id": "wx-amentia",
-     "name": "Amentia",
-     "rarity": 2,
-     "page": "Amentia",
-     "img": {
-      "wx-amentia": "https://static.wikia.nocookie.net/winx/images/e/ec/Princess_Amentia.jpg/revision/latest/scale-to-width-down/600?cb=20191028192730"
-     }
-    },
-    {
-     "id": "wx-eldora",
-     "name": "Eldora",
-     "rarity": 3,
-     "page": "Eldora",
-     "img": {
-      "wx-eldora": "https://static.wikia.nocookie.net/winx/images/7/76/Eldora.png/revision/latest/scale-to-width-down/600?cb=20160511045759"
-     }
-    },
-    {
-     "id": "wx-diana",
-     "name": "Diana",
-     "rarity": 3,
-     "page": "Diana (Season 4)",
-     "img": {
-      "wx-diana": "https://static.wikia.nocookie.net/winx/images/9/9d/Diana%28EF%29-StockArt-1.png/revision/latest/scale-to-width-down/600?cb=20220428042700"
-     }
-    },
-    {
-     "id": "wx-nex",
-     "name": "Nex",
-     "rarity": 2,
-     "page": "Nex"
     }
    ]
   },
@@ -879,242 +359,330 @@
     "color": "#e46aa6",
     "emoji": "🦇"
    },
-   "gens": [
-    [
-     "G1",
-     "Génération 1"
-    ],
-    [
-     "G2",
-     "Génération 2"
-    ],
-    [
-     "G3",
-     "Génération 3"
-    ]
-   ],
    "lines": [
     {
      "id": "mh-frankie",
      "name": "Frankie Stein",
      "rarity": 5,
      "page": "Frankie Stein",
-     "gens": true
+     "img": {
+      "mh-frankie": "https://static.wikia.nocookie.net/monsterhigh/images/f/f3/Frankie_Stein%E2%84%A2.png/revision/latest/scale-to-width-down/220?cb=20161102053136"
+     }
     },
     {
      "id": "mh-draculaura",
      "name": "Draculaura",
      "rarity": 5,
      "page": "Draculaura",
-     "gens": true
+     "img": {
+      "mh-draculaura": "https://static.wikia.nocookie.net/monsterhigh/images/b/ba/Draculaura%E2%84%A2.png/revision/latest/scale-to-width-down/325?cb=20161103014944"
+     }
     },
     {
      "id": "mh-clawdeen",
      "name": "Clawdeen Wolf",
      "rarity": 5,
      "page": "Clawdeen Wolf",
-     "gens": true
+     "img": {
+      "mh-clawdeen": "https://static.wikia.nocookie.net/monsterhigh/images/6/61/Profile_art_-_Basic_Clawdeen_I.jpg/revision/latest/scale-to-width-down/256?cb=20140914191136"
+     }
     },
     {
      "id": "mh-cleo",
      "name": "Cleo de Nile",
      "rarity": 4,
      "page": "Cleo de Nile",
-     "gens": true
+     "img": {
+      "mh-cleo": "https://static.wikia.nocookie.net/monsterhigh/images/8/82/Profile_art_-_Cleo_de_Nile.jpg/revision/latest/scale-to-width-down/341?cb=20121118163404"
+     }
     },
     {
      "id": "mh-lagoona",
      "name": "Lagoona Blue",
      "rarity": 4,
      "page": "Lagoona Blue",
-     "gens": true
+     "img": {
+      "mh-lagoona": "https://static.wikia.nocookie.net/monsterhigh/images/7/7c/Profile_art_-_Lagoona_Blue.jpg/revision/latest/scale-to-width-down/312?cb=20121118164141"
+     }
     },
     {
      "id": "mh-ghoulia",
      "name": "Ghoulia Yelps",
      "rarity": 4,
      "page": "Ghoulia Yelps",
-     "gens": true
+     "img": {
+      "mh-ghoulia": "https://static.wikia.nocookie.net/monsterhigh/images/2/24/Ghoulia_Yelps%E2%84%A2.png/revision/latest/scale-to-width-down/256?cb=20161102020535"
+     }
     },
     {
      "id": "mh-abbey",
      "name": "Abbey Bominable",
      "rarity": 3,
-     "page": "Abbey Bominable"
+     "page": "Abbey Bominable",
+     "img": {
+      "mh-abbey": "https://static.wikia.nocookie.net/monsterhigh/images/d/dd/Abbey_Bominable%E2%84%A2.png/revision/latest/scale-to-width-down/230?cb=20161102013213"
+     }
     },
     {
      "id": "mh-spectra",
      "name": "Spectra Vondergeist",
      "rarity": 3,
-     "page": "Spectra Vondergeist"
+     "page": "Spectra Vondergeist",
+     "img": {
+      "mh-spectra": "https://static.wikia.nocookie.net/monsterhigh/images/f/fc/Spectra_Vondergeist%E2%84%A2.png/revision/latest/scale-to-width-down/304?cb=20161102033831"
+     }
     },
     {
      "id": "mh-operetta",
      "name": "Operetta",
      "rarity": 3,
-     "page": "Operetta"
+     "page": "Operetta",
+     "img": {
+      "mh-operetta": "https://static.wikia.nocookie.net/monsterhigh/images/0/04/Adventures_of_the_Ghoul_Squad_-_Operetta_full.jpg/revision/latest?cb=20221107195026"
+     }
     },
     {
      "id": "mh-toralei",
      "name": "Toralei Stripe",
      "rarity": 3,
-     "page": "Toralei Stripe"
+     "page": "Toralei Stripe",
+     "img": {
+      "mh-toralei": "https://static.wikia.nocookie.net/monsterhigh/images/e/e9/ToraleiStripeG3.png/revision/latest/scale-to-width-down/325?cb=20240228135540"
+     }
     },
     {
      "id": "mh-venus",
      "name": "Venus McFlytrap",
      "rarity": 3,
-     "page": "Venus McFlytrap"
+     "page": "Venus McFlytrap",
+     "img": {
+      "mh-venus": "https://static.wikia.nocookie.net/monsterhigh/images/9/9c/Venus_McFlytrap_v2.png/revision/latest/scale-to-width-down/298?cb=20241119163059"
+     }
     },
     {
      "id": "mh-robecca",
      "name": "Robecca Steam",
      "rarity": 3,
-     "page": "Robecca Steam"
+     "page": "Robecca Steam",
+     "img": {
+      "mh-robecca": "https://static.wikia.nocookie.net/monsterhigh/images/6/6e/Robecca_Steam%E2%84%A2.png/revision/latest/scale-to-width-down/270?cb=20161102032245"
+     }
     },
     {
      "id": "mh-rochelle",
      "name": "Rochelle Goyle",
      "rarity": 3,
-     "page": "Rochelle Goyle"
+     "page": "Rochelle Goyle",
+     "img": {
+      "mh-rochelle": "https://static.wikia.nocookie.net/monsterhigh/images/f/fc/Rochelle_Goyle%E2%84%A2.png/revision/latest/scale-to-width-down/264?cb=20161102032600"
+     }
     },
     {
      "id": "mh-twyla",
      "name": "Twyla",
      "rarity": 3,
-     "page": "Twyla"
+     "page": "Twyla",
+     "img": {
+      "mh-twyla": "https://static.wikia.nocookie.net/monsterhigh/images/e/e4/Profile_art_-_Twyla.png/revision/latest/scale-to-width-down/244?cb=20130427131223"
+     }
     },
     {
      "id": "mh-catty",
      "name": "Catty Noir",
      "rarity": 3,
-     "page": "Catty Noir"
+     "page": "Catty Noir",
+     "img": {
+      "mh-catty": "https://static.wikia.nocookie.net/monsterhigh/images/6/6d/Catty_Noir..png/revision/latest/scale-to-width-down/380?cb=20161130041222"
+     }
     },
     {
      "id": "mh-skelita",
      "name": "Skelita Calaveras",
      "rarity": 3,
-     "page": "Skelita Calaveras"
+     "page": "Skelita Calaveras",
+     "img": {
+      "mh-skelita": "https://static.wikia.nocookie.net/monsterhigh/images/c/c6/Skelita_Calaveras%E2%84%A2.png/revision/latest/scale-to-width-down/313?cb=20161102034058"
+     }
     },
     {
      "id": "mh-cupid",
      "name": "C.A. Cupid",
      "rarity": 3,
-     "page": "C.A. Cupid"
+     "page": "C.A. Cupid",
+     "img": {
+      "mh-cupid": "https://static.wikia.nocookie.net/monsterhigh/images/6/60/Profileart_-_C.A_Cupid.png/revision/latest/scale-to-width-down/388?cb=20160917222353"
+     }
     },
     {
      "id": "mh-nefera",
      "name": "Nefera de Nile",
      "rarity": 4,
-     "page": "Nefera de Nile"
+     "page": "Nefera de Nile",
+     "img": {
+      "mh-nefera": "https://static.wikia.nocookie.net/monsterhigh/images/a/ac/Nefera_de_Nile.4.png/revision/latest/scale-to-width-down/265?cb=20161102030414"
+     }
     },
     {
      "id": "mh-elissabat",
      "name": "Elissabat",
      "rarity": 3,
-     "page": "Elissabat"
+     "page": "Elissabat",
+     "img": {
+      "mh-elissabat": "https://static.wikia.nocookie.net/monsterhigh/images/5/59/Elissabat%E2%84%A2.png/revision/latest/scale-to-width-down/257?cb=20161102020022"
+     }
     },
     {
      "id": "mh-howleen",
      "name": "Howleen Wolf",
      "rarity": 2,
-     "page": "Howleen Wolf"
+     "page": "Howleen Wolf",
+     "img": {
+      "mh-howleen": "https://static.wikia.nocookie.net/monsterhigh/images/c/cc/Icon_-_Howleen_Wolf.jpg/revision/latest?cb=20150125135947"
+     }
     },
     {
      "id": "mh-jinafire",
      "name": "Jinafire Long",
      "rarity": 2,
-     "page": "Jinafire Long"
+     "page": "Jinafire Long",
+     "img": {
+      "mh-jinafire": "https://static.wikia.nocookie.net/monsterhigh/images/0/0b/Jinafire_Long_2024_Profile_artwork.png/revision/latest/scale-to-width-down/401?cb=20241102173942"
+     }
     },
     {
      "id": "mh-gigi",
      "name": "Gigi Grant",
      "rarity": 2,
-     "page": "Gigi Grant"
+     "page": "Gigi Grant",
+     "img": {
+      "mh-gigi": "https://static.wikia.nocookie.net/monsterhigh/images/4/40/Gigi_Grant%E2%84%A2.png/revision/latest/scale-to-width-down/228?cb=20161102020739"
+     }
     },
     {
      "id": "mh-honey",
      "name": "Honey Swamp",
      "rarity": 2,
-     "page": "Honey Swamp"
+     "page": "Honey Swamp",
+     "img": {
+      "mh-honey": "https://static.wikia.nocookie.net/monsterhigh/images/f/fc/Honey_Swamp%E2%84%A2.png/revision/latest/scale-to-width-down/248?cb=20161102023538"
+     }
     },
     {
      "id": "mh-kiyomi",
      "name": "Kiyomi Haunterly",
      "rarity": 2,
-     "page": "Kiyomi Haunterly"
+     "page": "Kiyomi Haunterly",
+     "img": {
+      "mh-kiyomi": "https://static.wikia.nocookie.net/monsterhigh/images/0/0d/Kiyomi_Haunterly%E2%84%A2.png/revision/latest/scale-to-width-down/357?cb=20161102025508"
+     }
     },
     {
      "id": "mh-deuce",
      "name": "Deuce Gorgon",
      "rarity": 3,
-     "page": "Deuce Gorgon"
+     "page": "Deuce Gorgon",
+     "img": {
+      "mh-deuce": "https://static.wikia.nocookie.net/monsterhigh/images/d/d3/Deuce_Gorgon%E2%84%A2.png/revision/latest/scale-to-width-down/214?cb=20161102015632"
+     }
     },
     {
      "id": "mh-clawd",
      "name": "Clawd Wolf",
      "rarity": 2,
-     "page": "Clawd Wolf"
+     "page": "Clawd Wolf",
+     "img": {
+      "mh-clawd": "https://static.wikia.nocookie.net/monsterhigh/images/7/75/Clawd_Wolf%E2%84%A2.png/revision/latest/scale-to-width-down/225?cb=20171015054126"
+     }
     },
     {
      "id": "mh-heath",
      "name": "Heath Burns",
      "rarity": 2,
-     "page": "Heath Burns"
+     "page": "Heath Burns",
+     "img": {
+      "mh-heath": "https://static.wikia.nocookie.net/monsterhigh/images/a/a7/HeathBurnsG3Artwork.png/revision/latest/scale-to-width-down/233?cb=20240327015722"
+     }
     },
     {
      "id": "mh-bloodgood",
      "name": "Madame Bloodgood",
      "rarity": 2,
-     "page": "Headmistress Bloodgood"
+     "page": "Headmistress Bloodgood",
+     "img": {
+      "mh-bloodgood": "https://static.wikia.nocookie.net/monsterhigh/images/d/d7/Bloodgood_Render.png/revision/latest/scale-to-width-down/375?cb=20230517143247"
+     }
     },
     {
      "id": "mh-manny",
      "name": "Manny Taur",
      "rarity": 2,
-     "page": "Manny Taur"
+     "page": "Manny Taur",
+     "img": {
+      "mh-manny": "https://static.wikia.nocookie.net/monsterhigh/images/e/e6/Tumblr_neo3ipMaL91sis95eo1_1280.png/revision/latest/scale-to-width-down/252?cb=20160104181712"
+     }
     },
     {
      "id": "mh-purrsephone",
      "name": "Purrsephone",
      "rarity": 2,
-     "page": "Purrsephone"
+     "page": "Purrsephone",
+     "img": {
+      "mh-purrsephone": "https://static.wikia.nocookie.net/monsterhigh/images/7/78/Purrsephone_Profile_Art.png/revision/latest/scale-to-width-down/315?cb=20151022182451"
+     }
     },
     {
      "id": "mh-meowlody",
      "name": "Meowlody",
      "rarity": 2,
-     "page": "Meowlody"
+     "page": "Meowlody",
+     "img": {
+      "mh-meowlody": "https://static.wikia.nocookie.net/monsterhigh/images/e/e9/Meowlody_Profile_Art.png/revision/latest/scale-to-width-down/296?cb=20151022182512"
+     }
     },
     {
      "id": "mh-count-fabulous",
      "name": "Count Fabulous",
      "rarity": 1,
-     "page": "Count Fabulous"
+     "page": "Count Fabulous",
+     "img": {
+      "mh-count-fabulous": "https://static.wikia.nocookie.net/monsterhigh/images/e/e4/Profile_art_-_Count_Fabulous.jpg/revision/latest?cb=20130131135324"
+     }
     },
     {
      "id": "mh-watzit",
      "name": "Watzit",
      "rarity": 1,
-     "page": "Watzit"
+     "page": "Watzit",
+     "img": {
+      "mh-watzit": "https://static.wikia.nocookie.net/monsterhigh/images/1/10/Profile_art_-_Watzit.jpg/revision/latest?cb=20130130113302"
+     }
     },
     {
      "id": "mh-crescent",
      "name": "Crescent",
      "rarity": 1,
-     "page": "Crescent"
+     "page": "Crescent",
+     "img": {
+      "mh-crescent": "https://static.wikia.nocookie.net/monsterhigh/images/b/ba/Profile_art_-_Crescent.jpg/revision/latest?cb=20130131180243"
+     }
     },
     {
      "id": "mh-sweet-fang",
      "name": "Sweet Fang",
      "rarity": 1,
-     "page": "Sweet Fang"
+     "page": "Sweet Fang",
+     "img": {
+      "mh-sweet-fang": "https://static.wikia.nocookie.net/monsterhigh/images/c/c6/Profile_art_-_Sweet_Fangs.png/revision/latest?cb=20160514000855"
+     }
     },
     {
      "id": "mh-neptuna",
      "name": "Neptuna",
      "rarity": 1,
-     "page": "Neptuna"
+     "page": "Neptuna",
+     "img": {
+      "mh-neptuna": "https://static.wikia.nocookie.net/monsterhigh/images/e/e8/Profile_art_-_Neptuna.jpg/revision/latest?cb=20130131202624"
+     }
     },
     {
      "id": "mh-hissette",
@@ -1126,439 +694,10 @@
      "id": "mh-perseus",
      "name": "Perseus",
      "rarity": 1,
-     "page": "Perseus"
-    },
-    {
-     "id": "mh-jackson-jekyll",
-     "name": "Jackson Jekyll",
-     "rarity": 3,
-     "page": "Jackson Jekyll",
+     "page": "Perseus",
      "img": {
-      "mh-jackson-jekyll": "https://static.wikia.nocookie.net/monsterhigh/images/4/4c/Profile_art_-_Jackson_Jekyll.jpg/revision/latest/scale-to-width-down/600?cb=20121120225209"
+      "mh-perseus": "https://static.wikia.nocookie.net/monsterhigh/images/4/49/Profile_art_-_Perseus.jpg/revision/latest?cb=20140915161152"
      }
-    },
-    {
-     "id": "mh-holt-hyde",
-     "name": "Holt Hyde",
-     "rarity": 3,
-     "page": "Holt Hyde",
-     "img": {
-      "mh-holt-hyde": "https://static.wikia.nocookie.net/monsterhigh/images/3/32/Holt_Hyde%E2%84%A2.png/revision/latest?cb=20161102023240"
-     }
-    },
-    {
-     "id": "mh-kieran-valentine",
-     "name": "Kieran Valentine",
-     "rarity": 3,
-     "page": "Kieran Valentine",
-     "img": {
-      "mh-kieran-valentine": "https://static.wikia.nocookie.net/monsterhigh/images/7/75/Kieran_Valentine_pride_2026_artwork.png/revision/latest/scale-to-width-down/600?cb=20260810183657"
-     }
-    },
-    {
-     "id": "mh-wydowna-spider",
-     "name": "Wydowna Spider",
-     "rarity": 3,
-     "page": "Wydowna Spider",
-     "img": {
-      "mh-wydowna-spider": "https://static.wikia.nocookie.net/monsterhigh/images/c/c8/Wydowna_Spider%E2%84%A2.png/revision/latest/scale-to-width-down/600?cb=20161102035859"
-     }
-    },
-    {
-     "id": "mh-amanita-nightshade",
-     "name": "Amanita Nightshade",
-     "rarity": 2,
-     "page": "Amanita Nightshade",
-     "img": {
-      "mh-amanita-nightshade": "https://static.wikia.nocookie.net/monsterhigh/images/0/0f/Amanita_Nightshade.png/revision/latest/scale-to-width-down/600?cb=20161204041628"
-     }
-    },
-    {
-     "id": "mh-jane-boolittle",
-     "name": "Jane Boolittle",
-     "rarity": 2,
-     "page": "Jane Boolittle",
-     "img": {
-      "mh-jane-boolittle": "https://static.wikia.nocookie.net/monsterhigh/images/e/e2/Profile_art_-_Jane_II.jpg/revision/latest/scale-to-width-down/600?cb=20150122223717"
-     }
-    },
-    {
-     "id": "mh-marisol-coxi",
-     "name": "Marisol Coxi",
-     "rarity": 2,
-     "page": "Marisol Coxi",
-     "img": {
-      "mh-marisol-coxi": "https://static.wikia.nocookie.net/monsterhigh/images/7/72/Marisol_Coxi_Alternative_Artwork.png/revision/latest/scale-to-width-down/600?cb=20150406175158"
-     }
-    },
-    {
-     "id": "mh-scarah-screams",
-     "name": "Scarah Screams",
-     "rarity": 4,
-     "page": "Scarah Screams",
-     "img": {
-      "mh-scarah-screams": "https://static.wikia.nocookie.net/monsterhigh/images/1/1c/Profile_art_-_Scarah_Screams.jpg/revision/latest/scale-to-width-down/600?cb=20121115215435"
-     }
-    },
-    {
-     "id": "mh-gil-webber",
-     "name": "Gil Webber",
-     "rarity": 2,
-     "page": "Gillington Webber",
-     "img": {
-      "mh-gil-webber": "https://static.wikia.nocookie.net/monsterhigh/images/a/ab/Profile_art_-_DC_Gillington_Gil_Webber.jpg/revision/latest/scale-to-width-down/600?cb=20130730043745"
-     }
-    },
-    {
-     "id": "mh-bonita-femur",
-     "name": "Bonita Femur",
-     "rarity": 2,
-     "page": "Bonita Femur",
-     "img": {
-      "mh-bonita-femur": "https://static.wikia.nocookie.net/monsterhigh/images/7/7d/Icon_-_Bonita_Femur.jpg/revision/latest?cb=20140524201732"
-     }
-    },
-    {
-     "id": "mh-casta-fierce",
-     "name": "Casta Fierce",
-     "rarity": 4,
-     "page": "Casta Fierce",
-     "img": {
-      "mh-casta-fierce": "https://static.wikia.nocookie.net/monsterhigh/images/2/22/Castaa.png/revision/latest/scale-to-width-down/600?cb=20151212043008"
-     }
-    },
-    {
-     "id": "mh-iris-clops",
-     "name": "Iris Clops",
-     "rarity": 2,
-     "page": "Iris Clops",
-     "img": {
-      "mh-iris-clops": "https://static.wikia.nocookie.net/monsterhigh/images/9/9e/Iris_Clops%E2%84%A2.png/revision/latest/scale-to-width-down/600?cb=20161102023959"
-     }
-    },
-    {
-     "id": "mh-gooliope-jellington",
-     "name": "Gooliope Jellington",
-     "rarity": 3,
-     "page": "Gooliope Jellington",
-     "img": {
-      "mh-gooliope-jellington": "https://static.wikia.nocookie.net/monsterhigh/images/3/3e/Profile_art_-_Gooliope_Jellington.png/revision/latest/scale-to-width-down/600?cb=20150908214102"
-     }
-    },
-    {
-     "id": "mh-invisi-billy",
-     "name": "Invisi Billy",
-     "rarity": 2,
-     "page": "Invisi Billy",
-     "img": {
-      "mh-invisi-billy": "https://static.wikia.nocookie.net/monsterhigh/images/a/a8/Profile_Art_-_NS_Invisi_Billy.png/revision/latest/scale-to-width-down/600?cb=20240219225255"
-     }
-    },
-    {
-     "id": "mh-sirena-von-boo",
-     "name": "Sirena Von Boo",
-     "rarity": 2,
-     "page": "Sirena Von Boo",
-     "img": {
-      "mh-sirena-von-boo": "https://static.wikia.nocookie.net/monsterhigh/images/1/1f/Sirena_Von_Boo%E2%84%A2.png/revision/latest/scale-to-width-down/600?cb=20190411135706"
-     }
-    },
-    {
-     "id": "mh-catrine-demew",
-     "name": "Catrine DeMew",
-     "rarity": 4,
-     "page": "Catrine DeMew",
-     "img": {
-      "mh-catrine-demew": "https://static.wikia.nocookie.net/monsterhigh/images/1/1d/Profile_art_-_Catrine_DeMew.jpg/revision/latest/scale-to-width-down/600?cb=20130111173436"
-     }
-    },
-    {
-     "id": "mh-finnegan-wake",
-     "name": "Finnegan Wake",
-     "rarity": 2,
-     "page": "Finnegan Wake",
-     "img": {
-      "mh-finnegan-wake": "https://static.wikia.nocookie.net/monsterhigh/images/b/b2/Finnegan_Wake.png/revision/latest/scale-to-width-down/600?cb=20241205094930"
-     }
-    },
-    {
-     "id": "mh-hoodude-voodoo",
-     "name": "Hoodude Voodoo",
-     "rarity": 1,
-     "page": "Hoodude Voodoo",
-     "img": {
-      "mh-hoodude-voodoo": "https://static.wikia.nocookie.net/monsterhigh/images/0/02/Profile_art_-_Hoodude_Voodoo.jpg/revision/latest/scale-to-width-down/600?cb=20121118211350"
-     }
-    },
-    {
-     "id": "mh-silvi-timberwolf",
-     "name": "Silvi Timberwolf",
-     "rarity": 2,
-     "page": "Silvi Timberwolf",
-     "img": {
-      "mh-silvi-timberwolf": "https://static.wikia.nocookie.net/monsterhigh/images/3/35/Profile_art_-_Signature_Silvi.jpg/revision/latest/scale-to-width-down/600?cb=20170907075555"
-     }
-    },
-    {
-     "id": "mh-ari-hauntington",
-     "name": "Ari Hauntington",
-     "rarity": 2,
-     "page": "Ari Hauntington",
-     "img": {
-      "mh-ari-hauntington": "https://static.wikia.nocookie.net/monsterhigh/images/e/ea/Profile_Art_-_Ari_Hauntington.png/revision/latest/scale-to-width-down/600?cb=20221107123646"
-     }
-    },
-    {
-     "id": "mh-fangelica-vanbat",
-     "name": "Fangelica VanBat",
-     "rarity": 2,
-     "page": "Fangelica VanBat",
-     "img": {
-      "mh-fangelica-vanbat": "https://static.wikia.nocookie.net/monsterhigh/images/3/3f/Fangelica_Basic_Profile_Art.png/revision/latest/scale-to-width-down/600?cb=20170918233632"
-     }
-    },
-    {
-     "id": "mh-avea-trotter",
-     "name": "Avea Trotter",
-     "rarity": 2,
-     "page": "Avea Trotter",
-     "img": {
-      "mh-avea-trotter": "https://static.wikia.nocookie.net/monsterhigh/images/0/0f/Avea_Trotter%E2%84%A2.png/revision/latest/scale-to-width-down/600?cb=20200408141438"
-     }
-    },
-    {
-     "id": "mh-gilda-goldstag",
-     "name": "Gilda Goldstag",
-     "rarity": 2,
-     "page": "Gilda Goldstag",
-     "img": {
-      "mh-gilda-goldstag": "https://static.wikia.nocookie.net/monsterhigh/images/2/2e/Hero-Gilda-Character_tcm580-204136.jpg/revision/latest?cb=20160108190440"
-     }
-    },
-    {
-     "id": "mh-rockseena",
-     "name": "Rockseena",
-     "rarity": 2,
-     "page": "Rockseena",
-     "img": {
-      "mh-rockseena": "https://static.wikia.nocookie.net/monsterhigh/images/f/f1/%28Rockseena%29.png/revision/latest/scale-to-width-down/600?cb=20151007032808"
-     }
-    },
-    {
-     "id": "mh-kala-mer-ri",
-     "name": "Kala Mer'ri",
-     "rarity": 2,
-     "page": "Kala Mer'ri",
-     "img": {
-      "mh-kala-mer-ri": "https://static.wikia.nocookie.net/monsterhigh/images/6/67/Profileart_-_Kala_Mer%27ri.png/revision/latest/scale-to-width-down/600?cb=20151204060850"
-     }
-    },
-    {
-     "id": "mh-slo-mo-deadan",
-     "name": "Slo Mo Deadan",
-     "rarity": 2,
-     "page": "Slo Mo Deadan",
-     "img": {
-      "mh-slo-mo-deadan": "https://static.wikia.nocookie.net/monsterhigh/images/5/52/Profile_art_-_GS_Slo_Mo.jpg/revision/latest/scale-to-width-down/600?cb=20150121195340"
-     }
-    },
-    {
-     "id": "mh-lorna-mcnessie",
-     "name": "Lorna McNessie",
-     "rarity": 2,
-     "page": "Lorna McNessie",
-     "img": {
-      "mh-lorna-mcnessie": "https://static.wikia.nocookie.net/monsterhigh/images/a/a9/Profile_Art_-_Lorna_McNessie.jpg/revision/latest/scale-to-width-down/600?cb=20150524203638"
-     }
-    },
-    {
-     "id": "mh-mouscedes-king",
-     "name": "Mouscedes King",
-     "rarity": 2,
-     "page": "Mouscedes King",
-     "img": {
-      "mh-mouscedes-king": "https://static.wikia.nocookie.net/monsterhigh/images/3/37/Profile_art_-_Mouscedes_King.png/revision/latest/scale-to-width-down/600?cb=20150508161017"
-     }
-    },
-    {
-     "id": "mh-elle-eedee",
-     "name": "Elle Eedee",
-     "rarity": 2,
-     "page": "Elle Eedee",
-     "img": {
-      "mh-elle-eedee": "https://static.wikia.nocookie.net/monsterhigh/images/4/4d/Profile_art_-_Elle_Eedee.png/revision/latest/scale-to-width-down/600?cb=20150508161233"
-     }
-    },
-    {
-     "id": "mh-batsy-claro",
-     "name": "Batsy Claro",
-     "rarity": 2,
-     "page": "Batsy Claro",
-     "img": {
-      "mh-batsy-claro": "https://static.wikia.nocookie.net/monsterhigh/images/f/ff/Profile_art_-_Batsy_Claro.png/revision/latest/scale-to-width-down/600?cb=20151022204436"
-     }
-    },
-    {
-     "id": "mh-viperine-gorgon",
-     "name": "Viperine Gorgon",
-     "rarity": 3,
-     "page": "Viperine Gorgon",
-     "img": {
-      "mh-viperine-gorgon": "https://static.wikia.nocookie.net/monsterhigh/images/a/a0/Viperine_Gorgon_1.png/revision/latest?cb=20151217173744"
-     }
-    },
-    {
-     "id": "mh-clawdia-wolf",
-     "name": "Clawdia Wolf",
-     "rarity": 2,
-     "page": "Clawdia Wolf",
-     "img": {
-      "mh-clawdia-wolf": "https://static.wikia.nocookie.net/monsterhigh/images/2/27/Clawdia_Wolf%E2%84%A2.png/revision/latest?cb=20161107041522"
-     }
-    },
-    {
-     "id": "mh-peri-pearl-serpentine",
-     "name": "Peri & Pearl Serpentine",
-     "rarity": 3,
-     "page": "Peri and Pearl Serpentine",
-     "img": {
-      "mh-peri-pearl-serpentine": "https://static.wikia.nocookie.net/monsterhigh/images/d/d9/Profileart_-_Peri_and_Pearl_Serpentine.png/revision/latest/scale-to-width-down/600?cb=20151204060915"
-     }
-    },
-    {
-     "id": "mh-posea-reef",
-     "name": "Posea Reef",
-     "rarity": 2,
-     "page": "Posea Reef",
-     "img": {
-      "mh-posea-reef": "https://static.wikia.nocookie.net/monsterhigh/images/4/4b/Profileart_-_Posea_Reef.png/revision/latest/scale-to-width-down/600?cb=20151204061733"
-     }
-    },
-    {
-     "id": "mh-isi-dawndancer",
-     "name": "Isi Dawndancer",
-     "rarity": 2,
-     "page": "Isi Dawndancer",
-     "img": {
-      "mh-isi-dawndancer": "https://static.wikia.nocookie.net/monsterhigh/images/d/d3/Profile_art_-_Isi_Dawndancer.png/revision/latest/scale-to-width-down/600?cb=20151022204515"
-     }
-    },
-    {
-     "id": "mh-treesa-thornwillow",
-     "name": "Treesa Thornwillow",
-     "rarity": 2,
-     "page": "Treesa Thornwillow",
-     "img": {
-      "mh-treesa-thornwillow": "https://static.wikia.nocookie.net/monsterhigh/images/f/f7/Treesa_thornwillow_official.webp/revision/latest/scale-to-width-down/600?cb=20250708203125"
-     }
-    },
-    {
-     "id": "mh-moanica-d-kay",
-     "name": "Moanica D'Kay",
-     "rarity": 3,
-     "page": "Moanica D'Kay",
-     "img": {
-      "mh-moanica-d-kay": "https://static.wikia.nocookie.net/monsterhigh/images/9/98/Profile_art_-_Moanica.png/revision/latest/scale-to-width-down/600?cb=20161013204144"
-     }
-    },
-    {
-     "id": "mh-porter-geiss",
-     "name": "Porter Geiss",
-     "rarity": 1,
-     "page": "Porter Geiss",
-     "img": {
-      "mh-porter-geiss": "https://static.wikia.nocookie.net/monsterhigh/images/6/61/Porter_Geiss%E2%84%A2.png/revision/latest/scale-to-width-down/600?cb=20161102031315"
-     }
-    },
-    {
-     "id": "mh-neighthan-rot",
-     "name": "Neighthan Rot",
-     "rarity": 1,
-     "page": "Neighthan Rot",
-     "img": {
-      "mh-neighthan-rot": "https://static.wikia.nocookie.net/monsterhigh/images/8/89/Neighthan_Rot%E2%84%A2.png/revision/latest/scale-to-width-down/600?cb=20161102030616"
-     }
-    },
-    {
-     "id": "mh-captain-penny",
-     "name": "Captain Penny",
-     "rarity": 1,
-     "page": "Captain Penny",
-     "img": {
-      "mh-captain-penny": "https://static.wikia.nocookie.net/monsterhigh/images/d/d6/Profile_art_-_Captain_Penny.jpg/revision/latest/scale-to-width-down/600?cb=20140915165958"
-     }
-    },
-    {
-     "id": "mh-sir-hoots-a-lot",
-     "name": "Sir Hoots A Lot",
-     "rarity": 1,
-     "page": "Sir Hoots A Lot",
-     "img": {
-      "mh-sir-hoots-a-lot": "https://static.wikia.nocookie.net/monsterhigh/images/1/18/Profile_art_-_Sir_Hoots_A_Lot.jpg/revision/latest/scale-to-width-down/600?cb=20140915163018"
-     }
-    },
-    {
-     "id": "mh-memphis-longlegs",
-     "name": "Memphis Longlegs",
-     "rarity": 1,
-     "page": "Memphis Longlegs",
-     "img": {
-      "mh-memphis-longlegs": "https://static.wikia.nocookie.net/monsterhigh/images/6/60/Profile_art_-_Memphis_Longlegs.jpg/revision/latest?cb=20120703134032"
-     }
-    },
-    {
-     "id": "mh-shiver",
-     "name": "Shiver",
-     "rarity": 1,
-     "page": "Shiver",
-     "img": {
-      "mh-shiver": "https://static.wikia.nocookie.net/monsterhigh/images/a/a4/Profile_art_-_Shiver.jpg/revision/latest?cb=20130515111833"
-     }
-    },
-    {
-     "id": "mh-rhuen",
-     "name": "Rhuen",
-     "rarity": 1,
-     "page": "Rhuen",
-     "img": {
-      "mh-rhuen": "https://static.wikia.nocookie.net/monsterhigh/images/5/5b/Profile_art_-_Rhuen.jpg/revision/latest?cb=20130726194743"
-     }
-    },
-    {
-     "id": "mh-qing",
-     "name": "Qing",
-     "rarity": 1,
-     "page": "Qing",
-     "img": {
-      "mh-qing": "https://static.wikia.nocookie.net/monsterhigh/images/2/2a/Profile_art_-_Qing.png/revision/latest/scale-to-width-down/600?cb=20150802055250"
-     }
-    },
-    {
-     "id": "mh-nightmare",
-     "name": "Nightmare",
-     "rarity": 1,
-     "page": "Nightmare",
-     "img": {
-      "mh-nightmare": "https://static.wikia.nocookie.net/monsterhigh/images/9/9b/Nightmare.png/revision/latest/scale-to-width-down/600?cb=20151120163915"
-     }
-    },
-    {
-     "id": "mh-river-styxx",
-     "name": "River Styxx",
-     "rarity": 3,
-     "page": "River Styxx"
-    },
-    {
-     "id": "mh-vandala-doubloons",
-     "name": "Vandala Doubloons",
-     "rarity": 2,
-     "page": "Vandala Doubloons"
-    },
-    {
-     "id": "mh-lagoonafire",
-     "name": "Lagoonafire",
-     "rarity": 3,
-     "page": "Lagoonafire"
     }
    ]
   },
@@ -1579,601 +718,357 @@
      "id": "hk-hello-kitty",
      "name": "Hello Kitty",
      "rarity": 5,
-     "page": "Hello Kitty"
+     "page": "Hello Kitty",
+     "img": {
+      "hk-hello-kitty": "https://static.wikia.nocookie.net/hellokitty/images/5/52/Sanrio_Characters_Hello_Kitty_Image026.png/revision/latest/scale-to-width-down/518?cb=20250110105831"
+     }
     },
     {
      "id": "hk-kuromi",
      "name": "Kuromi",
      "rarity": 5,
-     "page": "Kuromi"
+     "page": "Kuromi",
+     "img": {
+      "hk-kuromi": "https://static.wikia.nocookie.net/hellokitty/images/6/6d/List-kuromi.png/revision/latest?cb=20250922232527"
+     }
     },
     {
      "id": "hk-my-melody",
      "name": "My Melody",
      "rarity": 4,
-     "page": "My Melody"
+     "page": "My Melody",
+     "img": {
+      "hk-my-melody": "https://static.wikia.nocookie.net/hellokitty/images/2/23/Sanrio_Characters_My_Melody_Image030.png/revision/latest?cb=20170407005355"
+     }
     },
     {
      "id": "hk-cinnamoroll",
      "name": "Cinnamoroll",
      "rarity": 4,
-     "page": "Cinnamoroll"
+     "page": "Cinnamoroll",
+     "img": {
+      "hk-cinnamoroll": "https://static.wikia.nocookie.net/hellokitty/images/a/a5/Mv-cinnamon.png/revision/latest/scale-to-width-down/600?cb=20250930161135"
+     }
     },
     {
      "id": "hk-little-twin-stars",
      "name": "Little Twin Stars",
      "rarity": 4,
-     "page": "Little Twin Stars"
+     "page": "Little Twin Stars",
+     "img": {
+      "hk-little-twin-stars": "https://static.wikia.nocookie.net/hellokitty/images/d/d0/Sanrio_Characters_Kiki_Image001.png/revision/latest?cb=20170522025546"
+     }
     },
     {
      "id": "hk-mimmy",
      "name": "Mimmy",
      "rarity": 3,
-     "page": "Mimmy White"
+     "page": "Mimmy White",
+     "img": {
+      "hk-mimmy": "https://static.wikia.nocookie.net/hellokitty/images/5/52/Sanrio_Characters_Mimmy_Infobox.png/revision/latest?cb=20251102193607"
+     }
     },
     {
      "id": "hk-dear-daniel",
      "name": "Dear Daniel",
      "rarity": 3,
-     "page": "Dear Daniel"
+     "page": "Dear Daniel",
+     "img": {
+      "hk-dear-daniel": "https://static.wikia.nocookie.net/hellokitty/images/0/05/Sanrio_Characters_Dear_Daniel_Image008.png/revision/latest?cb=20170522214217"
+     }
     },
     {
      "id": "hk-pompompurin",
      "name": "Pompompurin",
      "rarity": 3,
-     "page": "Pompompurin"
+     "page": "Pompompurin",
+     "img": {
+      "hk-pompompurin": "https://static.wikia.nocookie.net/hellokitty/images/3/30/Sanrio_Characters_Pompompurin_Image006.png/revision/latest?cb=20170401200050"
+     }
     },
     {
      "id": "hk-pochacco",
      "name": "Pochacco",
      "rarity": 3,
-     "page": "Pochacco"
+     "page": "Pochacco",
+     "img": {
+      "hk-pochacco": "https://static.wikia.nocookie.net/hellokitty/images/f/f4/List-Pochacco.png/revision/latest?cb=20251005042623"
+     }
     },
     {
      "id": "hk-keroppi",
      "name": "Keroppi",
      "rarity": 3,
-     "page": "Keroppi"
+     "page": "Keroppi",
+     "img": {
+      "hk-keroppi": "https://static.wikia.nocookie.net/hellokitty/images/c/c4/List-kerokerokeroppi.png/revision/latest?cb=20251102192805"
+     }
     },
     {
      "id": "hk-badtz-maru",
      "name": "Badtz-Maru",
      "rarity": 3,
-     "page": "Badtz-Maru"
+     "page": "Badtz-Maru",
+     "img": {
+      "hk-badtz-maru": "https://static.wikia.nocookie.net/hellokitty/images/b/b1/List-badtzmaru-1.png/revision/latest?cb=20250927221332"
+     }
     },
     {
      "id": "hk-chococat",
      "name": "Chococat",
      "rarity": 3,
-     "page": "Chococat"
+     "page": "Chococat",
+     "img": {
+      "hk-chococat": "https://static.wikia.nocookie.net/hellokitty/images/8/8e/List-chococat.png/revision/latest?cb=20250923173118"
+     }
     },
     {
      "id": "hk-charmmy-kitty",
      "name": "Charmmy Kitty",
      "rarity": 3,
-     "page": "Charmmy Kitty"
+     "page": "Charmmy Kitty",
+     "img": {
+      "hk-charmmy-kitty": "https://static.wikia.nocookie.net/hellokitty/images/b/bb/Sanrio_Characters_Charmmy_Kitty_Image008.png/revision/latest?cb=20170402172228"
+     }
     },
     {
      "id": "hk-aggretsuko",
      "name": "Aggretsuko",
      "rarity": 3,
-     "page": "Aggretsuko"
+     "page": "Aggretsuko",
+     "img": {
+      "hk-aggretsuko": "https://static.wikia.nocookie.net/hellokitty/images/3/36/Mv-retsuko.png/revision/latest?cb=20251106233510"
+     }
     },
     {
      "id": "hk-gudetama",
      "name": "Gudetama",
      "rarity": 2,
-     "page": "Gudetama"
+     "page": "Gudetama",
+     "img": {
+      "hk-gudetama": "https://static.wikia.nocookie.net/hellokitty/images/b/b5/Sanrio_Characters_Gudetama_Image005.png/revision/latest?cb=20170403223437"
+     }
     },
     {
      "id": "hk-hangyodon",
      "name": "Hangyodon",
      "rarity": 2,
-     "page": "Hangyodon"
+     "page": "Hangyodon",
+     "img": {
+      "hk-hangyodon": "https://static.wikia.nocookie.net/hellokitty/images/d/d9/Sanrio_Characters_Hangyodon_Image004.png/revision/latest?cb=20170403193609"
+     }
     },
     {
      "id": "hk-tuxedosam",
      "name": "Tuxedosam",
      "rarity": 2,
-     "page": "Tuxedosam"
+     "page": "Tuxedosam",
+     "img": {
+      "hk-tuxedosam": "https://static.wikia.nocookie.net/hellokitty/images/3/3c/List-Tuxedo.png/revision/latest?cb=20251004154625"
+     }
     },
     {
      "id": "hk-my-sweet-piano",
      "name": "My Sweet Piano",
      "rarity": 2,
-     "page": "My Sweet Piano"
+     "page": "My Sweet Piano",
+     "img": {
+      "hk-my-sweet-piano": "https://static.wikia.nocookie.net/hellokitty/images/6/65/List-mysweetpiano.png/revision/latest?cb=20250817010651"
+     }
     },
     {
      "id": "hk-wish-me-mell",
      "name": "Wish me mell",
      "rarity": 2,
-     "page": "Wish me mell"
+     "page": "Wish me mell",
+     "img": {
+      "hk-wish-me-mell": "https://static.wikia.nocookie.net/hellokitty/images/8/88/Mv-wishmemell.png/revision/latest/scale-to-width-down/600?cb=20251018220957"
+     }
     },
     {
      "id": "hk-marron-cream",
      "name": "Marron Cream",
      "rarity": 2,
-     "page": "Marron Cream"
+     "page": "Marron Cream",
+     "img": {
+      "hk-marron-cream": "https://static.wikia.nocookie.net/hellokitty/images/f/fa/Marroncream_infobox.png/revision/latest?cb=20251205162938"
+     }
     },
     {
      "id": "hk-usahana",
      "name": "Usahana",
      "rarity": 2,
-     "page": "Usahana"
+     "page": "Usahana",
+     "img": {
+      "hk-usahana": "https://static.wikia.nocookie.net/hellokitty/images/8/87/Sanrio_Characters_Usahana_Image002.png/revision/latest?cb=20170404002316"
+     }
     },
     {
      "id": "hk-cogimyun",
      "name": "Cogimyun",
      "rarity": 2,
-     "page": "Cogimyun"
+     "page": "Cogimyun",
+     "img": {
+      "hk-cogimyun": "https://static.wikia.nocookie.net/hellokitty/images/b/b7/Sanrio_Characters_Cogimyun_Image001.png/revision/latest?cb=20170512085852"
+     }
     },
     {
      "id": "hk-pekkle",
      "name": "Pekkle",
      "rarity": 1,
-     "page": "Pekkle"
+     "page": "Pekkle",
+     "img": {
+      "hk-pekkle": "https://static.wikia.nocookie.net/hellokitty/images/0/06/Sanrio_Characters_Pekkle_Image002.png/revision/latest?cb=20170404012410"
+     }
     },
     {
      "id": "hk-kirimi-chan",
      "name": "Kirimi-chan",
      "rarity": 1,
-     "page": "Kirimi-chan"
+     "page": "Kirimi-chan",
+     "img": {
+      "hk-kirimi-chan": "https://static.wikia.nocookie.net/hellokitty/images/9/9a/Sanrio_Characters_Kirimichan_Image004.png/revision/latest?cb=20170403185459"
+     }
     },
     {
      "id": "hk-corocorokuririn",
      "name": "Corocorokuririn",
      "rarity": 1,
-     "page": "Corocorokuririn"
+     "page": "Corocorokuririn",
+     "img": {
+      "hk-corocorokuririn": "https://static.wikia.nocookie.net/hellokitty/images/c/c1/List-kuririn-1.png/revision/latest?cb=20250923174109"
+     }
     },
     {
      "id": "hk-pandapple",
      "name": "Pandapple",
      "rarity": 1,
-     "page": "Pandapple"
+     "page": "Pandapple",
+     "img": {
+      "hk-pandapple": "https://static.wikia.nocookie.net/hellokitty/images/f/f6/Sanrio_Characters_Pandapple_Image001.png/revision/latest?cb=20170403230845"
+     }
     },
     {
      "id": "hk-bonbonribbon",
      "name": "Bonbonribbon",
      "rarity": 1,
-     "page": "Bonbonribbon"
+     "page": "Bonbonribbon",
+     "img": {
+      "hk-bonbonribbon": "https://static.wikia.nocookie.net/hellokitty/images/7/73/Sanrio_Characters_Bonbonribbon_Image005.png/revision/latest?cb=20170402183244"
+     }
     },
     {
      "id": "hk-tabo",
      "name": "Tabo",
      "rarity": 1,
-     "page": "Tabo"
+     "page": "Tabo",
+     "img": {
+      "hk-tabo": "https://static.wikia.nocookie.net/hellokitty/images/3/36/List-tabo.png/revision/latest?cb=20251008213847"
+     }
+    }
+   ]
+  },
+  {
+   "key": "nana",
+   "wikis": [
+    "nana.fandom.com"
+   ],
+   "info": {
+    "name": "Nana",
+    "short": "Nana",
+    "color": "#c43d5a",
+    "emoji": "🍓"
+   },
+   "lines": [
+    {
+     "id": "na-nana-osaki",
+     "name": "Nana Osaki",
+     "rarity": 5,
+     "page": "Nana Osaki"
     },
     {
-     "id": "hk-monkichi",
-     "name": "Monkichi",
+     "id": "na-hachi",
+     "name": "Nana « Hachi » Komatsu",
+     "rarity": 5,
+     "page": "Nana Komatsu"
+    },
+    {
+     "id": "na-ren",
+     "name": "Ren Honjo",
+     "rarity": 4,
+     "page": "Ren Honjo"
+    },
+    {
+     "id": "na-takumi",
+     "name": "Takumi Ichinose",
+     "rarity": 4,
+     "page": "Takumi Ichinose"
+    },
+    {
+     "id": "na-nobu",
+     "name": "Nobu",
+     "rarity": 3,
+     "page": "Nobuo Terashima"
+    },
+    {
+     "id": "na-shin",
+     "name": "Shin",
+     "rarity": 3,
+     "page": "Shinichi Okazaki"
+    },
+    {
+     "id": "na-yasu",
+     "name": "Yasu",
+     "rarity": 3,
+     "page": "Yasushi Takagi"
+    },
+    {
+     "id": "na-reira",
+     "name": "Reira Serizawa",
+     "rarity": 3,
+     "page": "Reira Serizawa"
+    },
+    {
+     "id": "na-naoki",
+     "name": "Naoki Fujieda",
      "rarity": 2,
-     "page": "Monkichi",
-     "img": {
-      "hk-monkichi": "https://static.wikia.nocookie.net/hellokitty/images/3/30/Monkichi%2BMonta.jpg/revision/latest/scale-to-width-down/600?cb=20240130042759"
-     }
+     "page": "Naoki Fujieda"
     },
     {
-     "id": "hk-patty-jimmy",
-     "name": "Patty & Jimmy",
+     "id": "na-junko",
+     "name": "Junko Saotome",
      "rarity": 2,
-     "page": "Patty & Jimmy",
-     "img": {
-      "hk-patty-jimmy": "https://static.wikia.nocookie.net/hellokitty/images/9/91/Pattyandjimmy2018ranking.png/revision/latest/scale-to-width-down/600?cb=20260228140151"
-     }
+     "page": "Junko Saotome"
     },
     {
-     "id": "hk-tiny-chum",
-     "name": "Tiny Chum",
-     "rarity": 1,
-     "page": "Tiny Chum",
-     "img": {
-      "hk-tiny-chum": "https://static.wikia.nocookie.net/hellokitty/images/e/e9/Partytop-tinychum.png/revision/latest/scale-to-width-down/600?cb=20251026161245"
-     }
-    },
-    {
-     "id": "hk-mocha",
-     "name": "Mocha",
+     "id": "na-kyosuke",
+     "name": "Kyosuke Takakura",
      "rarity": 2,
-     "page": "Mocha",
-     "img": {
-      "hk-mocha": "https://static.wikia.nocookie.net/hellokitty/images/4/48/Mocha.png/revision/latest/scale-to-width-down/600?cb=20230319131602"
-     }
+     "page": "Kyosuke Takakura"
     },
     {
-     "id": "hk-chiffon",
-     "name": "Chiffon",
+     "id": "na-shoji",
+     "name": "Shoji Endo",
+     "rarity": 1,
+     "page": "Shoji Endo"
+    },
+    {
+     "id": "na-sachiko",
+     "name": "Sachiko Kawamura",
+     "rarity": 1,
+     "page": "Sachiko Kawamura"
+    },
+    {
+     "id": "na-misato",
+     "name": "Misato Uehara",
      "rarity": 2,
-     "page": "Chiffon (Cinnamoroll)",
-     "img": {
-      "hk-chiffon": "https://static.wikia.nocookie.net/hellokitty/images/6/68/Chiffon.png/revision/latest/scale-to-width-down/600?cb=20230319133216"
-     }
+     "page": "Misato Uehara"
     },
     {
-     "id": "hk-cappuccino",
-     "name": "Cappuccino",
+     "id": "na-miu",
+     "name": "Miu Ichinose",
      "rarity": 2,
-     "page": "Cappuccino",
-     "img": {
-      "hk-cappuccino": "https://static.wikia.nocookie.net/hellokitty/images/4/4e/Sanrio_Characters_Cappuccino_Image001.png/revision/latest?cb=20170430204558"
-     }
-    },
-    {
-     "id": "hk-milk",
-     "name": "Milk",
-     "rarity": 2,
-     "page": "Milk",
-     "img": {
-      "hk-milk": "https://static.wikia.nocookie.net/hellokitty/images/e/e4/Sub-cinnamon-milk.png/revision/latest/scale-to-width-down/600?cb=20250828141244"
-     }
-    },
-    {
-     "id": "hk-espresso",
-     "name": "Espresso",
-     "rarity": 2,
-     "page": "Espresso",
-     "img": {
-      "hk-espresso": "https://static.wikia.nocookie.net/hellokitty/images/4/41/Espresso_HKPL.png/revision/latest?cb=20260626193712"
-     }
-    },
-    {
-     "id": "hk-fifi",
-     "name": "Fifi",
-     "rarity": 1,
-     "page": "Fifi",
-     "img": {
-      "hk-fifi": "https://static.wikia.nocookie.net/hellokitty/images/d/d1/Fifi_%281%29.png/revision/latest?cb=20251027225155"
-     }
-    },
-    {
-     "id": "hk-tracy",
-     "name": "Tracy",
-     "rarity": 1,
-     "page": "Tracy",
-     "img": {
-      "hk-tracy": "https://static.wikia.nocookie.net/hellokitty/images/c/ce/Sanrio_Characters_Tracy_Image001.png/revision/latest?cb=20170404014510"
-     }
-    },
-    {
-     "id": "hk-joey",
-     "name": "Joey",
-     "rarity": 1,
-     "page": "Joey",
-     "img": {
-      "hk-joey": "https://static.wikia.nocookie.net/hellokitty/images/6/6a/Sanrio_Characters_Joey_Image001.png/revision/latest?cb=20170405233700"
-     }
-    },
-    {
-     "id": "hk-jodie",
-     "name": "Jodie",
-     "rarity": 1,
-     "page": "Jodie",
-     "img": {
-      "hk-jodie": "https://static.wikia.nocookie.net/hellokitty/images/8/8e/Hellokitty-jodie.png/revision/latest/scale-to-width-down/600?cb=20251008043506"
-     }
-    },
-    {
-     "id": "hk-tippy",
-     "name": "Tippy",
-     "rarity": 1,
-     "page": "Tippy",
-     "img": {
-      "hk-tippy": "https://static.wikia.nocookie.net/hellokitty/images/5/53/Sanrio_Characters_Tippy_Image001.png/revision/latest?cb=20170405234719"
-     }
-    },
-    {
-     "id": "hk-flat",
-     "name": "Flat",
-     "rarity": 1,
-     "page": "Flat",
-     "img": {
-      "hk-flat": "https://static.wikia.nocookie.net/hellokitty/images/3/3e/Flat.png/revision/latest/scale-to-width-down/600?cb=20260628190417"
-     }
-    },
-    {
-     "id": "hk-baku",
-     "name": "Baku",
-     "rarity": 2,
-     "page": "Baku",
-     "img": {
-      "hk-baku": "https://static.wikia.nocookie.net/hellokitty/images/e/e8/20_baku.png/revision/latest/scale-to-width-down/600?cb=20251122195250"
-     }
-    },
-    {
-     "id": "hk-rhythm",
-     "name": "Rhythm",
-     "rarity": 1,
-     "page": "Rhythm",
-     "img": {
-      "hk-rhythm": "https://static.wikia.nocookie.net/hellokitty/images/b/b2/Sanrio_Characters_Rhythm_Image002.png/revision/latest?cb=20170526011819"
-     }
-    },
-    {
-     "id": "hk-muffin",
-     "name": "Muffin",
-     "rarity": 1,
-     "page": "Muffin",
-     "img": {
-      "hk-muffin": "https://static.wikia.nocookie.net/hellokitty/images/5/53/HKPL_Muffin_render.png/revision/latest/scale-to-width-down/600?cb=20261016212729"
-     }
-    },
-    {
-     "id": "hk-scone",
-     "name": "Scone",
-     "rarity": 1,
-     "page": "Scone",
-     "img": {
-      "hk-scone": "https://static.wikia.nocookie.net/hellokitty/images/2/29/Sanrio_Characters_Scone_Image002.png/revision/latest?cb=20170222225300"
-     }
-    },
-    {
-     "id": "hk-bagel",
-     "name": "Bagel",
-     "rarity": 1,
-     "page": "Bagel",
-     "img": {
-      "hk-bagel": "https://static.wikia.nocookie.net/hellokitty/images/d/da/Sanrio_Characters_Bagel_Image002.png/revision/latest?cb=20170222210624"
-     }
-    },
-    {
-     "id": "hk-keroleen",
-     "name": "Keroleen",
-     "rarity": 1,
-     "page": "Keroleen",
-     "img": {
-      "hk-keroleen": "https://static.wikia.nocookie.net/hellokitty/images/0/01/Keroleen.png/revision/latest?cb=20200621032551"
-     }
-    },
-    {
-     "id": "hk-hana-maru",
-     "name": "Hana-Maru",
-     "rarity": 1,
-     "page": "Hana-Maru",
-     "img": {
-      "hk-hana-maru": "https://static.wikia.nocookie.net/hellokitty/images/9/9d/Sanrio_Characters_Hana-Maru_Image002.png/revision/latest?cb=20170401211031"
-     }
-    },
-    {
-     "id": "hk-kurousa-shirousa",
-     "name": "Kurousa & Shirousa",
-     "rarity": 2,
-     "page": "Kurousa and Shirousa",
-     "img": {
-      "hk-kurousa-shirousa": "https://static.wikia.nocookie.net/hellokitty/images/1/1c/Sanrio_Characters_Kurousa--Shirousa_Image007.png/revision/latest?cb=20170523204851"
-     }
-    },
-    {
-     "id": "hk-hummingmint",
-     "name": "Hummingmint",
-     "rarity": 1,
-     "page": "Hummingmint",
-     "img": {
-      "hk-hummingmint": "https://static.wikia.nocookie.net/hellokitty/images/3/38/Hummingmint2019ranking.png/revision/latest/scale-to-width-down/600?cb=20260302104831"
-     }
-    },
-    {
-     "id": "hk-fenneko",
-     "name": "Fenneko",
-     "rarity": 2,
-     "page": "Fenneko",
-     "img": {
-      "hk-fenneko": "https://static.wikia.nocookie.net/hellokitty/images/b/b7/Fenneko.jpng.png/revision/latest/scale-to-width-down/600?cb=20240513132821"
-     }
-    },
-    {
-     "id": "hk-haida",
-     "name": "Haida",
-     "rarity": 2,
-     "page": "Haida",
-     "img": {
-      "hk-haida": "https://static.wikia.nocookie.net/hellokitty/images/9/90/Haida.png/revision/latest/scale-to-width-down/600?cb=20241021022222"
-     }
-    },
-    {
-     "id": "hk-ruby",
-     "name": "Ruby",
-     "rarity": 2,
-     "page": "Ruby (Jewelpet)",
-     "img": {
-      "hk-ruby": "https://static.wikia.nocookie.net/hellokitty/images/f/fd/Ruby_P1_anime_artwork.png/revision/latest/scale-to-width-down/600?cb=20261004220019"
-     }
-    },
-    {
-     "id": "hk-garnet",
-     "name": "Garnet",
-     "rarity": 2,
-     "page": "Garnet",
-     "img": {
-      "hk-garnet": "https://static.wikia.nocookie.net/hellokitty/images/f/fd/Garnet_P1_artwork.png/revision/latest/scale-to-width-down/600?cb=20261013180054"
-     }
-    },
-    {
-     "id": "hk-sapphie",
-     "name": "Sapphie",
-     "rarity": 2,
-     "page": "Sapphie",
-     "img": {
-      "hk-sapphie": "https://static.wikia.nocookie.net/hellokitty/images/9/9b/Jewelpet_Sapphie.png/revision/latest/scale-to-width-down/600?cb=20240608174643"
-     }
-    },
-    {
-     "id": "hk-cheery-chums",
-     "name": "Cheery Chums",
-     "rarity": 1,
-     "page": "Cheery Chums",
-     "img": {
-      "hk-cheery-chums": "https://static.wikia.nocookie.net/hellokitty/images/9/96/Cheerychums2020ranking.png/revision/latest/scale-to-width-down/600?cb=20260211060059"
-     }
-    },
-    {
-     "id": "hk-button-nose",
-     "name": "Button Nose",
-     "rarity": 1,
-     "page": "Button Nose",
-     "img": {
-      "hk-button-nose": "https://static.wikia.nocookie.net/hellokitty/images/0/0a/Sanrio_Characters_Button_Nose_Image001.png/revision/latest?cb=20170412231141"
-     }
-    },
-    {
-     "id": "hk-tiny-poem",
-     "name": "Tiny Poem",
-     "rarity": 1,
-     "page": "Tiny Poem",
-     "img": {
-      "hk-tiny-poem": "https://static.wikia.nocookie.net/hellokitty/images/d/de/Tinypoem2020ranking.png/revision/latest/scale-to-width-down/600?cb=20260211060908"
-     }
-    },
-    {
-     "id": "hk-spottie-dottie",
-     "name": "Spottie Dottie",
-     "rarity": 1,
-     "page": "Spottie Dottie",
-     "img": {
-      "hk-spottie-dottie": "https://static.wikia.nocookie.net/hellokitty/images/0/0e/List-spottiedottie.png/revision/latest/scale-to-width-down/600?cb=20260216062101"
-     }
-    },
-    {
-     "id": "hk-winkipinki",
-     "name": "Winkipinki",
-     "rarity": 1,
-     "page": "Winkipinki",
-     "img": {
-      "hk-winkipinki": "https://static.wikia.nocookie.net/hellokitty/images/a/a4/Winkipinki2018ranking.png/revision/latest/scale-to-width-down/600?cb=20260228152546"
-     }
-    },
-    {
-     "id": "hk-coro-chan",
-     "name": "Coro Chan",
-     "rarity": 1,
-     "page": "Coro Chan",
-     "img": {
-      "hk-coro-chan": "https://static.wikia.nocookie.net/hellokitty/images/c/c6/Sanrio_Characters_Coro_Chan_Image008.png/revision/latest?cb=20170522205948"
-     }
-    },
-    {
-     "id": "hk-picke-bicke",
-     "name": "Picke Bicke",
-     "rarity": 1,
-     "page": "Picke Bicke",
-     "img": {
-      "hk-picke-bicke": "https://static.wikia.nocookie.net/hellokitty/images/c/c6/Sanrio_Characters_Picke_Bicke_Image008.png/revision/latest?cb=20170518163829"
-     }
-    },
-    {
-     "id": "hk-shinkansen",
-     "name": "Shinkansen",
-     "rarity": 1,
-     "page": "Shinkansen",
-     "img": {
-      "hk-shinkansen": "https://static.wikia.nocookie.net/hellokitty/images/8/8e/Shinkansen2019ranking.png/revision/latest/scale-to-width-down/600?cb=20260302105306"
-     }
-    },
-    {
-     "id": "hk-zashikibuta",
-     "name": "Zashikibuta",
-     "rarity": 1,
-     "page": "Zashikibuta",
-     "img": {
-      "hk-zashikibuta": "https://static.wikia.nocookie.net/hellokitty/images/2/2f/Zashikibuta2018ranking.png/revision/latest/scale-to-width-down/600?cb=20260228152745"
-     }
-    },
-    {
-     "id": "hk-marumofubiyori",
-     "name": "Marumofubiyori",
-     "rarity": 2,
-     "page": "Marumofubiyori",
-     "img": {
-      "hk-marumofubiyori": "https://static.wikia.nocookie.net/hellokitty/images/d/d7/Marumofubiyori2020ranking.png/revision/latest/scale-to-width-down/600?cb=20260211060527"
-     }
-    },
-    {
-     "id": "hk-lloromannic",
-     "name": "Lloromannic",
-     "rarity": 1,
-     "page": "Lloromannic",
-     "img": {
-      "hk-lloromannic": "https://static.wikia.nocookie.net/hellokitty/images/9/9e/Lloromannic_ranking.png/revision/latest/scale-to-width-down/600?cb=20241207000909"
-     }
-    },
-    {
-     "id": "hk-nya-ni-nyu-nye-nyon",
-     "name": "Nya Ni Nyu Nye Nyon",
-     "rarity": 1,
-     "page": "Nya Ni Nyu Nye Nyon",
-     "img": {
-      "hk-nya-ni-nyu-nye-nyon": "https://static.wikia.nocookie.net/hellokitty/images/3/3d/Nyaninyunyenyon2018ranking.png/revision/latest/scale-to-width-down/600?cb=20260228140106"
-     }
-    },
-    {
-     "id": "hk-masyumaro",
-     "name": "Masyumaro",
-     "rarity": 1,
-     "page": "Masyumaro",
-     "img": {
-      "hk-masyumaro": "https://static.wikia.nocookie.net/hellokitty/images/2/23/Masyumaro.png/revision/latest/scale-to-width-down/600?cb=20180815174040"
-     }
-    },
-    {
-     "id": "hk-george-white",
-     "name": "George White",
-     "rarity": 2,
-     "page": "Papa (Hello Kitty)",
-     "img": {
-      "hk-george-white": "https://static.wikia.nocookie.net/hellokitty/images/5/5d/George_blowin_his_horn.PNG/revision/latest/scale-to-width-down/600?cb=20220827015647"
-     }
-    },
-    {
-     "id": "hk-mary-white",
-     "name": "Mary White",
-     "rarity": 2,
-     "page": "Mary White",
-     "img": {
-      "hk-mary-white": "https://static.wikia.nocookie.net/hellokitty/images/7/7e/Mary_White_swimsuit.png/revision/latest?cb=20220826215850"
-     }
-    },
-    {
-     "id": "hk-anthony-white",
-     "name": "Anthony White",
-     "rarity": 1,
-     "page": "Anthony White",
-     "img": {
-      "hk-anthony-white": "https://static.wikia.nocookie.net/hellokitty/images/9/9a/Anthony_playin_a_drum.PNG/revision/latest/scale-to-width-down/600?cb=20220909100245"
-     }
-    },
-    {
-     "id": "hk-cocoa-vanilla",
-     "name": "Cocoa & Vanilla",
-     "rarity": 2,
-     "page": "Cocoa and Vanilla"
-    },
-    {
-     "id": "hk-chibimaru",
-     "name": "Chibimaru",
-     "rarity": 1,
-     "page": "Chibimaru"
-    },
-    {
-     "id": "hk-goropikadon",
-     "name": "Goropikadon",
-     "rarity": 1,
-     "page": "Goropikadon"
-    },
-    {
-     "id": "hk-pannapitta",
-     "name": "Pannapitta",
-     "rarity": 1,
-     "page": "Pannapitta"
-    },
-    {
-     "id": "hk-sugarminuet",
-     "name": "Sugarminuet",
-     "rarity": 2,
-     "page": "Sugarminuet"
-    },
-    {
-     "id": "hk-noranekoland",
-     "name": "Noranekoland",
-     "rarity": 1,
-     "page": "Noranekoland"
+     "page": "Miu Ichinose"
     }
    ]
   }
