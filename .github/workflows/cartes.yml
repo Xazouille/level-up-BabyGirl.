@@ -3,6 +3,13 @@
 name: Images des cartes
 on:
   workflow_dispatch:
+    inputs:
+      mode:
+        description: "build (images des cartes), ou explore : cats, discover, candidates"
+        default: build
+      args:
+        description: "Pour candidates : ids des cartes (vide = toutes)"
+        default: ''
 permissions:
   contents: write
 jobs:
@@ -14,8 +21,13 @@ jobs:
         with:
           python-version: '3.12'
       - run: pip install pillow
-      - run: python3 tools/gen_cards.py --preview /tmp/apercu
+      - if: inputs.mode == 'build' || inputs.mode == ''
+        run: python3 tools/gen_cards.py --preview /tmp/apercu
+      - if: inputs.mode != 'build' && inputs.mode != ''
+        run: |
+          for m in ${{ inputs.mode }}; do python3 tools/explore_cards.py $m /tmp/apercu/explore ${{ inputs.args }}; done
       - name: Enregistrer les cartes
+        if: inputs.mode == 'build' || inputs.mode == ''
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
@@ -24,7 +36,7 @@ jobs:
           git push
       - name: Planches d'aperçu
         run: |
-          cp tools/cards-report.txt /tmp/apercu/
+          cp tools/cards-report.txt /tmp/apercu/ 2>/dev/null || true
           cd /tmp/apercu
           git init -q -b apercu-cartes
           git config user.name "github-actions[bot]"

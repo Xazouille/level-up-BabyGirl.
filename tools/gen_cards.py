@@ -107,6 +107,8 @@ def expand(series):
                               'q': [f'page:{page}'] if i == 0 else [f'file:{page} {tok} Stock', f'file:{page} {tok} 2D', f'file:{page} {tok}']})
         else:
             forms.append({'id': L['id'], 'name': L['name'], 'saga': '', 'q': [f'page:{page}']})
+        # Formes écartées à la main (pas de bonne image)
+        forms = [f for f in forms if f['id'] not in L.get('skip', [])]
         for f in forms:
             f['img'] = (L.get('img') or {}).get(f['id'], '')
             if f['id'] in (L.get('q') or {}):

@@ -1,0 +1,5 @@
+{
+ "winx.fandom.com": { "cats": ["Characters", "Fairies", "Witches", "Specialists", "Pixies", "Villains", "Royalty", "Female characters", "Male characters"], "limit": 160 },
+ "monsterhigh.fandom.com": { "cats": ["Characters", "G1 characters", "Monster High characters", "Students", "Female characters", "Ghouls", "Pets"], "limit": 220 },
+ "hellokitty.fandom.com": { "cats": ["Characters", "Sanrio characters", "Main characters", "Hello Kitty characters"], "limit": 180 }
+}
