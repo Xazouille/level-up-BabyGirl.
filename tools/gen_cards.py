@@ -11,7 +11,7 @@ import json, re, sys, time, os, io, unicodedata, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = 'GlowUpCelia/1.0 (appli perso; github.com/Xazouille)'
-BAD = ['gif', 'comic', 'icon', 'logo', 'sticker', 'video', 'screenshot', 'episode', 'ep ', 'title card', 'sprite', 'chibi', 'doll', 'box']
+BAD = ['gif', 'comic', 'icon', 'logo', 'sticker', 'video', 'screenshot', 'episode', 'ep ', 'title card', 'sprite', 'chibi', 'doll', 'box', 'most like', 'quiz', 'attack', 'power', '~', ' and ', 'game', 'perfect', 'concept', 'actor', 'cast']
 cache = {}
 
 
@@ -94,20 +94,21 @@ def expand(series):
         if L.get('transfo'):
             for i, (t, saga) in enumerate(zip(series['transfo'], series['transfoSaga'])):
                 forms.append({'id': L['id'] + ('' if i == 0 else '-' + norm(t).replace(' ', '-')), 'name': L['name'] if i == 0 else f"{L['name']} {t}",
-                              'saga': saga, 'q': [f'page:{page}'] if i == 0 else [f'file:{page} {t}']})
+                              'saga': saga, 'q': [f'page:{page}'] if i == 0 else [f'file:{page} {t} 2D', f'file:{page} {t} Stock', f'file:{page} {t}']})
         elif L.get('gens'):
-            alt = {'G2': ['2016', 'Generation 2'], 'G3': ['2022', 'Generation 3']}
+            q = {'G1': [f'page:{page} (G1)', f'page:{page}'], 'G2': [f'file:MH-G2 {page}', f'file:{page} G2'], 'G3': [f'file:MH-G3 {page} 2D', f'file:MH-G3 {page}', f'file:{page} G3']}
             for i, (g, saga) in enumerate(series['gens']):
-                forms.append({'id': L['id'] + ('' if i == 0 else '-' + g.lower()), 'name': L['name'] if i == 0 else f"{L['name']} ({g})",
-                              'saga': saga, 'q': [f'page:{page}'] if i == 0 else [f'file:{page} {g}'] + [f'file:{page} {a}' for a in alt[g]]})
+                forms.append({'id': L['id'] + ('' if i == 0 else '-' + g.lower()), 'name': L['name'] if i == 0 else f"{L['name']} ({g})", 'saga': saga, 'q': q[g]})
         elif L.get('forms'):
             for i, (name, tok, saga) in enumerate(L['forms']):
                 forms.append({'id': L['id'] + ('' if i == 0 else '-' + norm(tok).replace(' ', '-')), 'name': name, 'saga': saga,
-                              'q': [f'page:{page}'] if i == 0 else [f'file:{page} {tok}']})
+                              'q': [f'page:{page}'] if i == 0 else [f'file:{page} {tok} Stock', f'file:{page} {tok} 2D', f'file:{page} {tok}']})
         else:
             forms.append({'id': L['id'], 'name': L['name'], 'saga': '', 'q': [f'page:{page}']})
         for f in forms:
-            f['img'] = (L.get('img') or {}).get(f['id'], '') if isinstance(L.get('img'), dict) else ''
+            f['img'] = (L.get('img') or {}).get(f['id'], '')
+            if f['id'] in (L.get('q') or {}):
+                f['q'] = L['q'][f['id']]
         yield L, forms
 
 
@@ -129,7 +130,12 @@ def main():
                     sheet.append((f['id'], f['img']))
                 if not f['saga']:
                     f.pop('saga')
-            lines.append({'rarity': L['rarity'], 'forms': forms})
+            # Sans image : une forme suivante est retirée (la famille garde les autres), une famille entière aussi
+            forms = [f for i, f in enumerate(forms) if f['img'] or (i == 0 and L.get('keep'))]
+            if forms and forms[0]['id'] == L['id']:
+                lines.append({'rarity': L['rarity'], 'forms': forms})
+            else:
+                report.append(f"{L['id']:<34} FAMILLE RETIRÉE (pas d'image de base)")
         out.append({'key': s['key'], 'info': s['info'], 'lines': lines})
     head = ('// Cartes Winx Club, Monster High et Hello Kitty : une famille = un personnage, ses formes = transformations ou générations.\n'
             '// Images : wikis Fandom (winx, monsterhigh, hellokitty). Généré par tools/gen_cards.py à partir de tools/cards.json.\n')

@@ -142,7 +142,7 @@ function checkProgress() {
       if (lvUp) for (let L = lvUp[0] + 1; L <= lvUp[1]; L++) for (const t of levelRewards(L)) inc[t] = Math.max(0, inc[t] - 1);
       for (const k of ['g', 'c', 'p']) {
         if (!inc[k]) continue;
-        banner({ icon: chestHTML(k, 'mini'), title: inc[k] > 1 ? `${inc[k]} ${TIERS[k].many} gagnées !` : `${TIERS[k].name} gagnée !`,
+        banner({ icon: chestHTML(k, 'mini'), title: inc[k] > 1 ? `${inc[k]} ${TIERS[k].many} ${TIERS[k].wonMany} !` : `${TIERS[k].name} ${TIERS[k].won} !`,
           sub: 'Touche pour l’ouvrir', color: TIERS[k].color, cls: 'box-ban', onTap: () => startBox(k), still: () => G().boxes[k] > 0 });
       }
     }
@@ -154,6 +154,7 @@ function checkProgress() {
     announceBoss(g);
     announceGrowth(g);
     announceIdentity(g);
+    announceComp(g);
 
     // Un seul grand écran à la fois : boss vaincu, puis bilan de la semaine
     if (overlayOpen() || ui.sheet) return;
@@ -204,7 +205,7 @@ function announceRecords(g) {
   if (JSON.stringify(out) !== JSON.stringify(rs)) setPref('records', JSON.stringify(out));
 }
 
-// Maîtrise : un niveau de plus dans un domaine, ou un nouveau rang (grande box)
+// Maîtrise : un niveau de plus dans un domaine, ou un nouveau rang (grand coffret)
 function announceMastery(g) {
   const lv = {};
   for (const [id, m] of Object.entries(g.mastery)) lv[id] = m.level;
@@ -215,7 +216,7 @@ function announceMastery(g) {
     if (!m || !ms[d.id] || m.level <= ms[d.id]) continue;
     const up = m.rank > rankOf(ms[d.id]);
     banner({ icon: d.emoji, title: up ? `Nouveau rang : ${RANKS[m.rank][0]} ${RANKS[m.rank][2]}` : `${d.name} · niveau ${m.level}`,
-      sub: up ? `${d.name} niveau ${m.level} · grande box gagnée !` : `Maîtrise ${RANKS[m.rank][0]} · ${m.need - m.into} pts avant le niveau ${m.level + 1}`, color: RANKS[m.rank][1], cls: up ? 'gold-ban' : '' });
+      sub: up ? `${d.name} niveau ${m.level} · grand coffret gagné !` : `Maîtrise ${RANKS[m.rank][0]} · ${m.need - m.into} pts avant le niveau ${m.level + 1}`, color: RANKS[m.rank][1], cls: up ? 'gold-ban' : '' });
     if (up) setTimeout(() => confetti(140), 300);
   }
   if (!ms || Object.keys(lv).some(id => lv[id] !== ms[id])) setPref('mastery', JSON.stringify(lv));
@@ -225,7 +226,7 @@ function announceAlbums(g) {
   const done = g.albums.filter(a => a.done).map(a => a.id);
   let al = null;
   try { al = JSON.parse(pref('albums')); } catch (e) {}
-  if (al) for (const a of g.albums) if (a.done && !al.includes(a.id)) banner({ icon: a.emoji, title: `Album complété : ${a.name} !`, sub: `Grande box + titre « ${a.title} »`, color: '#f59e0b', cls: 'gold-ban' });
+  if (al) for (const a of g.albums) if (a.done && !al.includes(a.id)) banner({ icon: a.emoji, title: `Album complété : ${a.name} !`, sub: `Grand coffret + titre « ${a.title} »`, color: '#f59e0b', cls: 'gold-ban' });
   if (!al || done.length !== al.length) setPref('albums', JSON.stringify(done));
 }
 
@@ -266,7 +267,21 @@ function announceIdentity(g) {
   if (JSON.stringify(now) !== JSON.stringify(seen)) setPref('ident', JSON.stringify(now));
 }
 
-// Nouveau boss en vue
+// PP : nouveau palier de complicité (nouvelle forme ou nouveau halo)
+function announceComp(g) {
+  const c = g.companion;
+  if (!c) return;
+  const was = (pref('compLv') || '').split(':');
+  setPref('compLv', `${c.line}:${c.level}`);
+  if (was[0] !== c.line || !(c.level > Number(was[1]))) return;
+  // Les formes avancent d'un cran par palier, jusqu'à la dernière
+  const newForm = c.stage > 0 && c.level <= c.path.length - 1, halo = c.halo && c.halo[0] === c.level;
+  banner({ icon: '💗', title: `Complicité niveau ${c.level} avec ${c.form.name} !`, sub: newForm ? `Nouvelle forme : ${c.form.name} ✨` : halo ? `Nouveau halo : ${c.halo[2]} ✨` : '2 cœurs offerts pour le prochain palier',
+    color: '#e8a0b4', cls: 'gold-ban', ms: 4200 });
+  if (newForm || halo) setTimeout(() => confetti(90), 300);
+}
+
+// Nouveau défi (méchante) en vue
 function announceBoss(g) {
   const b = g.boss.current;
   if (!b || pref('bossCur') === String(b.n)) return;

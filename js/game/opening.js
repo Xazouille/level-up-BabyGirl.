@@ -87,7 +87,7 @@ export function startBox(k) {
   if (avail.length === 1) return summon(avail[0]);
   show(`<div class="altar">
       <p class="ov-kicker">Autel d’invocation</p>
-      <h2>Quelle box ouvrir ?</h2>
+      <h2>Quelle surprise ouvrir ?</h2>
       <div class="alt-list">${['g', 'c', 'p'].map((t, i) => `<button class="alt-item t-${t} ${b[t] ? '' : 'empty'}" ${b[t] ? `data-ov="pick" data-k="${t}"` : 'disabled'} style="--tc:${TIERS[t].color};--i:${i}">
         ${chestHTML(t)}<span class="alt-txt"><b>${TIERS[t].name}</b><small>${plural(TIERS[t].cards, 'carte', 'cartes')}${t === 'g' ? ' · les plus rares' : ''}</small></span><span class="alt-n">×${b[t]}</span></button>`).join('')}</div>
       <p class="ov-tip">Plus la box est grande, plus les cartes rares tombent souvent.</p>
@@ -103,7 +103,7 @@ function summon(k) {
       <div class="sm-stage">
         <div class="sm-aura"></div><div class="sm-ring"></div>
         <div class="sm-wave"></div><div class="sm-wave w2"></div>
-        <button class="sm-chest" data-ov="tap" aria-label="Toucher la box">${chestHTML(k, 'big')}</button>
+        <button class="sm-chest" data-ov="tap" aria-label="Toucher la surprise">${chestHTML(k, 'big')}</button>
         <p class="sm-up" aria-live="polite"></p>
       </div>
       <div class="sm-dots"><i></i><i></i><i></i></div>
@@ -245,9 +245,9 @@ function afterFlip() {
   layer.querySelector('.sp-hint').textContent = '';
   foot.innerHTML = `<div class="sp-sum">${news.length ? `<span>🆕 ${plural(news.length, 'nouvelle carte', 'nouvelles cartes')}</span>` : ''}${shinies ? `<span>✨ ${plural(shinies, 'brillante', 'brillantes')} !</span>` : ''}${dups ? `<span>🃏 ${plural(dups, 'doublon', 'doublons')} : fusion ou échange</span>` : ''}</div>
     <div class="ov-actions">
-      ${newBest && !G().companion ? `<button class="btn primary" data-ov="companion" data-line="${newBest.line.id}">🐾 Choisir ${esc(newBest.form.name)} comme compagnon</button>` : ''}
-      ${b[tier] ? `<button class="btn primary" data-ov="altar" data-k="${tier}">🎁 Encore une ${T.name.toLowerCase()} (${b[tier]})</button>` : ''}
-      ${b.total - b[tier] > 0 ? `<button class="btn ${b[tier] ? '' : 'primary'}" data-ov="altar">🎁 Ouvrir une autre box (${b.total - b[tier]})</button>` : ''}
+      ${newBest && !G().companion ? `<button class="btn primary" data-ov="companion" data-line="${newBest.line.id}">🎀 Choisir ${esc(newBest.form.name)} comme PP</button>` : ''}
+      ${b[tier] ? `<button class="btn primary" data-ov="altar" data-k="${tier}">🎁 Encore ${T.un} ${T.name.toLowerCase()} (${b[tier]})</button>` : ''}
+      ${b.total - b[tier] > 0 ? `<button class="btn ${b[tier] ? '' : 'primary'}" data-ov="altar">🎁 Ouvrir une autre surprise (${b.total - b[tier]})</button>` : ''}
       <button class="btn" data-ov="collection">Voir ma collection</button>
       <button class="btn ghost" data-ov="close">Fermer</button>
     </div>`;
@@ -265,8 +265,8 @@ export function showLevelUp(level, title, gained = 1) {
       <div class="lv-badge"><span class="lv-n">${from}</span></div>
       <h2 class="lv-tt">${esc(title)}</h2>
       <div class="lv-rewards">${['g', 'c'].filter(t => won[t]).map((t, i) => `<span class="lv-rw" style="--i:${i}">${chestHTML(t, 'mini')}<b>${won[t] > 1 ? won[t] + ' × ' : ''}${TIERS[t].name}</b></span>`).join('')}</div>
-      <p class="ov-msg">${gained > 1 ? `+${gained} niveaux d’un coup ! ` : ''}${level % 5 === 0 ? 'Palier atteint : box bonus ! ' : ''}${G().boxes.total ? 'Tes box t’attendent.' : ''}</p>
-      <div class="ov-actions">${G().boxes.total ? '<button class="btn primary" data-ov="altar">🎁 Ouvrir mes box</button><button class="btn ghost" data-ov="close">Plus tard</button>' : '<button class="btn primary" data-ov="close">Continuer</button>'}</div>
+      <p class="ov-msg">${gained > 1 ? `+${gained} niveaux d’un coup ! ` : ''}${level % 5 === 0 ? 'Palier atteint : surprise bonus ! ' : ''}${G().boxes.total ? 'Tes surprises t’attendent.' : ''}</p>
+      <div class="ov-actions">${G().boxes.total ? '<button class="btn primary" data-ov="altar">🎁 Ouvrir mes surprises</button><button class="btn ghost" data-ov="close">Plus tard</button>' : '<button class="btn primary" data-ov="close">Continuer</button>'}</div>
     </div>`, 'level-ov');
   // Le chiffre du niveau monte jusqu'au nouveau niveau
   const n = layer.querySelector('.lv-n');
@@ -293,7 +293,7 @@ export function showFusion(lineId, lv) {
         <div class="fu-card">${cardHTML(f.id, { size: 'xl', big: true, aw: lv, shiny: o.shiny })}</div><div class="fu-flash"></div></div>
       <h2 class="fu-name">${esc(f.name)}</h2>
       <p class="fu-lv">${lv === 2 ? '🌈 ULTIME !' : '✨ ÉVEILLÉE !'}</p>
-      <p class="ov-msg">Nouveau cadre${lv === 2 ? ' arc-en-ciel' : ' doré'} · en compagnon, elle grandit ${Math.round((AWAKEN[lv].mult - 1) * 100)} % plus vite</p>
+      <p class="ov-msg">Nouveau cadre${lv === 2 ? ' arc-en-ciel' : ' doré'} · en PP, la complicité grandit ${Math.round((AWAKEN[lv].mult - 1) * 100)} % plus vite</p>
       <div class="ov-actions"><button class="btn primary" data-ov="close">Trop bien !</button></div>
       ${CLOSE}</div>`, 'fusion-ov');
   later(() => { const el = layer.querySelector('.fu-card'); if (el) { const [x, y] = center(el); burstAt(x, y, lv === 2 ? RAINBOW : ['#ffd700', '#ffe08a', '#ffffff'], 120, 1.2); confetti(lv === 2 ? 200 : 120); buzz([40, 40, 120]); } }, 1150);
@@ -310,12 +310,12 @@ export function showBossKO(b) {
       <h2>${esc(b.name)} est vaincu !</h2>
       <p class="ov-msg">En ${plural(days, 'jour', 'jours')} · ${b.hp.toLocaleString('fr-FR')} PV détruits</p>
       <div class="lv-rewards">
-        <span class="lv-rw" style="--i:0">${chestHTML('g', 'mini')}<b>${b.legendary ? '2 × ' : ''}Grande box</b></span>
+        <span class="lv-rw" style="--i:0">${chestHTML('g', 'mini')}<b>${b.legendary ? '2 × ' : ''}Grand coffret</b></span>
         <span class="lv-rw" style="--i:1"><span class="ko-card">${cardHTML(L.base, { size: 'sm' })}</span><b>Sa carte</b></span>
         <span class="lv-rw" style="--i:2">⚡<b>+${b.legendary ? LEGEND_XP : BOSS_XP} XP</b></span>
       </div>
       <p class="ov-tip">${next}</p>
-      <div class="ov-actions">${G().boxes.g ? '<button class="btn primary" data-ov="altar" data-k="g">🎁 Ouvrir ma grande box</button>' : ''}<button class="btn ghost" data-ov="close">Continuer</button></div>
+      <div class="ov-actions">${G().boxes.g ? '<button class="btn primary" data-ov="altar" data-k="g">🎁 Ouvrir mon grand coffret</button>' : ''}<button class="btn ghost" data-ov="close">Continuer</button></div>
     </div>`, 'ko-ov');
   later(() => { confetti(b.legendary ? 240 : 150); buzz([80, 40, 80, 40, 200]); }, 900);
 }
@@ -347,10 +347,10 @@ export function showRecap(r) {
         <div><b>${r.xp.toLocaleString('fr-FR')}</b><small>XP</small></div>
       </div>
       ${lines.length ? `<ul class="rc-lines">${lines.map(l => `<li>${l}</li>`).join('')}</ul>` : ''}
-      <div class="rc-reward">${box ? `${chestHTML(box, 'mini')}<span><b>${r.provisional ? `Dimanche, si ça reste comme ça : ${TIERS[box].name.toLowerCase()}` : `${TIERS[box].name} gagnée !`}</b><small>Note ${gr.g}</small></span>`
-        : `<span><b>${r.provisional ? 'Pas encore de box' : 'Pas de box cette fois'}</b><small>Note B (60 %) pour une petite box, A (75 %) pour une classique, S (90 %) pour une grande</small></span>`}</div>
+      <div class="rc-reward">${box ? `${chestHTML(box, 'mini')}<span><b>${r.provisional ? `Dimanche, si ça reste comme ça : ${TIERS[box].name.toLowerCase()}` : `${TIERS[box].name} ${TIERS[box].won} !`}</b><small>Note ${gr.g}</small></span>`
+        : `<span><b>${r.provisional ? 'Pas encore de surprise' : 'Pas de surprise cette fois'}</b><small>Note B (60 %) pour une petite pochette, A (75 %) pour un coffret, S (90 %) pour un grand coffret</small></span>`}</div>
       ${r.next && r.live ? `<p class="ov-tip">${r.provisional ? 'Le bilan tombe dimanche à 18 h. ' : 'Il reste ce soir pour monter. '}Prochaine note : ${r.next.g} à ${r.next.min} %.</p>` : ''}
-      <div class="ov-actions">${box && !r.provisional && b[box] ? `<button class="btn primary" data-ov="altar" data-k="${box}">🎁 Ouvrir ma box</button>` : ''}<button class="btn ghost" data-ov="close">${box && !r.provisional ? 'Plus tard' : 'Fermer'}</button></div>
+      <div class="ov-actions">${box && !r.provisional && b[box] ? `<button class="btn primary" data-ov="altar" data-k="${box}">🎁 Ouvrir ma surprise</button>` : ''}<button class="btn ghost" data-ov="close">${box && !r.provisional ? 'Plus tard' : 'Fermer'}</button></div>
     </div>`, 'recap-ov');
   later(() => { if (!r.provisional && 'SA'.includes(gr.g)) confetti(gr.g === 'S' ? 240 : 140); buzz([50, 40, 120]); }, 750);
 }
@@ -401,7 +401,7 @@ export function showMonthRecap(mk) {
           <div class="pills">${Object.entries(WHY).map(([id, l]) => `<label><input type="radio" name="mr-why" value="${id}" ${r.why === id ? 'checked' : ''}><span>${l}</span></label>`).join('')}</div>
           <small>Pas de mauvaise réponse. Si c’est surtout pour le jeu, relis ta vision et garde une ou deux cases « juste pour toi », sans regarder l’XP.</small></div>
       </div>
-      <p class="ov-tip">${live ? 'Mois en cours : tu pourras valider ce bilan (box classique + ' + REVIEW_XP + ' XP) dès le 1er du mois prochain.' : done ? '✓ Bilan rempli : box classique et +' + REVIEW_XP + ' XP gagnées.' : `Réponds aux 3 questions : <b>box classique + ${REVIEW_XP} XP</b>.`}</p>
+      <p class="ov-tip">${live ? 'Mois en cours : tu pourras valider ce bilan (coffret + ' + REVIEW_XP + ' XP) dès le 1er du mois prochain.' : done ? '✓ Bilan rempli : coffret et +' + REVIEW_XP + ' XP gagnés.' : `Réponds aux 3 questions : <b>coffret + ${REVIEW_XP} XP</b>.`}</p>
       <div class="ov-actions"><button class="btn primary" data-ov="saveReview" data-m="${mk}">${done ? 'Enregistrer' : 'Valider mon bilan'}</button><button class="btn ghost" data-ov="close">Plus tard</button></div>
       ${CLOSE}</div>`, 'month-ov');
 }
@@ -415,6 +415,6 @@ function saveReview(mk) {
   if (was || mk >= key(new Date()).slice(0, 7)) { closeOverlay(); return; }
   confetti(160); buzz([50, 40, 120]);
   const foot = layer.querySelector('.ov-actions'), tip = layer.querySelector('.ov-tip');
-  tip.innerHTML = `🎉 Bilan validé : <b>box classique + ${REVIEW_XP} XP</b> !`;
-  foot.innerHTML = `${G().boxes.c ? '<button class="btn primary" data-ov="altar" data-k="c">🎁 Ouvrir ma box classique</button>' : ''}<button class="btn ghost" data-ov="close">Fermer</button>`;
+  tip.innerHTML = `🎉 Bilan validé : <b>coffret + ${REVIEW_XP} XP</b> !`;
+  foot.innerHTML = `${G().boxes.c ? '<button class="btn primary" data-ov="altar" data-k="c">🎁 Ouvrir mon coffret</button>' : ''}<button class="btn ghost" data-ov="close">Fermer</button>`;
 }

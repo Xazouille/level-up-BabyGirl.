@@ -10,9 +10,9 @@ export function nudges() {
   const g = G(), k = todayKey(), doms = activeDomains(), n = doms.length, c = dayCount(k), out = [];
   if (!n) return out;
   const hour = new Date().getHours(), sAt = g.smallAt;
-  if (c < sAt && sAt - c <= 2) out.push({ key: 'small', p: 90, ico: '🎁', left: sAt - c, txt: `Plus que ${plural(sAt - c, 'case', 'cases')} pour ta petite box` });
+  if (c < sAt && sAt - c <= 2) out.push({ key: 'small', p: 90, ico: '🎁', left: sAt - c, txt: `Plus que ${plural(sAt - c, 'case', 'cases')} pour ta petite pochette` });
   const pn = perfectNeed(n);
-  if (c >= sAt && c < pn && pn - c <= 2) out.push({ key: 'perfect', p: 86, ico: '🏆', left: pn - c, txt: `Plus que ${plural(pn - c, 'case', 'cases')} pour une journée parfaite (box classique)` });
+  if (c >= sAt && c < pn && pn - c <= 2) out.push({ key: 'perfect', p: 86, ico: '🏆', left: pn - c, txt: `Plus que ${plural(pn - c, 'case', 'cases')} pour une journée parfaite (coffret)` });
 
   const b = g.boss.current;
   if (b) {
@@ -37,7 +37,7 @@ export function nudges() {
   }
 
   const toLv = g.lvl.need - g.lvl.into;
-  if (toLv <= 80) out.push({ key: 'level', p: 70, ico: '⭐', txt: `Encore ${toLv} XP pour le niveau ${g.lvl.level + 1} (grande box)` });
+  if (toLv <= 80) out.push({ key: 'level', p: 70, ico: '⭐', txt: `Encore ${toLv} XP pour le niveau ${g.lvl.level + 1} (grand coffret)` });
 
   // Maîtrise : un domaine à une séance d'un nouveau niveau (ou d'un nouveau rang)
   let ms = null;

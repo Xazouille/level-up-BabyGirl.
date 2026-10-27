@@ -104,7 +104,7 @@ function reviews() {
   const pm = monthKey(prevMonth()), keys = Object.keys(S.reviews).filter(reviewDoneKey).sort().reverse();
   return `<section class="card"><div class="c-head"><h2>🗓️ Bilans du mois</h2>${!reviewDone(S.reviews[pm]) && Object.keys(S.days).some(k => k.startsWith(pm)) ? `<button class="btn sm primary" data-act="monthOpen">Faire le bilan de ${monthName(pm).split(' ')[0]}</button>` : ''}</div>
     ${keys.length ? keys.map(k => { const r = S.reviews[k]; return `<div class="rv"><b>${monthName(k)}</b>
-      <p>✅ ${esc(r.good)}</p><p>🧱 ${esc(r.bad)}</p><p>🎯 ${esc(r.focus)}</p>${WHY[r.why] ? `<p>🤔 ${WHY[r.why]}</p>` : ''}</div>`; }).join('') : '<p class="muted small">Chaque début de mois, un bilan te pose 3 questions : ce qui a marché, ce qui a bloqué, ton focus. Le remplir rapporte une box classique et 100 XP.</p>'}
+      <p>✅ ${esc(r.good)}</p><p>🧱 ${esc(r.bad)}</p><p>🎯 ${esc(r.focus)}</p>${WHY[r.why] ? `<p>🤔 ${WHY[r.why]}</p>` : ''}</div>`; }).join('') : '<p class="muted small">Chaque début de mois, un bilan te pose 3 questions : ce qui a marché, ce qui a bloqué, ton focus. Le remplir rapporte un coffret et 100 XP.</p>'}
   </section>`;
 }
 const reviewDoneKey = k => reviewDone(S.reviews[k]);

@@ -110,7 +110,7 @@ function hero(k, n, c) {
   const xp = G().dayXP[k] || 0;
   // Prochaine box du jour : petite à 5 cases, classique quand tout est coché
   const sAt = G().smallAt;
-  const boxChip = !n ? '' : perfect ? '🎁 2 box gagnées' : c >= sAt ? `🎁 ${c}/${need} → box classique` : `🎁 ${c}/${sAt} → petite box`;
+  const boxChip = !n ? '' : perfect ? '🎁 2 surprises gagnées' : c >= sAt ? `🎁 ${c}/${need} → coffret` : `🎁 ${c}/${sAt} → petite pochette`;
   return `<section class="hero ${perfect ? 'perfect' : ''}">
     <div class="ring" role="img" aria-label="${c} sur ${n}">
       <svg viewBox="0 0 120 120"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#ffe680"/></linearGradient></defs>
@@ -131,7 +131,7 @@ function hero(k, n, c) {
   </section>`;
 }
 
-// Ce qui est à portée de main aujourd'hui (petite box, journée parfaite, boss, série…)
+// Ce qui est à portée de main aujourd'hui (petite pochette, journée parfaite, boss, série…)
 function nudgeStrip(k) {
   if (k !== todayKey()) return '';
   const list = nudges().slice(0, 2);
@@ -179,7 +179,6 @@ export function render() {
     </header>
     ${levelCard(true)}
     ${g.boxes.total ? `<button class="box-banner" data-act="openBox"><span class="bb-chests">${['g', 'c', 'p'].filter(t => g.boxes[t]).map(t => `<span class="bb-c">${chestHTML(t, 'mini')}<b>${g.boxes[t]}</b></span>`).join('')}</span><b class="bb-txt">${plural(g.boxes.total, 'box à ouvrir', 'box à ouvrir')} !</b><span class="bb-go">Invoquer ${ico('chev')}</span></button>` : ''}
-    ${comp && comp.badStreak >= 1 && k === todayKey() ? `<p class="comp-warn">⚠️ ${esc(comp.form.name)} est en danger : coche École, Sommeil (7 h+) ou Alimentation aujourd’hui.</p>` : ''}
     <div class="segs days">${days}</div>
     ${hero(k, n, c)}
     ${habitStrip(k)}
@@ -260,7 +259,7 @@ function afterCheck(id, wasPerfect, before) {
     setTimeout(() => { confetti(); buzz([30, 60, 30]); }, 250);
     banner({ icon: '🏆', title: 'Journée parfaite !', sub: `+${PERFECT_BONUS} XP bonus · coup critique sur le boss · tu es une machine`, color: '#f59e0b', cls: 'gold-ban' });
   }
-  // « Presque ! » : plus qu'une case pour la petite box, la journée parfaite, ou le boss presque à terre
+  // « Presque ! » : plus qu'une case pour la petite pochette, la journée parfaite, ou le boss presque à terre
   if (k !== todayKey()) return;
   const nd = nudges().find(x => ((x.key === 'small' || x.key === 'perfect') && x.left === 1) || (x.key === 'boss' && x.pct <= 10));
   if (nd && !shown.has(k + nd.key)) { shown.add(k + nd.key); banner({ icon: nd.ico, title: 'Presque !', sub: nd.txt, color: '#ff4fa3' }); }

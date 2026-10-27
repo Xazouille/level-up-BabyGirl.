@@ -1,129 +1,789 @@
 {
-  "_": "Cartes de Célia. Une famille = un personnage ; ses formes = transformations (Winx), générations (Monster High). rarity 1 à 5. Pour chaque forme : q = liste de recherches d'image ('page:Titre' = image principale de la page, 'file:mots' = fichier du wiki contenant ces mots). img = image imposée à la main (prioritaire). Ne pas renommer l'id d'une première forme déjà obtenue.",
-  "series": [
+ "_": "Cartes de Célia. Une famille = un personnage ; ses formes = transformations (Winx), générations (Monster High). rarity 1 à 5. Pour chaque forme : q = liste de recherches d'image ('page:Titre' = image principale de la page, 'file:mots' = fichier du wiki contenant ces mots). img = image imposée à la main (prioritaire). Ne pas renommer l'id d'une première forme déjà obtenue.",
+ "series": [
+  {
+   "key": "winx",
+   "wikis": [
+    "winx.fandom.com"
+   ],
+   "info": {
+    "name": "Winx Club",
+    "short": "Winx",
+    "color": "#d98fd0",
+    "emoji": "🧚"
+   },
+   "transfo": [
+    "Winx",
+    "Charmix",
+    "Enchantix",
+    "Believix",
+    "Harmonix",
+    "Sirenix",
+    "Bloomix",
+    "Mythix",
+    "Butterflix",
+    "Cosmix"
+   ],
+   "transfoSaga": [
+    "Saison 1",
+    "Saison 2",
+    "Saison 3",
+    "Saison 4",
+    "Saison 5",
+    "Saison 5",
+    "Saison 6",
+    "Saison 6",
+    "Saison 7",
+    "Saison 8"
+   ],
+   "lines": [
     {
-      "key": "winx", "wikis": ["winx.fandom.com"],
-      "info": { "name": "Winx Club", "short": "Winx", "color": "#d98fd0", "emoji": "🧚" },
-      "transfo": ["Winx", "Charmix", "Enchantix", "Believix", "Harmonix", "Sirenix", "Bloomix", "Mythix", "Butterflix", "Cosmix"],
-      "transfoSaga": ["Saison 1", "Saison 2", "Saison 3", "Saison 4", "Saison 5", "Saison 5", "Saison 6", "Saison 6", "Saison 7", "Saison 8"],
-      "lines": [
-        { "id": "wx-bloom", "name": "Bloom", "rarity": 5, "page": "Bloom", "transfo": true },
-        { "id": "wx-stella", "name": "Stella", "rarity": 5, "page": "Stella", "transfo": true },
-        { "id": "wx-flora", "name": "Flora", "rarity": 4, "page": "Flora", "transfo": true },
-        { "id": "wx-musa", "name": "Musa", "rarity": 4, "page": "Musa", "transfo": true },
-        { "id": "wx-tecna", "name": "Tecna", "rarity": 4, "page": "Tecna", "transfo": true },
-        { "id": "wx-aisha", "name": "Aisha", "rarity": 4, "page": "Aisha", "transfo": true },
-        { "id": "wx-roxy", "name": "Roxy", "rarity": 3, "page": "Roxy" },
-        { "id": "wx-daphne", "name": "Daphné", "rarity": 4, "page": "Daphne" },
-        { "id": "wx-faragonda", "name": "Faragonda", "rarity": 3, "page": "Faragonda" },
-        { "id": "wx-griselda", "name": "Griselda", "rarity": 2, "page": "Griselda" },
-        { "id": "wx-mirta", "name": "Mirta", "rarity": 2, "page": "Mirta" },
-        { "id": "wx-diaspro", "name": "Diaspro", "rarity": 2, "page": "Diaspro" },
-        { "id": "wx-sky", "name": "Sky", "rarity": 3, "page": "Sky" },
-        { "id": "wx-brandon", "name": "Brandon", "rarity": 2, "page": "Brandon" },
-        { "id": "wx-helia", "name": "Helia", "rarity": 2, "page": "Helia" },
-        { "id": "wx-riven", "name": "Riven", "rarity": 2, "page": "Riven" },
-        { "id": "wx-timmy", "name": "Timmy", "rarity": 2, "page": "Timmy" },
-        { "id": "wx-nabu", "name": "Nabu", "rarity": 2, "page": "Nabu" },
-        { "id": "wx-lockette", "name": "Lockette", "rarity": 1, "page": "Lockette" },
-        { "id": "wx-amore", "name": "Amore", "rarity": 1, "page": "Amore" },
-        { "id": "wx-chatta", "name": "Chatta", "rarity": 1, "page": "Chatta" },
-        { "id": "wx-tune", "name": "Tune", "rarity": 1, "page": "Tune" },
-        { "id": "wx-digit", "name": "Digit", "rarity": 1, "page": "Digit" },
-        { "id": "wx-piff", "name": "Piff", "rarity": 1, "page": "Piff" },
-        { "id": "wx-kiko", "name": "Kiko", "rarity": 1, "page": "Kiko" },
-        { "id": "wx-icy", "name": "Icy", "rarity": 3, "page": "Icy", "forms": [["Icy", "Trix", "Saison 1"], ["Icy Gloomix", "Gloomix", "Saison 2"], ["Icy Disenchantix", "Disenchantix", "Saison 3"], ["Icy Dark Sirenix", "Dark Sirenix", "Saison 5"]] },
-        { "id": "wx-darcy", "name": "Darcy", "rarity": 3, "page": "Darcy", "forms": [["Darcy", "Trix", "Saison 1"], ["Darcy Gloomix", "Gloomix", "Saison 2"], ["Darcy Disenchantix", "Disenchantix", "Saison 3"], ["Darcy Dark Sirenix", "Dark Sirenix", "Saison 5"]] },
-        { "id": "wx-stormy", "name": "Stormy", "rarity": 3, "page": "Stormy", "forms": [["Stormy", "Trix", "Saison 1"], ["Stormy Gloomix", "Gloomix", "Saison 2"], ["Stormy Disenchantix", "Disenchantix", "Saison 3"], ["Stormy Dark Sirenix", "Dark Sirenix", "Saison 5"]] },
-        { "id": "wx-valtor", "name": "Valtor", "rarity": 5, "page": "Valtor" },
-        { "id": "wx-darkar", "name": "Lord Darkar", "rarity": 5, "page": "Lord Darkar" },
-        { "id": "wx-sorcieres", "name": "Les Sorcières Ancestrales", "rarity": 5, "page": "Ancestral Witches" },
-        { "id": "wx-tritannus", "name": "Tritannus", "rarity": 4, "page": "Tritannus" },
-        { "id": "wx-kalshara", "name": "Kalshara", "rarity": 4, "page": "Kalshara" },
-        { "id": "wx-selina", "name": "Selina", "rarity": 3, "page": "Selina" },
-        { "id": "wx-politea", "name": "Politea", "rarity": 3, "page": "Politea" },
-        { "id": "wx-ogron", "name": "Ogron", "rarity": 3, "page": "Ogron" },
-        { "id": "wx-mandragora", "name": "Mandragora", "rarity": 3, "page": "Mandragora" }
-      ]
+     "id": "wx-bloom",
+     "name": "Bloom",
+     "rarity": 5,
+     "page": "Bloom",
+     "transfo": true
     },
     {
-      "key": "mh", "wikis": ["monsterhigh.fandom.com"],
-      "info": { "name": "Monster High", "short": "Monster High", "color": "#e46aa6", "emoji": "🦇" },
-      "gens": [["G1", "Génération 1"], ["G2", "Génération 2"], ["G3", "Génération 3"]],
-      "lines": [
-        { "id": "mh-frankie", "name": "Frankie Stein", "rarity": 5, "page": "Frankie Stein", "gens": true },
-        { "id": "mh-draculaura", "name": "Draculaura", "rarity": 5, "page": "Draculaura", "gens": true },
-        { "id": "mh-clawdeen", "name": "Clawdeen Wolf", "rarity": 5, "page": "Clawdeen Wolf", "gens": true },
-        { "id": "mh-cleo", "name": "Cleo de Nile", "rarity": 4, "page": "Cleo de Nile", "gens": true },
-        { "id": "mh-lagoona", "name": "Lagoona Blue", "rarity": 4, "page": "Lagoona Blue", "gens": true },
-        { "id": "mh-ghoulia", "name": "Ghoulia Yelps", "rarity": 4, "page": "Ghoulia Yelps", "gens": true },
-        { "id": "mh-abbey", "name": "Abbey Bominable", "rarity": 3, "page": "Abbey Bominable" },
-        { "id": "mh-spectra", "name": "Spectra Vondergeist", "rarity": 3, "page": "Spectra Vondergeist" },
-        { "id": "mh-operetta", "name": "Operetta", "rarity": 3, "page": "Operetta" },
-        { "id": "mh-toralei", "name": "Toralei Stripe", "rarity": 3, "page": "Toralei Stripe" },
-        { "id": "mh-venus", "name": "Venus McFlytrap", "rarity": 3, "page": "Venus McFlytrap" },
-        { "id": "mh-robecca", "name": "Robecca Steam", "rarity": 3, "page": "Robecca Steam" },
-        { "id": "mh-rochelle", "name": "Rochelle Goyle", "rarity": 3, "page": "Rochelle Goyle" },
-        { "id": "mh-twyla", "name": "Twyla", "rarity": 3, "page": "Twyla" },
-        { "id": "mh-catty", "name": "Catty Noir", "rarity": 3, "page": "Catty Noir" },
-        { "id": "mh-skelita", "name": "Skelita Calaveras", "rarity": 3, "page": "Skelita Calaveras" },
-        { "id": "mh-cupid", "name": "C.A. Cupid", "rarity": 3, "page": "C.A. Cupid" },
-        { "id": "mh-nefera", "name": "Nefera de Nile", "rarity": 4, "page": "Nefera de Nile" },
-        { "id": "mh-elissabat", "name": "Elissabat", "rarity": 3, "page": "Elissabat" },
-        { "id": "mh-howleen", "name": "Howleen Wolf", "rarity": 2, "page": "Howleen Wolf" },
-        { "id": "mh-jinafire", "name": "Jinafire Long", "rarity": 2, "page": "Jinafire Long" },
-        { "id": "mh-gigi", "name": "Gigi Grant", "rarity": 2, "page": "Gigi Grant" },
-        { "id": "mh-honey", "name": "Honey Swamp", "rarity": 2, "page": "Honey Swamp" },
-        { "id": "mh-kiyomi", "name": "Kiyomi Haunterly", "rarity": 2, "page": "Kiyomi Haunterly" },
-        { "id": "mh-deuce", "name": "Deuce Gorgon", "rarity": 3, "page": "Deuce Gorgon" },
-        { "id": "mh-clawd", "name": "Clawd Wolf", "rarity": 2, "page": "Clawd Wolf" },
-        { "id": "mh-heath", "name": "Heath Burns", "rarity": 2, "page": "Heath Burns" },
-        { "id": "mh-bloodgood", "name": "Madame Bloodgood", "rarity": 2, "page": "Headmistress Bloodgood" },
-        { "id": "mh-manny", "name": "Manny Taur", "rarity": 2, "page": "Manny Taur" },
-        { "id": "mh-purrsephone", "name": "Purrsephone", "rarity": 2, "page": "Purrsephone" },
-        { "id": "mh-meowlody", "name": "Meowlody", "rarity": 2, "page": "Meowlody" },
-        { "id": "mh-count-fabulous", "name": "Count Fabulous", "rarity": 1, "page": "Count Fabulous" },
-        { "id": "mh-watzit", "name": "Watzit", "rarity": 1, "page": "Watzit" },
-        { "id": "mh-crescent", "name": "Crescent", "rarity": 1, "page": "Crescent" },
-        { "id": "mh-sweet-fang", "name": "Sweet Fang", "rarity": 1, "page": "Sweet Fang" },
-        { "id": "mh-neptuna", "name": "Neptuna", "rarity": 1, "page": "Neptuna" },
-        { "id": "mh-hissette", "name": "Hissette", "rarity": 1, "page": "Hissette" },
-        { "id": "mh-perseus", "name": "Perseus", "rarity": 1, "page": "Perseus" }
-      ]
+     "id": "wx-stella",
+     "name": "Stella",
+     "rarity": 5,
+     "page": "Stella",
+     "transfo": true
     },
     {
-      "key": "kitty", "wikis": ["hellokitty.fandom.com", "sanrio.fandom.com"],
-      "info": { "name": "Hello Kitty & ses amis", "short": "Hello Kitty", "color": "#ef7f97", "emoji": "🎀" },
-      "lines": [
-        { "id": "hk-hello-kitty", "name": "Hello Kitty", "rarity": 5, "page": "Hello Kitty" },
-        { "id": "hk-kuromi", "name": "Kuromi", "rarity": 5, "page": "Kuromi" },
-        { "id": "hk-my-melody", "name": "My Melody", "rarity": 4, "page": "My Melody" },
-        { "id": "hk-cinnamoroll", "name": "Cinnamoroll", "rarity": 4, "page": "Cinnamoroll" },
-        { "id": "hk-little-twin-stars", "name": "Little Twin Stars", "rarity": 4, "page": "Little Twin Stars" },
-        { "id": "hk-mimmy", "name": "Mimmy", "rarity": 3, "page": "Mimmy White" },
-        { "id": "hk-dear-daniel", "name": "Dear Daniel", "rarity": 3, "page": "Dear Daniel" },
-        { "id": "hk-pompompurin", "name": "Pompompurin", "rarity": 3, "page": "Pompompurin" },
-        { "id": "hk-pochacco", "name": "Pochacco", "rarity": 3, "page": "Pochacco" },
-        { "id": "hk-keroppi", "name": "Keroppi", "rarity": 3, "page": "Keroppi" },
-        { "id": "hk-badtz-maru", "name": "Badtz-Maru", "rarity": 3, "page": "Badtz-Maru" },
-        { "id": "hk-chococat", "name": "Chococat", "rarity": 3, "page": "Chococat" },
-        { "id": "hk-charmmy-kitty", "name": "Charmmy Kitty", "rarity": 3, "page": "Charmmy Kitty" },
-        { "id": "hk-aggretsuko", "name": "Aggretsuko", "rarity": 3, "page": "Aggretsuko" },
-        { "id": "hk-gudetama", "name": "Gudetama", "rarity": 2, "page": "Gudetama" },
-        { "id": "hk-hangyodon", "name": "Hangyodon", "rarity": 2, "page": "Hangyodon" },
-        { "id": "hk-tuxedosam", "name": "Tuxedosam", "rarity": 2, "page": "Tuxedosam" },
-        { "id": "hk-my-sweet-piano", "name": "My Sweet Piano", "rarity": 2, "page": "My Sweet Piano" },
-        { "id": "hk-wish-me-mell", "name": "Wish me mell", "rarity": 2, "page": "Wish me mell" },
-        { "id": "hk-marron-cream", "name": "Marron Cream", "rarity": 2, "page": "Marron Cream" },
-        { "id": "hk-usahana", "name": "Usahana", "rarity": 2, "page": "Usahana" },
-        { "id": "hk-cogimyun", "name": "Cogimyun", "rarity": 2, "page": "Cogimyun" },
-        { "id": "hk-pekkle", "name": "Pekkle", "rarity": 1, "page": "Pekkle" },
-        { "id": "hk-kirimi-chan", "name": "Kirimi-chan", "rarity": 1, "page": "Kirimi-chan" },
-        { "id": "hk-corocorokuririn", "name": "Corocorokuririn", "rarity": 1, "page": "Corocorokuririn" },
-        { "id": "hk-pandapple", "name": "Pandapple", "rarity": 1, "page": "Pandapple" },
-        { "id": "hk-bonbonribbon", "name": "Bonbonribbon", "rarity": 1, "page": "Bonbonribbon" },
-        { "id": "hk-tabo", "name": "Tabo", "rarity": 1, "page": "Tabo" }
+     "id": "wx-flora",
+     "name": "Flora",
+     "rarity": 4,
+     "page": "Flora",
+     "transfo": true
+    },
+    {
+     "id": "wx-musa",
+     "name": "Musa",
+     "rarity": 4,
+     "page": "Musa",
+     "transfo": true
+    },
+    {
+     "id": "wx-tecna",
+     "name": "Tecna",
+     "rarity": 4,
+     "page": "Tecna",
+     "transfo": true
+    },
+    {
+     "id": "wx-aisha",
+     "name": "Aisha",
+     "rarity": 4,
+     "page": "Aisha",
+     "transfo": true
+    },
+    {
+     "id": "wx-roxy",
+     "name": "Roxy",
+     "rarity": 3,
+     "page": "Roxy"
+    },
+    {
+     "id": "wx-daphne",
+     "name": "Daphné",
+     "rarity": 4,
+     "page": "Daphne"
+    },
+    {
+     "id": "wx-faragonda",
+     "name": "Faragonda",
+     "rarity": 3,
+     "page": "Faragonda"
+    },
+    {
+     "id": "wx-griselda",
+     "name": "Griselda",
+     "rarity": 2,
+     "page": "Griselda"
+    },
+    {
+     "id": "wx-mirta",
+     "name": "Mirta",
+     "rarity": 2,
+     "page": "Mirta"
+    },
+    {
+     "id": "wx-diaspro",
+     "name": "Diaspro",
+     "rarity": 2,
+     "page": "Diaspro"
+    },
+    {
+     "id": "wx-sky",
+     "name": "Sky",
+     "rarity": 3,
+     "page": "Sky"
+    },
+    {
+     "id": "wx-brandon",
+     "name": "Brandon",
+     "rarity": 2,
+     "page": "Brandon"
+    },
+    {
+     "id": "wx-helia",
+     "name": "Helia",
+     "rarity": 2,
+     "page": "Helia"
+    },
+    {
+     "id": "wx-riven",
+     "name": "Riven",
+     "rarity": 2,
+     "page": "Riven"
+    },
+    {
+     "id": "wx-timmy",
+     "name": "Timmy",
+     "rarity": 2,
+     "page": "Timmy"
+    },
+    {
+     "id": "wx-nabu",
+     "name": "Nabu",
+     "rarity": 2,
+     "page": "Nabu"
+    },
+    {
+     "id": "wx-lockette",
+     "name": "Lockette",
+     "rarity": 1,
+     "page": "Lockette"
+    },
+    {
+     "id": "wx-amore",
+     "name": "Amore",
+     "rarity": 1,
+     "page": "Amore"
+    },
+    {
+     "id": "wx-chatta",
+     "name": "Chatta",
+     "rarity": 1,
+     "page": "Chatta"
+    },
+    {
+     "id": "wx-tune",
+     "name": "Tune",
+     "rarity": 1,
+     "page": "Tune"
+    },
+    {
+     "id": "wx-digit",
+     "name": "Digit",
+     "rarity": 1,
+     "page": "Digit"
+    },
+    {
+     "id": "wx-piff",
+     "name": "Piff",
+     "rarity": 1,
+     "page": "Piff"
+    },
+    {
+     "id": "wx-kiko",
+     "name": "Kiko",
+     "rarity": 1,
+     "page": "Kiko"
+    },
+    {
+     "id": "wx-icy",
+     "name": "Icy",
+     "rarity": 3,
+     "page": "Icy",
+     "forms": [
+      [
+       "Icy",
+       "Trix",
+       "Saison 1"
+      ],
+      [
+       "Icy Gloomix",
+       "Gloomix",
+       "Saison 2"
+      ],
+      [
+       "Icy Disenchantix",
+       "Disenchantix",
+       "Saison 3"
+      ],
+      [
+       "Icy Dark Sirenix",
+       "Dark Sirenix",
+       "Saison 5"
       ]
+     ]
+    },
+    {
+     "id": "wx-darcy",
+     "name": "Darcy",
+     "rarity": 3,
+     "page": "Darcy",
+     "forms": [
+      [
+       "Darcy",
+       "Trix",
+       "Saison 1"
+      ],
+      [
+       "Darcy Gloomix",
+       "Gloomix",
+       "Saison 2"
+      ],
+      [
+       "Darcy Disenchantix",
+       "Disenchantix",
+       "Saison 3"
+      ],
+      [
+       "Darcy Dark Sirenix",
+       "Dark Sirenix",
+       "Saison 5"
+      ]
+     ]
+    },
+    {
+     "id": "wx-stormy",
+     "name": "Stormy",
+     "rarity": 3,
+     "page": "Stormy",
+     "forms": [
+      [
+       "Stormy",
+       "Trix",
+       "Saison 1"
+      ],
+      [
+       "Stormy Gloomix",
+       "Gloomix",
+       "Saison 2"
+      ],
+      [
+       "Stormy Disenchantix",
+       "Disenchantix",
+       "Saison 3"
+      ],
+      [
+       "Stormy Dark Sirenix",
+       "Dark Sirenix",
+       "Saison 5"
+      ]
+     ]
+    },
+    {
+     "id": "wx-valtor",
+     "name": "Valtor",
+     "rarity": 5,
+     "page": "Valtor"
+    },
+    {
+     "id": "wx-darkar",
+     "name": "Lord Darkar",
+     "rarity": 5,
+     "page": "Lord Darkar",
+     "q": {
+      "wx-darkar": [
+       "file:Lord Darkar",
+       "file:Darkar 2D",
+       "file:Darkar"
+      ]
+     }
+    },
+    {
+     "id": "wx-sorcieres",
+     "name": "Les Sorcières Ancestrales",
+     "rarity": 5,
+     "page": "Ancestral Witches"
+    },
+    {
+     "id": "wx-tritannus",
+     "name": "Tritannus",
+     "rarity": 4,
+     "page": "Tritannus"
+    },
+    {
+     "id": "wx-kalshara",
+     "name": "Kalshara",
+     "rarity": 4,
+     "page": "Kalshara"
+    },
+    {
+     "id": "wx-selina",
+     "name": "Selina",
+     "rarity": 3,
+     "page": "Selina"
+    },
+    {
+     "id": "wx-politea",
+     "name": "Politea",
+     "rarity": 3,
+     "page": "Politea"
+    },
+    {
+     "id": "wx-ogron",
+     "name": "Ogron",
+     "rarity": 3,
+     "page": "Ogron"
+    },
+    {
+     "id": "wx-mandragora",
+     "name": "Mandragora",
+     "rarity": 3,
+     "page": "Mandragora"
     }
-  ]
+   ]
+  },
+  {
+   "key": "mh",
+   "wikis": [
+    "monsterhigh.fandom.com"
+   ],
+   "info": {
+    "name": "Monster High",
+    "short": "Monster High",
+    "color": "#e46aa6",
+    "emoji": "🦇"
+   },
+   "gens": [
+    [
+     "G1",
+     "Génération 1"
+    ],
+    [
+     "G2",
+     "Génération 2"
+    ],
+    [
+     "G3",
+     "Génération 3"
+    ]
+   ],
+   "lines": [
+    {
+     "id": "mh-frankie",
+     "name": "Frankie Stein",
+     "rarity": 5,
+     "page": "Frankie Stein",
+     "gens": true
+    },
+    {
+     "id": "mh-draculaura",
+     "name": "Draculaura",
+     "rarity": 5,
+     "page": "Draculaura",
+     "gens": true
+    },
+    {
+     "id": "mh-clawdeen",
+     "name": "Clawdeen Wolf",
+     "rarity": 5,
+     "page": "Clawdeen Wolf",
+     "gens": true
+    },
+    {
+     "id": "mh-cleo",
+     "name": "Cleo de Nile",
+     "rarity": 4,
+     "page": "Cleo de Nile",
+     "gens": true
+    },
+    {
+     "id": "mh-lagoona",
+     "name": "Lagoona Blue",
+     "rarity": 4,
+     "page": "Lagoona Blue",
+     "gens": true
+    },
+    {
+     "id": "mh-ghoulia",
+     "name": "Ghoulia Yelps",
+     "rarity": 4,
+     "page": "Ghoulia Yelps",
+     "gens": true
+    },
+    {
+     "id": "mh-abbey",
+     "name": "Abbey Bominable",
+     "rarity": 3,
+     "page": "Abbey Bominable"
+    },
+    {
+     "id": "mh-spectra",
+     "name": "Spectra Vondergeist",
+     "rarity": 3,
+     "page": "Spectra Vondergeist"
+    },
+    {
+     "id": "mh-operetta",
+     "name": "Operetta",
+     "rarity": 3,
+     "page": "Operetta"
+    },
+    {
+     "id": "mh-toralei",
+     "name": "Toralei Stripe",
+     "rarity": 3,
+     "page": "Toralei Stripe"
+    },
+    {
+     "id": "mh-venus",
+     "name": "Venus McFlytrap",
+     "rarity": 3,
+     "page": "Venus McFlytrap"
+    },
+    {
+     "id": "mh-robecca",
+     "name": "Robecca Steam",
+     "rarity": 3,
+     "page": "Robecca Steam"
+    },
+    {
+     "id": "mh-rochelle",
+     "name": "Rochelle Goyle",
+     "rarity": 3,
+     "page": "Rochelle Goyle"
+    },
+    {
+     "id": "mh-twyla",
+     "name": "Twyla",
+     "rarity": 3,
+     "page": "Twyla"
+    },
+    {
+     "id": "mh-catty",
+     "name": "Catty Noir",
+     "rarity": 3,
+     "page": "Catty Noir"
+    },
+    {
+     "id": "mh-skelita",
+     "name": "Skelita Calaveras",
+     "rarity": 3,
+     "page": "Skelita Calaveras"
+    },
+    {
+     "id": "mh-cupid",
+     "name": "C.A. Cupid",
+     "rarity": 3,
+     "page": "C.A. Cupid"
+    },
+    {
+     "id": "mh-nefera",
+     "name": "Nefera de Nile",
+     "rarity": 4,
+     "page": "Nefera de Nile"
+    },
+    {
+     "id": "mh-elissabat",
+     "name": "Elissabat",
+     "rarity": 3,
+     "page": "Elissabat"
+    },
+    {
+     "id": "mh-howleen",
+     "name": "Howleen Wolf",
+     "rarity": 2,
+     "page": "Howleen Wolf"
+    },
+    {
+     "id": "mh-jinafire",
+     "name": "Jinafire Long",
+     "rarity": 2,
+     "page": "Jinafire Long"
+    },
+    {
+     "id": "mh-gigi",
+     "name": "Gigi Grant",
+     "rarity": 2,
+     "page": "Gigi Grant"
+    },
+    {
+     "id": "mh-honey",
+     "name": "Honey Swamp",
+     "rarity": 2,
+     "page": "Honey Swamp"
+    },
+    {
+     "id": "mh-kiyomi",
+     "name": "Kiyomi Haunterly",
+     "rarity": 2,
+     "page": "Kiyomi Haunterly"
+    },
+    {
+     "id": "mh-deuce",
+     "name": "Deuce Gorgon",
+     "rarity": 3,
+     "page": "Deuce Gorgon"
+    },
+    {
+     "id": "mh-clawd",
+     "name": "Clawd Wolf",
+     "rarity": 2,
+     "page": "Clawd Wolf"
+    },
+    {
+     "id": "mh-heath",
+     "name": "Heath Burns",
+     "rarity": 2,
+     "page": "Heath Burns"
+    },
+    {
+     "id": "mh-bloodgood",
+     "name": "Madame Bloodgood",
+     "rarity": 2,
+     "page": "Headmistress Bloodgood"
+    },
+    {
+     "id": "mh-manny",
+     "name": "Manny Taur",
+     "rarity": 2,
+     "page": "Manny Taur"
+    },
+    {
+     "id": "mh-purrsephone",
+     "name": "Purrsephone",
+     "rarity": 2,
+     "page": "Purrsephone"
+    },
+    {
+     "id": "mh-meowlody",
+     "name": "Meowlody",
+     "rarity": 2,
+     "page": "Meowlody"
+    },
+    {
+     "id": "mh-count-fabulous",
+     "name": "Count Fabulous",
+     "rarity": 1,
+     "page": "Count Fabulous"
+    },
+    {
+     "id": "mh-watzit",
+     "name": "Watzit",
+     "rarity": 1,
+     "page": "Watzit"
+    },
+    {
+     "id": "mh-crescent",
+     "name": "Crescent",
+     "rarity": 1,
+     "page": "Crescent"
+    },
+    {
+     "id": "mh-sweet-fang",
+     "name": "Sweet Fang",
+     "rarity": 1,
+     "page": "Sweet Fang"
+    },
+    {
+     "id": "mh-neptuna",
+     "name": "Neptuna",
+     "rarity": 1,
+     "page": "Neptuna"
+    },
+    {
+     "id": "mh-hissette",
+     "name": "Hissette",
+     "rarity": 1,
+     "page": "Hissette"
+    },
+    {
+     "id": "mh-perseus",
+     "name": "Perseus",
+     "rarity": 1,
+     "page": "Perseus"
+    }
+   ]
+  },
+  {
+   "key": "kitty",
+   "wikis": [
+    "hellokitty.fandom.com",
+    "sanrio.fandom.com"
+   ],
+   "info": {
+    "name": "Hello Kitty & ses amis",
+    "short": "Hello Kitty",
+    "color": "#ef7f97",
+    "emoji": "🎀"
+   },
+   "lines": [
+    {
+     "id": "hk-hello-kitty",
+     "name": "Hello Kitty",
+     "rarity": 5,
+     "page": "Hello Kitty"
+    },
+    {
+     "id": "hk-kuromi",
+     "name": "Kuromi",
+     "rarity": 5,
+     "page": "Kuromi"
+    },
+    {
+     "id": "hk-my-melody",
+     "name": "My Melody",
+     "rarity": 4,
+     "page": "My Melody"
+    },
+    {
+     "id": "hk-cinnamoroll",
+     "name": "Cinnamoroll",
+     "rarity": 4,
+     "page": "Cinnamoroll"
+    },
+    {
+     "id": "hk-little-twin-stars",
+     "name": "Little Twin Stars",
+     "rarity": 4,
+     "page": "Little Twin Stars"
+    },
+    {
+     "id": "hk-mimmy",
+     "name": "Mimmy",
+     "rarity": 3,
+     "page": "Mimmy White"
+    },
+    {
+     "id": "hk-dear-daniel",
+     "name": "Dear Daniel",
+     "rarity": 3,
+     "page": "Dear Daniel"
+    },
+    {
+     "id": "hk-pompompurin",
+     "name": "Pompompurin",
+     "rarity": 3,
+     "page": "Pompompurin"
+    },
+    {
+     "id": "hk-pochacco",
+     "name": "Pochacco",
+     "rarity": 3,
+     "page": "Pochacco"
+    },
+    {
+     "id": "hk-keroppi",
+     "name": "Keroppi",
+     "rarity": 3,
+     "page": "Keroppi"
+    },
+    {
+     "id": "hk-badtz-maru",
+     "name": "Badtz-Maru",
+     "rarity": 3,
+     "page": "Badtz-Maru"
+    },
+    {
+     "id": "hk-chococat",
+     "name": "Chococat",
+     "rarity": 3,
+     "page": "Chococat"
+    },
+    {
+     "id": "hk-charmmy-kitty",
+     "name": "Charmmy Kitty",
+     "rarity": 3,
+     "page": "Charmmy Kitty"
+    },
+    {
+     "id": "hk-aggretsuko",
+     "name": "Aggretsuko",
+     "rarity": 3,
+     "page": "Aggretsuko"
+    },
+    {
+     "id": "hk-gudetama",
+     "name": "Gudetama",
+     "rarity": 2,
+     "page": "Gudetama"
+    },
+    {
+     "id": "hk-hangyodon",
+     "name": "Hangyodon",
+     "rarity": 2,
+     "page": "Hangyodon"
+    },
+    {
+     "id": "hk-tuxedosam",
+     "name": "Tuxedosam",
+     "rarity": 2,
+     "page": "Tuxedosam"
+    },
+    {
+     "id": "hk-my-sweet-piano",
+     "name": "My Sweet Piano",
+     "rarity": 2,
+     "page": "My Sweet Piano"
+    },
+    {
+     "id": "hk-wish-me-mell",
+     "name": "Wish me mell",
+     "rarity": 2,
+     "page": "Wish me mell"
+    },
+    {
+     "id": "hk-marron-cream",
+     "name": "Marron Cream",
+     "rarity": 2,
+     "page": "Marron Cream"
+    },
+    {
+     "id": "hk-usahana",
+     "name": "Usahana",
+     "rarity": 2,
+     "page": "Usahana"
+    },
+    {
+     "id": "hk-cogimyun",
+     "name": "Cogimyun",
+     "rarity": 2,
+     "page": "Cogimyun"
+    },
+    {
+     "id": "hk-pekkle",
+     "name": "Pekkle",
+     "rarity": 1,
+     "page": "Pekkle"
+    },
+    {
+     "id": "hk-kirimi-chan",
+     "name": "Kirimi-chan",
+     "rarity": 1,
+     "page": "Kirimi-chan"
+    },
+    {
+     "id": "hk-corocorokuririn",
+     "name": "Corocorokuririn",
+     "rarity": 1,
+     "page": "Corocorokuririn"
+    },
+    {
+     "id": "hk-pandapple",
+     "name": "Pandapple",
+     "rarity": 1,
+     "page": "Pandapple"
+    },
+    {
+     "id": "hk-bonbonribbon",
+     "name": "Bonbonribbon",
+     "rarity": 1,
+     "page": "Bonbonribbon"
+    },
+    {
+     "id": "hk-tabo",
+     "name": "Tabo",
+     "rarity": 1,
+     "page": "Tabo"
+    }
+   ]
+  }
+ ]
 }
