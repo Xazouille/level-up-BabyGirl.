@@ -5,11 +5,11 @@ import { esc, todayKey, parseKey, fmtDate, norm, plural } from '../util.js';
 import { confetti } from '../fx.js';
 
 export const MTYPES = {
-  film: { label: 'Film', many: 'Films', emoji: '🎬', color: '#ff5a5f' },
-  livre: { label: 'Livre', many: 'Livres', emoji: '📖', color: '#ff8a3d' },
-  manga: { label: 'Manga', many: 'Mangas', emoji: '📕', color: '#ff4fa3' },
-  anime: { label: 'Animé', many: 'Animés', emoji: '🍥', color: '#9b6bff' },
-  serie: { label: 'Série', many: 'Séries', emoji: '📺', color: '#4f8cff' },
+  film: { label: 'Film', many: 'Films', emoji: '🎬', color: '#e3a0a6' },
+  livre: { label: 'Livre', many: 'Livres', emoji: '📖', color: '#e0b18f' },
+  manga: { label: 'Manga', many: 'Mangas', emoji: '📕', color: '#d7a1bd' },
+  anime: { label: 'Animé', many: 'Animés', emoji: '🍥', color: '#b7a3d6' },
+  serie: { label: 'Série', many: 'Séries', emoji: '📺', color: '#8aa6c1' },
 };
 const STATUS = [['done', 'Terminés', 'Terminé'], ['doing', 'En cours', 'En cours'], ['todo', 'À voir', 'À voir plus tard']];
 

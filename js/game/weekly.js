@@ -4,11 +4,11 @@ import { key, parseKey, today, addDays, weekStart } from '../util.js';
 import { periodScore, isPerfect } from '../stats.js';
 
 export const GRADES = [
-  { g: 'S', min: 90, box: 'g', title: 'Semaine légendaire !', color: '#f59e0b' },
-  { g: 'A', min: 75, box: 'c', title: 'Excellente semaine !', color: '#a855f7' },
-  { g: 'B', min: 60, box: 'p', title: 'Bonne semaine', color: '#3b82f6' },
-  { g: 'C', min: 45, box: null, title: 'Semaine correcte', color: '#22c55e' },
-  { g: 'D', min: 0, box: null, title: 'Semaine difficile', color: '#94a3b8' },
+  { g: 'S', min: 90, box: 'g', title: 'Semaine légendaire !', color: '#d4a373' },
+  { g: 'A', min: 75, box: 'c', title: 'Excellente semaine !', color: '#b79fd1' },
+  { g: 'B', min: 60, box: 'p', title: 'Bonne semaine', color: '#8aa6c1' },
+  { g: 'C', min: 45, box: null, title: 'Semaine correcte', color: '#9cb48a' },
+  { g: 'D', min: 0, box: null, title: 'Semaine difficile', color: '#b8b2a7' },
 ];
 export const gradeOf = pct => GRADES.find(x => pct >= x.min);
 // Le bilan s'ouvre le dimanche à 18 h (la note peut encore monter jusqu'à minuit)

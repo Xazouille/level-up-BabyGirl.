@@ -388,10 +388,10 @@ export function badgeDefs() {
   add('Collection', 'ultime1', '🌈', 'Carte ultime', 'Amener une carte au stade ultime', 300, c => c.ultime >= 1, 'c');
   add('Collection', 'album1', '📚', 'Premier album', 'Compléter un album', 200, c => c.albums >= 1);
   add('Collection', 'album5', '📖', 'Collectionneuse', 'Compléter 5 albums', 800, c => c.albums >= 5, 'g');
-  add('Boss', 'boss1', '🌸', 'Premier défi relevé', 'Relever ton premier défi de méchante', 100, c => c.bosses >= 1);
-  add('Boss', 'boss10', '🌷', 'Rien ne m’arrête', 'Relever 10 défis de méchantes', 500, c => c.bosses >= 10, 'c');
-  add('Boss', 'boss-leg', '👑', 'Plus forte qu’une légende', 'Relever un défi légendaire', 300, c => c.legends >= 1, 'g');
-  add('Boss', 'boss50', '💐', 'Gardienne de Magix', 'Relever 50 défis de méchantes', 1500, c => c.bosses >= 50, 'g');
+  add('Duels', 'boss1', '🌸', 'Premier duel gagné', 'Gagner ton premier duel magique', 100, c => c.bosses >= 1);
+  add('Duels', 'boss10', '🌷', 'Rien ne m’arrête', 'Gagner 10 duels magiques', 500, c => c.bosses >= 10, 'c');
+  add('Duels', 'boss-leg', '👑', 'Plus forte qu’une légende', 'Gagner un duel légendaire', 300, c => c.legends >= 1, 'g');
+  add('Duels', 'boss50', '💐', 'Gardienne de Magix', 'Gagner 50 duels magiques', 1500, c => c.bosses >= 50, 'g');
   add('Maîtrise', 'm-confirme', '🔷', 'Confirmée', 'Rang Confirmée dans un domaine (niveau 31)', 300, c => c.rank >= 3);
   add('Maîtrise', 'm-maitre', '🔮', 'Experte', 'Rang Maîtresse dans un domaine (niveau 51)', 800, c => c.rank >= 5, 'g');
   add('Maîtrise', 'm-legende', '👑', 'Légende vivante', 'Rang Légende dans un domaine (niveau 81)', 2000, c => c.rank >= 8, 'g');

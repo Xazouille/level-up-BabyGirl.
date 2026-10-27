@@ -77,15 +77,15 @@ export function bossCard(compact = false) {
     const last = g.boss.history[g.boss.history.length - 1];
     if (!last) return '';
     return `<button class="boss-card idle ${compact ? 'compact' : ''}" data-act="bossOpen"><span class="bc-ico">${last.won ? '🏆' : '💨'}</span>
-      <span class="bc-main"><b>${last.won ? `${esc(last.name)} est K.O. !` : `${esc(last.name)} s’est enfui…`}</b><small>Le prochain boss arrive demain.</small></span></button>`;
+      <span class="bc-main"><b>${last.won ? `Duel gagné contre ${esc(last.name)} !` : `${esc(last.name)} a filé…`}</b><small>Le prochain duel arrive demain.</small></span></button>`;
   }
   const left = Math.max(0, b.hp - b.dmg), pct = Math.round(left / b.hp * 100);
   const wd = S.domains.list.find(d => d.id === b.weak);
-  return `<button class="boss-card ${b.legendary ? 'legend' : ''} ${compact ? 'compact' : ''}" data-act="bossOpen" aria-label="Boss : ${esc(b.name)}">
+  return `<button class="boss-card ${b.legendary ? 'legend' : ''} ${compact ? 'compact' : ''}" data-act="bossOpen" aria-label="Duel : ${esc(b.name)}">
     <span class="bc-portrait"><img src="${esc(b.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"></span>
     <span class="bc-main">
       <span class="bc-top"><b>${esc(b.name)}</b>${b.legendary ? '<span class="bc-leg">Légendaire</span>' : ''}<span class="bc-day">Jour ${b.dayNo}/7</span></span>
-      <span class="bc-hp"><span class="bc-fill" style="width:${pct}%"></span><i>${nf(left)} / ${nf(b.hp)} PV</i></span>
+      <span class="bc-hp"><span class="bc-fill" style="width:${pct}%"></span><i>${nf(left)} / ${nf(b.hp)} d’énergie</i></span>
       <span class="bc-sub">Point faible : ${wd ? `${wd.emoji} ${esc(wd.name)}` : '?'} ×2 · ${b.left ? `${plural(b.left, 'jour', 'jours')} restants` : 'dernier jour !'}</span>
     </span></button>`;
 }
@@ -94,21 +94,21 @@ export function bossSheet() {
   const won = g.boss.history.filter(x => x.won).length;
   const wd = b && S.domains.list.find(d => d.id === b.weak);
   const head = b ? `<div class="bs-head ${b.legendary ? 'legend' : ''}"><span class="bc-portrait big"><img src="${esc(b.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"></span>
-      <div><p class="eyebrow">${b.legendary ? '🐉 Boss légendaire' : '⚔️ Boss'} · jour ${b.dayNo}/7</p><h2>${esc(b.name)}</h2><p class="muted small">${esc(b.why)}</p></div></div>
-      <div class="bc-hp big"><span class="bc-fill" style="width:${Math.round((b.hp - b.dmg) / b.hp * 100)}%"></span><i>${nf(b.hp - b.dmg)} / ${nf(b.hp)} PV</i></div>
+      <div><p class="eyebrow">${b.legendary ? '👑 Duel légendaire' : '🪄 Duel magique'} · jour ${b.dayNo}/7</p><h2>${esc(b.name)}</h2><p class="muted small">${esc(b.why)}</p></div></div>
+      <div class="bc-hp big"><span class="bc-fill" style="width:${Math.round((b.hp - b.dmg) / b.hp * 100)}%"></span><i>${nf(b.hp - b.dmg)} / ${nf(b.hp)} d’énergie</i></div>
       <div class="bs-days">${Array.from({ length: 7 }, (_, i) => { const d = b.days[i]; return `<span class="${d ? 'on' : ''}"><b>${d ? nf(d[1]) : '·'}</b><small>J${i + 1}</small></span>`; }).join('')}</div>`
-    : '<h2>Boss</h2><p class="muted">Le prochain boss arrive demain. Repose-toi… ou prends de l’avance !</p>';
+    : '<h2>Duel magique</h2><p class="muted">Le prochain duel arrive demain. Repose-toi… ou prends de l’avance !</p>';
   return `<div class="boss-sheet">${head}
     <ul class="bs-rules">
       <li>⚔️ Chaque case cochée lui fait autant de dégâts que son XP.</li>
-      ${wd ? `<li>${wd.emoji} Point faible : <b>${esc(wd.name)}</b>, dégâts ×2.</li>` : ''}
+      ${wd ? `<li>${wd.emoji} Point faible : <b>${esc(wd.name)}</b>, magie ×2.</li>` : ''}
       <li>💥 Journée parfaite : coup critique, dégâts ×1,5.</li>
       <li>⏳ 7 jours maximum. Battu plus tôt : le suivant arrive dès le lendemain.</li>
       <li>🎁 Victoire : grand coffret (deux pour un légendaire), sa carte et de l’XP. Un boss sur 4 est légendaire.</li>
     </ul>
     <p class="eyebrow">Tableau de chasse · ${plural(won, 'victoire', 'victoires')}</p>
     ${hist.length ? `<div class="bs-hist">${hist.slice(0, 30).map(x => `<div class="bh ${x.won ? 'won' : 'lost'}"><span class="bh-img"><img src="${esc(x.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"></span>
-      <span class="bh-txt"><b>${esc(x.name)}${x.legendary ? ' 🐉' : ''}</b><small>${x.won ? `Vaincu en ${plural(x.days.length, 'jour', 'jours')}` : 'S’est enfui (il reviendra)'} · ${fmtShort(parseKey(x.endDay))}</small></span><span>${x.won ? '✅' : '💨'}</span></div>`).join('')}</div>`
+      <span class="bh-txt"><b>${esc(x.name)}${x.legendary ? ' 🐉' : ''}</b><small>${x.won ? `Gagné en ${plural(x.days.length, 'jour', 'jours')}` : 'A filé (revanche plus tard)'} · ${fmtShort(parseKey(x.endDay))}</small></span><span>${x.won ? '✅' : '💨'}</span></div>`).join('')}</div>`
       : '<p class="muted small">Ton premier combat est en cours.</p>'}
   </div>`;
 }
@@ -287,9 +287,9 @@ function cardsView(g) {
   const total = list.length, limit = ui.collLimit || 120;
   list = list.slice(0, limit);
   const nNew = all.filter(test.new).length, nDup = Object.keys(g.dups).length, nAw = Object.keys(g.awaken).length;
-  const serChips = [['all', 'Toutes', '#9b6bff']].concat(Object.entries(SERIES).map(([k, s]) => [k, `${s.emoji} ${s.name}`, s.color]))
+  const serChips = [['all', 'Toutes', '#b7a3d6']].concat(Object.entries(SERIES).map(([k, s]) => [k, `${s.emoji} ${s.name}`, s.color]))
     .map(([k, l, c]) => `<button class="chip ${ser === k ? 'on' : ''}" style="--c:${c}" data-act="collSeries" data-s="${k}">${esc(l)}</button>`).join('');
-  const rarChips = [0, 1, 2, 3, 4, 5].map(r => `<button class="chip ${rar === r ? 'on' : ''}" style="--c:${r ? RARITY[r].color : '#9b6bff'}" data-act="collRarity" data-r="${r}">${r ? '★'.repeat(r) : 'Toutes'}</button>`).join('');
+  const rarChips = [0, 1, 2, 3, 4, 5].map(r => `<button class="chip ${rar === r ? 'on' : ''}" style="--c:${r ? RARITY[r].color : '#b7a3d6'}" data-act="collRarity" data-r="${r}">${r ? '★'.repeat(r) : 'Toutes'}</button>`).join('');
   const filChips = [['', 'Tout'], ['owned', '✓ Obtenues'], ['new', `🆕 Nouvelles ${nNew}`], ['shiny', `✨ Brillantes ${g.shinies}`], ['dups', `🃏 Doublons ${nDup}`], ['aw', `🔮 Éveillées ${nAw}`]]
     .map(([k, l]) => `<button class="chip ${fil === k ? 'on' : ''}" data-act="collFilter" data-f="${k}">${l}</button>`).join('');
   return `<section class="coll-head"><div><b>${ownedForms}</b> / ${all.length} cartes${g.shinies ? ` · ✨ ${g.shinies} brillantes` : ''}</div><div class="xpbar"><span style="width:${Math.round(ownedForms / all.length * 100)}%"></span></div></section>
@@ -441,7 +441,7 @@ export const actions = {
     const pick = [...(chalPick(ws).length ? chalPick(ws) : [0, 0, 0])];
     pick[Number(el.dataset.lv)] = Number(el.dataset.i);
     S.game.chal[wk] = { pick, u: Date.now() }; touch(S.game); save();
-    burst(el, '#f5b700'); ui.sheet = { ...ui.sheet };
+    burst(el, '#d8b26e'); ui.sheet = { ...ui.sheet };
   },
   // Valider : les défis par défaut comptent comme choisis (le rappel du lundi disparaît)
   chalConfirm() {

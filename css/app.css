@@ -1550,3 +1550,55 @@ form[data-type=list] .if-list{display:block}
 .ui-icon{display:flex;gap:12px;align-items:flex-start;margin-top:14px;padding-top:12px;border-top:1px solid var(--line)}
 .ui-icon img{flex:none;width:48px;height:48px;border-radius:12px}
 .ui-icon p{margin:0}
+
+/* ================= Glow Up : couche douce (clean girl / zen) ================= */
+/* Surprises : petite pochette (rose poudré), coffret (lavande nacrée), grand coffret (champagne) ; un nœud à la place du cadenas */
+.chest{--cb1:#f3c9cf;--cb2:#d993a0;--cl1:#fbe3e6;--cl2:#e8aab5;--band1:#fffaf7;--band2:#f1d6d2;--cc:#f2b8c4}
+.chest.t-c{--cb1:#d9cdee;--cb2:#a593cc;--cl1:#efe8fa;--cl2:#c2b2e2;--band1:#fff6e8;--band2:#e6c9a6;--cc:#c9b8ea}
+.chest.t-g{--cb1:#f2e1c4;--cb2:#cfae7d;--cl1:#fbf3e3;--cl2:#e6cfa5;--band1:#fde7ec;--band2:#e3a6b4;--cc:#ead2a4}
+.chest .ch-body{box-shadow:inset 0 -.05em 0 rgba(120,70,60,.14),inset 0 .025em 0 rgba(255,255,255,.5),0 .06em .12em rgba(120,80,60,.18)}
+.chest .ch-lid{box-shadow:inset 0 .035em 0 rgba(255,255,255,.7),inset 0 -.04em 0 rgba(120,70,60,.1),0 .02em .04em rgba(120,80,60,.15)}
+.chest .ch-lock{background:none;box-shadow:none;width:auto;height:auto;top:-.19em;font-size:.3em;line-height:1}
+.chest .ch-lock::after{content:"🎀";position:static;display:block;width:auto;height:auto;background:none;transform:none}
+.chest.mini .ch-lock{top:-.24em;font-size:.36em}
+.ch-gems i{border-radius:50%;transform:none;background:radial-gradient(circle at 35% 30%,#fff,var(--gc));box-shadow:0 0 .03em rgba(255,255,255,.8)}
+.ch-gems i:nth-child(1){--gc:#f6d5dc}
+.ch-gems i:nth-child(2){--gc:#f4efe8}
+.ch-gems i:nth-child(3){--gc:#e2d6f2}
+.chest.t-g:not(.mini)::after{color:#fff;text-shadow:0 0 .3em #f2d3a2}
+/* Titres plus fins et aérés */
+h1,h2,h3{font-weight:600;letter-spacing:0}
+h1{font-size:34px}
+/* Niveau : titre champagne, ombres légères */
+.lv-card{box-shadow:0 10px 30px rgba(80,55,40,.18)}
+.lv-card::after{background:radial-gradient(circle,rgba(255,235,210,.28),transparent 70%)}
+.lv-title{color:#f6e3c3}
+.xpbar span{box-shadow:0 0 8px rgba(240,210,190,.5)}
+/* PP : photo de profil ronde */
+.lv-avatar{overflow:visible}
+.lv-avatar img{width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 18%;filter:none;position:relative;z-index:1}
+.comp-art img{border-radius:50%;object-fit:cover;object-position:50% 18%;filter:none;box-shadow:0 10px 26px rgba(80,55,40,.18);background:var(--card2);position:relative;z-index:1}
+.comp-art .mood-ico,.lv-avatar .mood-ico{z-index:3}
+/* Accueil : halo doux au lieu de l'ombre violette */
+.hero{box-shadow:0 14px 36px color-mix(in oklab,var(--accent) 22%,transparent)}
+.hero::before,.hero::after{background:rgba(255,255,255,.12)}
+/* Bannières et surprises à ouvrir : tons de la palette */
+.ban{box-shadow:0 10px 26px color-mix(in oklab,var(--bc) 30%,transparent),inset 0 0 0 1px rgba(255,255,255,.3)}
+:root .box-banner{background:linear-gradient(120deg,color-mix(in oklab,var(--accent) 80%,#000) 0%,var(--accent) 55%,color-mix(in oklab,var(--accent2) 85%,#fff) 100%);box-shadow:0 8px 22px color-mix(in oklab,var(--accent) 25%,transparent)}
+/* Duel magique : mauve poudré plutôt que rouge sang */
+.boss-card{background:linear-gradient(120deg,#5b4152 0%,#8a6178 55%,#b98a9d 100%);box-shadow:0 8px 22px rgba(110,70,90,.25)}
+.boss-card::after{background:radial-gradient(circle at 10% 50%,rgba(255,220,235,.3),transparent 45%)}
+.boss-card.legend{background:linear-gradient(120deg,#5a4630 0%,#977652 50%,#c9a77a 100%);box-shadow:0 8px 24px rgba(150,115,70,.3),inset 0 0 0 2px #ecd3a6}
+.bc-fill{background:linear-gradient(90deg,#f3c3d1,#e8b9a4,#f1dcc0)}
+.bc-hp{background:rgba(40,20,30,.28)}
+.bc-hp.big{background:#4a3340}
+.bc-leg{background:#ecd3a6;color:#4a3420}
+.bs-head.legend .bc-portrait{box-shadow:0 0 0 3px #ecd3a6,0 0 20px rgba(220,190,140,.55)}
+.comp-warn{background:color-mix(in oklab,var(--accent2) 12%,var(--card));border-color:color-mix(in oklab,var(--accent2) 35%,transparent)}
+.demo-bar{background:repeating-linear-gradient(135deg,#b39ccf 0 14px,#a58fc4 14px 28px)}
+/* Cartes : fond pastel autour de l'image, carte de secours élégante */
+.cg-fallback{font-size:2.2em;opacity:.8}
+.overlay .card-g .cg-inner{background:radial-gradient(circle at 50% 38%,color-mix(in oklab,var(--rc) 40%,#3a2c3a) 0%,#2b2230 72%)}
+/* Grands écrans (ouverture, niveau, bilans) : nuit douce mauve-taupe au lieu du violet profond */
+.overlay{background:radial-gradient(circle at 50% 40%,#5a4358 0%,#2a2029 60%,#151014 100%)}
+.speech{color:#3b3129}

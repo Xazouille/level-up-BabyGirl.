@@ -17,9 +17,9 @@ import { burst, confetti, buzz, floatText } from '../fx.js';
 export const MOODS = ['', '😞', '😕', '😐', '🙂', '😄'];
 const MOOD_NAMES = ['', 'Pas terrible', 'Bof', 'Normal', 'Bien', 'Super'];
 
-const CHEERS0 = ['Une case pour lancer la machine 💪', 'Chaque jour compte. On commence ?', 'Le premier pas est le plus important.', 'Aujourd’hui, tu construis la version de demain.'];
-const CHEERS_LOW = ['Bon début, continue sur ta lancée !', 'C’est parti, une case après l’autre.', 'La machine est lancée 🚀'];
-const CHEERS = ['Belle lancée, continue !', 'Tu es dans le rythme 🔥', 'Ça avance, ne lâche rien.', 'Plus de la moitié, bravo !'];
+const CHEERS0 = ['Une petite case pour commencer en douceur 🌸', 'Chaque jour compte. On commence ?', 'Le premier pas est le plus joli.', 'Aujourd’hui, tu prends soin de la Célia de demain.'];
+const CHEERS_LOW = ['Joli début, continue tout en douceur !', 'Une case après l’autre, sans pression.', 'Ta journée prend forme 🫧'];
+const CHEERS = ['Belle lancée, continue !', 'Tu es dans ton flow ✨', 'Ça avance tout en douceur.', 'Plus de la moitié, bravo !'];
 
 // Dernier total des comptes noté avant le jour k
 function prevMoney(k) {
@@ -52,7 +52,7 @@ function kindCard() {
     <b>Ta série de ${plural(n, 'jour', 'jours')} s’est arrêtée${gap > 1 ? '' : ' hier'}.</b>
     <p>${gap > 1 ? 'Ces derniers jours étaient plus compliqués, et c’est normal. ' : 'Pas grave : '}rater un jour ne change presque rien à une habitude qui se construit. Ce qui compte, c’est de reprendre aujourd’hui : une case suffit pour relancer la machine.</p>
     <small class="muted">Tes ${n} jours restent acquis${best > n ? ` · ton record : ${best} jours` : ' · c’est ton record, il t’attend'}.</small>
-    <button class="btn sm primary" data-act="kindOk" data-k="${last}">C’est reparti 💪</button></div></section>`;
+    <button class="btn sm primary" data-act="kindOk" data-k="${last}">C’est reparti 🌷</button></div></section>`;
 }
 
 // Nouvelle semaine : choisir ses défis (jusqu'au mardi soir)
@@ -102,7 +102,7 @@ function hero(k, n, c) {
   const pct = n ? c / n : 0, R = 52, C = 2 * Math.PI * R;
   const st = globalStreak(), perfect = isPerfect(k), isToday = k === todayKey(), need = perfectNeed(n);
   const rnd = seeded(k);
-  const msg = perfect ? (c < n ? `Journée parfaite ! Encore ${plural(n - c, 'case', 'cases')} pour tout cocher 🏆` : 'Journée parfaite et tout coché ! Tu es une machine 🏆')
+  const msg = perfect ? (c < n ? `Journée parfaite ! Encore ${plural(n - c, 'case', 'cases')} pour tout cocher 🏆` : 'Journée parfaite et tout coché ! Tu rayonnes ✨')
     : c === 0 ? CHEERS0[Math.floor(rnd() * CHEERS0.length)]
     : need - c <= 2 ? `Plus que ${plural(need - c, 'case', 'cases')} pour une journée parfaite (+${PERFECT_BONUS} XP) !`
     : pct < 0.5 ? CHEERS_LOW[Math.floor(rnd() * CHEERS_LOW.length)]
@@ -166,7 +166,7 @@ export function render() {
     const xpTxt = done ? `+${per[d.id] ?? d.xp} XP` : `${d.xp} XP${d.m && d.m.kind !== 'none' ? '+' : ''}`;
     const weak = g.boss.current && g.boss.current.weak === d.id;
     return `<button class="tile ${done ? 'on' : ''} ${ui.justDone === d.id ? 'pop' : ''} ${weak ? 'weak' : ''}" style="--c:${d.color}" data-act="toggle" data-id="${d.id}" aria-pressed="${done}">
-      <span class="t-emoji">${d.emoji}${m ? `<span class="t-lv" style="--rk:${RANKS[m.rank][1]}" title="Maîtrise : niveau ${m.level}">${m.level}</span>` : ''}</span>${weak ? '<span class="t-weak" title="Point faible du boss : dégâts ×2">⚔️×2</span>' : ''}
+      <span class="t-emoji">${d.emoji}${m ? `<span class="t-lv" style="--rk:${RANKS[m.rank][1]}" title="Maîtrise : niveau ${m.level}">${m.level}</span>` : ''}</span>${weak ? '<span class="t-weak" title="Point faible du duel : compte double">⚔️×2</span>' : ''}
       <span class="t-body"><span class="t-name">${esc(d.name)}</span><span class="t-hint">${esc(lab || d.hint || '')}</span></span>
       <span class="t-foot"><span class="t-xp">${xpTxt}</span>${s > 0 ? `<span class="t-streak">🔥${s}</span>` : ''}</span>
       <span class="t-check">${ico('check')}</span>
@@ -175,10 +175,10 @@ export function render() {
   const day = S.days[k];
   const comp = g.companion;
   return `<header class="page-head hello">
-      <div><p class="eyebrow">${fmtLong(parseKey(todayKey()))}</p><h1>Salut ${esc(S.profile.name || 'toi')} 👋</h1></div>
+      <div><p class="eyebrow">${fmtLong(parseKey(todayKey()))}</p><h1>Coucou ${esc(S.profile.name || 'toi')} 🌸</h1></div>
     </header>
     ${levelCard(true)}
-    ${g.boxes.total ? `<button class="box-banner" data-act="openBox"><span class="bb-chests">${['g', 'c', 'p'].filter(t => g.boxes[t]).map(t => `<span class="bb-c">${chestHTML(t, 'mini')}<b>${g.boxes[t]}</b></span>`).join('')}</span><b class="bb-txt">${plural(g.boxes.total, 'box à ouvrir', 'box à ouvrir')} !</b><span class="bb-go">Invoquer ${ico('chev')}</span></button>` : ''}
+    ${g.boxes.total ? `<button class="box-banner" data-act="openBox"><span class="bb-chests">${['g', 'c', 'p'].filter(t => g.boxes[t]).map(t => `<span class="bb-c">${chestHTML(t, 'mini')}<b>${g.boxes[t]}</b></span>`).join('')}</span><b class="bb-txt">${plural(g.boxes.total, 'surprise à ouvrir', 'surprises à ouvrir')} !</b><span class="bb-go">Ouvrir ${ico('chev')}</span></button>` : ''}
     <div class="segs days">${days}</div>
     ${hero(k, n, c)}
     ${habitStrip(k)}
@@ -252,17 +252,17 @@ function afterCheck(id, wasPerfect, before) {
   // Dégâts au boss (ou K.O. : l'écran de victoire s'affiche ensuite)
   const b = g.boss.current;
   if (before && b && b.n === before.n && b.dmg > before.dmg) {
-    floatText(el, `⚔️ −${b.dmg - before.dmg}`, 'dmg');
+    floatText(el, `✨ −${b.dmg - before.dmg}`, 'dmg');
     setTimeout(() => { const c = document.querySelector('.boss-card'); if (c) { c.classList.remove('hit'); void c.offsetWidth; c.classList.add('hit'); } }, 40);
   } else if (before && (!b || b.n !== before.n)) floatText(el, '💥 K.O. !', 'dmg');
   if (!wasPerfect && isPerfect(k)) {
     setTimeout(() => { confetti(); buzz([30, 60, 30]); }, 250);
-    banner({ icon: '🏆', title: 'Journée parfaite !', sub: `+${PERFECT_BONUS} XP bonus · coup critique sur le boss · tu es une machine`, color: '#f59e0b', cls: 'gold-ban' });
+    banner({ icon: '🏆', title: 'Journée parfaite !', sub: `+${PERFECT_BONUS} XP bonus · coup critique dans ton duel · tu rayonnes ✨`, color: '#d4a373', cls: 'gold-ban' });
   }
   // « Presque ! » : plus qu'une case pour la petite pochette, la journée parfaite, ou le boss presque à terre
   if (k !== todayKey()) return;
   const nd = nudges().find(x => ((x.key === 'small' || x.key === 'perfect') && x.left === 1) || (x.key === 'boss' && x.pct <= 10));
-  if (nd && !shown.has(k + nd.key)) { shown.add(k + nd.key); banner({ icon: nd.ico, title: 'Presque !', sub: nd.txt, color: '#ff4fa3' }); }
+  if (nd && !shown.has(k + nd.key)) { shown.add(k + nd.key); banner({ icon: nd.ico, title: 'Presque !', sub: nd.txt, color: '#d7a1bd' }); }
 }
 
 export const actions = {
@@ -326,7 +326,7 @@ export const actions = {
   mood(el) {
     const v = Number(el.dataset.v), cur = S.days[ui.day] && S.days[ui.day].mood;
     setMood(ui.day, cur === v ? 0 : v); save();
-    if (cur !== v) { burst(el, '#f5b700'); buzz(10); }
+    if (cur !== v) { burst(el, '#d8b26e'); buzz(10); }
   },
   shuffleQuote() { ui.quoteShift = (ui.quoteShift || 0) + 1; },
   habitsOpen() { ui.tab = 'growth'; ui.growthTab = 'habits'; setPref('tab', 'growth'); scrollTo({ top: 0 }); },

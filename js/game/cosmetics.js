@@ -45,8 +45,8 @@ export function howTo(need) {
   if (!need) return 'Disponible';
   if (need.level) return `Niveau ${need.level}`;
   if (need.rank) return `Rang ${RANKS[need.rank][0]} dans un domaine`;
-  if (need.bosses) return `Relever ${need.bosses} défis de méchantes`;
-  if (need.legends) return `Relever ${need.legends} défis légendaires`;
+  if (need.bosses) return `Gagner ${need.bosses} duels`;
+  if (need.legends) return `Gagner ${need.legends} duels légendaires`;
   if (need.album) { const a = ALBUMS.find(x => x.id === need.album); return `Album « ${a ? a.name : need.album} »`; }
   if (need.albums) return `Compléter ${need.albums} albums`;
   if (need.badge) { const b = badgeDefs().find(x => x.id === need.badge); return `Badge « ${b ? b.name : need.badge} »`; }

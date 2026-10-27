@@ -17,9 +17,9 @@ export function nudges() {
   const b = g.boss.current;
   if (b) {
     const pct = Math.round((b.hp - b.dmg) / b.hp * 100), wd = doms.find(d => d.id === b.weak);
-    if (pct <= 25) out.push({ key: 'boss', p: 95, ico: '⚔️', pct, txt: `${b.name} n’a plus que ${pct} % de vie : achève-le !` });
-    else if (!b.left) out.push({ key: 'bosslast', p: 82, ico: '⏳', txt: `Dernier jour pour battre ${b.name} (encore ${pct} % de vie)` });
-    if (wd && !isDone(k, wd.id) && pct > 25) out.push({ key: 'weak', p: 38, ico: wd.emoji, txt: `${wd.name} fait double dégâts à ${b.name}` });
+    if (pct <= 25) out.push({ key: 'boss', p: 95, ico: '🪄', pct, txt: `${b.name} n’a plus que ${pct} % d’énergie : termine ce duel !` });
+    else if (!b.left) out.push({ key: 'bosslast', p: 82, ico: '⏳', txt: `Dernier jour pour ton duel contre ${b.name} (encore ${pct} % d’énergie)` });
+    if (wd && !isDone(k, wd.id) && pct > 25) out.push({ key: 'weak', p: 38, ico: wd.emoji, txt: `${wd.name} compte double contre ${b.name}` });
   }
 
   const st = globalStreak();

@@ -7,7 +7,7 @@ import { goalProgress as progress, goalXP, STEP_XP } from '../game/rules.js';
 
 export const HORIZONS = [['annee', 'Cette année'], ['trimestre', 'Ce trimestre'], ['mois', 'Ce mois-ci'], ['semaine', 'Cette semaine'], ['libre', 'Sans échéance']];
 const TYPES = [['count', '🔢 Chiffré', 'Atteindre un nombre : 20 livres, 300 km…'], ['steps', '🪜 À étapes', 'Une liste d’étapes à valider'], ['simple', '✅ Simple', 'Fait ou pas fait']];
-const EMOJIS = ['🎯', '📚', '🏃', '💰', '🎓', '♟️', '🧘', '💪', '🚀', '🏆', '✈️', '🍎', '💼', '🎸', '🧠', '❤️'];
+const EMOJIS = ['🎯', '📚', '🧘‍♀️', '🎓', '🌸', '🎨', '💪', '✈️', '🍎', '💼', '🎹', '🧠', '🤍', '🌿', '💰', '✨'];
 
 const colorOf = g => COLORS[[...g.id].reduce((a, c) => a + c.charCodeAt(0), 0) % COLORS.length];
 

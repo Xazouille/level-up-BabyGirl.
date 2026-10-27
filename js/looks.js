@@ -94,7 +94,7 @@ export const LAYOUTS = [
   { id: 'classique', name: 'Classique', desc: 'Grandes cases sur 2 colonnes' },
   { id: 'liste', name: 'Liste', desc: 'Une ligne par case, plus compact' },
   { id: 'mosaique', name: 'Mosaïque', desc: 'Petites cases sur 3 colonnes : tout d’un coup d’œil' },
-  { id: 'epuree', name: 'Épurée', desc: 'Liste sans boss ni rappels, sans ombres : juste l’essentiel' },
+  { id: 'epuree', name: 'Épurée', desc: 'Liste sans duel ni rappels, sans ombres : juste l’essentiel' },
 ];
 
 export const uiOf = id => UIS.find(u => u.id === id) || UIS[0];

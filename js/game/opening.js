@@ -175,7 +175,7 @@ function spread() {
 }
 
 const tagOf = c => (c.shinyNew ? '✨ BRILLANTE' : c.isNew ? 'NOUVEAU' : c.shiny ? `✨ +${SHINY_DUP} 💎` : `DOUBLON ×${c.dups}`);
-const RAINBOW = ['#ffd700', '#ff6ad5', '#7c5cff', '#00d4ff', '#ffffff'];
+const RAINBOW = ['#ffd700', '#ff6ad5', '#a395cf', '#00d4ff', '#ffffff'];
 
 function flipCard(i) {
   if (!layer || !pack || flipped[i] || busy) return;
@@ -305,10 +305,10 @@ export function showBossKO(b) {
   const next = G().boss.current ? 'Le prochain boss est déjà là !' : 'Le prochain boss arrive demain.';
   show(`<div class="boss-ko ${b.legendary ? 'legend' : ''}">
       <div class="ov-rays"></div>
-      <p class="ov-kicker">${b.legendary ? 'Boss légendaire vaincu' : 'Boss vaincu'}</p>
+      <p class="ov-kicker">${b.legendary ? 'Duel légendaire gagné' : 'Duel gagné'}</p>
       <div class="ko-stage"><img class="ko-img" src="${esc(b.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"><span class="ko-txt">K.O. !</span></div>
       <h2>${esc(b.name)} est vaincu !</h2>
-      <p class="ov-msg">En ${plural(days, 'jour', 'jours')} · ${b.hp.toLocaleString('fr-FR')} PV détruits</p>
+      <p class="ov-msg">En ${plural(days, 'jour', 'jours')} · ${b.hp.toLocaleString('fr-FR')} d’énergie dissipée</p>
       <div class="lv-rewards">
         <span class="lv-rw" style="--i:0">${chestHTML('g', 'mini')}<b>${b.legendary ? '2 × ' : ''}Grand coffret</b></span>
         <span class="lv-rw" style="--i:1"><span class="ko-card">${cardHTML(L.base, { size: 'sm' })}</span><b>Sa carte</b></span>
@@ -329,7 +329,7 @@ export function showRecap(r) {
   const delta = r.pct - r.prevPct;
   const lines = [];
   if (r.best) lines.push(`${r.best.d.emoji} Domaine phare : <b>${esc(r.best.d.name)}</b> (${r.best.n}/7)`);
-  for (const x of r.bosses) lines.push(x.won ? `⚔️ ${esc(x.name)} vaincu` : `💨 ${esc(x.name)} s’est enfui`);
+  for (const x of r.bosses) lines.push(x.won ? `🪄 Duel gagné contre ${esc(x.name)}` : `💨 ${esc(x.name)} a filé`);
   if (r.mood) lines.push(`${MOODS[Math.round(r.mood)]} Humeur moyenne : <b>${r.mood.toFixed(1).replace('.', ',')}/5</b>`);
   if (r.record) lines.push('🏆 <b>Nouveau record</b> : ta meilleure semaine en XP !');
   const wins = winsBetween(G(), key(r.ws), key(sun)).sort((a, b) => b.big - a.big);
@@ -389,12 +389,12 @@ export function showMonthRecap(mk) {
       <ul class="rc-lines">
         ${a.best ? `<li>${a.best.d.emoji} Ton point fort : <b>${esc(a.best.d.name)}</b> (${a.best.n} jours)</li>` : ''}
         ${a.low && a.low !== a.best ? `<li>${a.low.d.emoji} À travailler : <b>${esc(a.low.d.name)}</b> (${a.low.n} jours)</li>` : ''}
-        ${a.bosses ? `<li>⚔️ ${plural(a.bosses, 'boss vaincu', 'boss vaincus')}</li>` : ''}
+        ${a.bosses ? `<li>🪄 ${plural(a.bosses, 'duel gagné', 'duels gagnés')}</li>` : ''}
         ${a.skills ? `<li>🧠 ${plural(a.skills, 'séance', 'séances')} de compétence</li>` : ''}
         ${a.mood ? `<li>🙂 Humeur moyenne : <b>${a.mood.toFixed(1).replace('.', ',')}/5</b></li>` : ''}
       </ul>
       <div class="mr-form">
-        ${q('good', '✅ Qu’est-ce qui a bien marché ?', 'Ce dont tu es fier ce mois-ci…')}
+        ${q('good', '✅ Qu’est-ce qui a bien marché ?', 'Ce dont tu es fière ce mois-ci…')}
         ${q('bad', '🧱 Qu’est-ce qui t’a bloqué ?', 'Ce qui t’a freiné, et pourquoi…')}
         ${q('focus', '🎯 Ton focus pour le mois prochain ?', 'Une priorité claire (elle s’affichera chaque jour)')}
         <div class="mr-q mr-why"><span>🤔 Est-ce que tu le fais encore pour toi, ou pour le jeu ?</span>

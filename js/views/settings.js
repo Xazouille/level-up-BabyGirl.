@@ -36,10 +36,10 @@ export function renderMore() {
   const item = (tab, emoji, title, sub, c) => `<button class="hub" style="--c:${c}" data-act="tab" data-tab="${tab}"><span class="hub-emoji">${emoji}</span><span><b>${title}</b><small>${sub}</small></span>${ico('chev')}</button>`;
   return `<header class="page-head"><h1>Plus</h1></header>
     <div class="hubs">
-      ${item('media', '🍿', 'Médiathèque', `${S.media.length} films, livres, mangas, animés, séries`, '#ff4fa3')}
-      ${item('growth', '🌱', 'Progrès', 'Qui je suis, victoires, compétences, habitudes, bilans', '#22c55e')}
-      ${item('vision', '🌅', 'Ma vision', 'Ce que je pense, qui je veux devenir', '#ff8a3d')}
-      ${item('settings', '⚙️', 'Réglages', 'Domaines, thème, synchro, sauvegarde', '#4f8cff')}
+      ${item('media', '🍿', 'Médiathèque', `${S.media.length} films, livres, mangas, animés, séries`, '#d7a1bd')}
+      ${item('growth', '🌱', 'Progrès', 'Qui je suis, victoires, compétences, habitudes, bilans', '#9cb48a')}
+      ${item('vision', '🌅', 'Ma vision', 'Ce que je pense, qui je veux devenir', '#e0b18f')}
+      ${item('settings', '⚙️', 'Réglages', 'Domaines, thème, synchro, sauvegarde', '#8aa6c1')}
     </div>`;
 }
 
@@ -201,7 +201,7 @@ export const actions = {
   importData() { document.getElementById('importFile').click(); },
   resetData() {
     if (!confirm('Tout effacer ? Cette action est définitive (sauf si tu as une sauvegarde).')) return;
-    if (!confirm('Vraiment sûr ? Toute ta progression sera perdue.')) return;
+    if (!confirm('Vraiment sûre ? Toute ta progression sera perdue.')) return;
     resetAll(); toast('Tout est effacé. Nouveau départ 🚀');
   },
 };

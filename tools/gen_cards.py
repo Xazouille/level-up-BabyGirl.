@@ -11,8 +11,10 @@ import json, re, sys, time, os, io, unicodedata, urllib.parse, urllib.request
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 UA = 'GlowUpCelia/1.0 (appli perso; github.com/Xazouille)'
-BAD = ['gif', 'comic', 'icon', 'logo', 'sticker', 'video', 'screenshot', 'episode', 'ep ', 'title card', 'sprite', 'chibi', 'doll', 'box', 'most like', 'quiz', 'attack', 'power', '~', ' and ', 'game', 'perfect', 'concept', 'actor', 'cast']
+BAD = ['gif', 'comic', 'icon', 'logo', 'sticker', 'video', 'screenshot', 'episode', 'ep ', 'title card', 'sprite', 'chibi', 'doll', 'box', 'most like', 'quiz', 'attack', 'power', '~', ' and ', 'game', 'perfect', 'concept', 'actor', 'cast', 'vk', 'wallpaper', 'banner', 'series', '.com', 'logo']
 cache = {}
+# Transformations dont les fichiers « 2D » / « Stock » sont des bannières : on garde la recherche simple
+PLAIN = {'Sirenix', 'Cosmix'}
 
 
 def api(wiki, **params):
@@ -94,7 +96,7 @@ def expand(series):
         if L.get('transfo'):
             for i, (t, saga) in enumerate(zip(series['transfo'], series['transfoSaga'])):
                 forms.append({'id': L['id'] + ('' if i == 0 else '-' + norm(t).replace(' ', '-')), 'name': L['name'] if i == 0 else f"{L['name']} {t}",
-                              'saga': saga, 'q': [f'page:{page}'] if i == 0 else [f'file:{page} {t} 2D', f'file:{page} {t} Stock', f'file:{page} {t}']})
+                              'saga': saga, 'q': [f'page:{page}'] if i == 0 else ([f'file:{page} {t}'] if t in PLAIN else [f'file:{page} {t} 2D', f'file:{page} {t} Stock', f'file:{page} {t}'])})
         elif L.get('gens'):
             q = {'G1': [f'page:{page} (G1)', f'page:{page}'], 'G2': [f'file:MH-G2 {page}', f'file:{page} G2'], 'G3': [f'file:MH-G3 {page} 2D', f'file:MH-G3 {page}', f'file:{page} G3']}
             for i, (g, saga) in enumerate(series['gens']):

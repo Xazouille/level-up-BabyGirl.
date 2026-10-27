@@ -129,7 +129,7 @@ export const actions = {
   skillStar(el) {
     const sk = skill(el.dataset.id), s = Number(el.dataset.s);
     sk.stars = sk.stars === s && s > 1 ? s - 1 : s; touch(sk); save();
-    burst(el, '#f5b700'); buzz(10);
+    burst(el, '#d8b26e'); buzz(10);
   },
   skillEmoji(el) {
     const sk = skill(el.dataset.id), i = SKILL_EMOJIS.indexOf(sk.emoji || '🧠');
@@ -142,7 +142,7 @@ export const actions = {
     const st = G().habits.find(x => x.id === h.id), n = st ? st.cur : 0;
     h.resets = [...(h.resets || []), todayKey()]; touch(h); save();
     // Une rechute n'efface pas le chemin fait : c'est la façon de la vivre qui compte pour la suite
-    toast(n >= 2 ? `Une rechute n’efface pas tes ${n} jours. Tu sais que tu en es capable : on repart demain 💪` : 'Pas grave : une rechute fait partie du chemin. On repart demain 💪');
+    toast(n >= 2 ? `Une rechute n’efface pas tes ${n} jours. Tu sais que tu en es capable : on repart demain 🌷` : 'Pas grave : une rechute fait partie du chemin. On repart demain 💪');
   },
   habitUndo(el) { const h = habit(el.dataset.id); h.resets = (h.resets || []).filter(k => k !== todayKey()); touch(h); save(); },
   habitDel(el) { const h = habit(el.dataset.id); if (confirm(`Supprimer « ${h.name} » et son compteur ?`)) del('habits', h.id); },
@@ -167,6 +167,6 @@ export const forms = {
     const name = (f.name || '').trim();
     if (!name) return false;
     S.habits.push({ id: newId(), name, emoji: HABIT_EMOJIS[S.habits.length % HABIT_EMOJIS.length], start: todayKey(), resets: [], u: Date.now() }); save();
-    toast('C’est parti : le compteur démarre aujourd’hui 💪');
+    toast('C’est parti : le compteur démarre aujourd’hui 🌱');
   },
 };

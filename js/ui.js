@@ -67,7 +67,7 @@ function nextBanner() {
   if (!root) { root = document.createElement('div'); root.id = 'banners'; document.body.appendChild(root); }
   const el = document.createElement('button');
   el.className = 'ban ' + (b.cls || '');
-  el.style.setProperty('--bc', b.color || '#9b6bff');
+  el.style.setProperty('--bc', b.color || '#b7a3d6');
   el.innerHTML = `<span class="ban-ico">${b.icon || '🎉'}</span><span class="ban-txt"><b>${esc(b.title)}</b>${b.sub ? `<small>${esc(b.sub)}</small>` : ''}</span><span class="ban-shine"></span>`;
   let done = false;
   const hide = () => {

@@ -121,7 +121,7 @@ function checkProgress() {
     const fresh = awardBadges();
     if (fresh.length) changed = true;
     if (changed) { touch(S.game); save(); }
-    fresh.slice(0, 4).forEach(b => banner({ icon: b.emoji, title: `Badge : ${b.name}`, sub: `+${b.xp} XP${b.box ? ` · ${TIERS[b.box].name} offerte` : ''}`, color: '#f5b700', cls: 'badge-ban' }));
+    fresh.slice(0, 4).forEach(b => banner({ icon: b.emoji, title: `Badge : ${b.name}`, sub: `+${b.xp} XP${b.box ? ` · ${TIERS[b.box].name} offerte` : ''}`, color: '#d8b26e', cls: 'badge-ban' }));
     if (fresh.length > 4) banner({ icon: '🏅', title: `Et ${fresh.length - 4} autres badges !`, sub: 'Jeu → Badges' });
 
     const g = G(), lv = g.lvl.level, seenLv = Number(pref('seenLevel') || 0);
@@ -163,7 +163,7 @@ function checkProgress() {
     else if (hist.length > Number(bSeen)) {
       const fresh = hist.slice(Number(bSeen));
       setPref('bossSeen', hist.length);
-      fresh.filter(b => !b.won).forEach(b => banner({ icon: '💨', title: `${b.name} s’est enfui…`, sub: 'Il reviendra plus tard. Un nouveau boss t’attend !', color: '#64748b' }));
+      fresh.filter(b => !b.won).forEach(b => banner({ icon: '💨', title: `${b.name} a filé…`, sub: 'Revanche plus tard. Un nouveau duel t’attend 🌸', color: '#a09486' }));
       const won = fresh.filter(b => b.won);
       if (won.length) { showBossKO(won[won.length - 1]); return; }
     }
@@ -191,7 +191,7 @@ function announceRecords(g) {
   let rs = null;
   try { rs = JSON.parse(pref('records')); } catch (e) {}
   if (!rs) { setPref('records', JSON.stringify({ ...cur, dayK: '', weekK: '' })); return; }
-  const out = { ...rs, dom: { ...(rs.dom || {}) } }, ban = (icon, title, sub) => banner({ icon, title, sub, color: '#f59e0b', cls: 'gold-ban' });
+  const out = { ...rs, dom: { ...(rs.dom || {}) } }, ban = (icon, title, sub) => banner({ icon, title, sub, color: '#d4a373', cls: 'gold-ban' });
   const enough = Object.keys(S.days).length >= 14;
   if (cur.day > rs.day) { if (enough && rec.day.k === tk && rs.dayK !== tk) { ban('🏆', 'Record : ta meilleure journée !', `${cur.day} XP aujourd’hui`); out.dayK = tk; } out.day = cur.day; }
   if (cur.week > rs.week) { if (enough && rec.week.k === wk && rs.weekK !== wk) { ban('📈', 'Record : ta meilleure semaine !', `${cur.week.toLocaleString('fr-FR')} XP cette semaine`); out.weekK = wk; } out.week = cur.week; }
@@ -226,7 +226,7 @@ function announceAlbums(g) {
   const done = g.albums.filter(a => a.done).map(a => a.id);
   let al = null;
   try { al = JSON.parse(pref('albums')); } catch (e) {}
-  if (al) for (const a of g.albums) if (a.done && !al.includes(a.id)) banner({ icon: a.emoji, title: `Album complété : ${a.name} !`, sub: `Grand coffret + titre « ${a.title} »`, color: '#f59e0b', cls: 'gold-ban' });
+  if (al) for (const a of g.albums) if (a.done && !al.includes(a.id)) banner({ icon: a.emoji, title: `Album complété : ${a.name} !`, sub: `Grand coffret + titre « ${a.title} »`, color: '#d4a373', cls: 'gold-ban' });
   if (!al || done.length !== al.length) setPref('albums', JSON.stringify(done));
 }
 
@@ -240,13 +240,13 @@ function announceGrowth(g) {
   if (seen) {
     for (const h of g.habits) {
       const n = now.h[h.id], was = seen.h[h.id] ?? n;
-      if (n > was) { const st = HABIT_STEPS[n - 1]; banner({ icon: h.emoji || '🛑', title: `${st[0]} ${st[0] > 1 ? 'jours' : 'jour'} sans ${h.name} !`, sub: `+${st[1]} XP${st[2] ? ` · ${TIERS[st[2]].name} gagnée` : ''}`, color: '#22c55e', cls: 'gold-ban' }); }
+      if (n > was) { const st = HABIT_STEPS[n - 1]; banner({ icon: h.emoji || '🛑', title: `${st[0]} ${st[0] > 1 ? 'jours' : 'jour'} sans ${h.name} !`, sub: `+${st[1]} XP${st[2] ? ` · ${TIERS[st[2]].name} gagnée` : ''}`, color: '#9cb48a', cls: 'gold-ban' }); }
     }
     for (const s of g.skills) {
       const was = seen.s[s.id];
       if (was === undefined) continue;
-      if (was < 10 && s.sessions) banner({ icon: s.emoji || '🧠', title: `Nouvelle compétence : ${s.name} !`, sub: '+30 XP · première séance', color: '#6366f1' });
-      if (s.validated > was % 10) { const r = STAR_RULES[s.validated]; banner({ icon: '⭐', title: `${s.name} : ${s.validated}★ validées !`, sub: `+${r[1]} XP${r[2] ? ` · ${TIERS[r[2]].name} gagnée` : ''} · ta pratique paie`, color: '#f59e0b', cls: 'gold-ban' }); }
+      if (was < 10 && s.sessions) banner({ icon: s.emoji || '🧠', title: `Nouvelle compétence : ${s.name} !`, sub: '+30 XP · première séance', color: '#9d9fd1' });
+      if (s.validated > was % 10) { const r = STAR_RULES[s.validated]; banner({ icon: '⭐', title: `${s.name} : ${s.validated}★ validées !`, sub: `+${r[1]} XP${r[2] ? ` · ${TIERS[r[2]].name} gagnée` : ''} · ta pratique paie`, color: '#d4a373', cls: 'gold-ban' }); }
     }
   }
   if (JSON.stringify(now) !== JSON.stringify(seen)) setPref('growth', JSON.stringify(now));
@@ -287,8 +287,8 @@ function announceBoss(g) {
   if (!b || pref('bossCur') === String(b.n)) return;
   setPref('bossCur', b.n);
   const wd = S.domains.list.find(d => d.id === b.weak);
-  banner({ icon: b.legendary ? '🐉' : '⚔️', title: `${b.legendary ? 'Boss légendaire' : 'Nouveau boss'} : ${b.name} !`, sub: `${b.hp.toLocaleString('fr-FR')} PV · point faible ${wd ? wd.emoji + ' ' + wd.name : ''} · 7 jours pour le battre`,
-    color: b.legendary ? '#f59e0b' : '#ef4444', onTap: () => { ui.sheet = { kind: 'boss' }; render(); } });
+  banner({ icon: b.legendary ? '👑' : '🪄', title: `${b.legendary ? 'Duel légendaire' : 'Nouveau duel'} : ${b.name} !`, sub: `${b.hp.toLocaleString('fr-FR')} d’énergie · point faible ${wd ? wd.emoji + ' ' + wd.name : ''} · 7 jours pour le battre`,
+    color: b.legendary ? '#d4a373' : '#d98b8f', onTap: () => { ui.sheet = { kind: 'boss' }; render(); } });
 }
 setRender(render);
 onChange(render);
