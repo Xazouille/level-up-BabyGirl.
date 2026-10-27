@@ -3,47 +3,47 @@ wx-bloom-charmix                   winx.fandom.com · fichier File:Bloom Charmix
 wx-bloom-enchantix                 winx.fandom.com · fichier File:Bloom's Enchantix - Stock (2).png
 wx-bloom-believix                  winx.fandom.com · fichier File:Bloom believix stock art1.png
 wx-bloom-harmonix                  winx.fandom.com · fichier File:Bloom Harmonix - Stock Art 8.png
-wx-bloom-sirenix                   winx.fandom.com · fichier File:Bloom 2D Sirenix.jpg
+wx-bloom-sirenix                   winx.fandom.com · fichier File:Bloom sirenix.png
 wx-bloom-bloomix                   winx.fandom.com · fichier File:Bloom bloomix couture stock 2.png
 wx-bloom-mythix                    winx.fandom.com · fichier File:Bloom Mythix 2D.png
 wx-bloom-butterflix                winx.fandom.com · fichier File:Winx Club - Bloom Butterflix 2D (First Look, 2015).jpg
-wx-bloom-cosmix                    winx.fandom.com · fichier File:BloomCosmixStockArt(1).png
+wx-bloom-cosmix                    winx.fandom.com · fichier File:Bloom Cosmix.jpg
 wx-stella                          winx.fandom.com · page Stella → Stella_S8E16.png
 wx-stella-charmix                  winx.fandom.com · fichier File:Winx Club Specials Stella charmix stock art 4.png
 wx-stella-enchantix                winx.fandom.com · fichier File:Stella S8 Enchantix stock art 2.png
 wx-stella-believix                 winx.fandom.com · fichier File:Believix - Stella stock art.png
 wx-stella-harmonix                 winx.fandom.com · fichier File:Harmonix Stella.png
-wx-stella-sirenix                  winx.fandom.com · fichier File:Sirenix 2D WP Stella.png
+wx-stella-sirenix                  winx.fandom.com · fichier File:Sirenix Stella.png
 wx-stella-bloomix                  winx.fandom.com · fichier File:Stella bloomix couture stock 1.png
 wx-stella-mythix                   winx.fandom.com · fichier File:Stella Mythix 2D.png
 wx-stella-butterflix               winx.fandom.com · fichier File:Butterflix Stella.png
-wx-stella-cosmix                   winx.fandom.com · fichier File:Stella Cosmix stock art 3.png
+wx-stella-cosmix                   winx.fandom.com · fichier File:Stella Cosmix.jpg
 wx-flora                           winx.fandom.com · page Flora → Flora_S8E7.png
 wx-flora-charmix                   winx.fandom.com · fichier File:Flora Charmix - Stock Art.png
 wx-flora-enchantix                 winx.fandom.com · fichier File:Flora 3D Enchantix stock art 1.png
 wx-flora-believix                  winx.fandom.com · fichier File:Believix - Flora stock art.png
 wx-flora-harmonix                  winx.fandom.com · fichier File:Harmonix Flora.png
-wx-flora-sirenix                   winx.fandom.com · fichier File:Flora 2d sirenix.jpg
+wx-flora-sirenix                   winx.fandom.com · fichier File:Sirenix Flora.png
 wx-flora-bloomix                   winx.fandom.com · fichier File:Flora bloomix couture stock 1.png
 wx-flora-mythix                    winx.fandom.com · fichier File:Flora Mythix 2D.png
 wx-flora-butterflix                winx.fandom.com · fichier File:Butterflix Flora.png
-wx-flora-cosmix                    winx.fandom.com · fichier File:Flora cosmix stock art 1.png
+wx-flora-cosmix                    winx.fandom.com · fichier File:Flora Cosmix.jpg
 wx-musa                            winx.fandom.com · page Musa → Musa_S8E7.png
 wx-musa-charmix                    winx.fandom.com · fichier File:Musa Charmix - Stock Art.png
 wx-musa-enchantix                  winx.fandom.com · fichier File:Winx SOTLK Musa enchantix stock art 1.png
 wx-musa-believix                   winx.fandom.com · fichier File:Musa Believix Stock Art 2.png
 wx-musa-harmonix                   winx.fandom.com · fichier File:Harmonix Musa.png
-wx-musa-sirenix                    winx.fandom.com · fichier File:Sirenix 2d musa.jpg
+wx-musa-sirenix                    winx.fandom.com · fichier File:Sirenix Musa.png
 wx-musa-bloomix                    winx.fandom.com · fichier File:Musa bloomix couture stock 3.png
 wx-musa-mythix                     winx.fandom.com · fichier File:Musa Mythix 2D.png
 wx-musa-butterflix                 winx.fandom.com · fichier File:Butterflix Musa.png
-wx-musa-cosmix                     winx.fandom.com · fichier File:Musa cosmix stock art 1.png
+wx-musa-cosmix                     winx.fandom.com · fichier File:Musa Cosmix.jpg
 wx-tecna                           winx.fandom.com · page Tecna → Tecna_S8E11.png
 wx-tecna-charmix                   winx.fandom.com · fichier File:Tecna Charmix - Stock Art.png
 wx-tecna-enchantix                 winx.fandom.com · fichier File:Enchantix Tecna.png
 wx-tecna-believix                  winx.fandom.com · fichier File:Tecna-Believix-StockArt-1.png
 wx-tecna-harmonix                  winx.fandom.com · fichier File:Harmonix Tecna.png
-wx-tecna-sirenix                   winx.fandom.com · fichier File:Tecna 2D Sirenix.jpg
+wx-tecna-sirenix                   winx.fandom.com · fichier File:Sirenix Tecna.png
 wx-tecna-bloomix                   winx.fandom.com · fichier File:Tecna Bloomix.png
 wx-tecna-mythix                    winx.fandom.com · fichier File:Tecna Mythix 2D.png
 wx-tecna-butterflix                winx.fandom.com · fichier File:Butterflix Tecna.png
@@ -53,7 +53,7 @@ wx-aisha-charmix                   winx.fandom.com · fichier File:Aisha Charmix
 wx-aisha-enchantix                 winx.fandom.com · fichier File:Aisha enchantix stock art1.png
 wx-aisha-believix                  winx.fandom.com · fichier File:Believix - Aisha stock art.png
 wx-aisha-harmonix                  winx.fandom.com · fichier File:Aisha's Harmonix - Stock (2).png
-wx-aisha-sirenix                   winx.fandom.com · fichier File:Sirenix 2d aisha.jpg
+wx-aisha-sirenix                   winx.fandom.com · fichier File:Sirenix Aisha.png
 wx-aisha-bloomix                   winx.fandom.com · fichier File:Winx Aisha Bloomix crouching stock art.png
 wx-aisha-mythix                    winx.fandom.com · fichier File:Aisha Mythix 2D.png
 wx-aisha-butterflix                winx.fandom.com · fichier File:Butterflix Aisha.png
@@ -78,15 +78,12 @@ wx-digit                           winx.fandom.com · page Digit → Digit.png
 wx-piff                            winx.fandom.com · page Piff → Piff.png
 wx-kiko                            winx.fandom.com · page Kiko → Kiko_-_S8E1.png
 wx-icy                             winx.fandom.com · page Icy → Icy_S8.png
-wx-icy-gloomix                     winx.fandom.com · fichier File:Trix Gloomix Icy.png
 wx-icy-disenchantix                winx.fandom.com · fichier File:Icy Disenchantix - Episode 324.png
 wx-icy-dark-sirenix                winx.fandom.com · fichier File:Icy - Dark Sirenix - Stock Art.jpg
 wx-darcy                           winx.fandom.com · page Darcy → Darcy_S8.png
-wx-darcy-gloomix                   winx.fandom.com · fichier File:Trix Gloomix Darcy.png
 wx-darcy-disenchantix              winx.fandom.com · fichier File:Darcy Disenchantix - Stock Art.jpg
 wx-darcy-dark-sirenix              winx.fandom.com · fichier File:Darcy - Dark Sirenix - Stock Art.jpg
 wx-stormy                          winx.fandom.com · page Stormy → Stormy_S8.png
-wx-stormy-gloomix                  winx.fandom.com · fichier File:Trix Gloomix Stormy.png
 wx-stormy-disenchantix             winx.fandom.com · fichier File:Stormy Disenchantix - Episode 324.png
 wx-stormy-dark-sirenix             winx.fandom.com · fichier File:Stormy - Dark Sirenix - Stock Art.jpg
 wx-valtor                          winx.fandom.com · page Valtor → Valtor_S8E12.png
