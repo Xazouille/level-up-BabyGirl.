@@ -14,6 +14,10 @@ const NORMAL = [
   ['wx-selina', 'lecture', 'Selina vole les histoires : chaque page lue lui en reprend une.'],
   ['wx-politea', 'scroll', 'Politea se glisse partout comme un fil sans fin : pose ton téléphone.'],
   ['wx-ogron', 'creatif', 'Ogron absorbe la magie : ta créativité est plus forte que lui.'],
+  ['wx-duman', 'journal', 'Duman change de visage sans arrêt : écris qui tu es vraiment.'],
+  ['wx-gantlos', 'sport', 'Gantlos ne mise que sur la force brute : ton endurance le dépasse.'],
+  ['wx-anagan', 'pas', 'Anagan court plus vite que tout le monde… sauf toi, pas après pas.'],
+  ['mh-moanica-d-kay', 'hygiene', 'Moanica veut transformer tout le monde en zombie : prends soin de toi.'],
   ['wx-mandragora', 'alim', 'Mandragora empoisonne tout : une assiette saine la fait reculer.'],
   ['wx-kalshara', 'pas', 'Kalshara court après les animaux magiques : marche plus qu’elle.'],
   ['mh-toralei', 'sport', 'Toralei se croit la plus agile de Monster High : montre-lui ta forme.'],
@@ -33,6 +37,7 @@ const LEGEND = [
   ['wx-sorcieres', 'yoga', 'Les Sorcières Ancestrales : il faudra un corps et un esprit alignés.'],
   ['hk-kuromi', 'scroll', 'Kuromi et sa bande veulent te garder sur ton téléphone. Résiste !'],
   ['mh-nefera', 'lecture', 'Nefera de Nile défie ta culture : une bibliothèque entière ne lui fait pas peur.'],
+  ['wx-acheron', 'lecture', 'Acheron, le sorcier du Livre Légendaire : chaque page lue affaiblit sa magie.'],
   ['wx-tritannus', 'ecran', 'Tritannus, empereur des océans pollués, se nourrit de la lumière des écrans.'],
 ];
 const mk = ([line, weak, why]) => ({ line, weak, why });
