@@ -123,7 +123,7 @@ function hero(k, n, c) {
       <p class="h-msg">${msg}</p>
       <div class="h-chips">
         <span class="chip-glass" title="Série globale">${st.n ? `🔥 ${plural(st.n, 'jour', 'jours')}` : '🌱 Nouvelle série'}</span>
-        <span class="chip-glass" title="XP gagnée ${isToday ? 'aujourd’hui' : 'ce jour-là'}">⚡ +${xp} XP</span>
+        <span class="chip-glass" title="XP gagnée ${isToday ? 'aujourd’hui' : 'ce jour-là'}">✨ +${xp} XP</span>
         ${boxChip ? `<span class="chip-glass box-chip ${c >= sAt ? 'got' : ''}">${boxChip}</span>` : ''}
         ${!isToday ? `<span class="chip-glass">✏️ ${fmtShort(parseKey(k))}</span>` : ''}
       </div>

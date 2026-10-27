@@ -148,7 +148,7 @@ function recordsCard() {
   const g = G(), r = records(g), best = globalBest();
   const doms = activeDomains().map(d => ({ d, n: domainBest(d.id) })).filter(x => x.n >= 2).sort((a, b) => b.n - a.n).slice(0, 3);
   const rows = [
-    r.day.v ? ['⚡', 'Meilleure journée', `${r.day.v} XP`, fmtShort(parseKey(r.day.k))] : null,
+    r.day.v ? ['✨', 'Meilleure journée', `${r.day.v} XP`, fmtShort(parseKey(r.day.k))] : null,
     r.week.v ? ['📈', 'Meilleure semaine', `${r.week.v.toLocaleString('fr-FR')} XP`, `sem. du ${fmtShort(parseKey(r.week.k))}`] : null,
     best ? ['🔥', 'Plus longue série', plural(best, 'jour', 'jours'), ''] : null,
     r.cases.v ? ['✅', 'Le plus de cases en un jour', `${r.cases.v}`, fmtShort(parseKey(r.cases.k))] : null,

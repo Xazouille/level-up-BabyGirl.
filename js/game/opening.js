@@ -166,7 +166,7 @@ function spread() {
       <p class="ov-kicker">${T.name}</p>
       <p class="sp-hint">${N > 1 ? 'Touche les cartes pour les retourner' : 'Touche la carte pour la retourner'}</p>
       <div class="sp-cards">${pack.map((c, i) => `<div class="fcard r${c.rarity} ${c.shiny ? 'shiny' : ''}" role="button" tabindex="0" data-ov="flip" data-i="${i}" style="--i:${i};--rc:${RARITY[c.rarity].color}" aria-label="Retourner la carte ${i + 1}">
-          <div class="fc-inner"><div class="fc-back"><span class="fc-emblem">⚡</span><span class="fc-shine"></span>${c.shiny ? '<span class="fc-sparks"><i></i><i></i><i></i></span>' : ''}</div>
+          <div class="fc-inner"><div class="fc-back"><span class="fc-emblem">✦</span><span class="fc-shine"></span>${c.shiny ? '<span class="fc-sparks"><i></i><i></i><i></i></span>' : ''}</div>
           <div class="fc-front">${cardHTML(c.form.id, { size: N === 1 ? 'xl' : 'sm', big: N === 1, shiny: c.shiny })}</div></div>
           <span class="fc-tag ${c.shinyNew ? 'shiny' : c.isNew ? 'new' : 'dup'}">${tagOf(c)}</span></div>`).join('')}</div>
       <div class="sp-foot">${N > 1 ? '<button class="btn ghost" data-ov="flipAll">Tout retourner</button>' : ''}</div>
@@ -312,7 +312,7 @@ export function showBossKO(b) {
       <div class="lv-rewards">
         <span class="lv-rw" style="--i:0">${chestHTML('g', 'mini')}<b>${b.legendary ? '2 × ' : ''}Grand coffret</b></span>
         <span class="lv-rw" style="--i:1"><span class="ko-card">${cardHTML(L.base, { size: 'sm' })}</span><b>Sa carte</b></span>
-        <span class="lv-rw" style="--i:2">⚡<b>+${b.legendary ? LEGEND_XP : BOSS_XP} XP</b></span>
+        <span class="lv-rw" style="--i:2">✨<b>+${b.legendary ? LEGEND_XP : BOSS_XP} XP</b></span>
       </div>
       <p class="ov-tip">${next}</p>
       <div class="ov-actions">${G().boxes.g ? '<button class="btn primary" data-ov="altar" data-k="g">🎁 Ouvrir mon grand coffret</button>' : ''}<button class="btn ghost" data-ov="close">Continuer</button></div>
@@ -322,6 +322,21 @@ export function showBossKO(b) {
 
 /* ---------- Bilan de la semaine ---------- */
 const MOODS = ['', '😞', '😕', '😐', '🙂', '😄'];
+// Le petit mot du dimanche, écrit par la PP
+function ppLetter(r) {
+  const c = G().companion;
+  if (!c) return '';
+  const name = esc(S.profile.name || 'toi'), g = r.grade.g, pick = (a, n = 0) => a[(new Date(r.ws).getDate() + n) % a.length];
+  const open = { S: [`${name}, quelle semaine ! J’ai les yeux qui brillent ✨`, `Wow ${name}, tu as tout donné cette semaine 🤍`],
+    A: [`${name}, tu peux être fière de ta semaine 🌸`, `Très jolie semaine, ${name} !`],
+    B: [`Belle semaine, ${name} : on avance tout en douceur 🫧`, `${name}, tu as été régulière, et c’est ce qui compte.`],
+    C: [`${name}, une semaine en demi-teinte, et c’est ok.`, `Pas la semaine la plus facile, ${name}, mais tu étais là.`],
+    D: [`${name}, cette semaine a été dure. Je suis toujours là, et lundi on recommence ensemble 🌱`, `Les semaines difficiles font partie du chemin, ${name}. Prends soin de toi 🤍`] }[g] || [''];
+  const mid = r.best ? `Ce que j’ai préféré : ${r.best.d.emoji} ${esc(r.best.d.name)}, ${r.best.n} jour${r.best.n > 1 ? 's' : ''} sur 7.` : '';
+  const end = r.low ? `Et si on offrait un peu plus de place à ${r.low.d.emoji} ${esc(r.low.d.name)} la semaine prochaine ? Même 5 minutes, ça compte.` : pick(['Continue comme ça, à ton rythme.', 'Reste douce avec toi-même.'], 1);
+  return `<div class="rc-letter"><span class="rcl-pp ${c.halo ? 'halo-' + c.halo[1] : ''}"><img src="${esc(c.form.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"></span>
+    <div><p>${pick(open)}</p>${mid ? `<p>${mid}</p>` : ''}<p>${end}</p><p class="rcl-sign">— ${esc(c.form.name)} 💌</p></div></div>`;
+}
 export function showRecap(r) {
   const gr = r.grade, box = gr.box, b = G().boxes;
   const fmt = d => `${d.getDate()}/${d.getMonth() + 1}`;
@@ -347,6 +362,7 @@ export function showRecap(r) {
         <div><b>${r.xp.toLocaleString('fr-FR')}</b><small>XP</small></div>
       </div>
       ${lines.length ? `<ul class="rc-lines">${lines.map(l => `<li>${l}</li>`).join('')}</ul>` : ''}
+      ${r.provisional ? '' : ppLetter(r)}
       <div class="rc-reward">${box ? `${chestHTML(box, 'mini')}<span><b>${r.provisional ? `Dimanche, si ça reste comme ça : ${TIERS[box].name.toLowerCase()}` : `${TIERS[box].name} ${TIERS[box].won} !`}</b><small>Note ${gr.g}</small></span>`
         : `<span><b>${r.provisional ? 'Pas encore de surprise' : 'Pas de surprise cette fois'}</b><small>Note B (60 %) pour une petite pochette, A (75 %) pour un coffret, S (90 %) pour un grand coffret</small></span>`}</div>
       ${r.next && r.live ? `<p class="ov-tip">${r.provisional ? 'Le bilan tombe dimanche à 18 h. ' : 'Il reste ce soir pour monter. '}Prochaine note : ${r.next.g} à ${r.next.min} %.</p>` : ''}

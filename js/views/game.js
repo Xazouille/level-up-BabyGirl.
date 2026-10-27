@@ -244,7 +244,7 @@ function rewardsCard() {
 function xpCard() {
   const b = G().breakdown;
   const rows = [['✅', 'Cases cochées', b.cases], ['⭐', 'Bonus (journées parfaites, phrases, connexion)', b.bonus], ['🎯', 'Objectifs', b.goals], ['🍿', 'Médiathèque', b.media], ['🏅', 'Badges', b.badges], ['📅', 'Défis', b.challenges], ['⚔️', 'Boss', b.boss], ['🌱', 'Compétences et habitudes', b.growth], ['🪪', 'Identités', b.identity], ['🗓️', 'Bilans du mois', b.reviews]];
-  return `<section class="card"><h2>⚡ D’où vient ton XP</h2>${rows.map(([e, l, v]) => `<div class="xp-row"><span>${e} ${l}</span><b>${nf(v)}</b></div>`).join('')}</section>`;
+  return `<section class="card"><h2>✨ D’où vient ton XP</h2>${rows.map(([e, l, v]) => `<div class="xp-row"><span>${e} ${l}</span><b>${nf(v)}</b></div>`).join('')}</section>`;
 }
 
 function profil() {
@@ -293,7 +293,7 @@ function cardsView(g) {
   const filChips = [['', 'Tout'], ['owned', '✓ Obtenues'], ['new', `🆕 Nouvelles ${nNew}`], ['shiny', `✨ Brillantes ${g.shinies}`], ['dups', `🃏 Doublons ${nDup}`], ['aw', `🔮 Éveillées ${nAw}`]]
     .map(([k, l]) => `<button class="chip ${fil === k ? 'on' : ''}" data-act="collFilter" data-f="${k}">${l}</button>`).join('');
   return `<section class="coll-head"><div><b>${ownedForms}</b> / ${all.length} cartes${g.shinies ? ` · ✨ ${g.shinies} brillantes` : ''}</div><div class="xpbar"><span style="width:${Math.round(ownedForms / all.length * 100)}%"></span></div></section>
-    <div class="coll-tools"><input class="coll-search" type="search" data-input="collQ" value="${esc(ui.collQ || '')}" placeholder="🔎 Chercher une carte (Goku, Itachi, Pikachu…)" autocomplete="off">
+    <div class="coll-tools"><input class="coll-search" type="search" data-input="collQ" value="${esc(ui.collQ || '')}" placeholder="🔎 Chercher une carte (Bloom, Draculaura, Kuromi…)" autocomplete="off">
       <div class="chips scroll-x">${SORTS.map(([k, l]) => `<button class="chip ${sort === k ? 'on' : ''}" data-act="collSort" data-s="${k}">${k === sort ? '⇅ ' : ''}${l}</button>`).join('')}</div></div>
     <div class="chips scroll-x">${filChips}</div>
     <div class="chips scroll-x">${serChips}</div>

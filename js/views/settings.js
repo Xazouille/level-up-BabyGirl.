@@ -152,7 +152,7 @@ async function exportData() {
   if (/iphone|ipad|ipod|android/i.test(navigator.userAgent) && navigator.canShare) {
     const file = new File([blob], name, { type: 'application/json' });
     if (navigator.canShare({ files: [file] })) {
-      try { await navigator.share({ files: [file], title: 'Sauvegarde du tableau de bord' }); return; }
+      try { await navigator.share({ files: [file], title: 'Sauvegarde de Glow Up' }); return; }
       catch (e) { if (e.name === 'AbortError') return; }
     }
   }

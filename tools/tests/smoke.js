@@ -10,7 +10,7 @@ const shot = (p, n, full) => p.screenshot({ path: `${out}/${tag}-${n}.png`, full
 (async () => {
   const b = await chromium.launch({ proxy: { server: process.env.HTTPS_PROXY, bypass: 'localhost,127.0.0.1' } });
   const ctx = await b.newContext({ viewport: desk ? { width: 1280, height: 860 } : { width: 390, height: 844 }, deviceScaleFactor: desk ? 1 : 2, colorScheme: process.env.SCHEME || 'light', ignoreHTTPSErrors: true });
-  await ctx.route('https://arosare.github.io/naruto-blazing-revival/**', r => { const f = path.join(NB, r.request().url().split('/naruto-blazing-revival/')[1]); fs.existsSync(f) ? r.fulfill({ path: f }) : r.abort(); });
+  await require('./imgs.js')(ctx, NB);
   const p = await ctx.newPage();
   const errors = [];
   p.on('pageerror', e => errors.push('pageerror: ' + e.message + '\n' + e.stack));

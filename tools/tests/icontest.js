@@ -8,10 +8,10 @@ const act = (p, a, data = {}) => p.evaluate(([a, data]) => { const b = document.
   await p.goto('http://localhost:8765/'); await p.evaluate(() => { localStorage.clear(); localStorage.setItem('celia-demo', '1'); }); await p.reload(); await p.waitForTimeout(2500);
   for (let i = 0; i < 5 && await p.$('.overlay'); i++) { await p.keyboard.press('Escape'); await p.waitForTimeout(900); }
   const links = () => p.evaluate(() => ['icon', 'apple-touch-icon', 'manifest'].map(r => { const l = document.querySelector(`link[rel="${r}"]`); return r + '=' + (l.href.startsWith('data:') ? 'data:svg(' + l.href.length + ')' : l.getAttribute('href')); }).join(' | '));
-  console.log('neon  ', await links());
-  await act(p, 'lookSet', { kind: 'theme', id: 'gameboy' }); await p.waitForTimeout(500);
-  console.log('gameb ', await links());
-  const ok = await p.evaluate(async () => { const r = await Promise.all(['icons/t/gameboy-180.png', 'm/gameboy.webmanifest', 'icons/t/gameboy-192.png'].map(u => fetch(u).then(x => x.status))); const m = await (await fetch('m/gameboy.webmanifest')).json(); return r.join(',') + ' ' + new URL(m.icons[0].src, location.origin + '/m/gameboy.webmanifest').pathname + ' id=' + new URL(m.id, location.origin + '/m/x').pathname; });
+  console.log('lin   ', await links());
+  await act(p, 'lookSet', { kind: 'theme', id: 'mh' }); await p.waitForTimeout(500);
+  console.log('mh    ', await links());
+  const ok = await p.evaluate(async () => { const r = await Promise.all(['icons/t/mh-180.png', 'm/mh.webmanifest', 'icons/t/mh-192.png'].map(u => fetch(u).then(x => x.status))); const m = await (await fetch('m/mh.webmanifest')).json(); return r.join(',') + ' ' + new URL(m.icons[0].src, location.origin + '/m/mh.webmanifest').pathname + ' id=' + new URL(m.id, location.origin + '/m/x').pathname; });
   console.log('fetch ', ok);
   await act(p, 'tab', { tab: 'settings' }); await p.waitForTimeout(600);
   await p.evaluate(() => document.querySelector('.ui-icon').scrollIntoView({ block: 'center' })); await p.waitForTimeout(300);

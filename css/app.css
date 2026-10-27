@@ -1602,3 +1602,11 @@ h1{font-size:34px}
 /* Grands écrans (ouverture, niveau, bilans) : nuit douce mauve-taupe au lieu du violet profond */
 .overlay{background:radial-gradient(circle at 50% 40%,#5a4358 0%,#2a2029 60%,#151014 100%)}
 .speech{color:#3b3129}
+/* Le mot du dimanche de la PP */
+.rc-letter{display:flex;gap:12px;align-items:flex-start;max-width:400px;margin:12px auto 4px;padding:14px 16px;border-radius:20px;text-align:left;
+  background:#fffaf5;color:#3b3129;box-shadow:0 10px 30px rgba(0,0,0,.25);font-size:14px;line-height:1.45}
+.rc-letter p{margin:0 0 6px}
+.rcl-pp{position:relative;flex:none;width:54px;height:54px;border-radius:50%}
+.rcl-pp img{position:relative;z-index:1;width:100%;height:100%;border-radius:50%;object-fit:cover;object-position:50% 18%;background:#f3ece4}
+.rcl-pp[class*="halo-"]::before{content:"";position:absolute;inset:-7px;border-radius:50%;filter:blur(5px);opacity:.85}
+.rcl-sign{font:italic 600 16px var(--head);color:#a07d62;text-align:right}

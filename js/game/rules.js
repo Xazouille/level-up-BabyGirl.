@@ -77,7 +77,7 @@ const CH_KINDS = {
   perfect: lv => { const n = [1, 2, 4][lv]; return { emoji: '🏆', text: n === 1 ? 'Une journée parfaite' : `${n} journées parfaites`, goal: n, prog: w => w.days.filter(isPerfect).length }; },
   good: lv => { const n = [3, 5, 7][lv]; return { emoji: '🔥', text: n === 7 ? '7 journées réussies sur 7' : `${n} journées réussies`, goal: n, prog: w => w.days.filter(isGoodDay).length }; },
   notes: lv => { const n = [3, 5, 7][lv]; return { emoji: '✍️', text: `Ta phrase du jour ${n} fois`, goal: n, prog: w => w.days.filter(k => S.days[k] && S.days[k].note && S.days[k].note.trim()).length }; },
-  xp: lv => { const n = [500, 1000, 1800][lv]; return { emoji: '⚡', text: `Gagner ${n.toLocaleString('fr-FR')} XP`, goal: n, unit: ' XP', prog: w => w.xp }; },
+  xp: lv => { const n = [500, 1000, 1800][lv]; return { emoji: '✨', text: `Gagner ${n.toLocaleString('fr-FR')} XP`, goal: n, unit: ' XP', prog: w => w.xp }; },
   long: lv => { const n = [2, 3, 6][lv]; return { emoji: '⏱️', text: `${n} activités longues (1 h et +)`, goal: n, prog: longCount }; },
   pct: lv => { const n = [50, 65, 80][lv]; return { emoji: '📈', text: `Semaine à ${n} % ou plus`, goal: n, unit: ' %', prog: w => w.pct }; },
   dom: (lv, rnd) => domChallenge(lv, activeDomains()[Math.floor(rnd() * activeDomains().length)]),

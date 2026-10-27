@@ -4,7 +4,7 @@ import { key, parseKey, today, addDays, weekStart } from '../util.js';
 import { periodScore, isPerfect } from '../stats.js';
 
 export const GRADES = [
-  { g: 'S', min: 90, box: 'g', title: 'Semaine légendaire !', color: '#d4a373' },
+  { g: 'S', min: 90, box: 'g', title: 'Semaine rayonnante !', color: '#d4a373' },
   { g: 'A', min: 75, box: 'c', title: 'Excellente semaine !', color: '#b79fd1' },
   { g: 'B', min: 60, box: 'p', title: 'Bonne semaine', color: '#8aa6c1' },
   { g: 'C', min: 45, box: null, title: 'Semaine correcte', color: '#9cb48a' },
@@ -47,7 +47,7 @@ export function weekRecap(ws, g) {
   const bosses = g.boss.history.filter(b => b.endDay >= days[0] && b.endDay <= we);
   return {
     ws, days, pct: sc.pct, done: sc.done, max: sc.max, prevPct: prev.pct, grade, xp, record: bestPrev > 0 && xp > bestPrev,
-    perfect: days.filter(isPerfect).length, best: perDom[0] && perDom[0].n ? perDom[0] : null,
+    perfect: days.filter(isPerfect).length, best: perDom[0] && perDom[0].n ? perDom[0] : null, low: perDom.length > 1 && perDom[perDom.length - 1].n < 3 ? perDom[perDom.length - 1] : null,
     mood: moods.length ? moods.reduce((a, b) => a + b, 0) / moods.length : 0, bosses,
     next: GRADES.slice().reverse().find(x => x.min > sc.pct),
   };
