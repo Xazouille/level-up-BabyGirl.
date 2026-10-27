@@ -984,91 +984,118 @@
      "id": "na-nana-osaki",
      "name": "Nana Osaki",
      "rarity": 5,
-     "page": "Nana Osaki"
+     "page": "Nana Osaki",
+     "img": {
+      "na-nana-osaki": "https://static.wikia.nocookie.net/nana/images/d/d4/Nana-Osaki.jpg/revision/latest/scale-to-width-down/600?cb=20180107024928"
+     }
     },
     {
      "id": "na-hachi",
      "name": "Nana « Hachi » Komatsu",
      "rarity": 5,
-     "page": "Nana Komatsu"
+     "page": "Nana Komatsu",
+     "img": {
+      "na-hachi": "https://static.wikia.nocookie.net/nana/images/b/b3/Nana_Komatsu_Illustration.png/revision/latest/scale-to-width-down/600?cb=20251128234253"
+     }
     },
     {
      "id": "na-ren",
      "name": "Ren Honjo",
      "rarity": 4,
-     "page": "Ren Honjo"
+     "page": "Ren Honjo",
+     "img": {
+      "na-ren": "https://static.wikia.nocookie.net/nana/images/b/bc/Ren_Honjo_Illustration.png/revision/latest/scale-to-width-down/600?cb=20251122154307"
+     }
     },
     {
      "id": "na-takumi",
      "name": "Takumi Ichinose",
      "rarity": 4,
-     "page": "Takumi Ichinose"
+     "page": "Takumi Ichinose",
+     "img": {
+      "na-takumi": "https://static.wikia.nocookie.net/nana/images/4/42/Takumi-game.jpg/revision/latest?cb=20150728170229"
+     }
     },
     {
      "id": "na-nobu",
      "name": "Nobu",
      "rarity": 3,
-     "page": "Nobuo Terashima"
+     "page": "Nobuo Terashima",
+     "img": {
+      "na-nobu": "https://static.wikia.nocookie.net/nana/images/b/b8/Nobu_7.8.jpg/revision/latest/scale-to-width-down/600?cb=20251105163012"
+     }
     },
     {
      "id": "na-shin",
      "name": "Shin",
      "rarity": 3,
-     "page": "Shinichi Okazaki"
+     "page": "Shinichi Okazaki",
+     "img": {
+      "na-shin": "https://static.wikia.nocookie.net/nana/images/f/ff/Shin-O.jpg/revision/latest/scale-to-width-down/600?cb=20180107041037"
+     }
     },
     {
      "id": "na-yasu",
      "name": "Yasu",
      "rarity": 3,
-     "page": "Yasushi Takagi"
+     "page": "Yasushi Takagi",
+     "img": {
+      "na-yasu": "https://static.wikia.nocookie.net/nana/images/a/aa/Yasu-T.jpg/revision/latest/scale-to-width-down/600?cb=20180107042550"
+     }
     },
     {
      "id": "na-reira",
      "name": "Reira Serizawa",
      "rarity": 3,
-     "page": "Reira Serizawa"
+     "page": "Reira Serizawa",
+     "img": {
+      "na-reira": "https://static.wikia.nocookie.net/nana/images/0/02/Reira-Tranes.jpg/revision/latest?cb=20150726235100"
+     }
     },
     {
      "id": "na-naoki",
      "name": "Naoki Fujieda",
      "rarity": 2,
-     "page": "Naoki Fujieda"
+     "page": "Naoki Fujieda",
+     "img": {
+      "na-naoki": "https://static.wikia.nocookie.net/nana/images/1/14/Naoki_Fujieda_Illustration.png/revision/latest/scale-to-width-down/600?cb=20251226223521"
+     }
     },
     {
      "id": "na-junko",
      "name": "Junko Saotome",
      "rarity": 2,
-     "page": "Junko Saotome"
+     "page": "Junko Saotome",
+     "img": {
+      "na-junko": "https://static.wikia.nocookie.net/nana/images/c/ce/Junko-game.jpg/revision/latest?cb=20121014030508"
+     }
     },
     {
      "id": "na-kyosuke",
      "name": "Kyosuke Takakura",
      "rarity": 2,
-     "page": "Kyosuke Takakura"
+     "page": "Kyosuke Takakura",
+     "img": {
+      "na-kyosuke": "https://static.wikia.nocookie.net/nana/images/f/f0/Kyosuke_Takakura_%28Anime%29.png/revision/latest/scale-to-width-down/600?cb=20260402163606"
+     }
     },
     {
      "id": "na-shoji",
      "name": "Shoji Endo",
      "rarity": 1,
-     "page": "Shoji Endo"
+     "page": "Shoji Endo",
+     "img": {
+      "na-shoji": "https://static.wikia.nocookie.net/nana/images/e/ef/Shoji-game.jpg/revision/latest?cb=20150728170453"
+     }
     },
     {
      "id": "na-sachiko",
      "name": "Sachiko Kawamura",
      "rarity": 1,
-     "page": "Sachiko Kawamura"
-    },
-    {
-     "id": "na-misato",
-     "name": "Misato Uehara",
-     "rarity": 2,
-     "page": "Misato Uehara"
-    },
-    {
-     "id": "na-miu",
-     "name": "Miu Ichinose",
-     "rarity": 2,
-     "page": "Miu Ichinose"
+     "page": "Sachiko Kawamura",
+     "img": {
+      "na-sachiko": "https://static.wikia.nocookie.net/nana/images/0/0b/Sachiko_Kawamura_Pre-Timeskip_%28Anime%29.png/revision/latest/scale-to-width-down/600?cb=20260411183430"
+     }
     }
    ]
   }

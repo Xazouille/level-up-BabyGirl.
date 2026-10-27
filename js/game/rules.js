@@ -381,7 +381,6 @@ export function badgeDefs() {
   add('Collection', 'first5', '🌟', 'Légendaire !', 'Obtenir une carte 5★', 300, c => c.maxRarity >= 5);
   add('Collection', 'evo1', '💗', 'Premier palier', 'Un premier palier de complicité avec ta PP', 150, c => c.paliers >= 1);
   add('Collection', 'evo10', '💞', 'Âmes sœurs', '10 paliers de complicité avec tes PP', 500, c => c.paliers >= 10);
-  add('Collection', 'transfo1', '✨', 'Transformation !', 'Faire passer ta PP à sa forme suivante', 200, c => c.evolutions >= 1);
   add('Collection', 'shiny1', '✨', 'Ça brille !', 'Obtenir une carte brillante', 100, c => c.shinies >= 1);
   add('Collection', 'shiny10', '💫', 'Chasseuse de brillantes', 'Obtenir 10 cartes brillantes', 500, c => c.shinies >= 10, 'g');
   add('Collection', 'fusion1', '🔮', 'Première fusion', 'Éveiller une carte avec ses doublons', 100, c => c.fusions >= 1);
