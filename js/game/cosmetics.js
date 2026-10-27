@@ -3,17 +3,17 @@ import { S } from '../store.js';
 import { G, badgeDefs, LEVEL_TITLES } from './rules.js';
 import { RANKS } from './mastery.js';
 import { ALBUMS } from './albums.js';
-import { UIS, applyUI } from '../looks.js';
+import { UIS, applyUI, BASE_UI } from '../looks.js';
 
 // Thèmes complets (définis dans looks.js) : 3 dès le départ, les autres à débloquer
-const LOOK_NEED = { ocean: { level: 5 }, saiyan: { level: 10 }, sakura: { level: 15 }, foret: { rank: 3 }, lave: { bosses: 5 }, akatsuki: { album: 'na-akatsuki' },
-  gameboy: { badge: 'coll100' }, galaxie: { level: 25 }, glace: { badge: 'serie30' }, prisme: { shinies: 10 } };
+const LOOK_NEED = { rose: { level: 5 }, lavande: { level: 10 }, peche: { level: 15 }, matcha: { rank: 3 }, nacre: { shinies: 5 }, nuit: { badge: 'serie30' },
+  winx: { album: 'wx-club' }, kitty: { album: 'hk-kitty' }, mh: { album: 'mh-ghouls' } };
 export const LOOKS = UIS.map(u => ({ id: u.id, name: u.name, desc: u.desc, need: LOOK_NEED[u.id] || null }));
 
 export const FRAMES = [
-  ['simple', 'Simple', null], ['eclair', 'Éclairs', { level: 8 }], ['feu', 'Flammes', { badge: 'serie7' }], ['givre', 'Givre', { badge: 'serie14' }],
-  ['or', 'Or', { badge: 'parfait10' }], ['boss', 'Chasseur', { bosses: 3 }], ['sakura', 'Pétales', { albums: 3 }], ['arc', 'Arc-en-ciel', { maxRarity: 5 }],
-  ['eveil', 'Éveil', { fusions: 1 }], ['cosmos', 'Cosmos', { rank: 5 }],
+  ['simple', 'Simple', null], ['perles', 'Perles', { level: 8 }], ['fleurs', 'Tulipes', { badge: 'serie7' }], ['rosee', 'Rosée', { badge: 'serie14' }],
+  ['orrose', 'Or rose', { badge: 'parfait10' }], ['ruban', 'Ruban', { bosses: 3 }], ['sakura', 'Pétales', { albums: 3 }], ['arc', 'Arc-en-ciel pastel', { maxRarity: 5 }],
+  ['eveil', 'Éveil', { fusions: 1 }], ['etoiles', 'Étoiles', { rank: 5 }],
 ].map(([id, name, need]) => ({ id, name, need }));
 
 // Ce qui sert à savoir ce qui est débloqué
@@ -45,8 +45,8 @@ export function howTo(need) {
   if (!need) return 'Disponible';
   if (need.level) return `Niveau ${need.level}`;
   if (need.rank) return `Rang ${RANKS[need.rank][0]} dans un domaine`;
-  if (need.bosses) return `Battre ${need.bosses} boss`;
-  if (need.legends) return `Battre ${need.legends} boss légendaires`;
+  if (need.bosses) return `Relever ${need.bosses} défis de méchantes`;
+  if (need.legends) return `Relever ${need.legends} défis légendaires`;
   if (need.album) { const a = ALBUMS.find(x => x.id === need.album); return `Album « ${a ? a.name : need.album} »`; }
   if (need.albums) return `Compléter ${need.albums} albums`;
   if (need.badge) { const b = badgeDefs().find(x => x.id === need.badge); return `Badge « ${b ? b.name : need.badge} »`; }
@@ -61,8 +61,8 @@ export function titleList(g = G()) {
   const c = unlockCtx(g), out = [];
   for (const [lv, name] of LEVEL_TITLES) out.push({ id: 'lv' + lv, name, need: { level: lv } });
   for (const a of ALBUMS) out.push({ id: 'al-' + a.id, name: a.title, need: { album: a.id } });
-  out.push({ id: 'bo5', name: 'Chasseur de boss', need: { bosses: 5 } }, { id: 'bo25', name: 'Fléau des méchants', need: { bosses: 25 } },
-    { id: 'lg3', name: 'Tueur de légendes', need: { legends: 3 } }, { id: 'sh10', name: 'Collectionneur brillant', need: { shinies: 10 } },
+  out.push({ id: 'bo5', name: 'Gardienne de Magix', need: { bosses: 5 } }, { id: 'bo25', name: 'Plus forte que les Trix', need: { bosses: 25 } },
+    { id: 'lg3', name: 'Héroïne légendaire', need: { legends: 3 } }, { id: 'sh10', name: 'Collectionneuse scintillante', need: { shinies: 10 } },
     { id: 'fu5', name: 'Alchimiste', need: { fusions: 5 } });
   // Identités « Je suis… » déjà atteintes
   for (const d of S.domains.list.filter(x => !x.archived)) {
@@ -87,4 +87,4 @@ export function worn(g = G()) {
 }
 
 // Thème porté : appliqué à toute l'appli (avec la disposition choisie pour lui)
-export function applyLook(theme) { applyUI(theme ? theme.id : 'neon'); }
+export function applyLook(theme) { applyUI(theme ? theme.id : BASE_UI); }
