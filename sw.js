@@ -1,7 +1,7 @@
 // Service worker : rend l'appli utilisable hors ligne.
 // Les fichiers de l'appli sont d'abord demandés au réseau (pour recevoir les mises à jour), puis au cache si pas de connexion.
 // Noms préfixés « celia- » : l'appli d'Aaron est sur le même site (xazouille.github.io), on ne touche jamais à ses caches
-const CACHE = 'celia-v1';
+const CACHE = 'celia-v2';
 const IMG_CACHE = 'celia-img-v1';
 const IMG_MAX = 250;   // images gardées hors ligne ; les plus anciennes sont effacées
 const ASSETS = [

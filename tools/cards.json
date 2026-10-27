@@ -555,18 +555,6 @@
      }
     },
     {
-     "id": "wx-reine-marion",
-     "name": "Reine Marion",
-     "rarity": 3,
-     "page": "Marion"
-    },
-    {
-     "id": "wx-roi-oritel",
-     "name": "Roi Oritel",
-     "rarity": 3,
-     "page": "Oritel"
-    },
-    {
      "id": "wx-roi-radius",
      "name": "Roi Radius",
      "rarity": 2,
@@ -877,12 +865,6 @@
      "name": "Nex",
      "rarity": 2,
      "page": "Nex"
-    },
-    {
-     "id": "wx-ho-boe",
-     "name": "Ho-Boe",
-     "rarity": 1,
-     "page": "Ho-Boe"
     }
    ]
   },
@@ -1577,24 +1559,6 @@
      "name": "Lagoonafire",
      "rarity": 3,
      "page": "Lagoonafire"
-    },
-    {
-     "id": "mh-johnny-spirit",
-     "name": "Johnny Spirit",
-     "rarity": 2,
-     "page": "Johnny Spirit"
-    },
-    {
-     "id": "mh-cy-clops",
-     "name": "Cy Clops",
-     "rarity": 1,
-     "page": "Cy Clops"
-    },
-    {
-     "id": "mh-lilith-van-hellscream",
-     "name": "Lilith Van Hellscream",
-     "rarity": 2,
-     "page": "Lilith Van Hellscream"
     }
    ]
   },
