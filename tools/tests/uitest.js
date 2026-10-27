@@ -14,7 +14,7 @@ const sleep = (p, ms) => p.waitForTimeout(ms);
     p.on('console', m => { if (m.type() === 'error' && !/vibrate|Failed to load resource|ERR_/.test(m.text())) errors.push('console: ' + m.text()); });
     p.on('dialog', d => d.accept());
     await p.goto('http://localhost:8765/');
-    await p.evaluate(() => { localStorage.clear(); localStorage.setItem('tdb2-demo', '1'); });
+    await p.evaluate(() => { localStorage.clear(); localStorage.setItem('celia-demo', '1'); });
     await p.reload(); await sleep(p, 2500);
     for (let i = 0; i < 5 && await p.$('.overlay'); i++) { await p.keyboard.press('Escape'); await sleep(p, 900); }
     await p.evaluate(() => { document.getElementById('banners') && document.getElementById('banners').remove(); });
@@ -27,8 +27,8 @@ const sleep = (p, ms) => p.waitForTimeout(ms);
     await p.evaluate(() => document.querySelector('.sheet').scrollTo(0, 3000)); await sleep(p, 300);
     await p.screenshot({ path: `${out}/u-${tag}-themes2.png` });
     await act(p, 'closeSheet'); await sleep(p, 400);
-    for (const [ui, lay] of [['ocean', 'liste'], ['foret', 'mosaique'], ['sakura', 'classique'], ['saiyan', 'liste'], ['lave', 'classique'], ['akatsuki', 'liste'], ['galaxie', 'mosaique'], ['glace', 'classique'], ['prisme', 'mosaique'], ['minuit', 'epuree'], ['papier', 'liste'], ['gameboy', 'mosaique'], ['neon', 'classique']]) {
-      if (desk && !['ocean', 'gameboy'].includes(ui)) continue;
+    for (const [ui, lay] of [['sauge', 'liste'], ['nuage', 'mosaique'], ['rose', 'classique'], ['lavande', 'liste'], ['peche', 'classique'], ['matcha', 'liste'], ['nacre', 'mosaique'], ['nuit', 'classique'], ['winx', 'mosaique'], ['kitty', 'epuree'], ['mh', 'liste'], ['lin', 'classique']]) {
+      if (desk && !['sauge', 'mh'].includes(ui)) continue;
       await act(p, 'lookSet', { kind: 'theme', id: ui }); await act(p, 'layoutSet', { id: lay });
       await act(p, 'tab', { tab: 'today' }); await sleep(p, 900);
       await p.evaluate(() => { const b = document.getElementById('banners'); if (b) b.remove(); });

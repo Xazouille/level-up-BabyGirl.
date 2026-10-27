@@ -1,4 +1,4 @@
-// Génère les icônes de chaque thème (icons/t/) et leur fichier d'appli (m/<thème>.webmanifest).
+// Génère les icônes de chaque thème (icons/t/) et leur fichier d'appli (m/<thème>.webmanifest), ainsi que les icônes de base (icons/).
 // Usage : servir le dépôt sur http://localhost:8765 puis `node tools/gen_theme_icons.js`
 const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
@@ -15,10 +15,18 @@ const root = path.join(__dirname, '..');
       img.src = 'data:image/svg+xml,' + encodeURIComponent(svg);
     });
     const r = {};
+    r._base = { svg: L.iconSVG(L.UIS[0]), 180: await png(L.iconSVG(L.UIS[0], true), 180), 192: await png(L.iconSVG(L.UIS[0]), 192), 512: await png(L.iconSVG(L.UIS[0]), 512), mask: await png(L.iconSVG(L.UIS[0], 'mask'), 512) };
     for (const u of L.UIS) r[u.id] = { bg: L.tokensOf(u, true).bg, 180: await png(L.iconSVG(u, true), 180), 192: await png(L.iconSVG(u), 192), 512: await png(L.iconSVG(u), 512), mask: await png(L.iconSVG(u, 'mask'), 512) };
     return r;
   });
   const base = JSON.parse(fs.readFileSync(path.join(root, 'manifest.webmanifest'), 'utf8'));
+  // Icônes de base (thème de départ) : onglet, installation, fichier d'appli principal
+  const bx = out._base; delete out._base;
+  fs.writeFileSync(path.join(root, 'icons/icon.svg'), bx.svg);
+  fs.writeFileSync(path.join(root, 'icons/apple-touch-icon.png'), Buffer.from(bx[180], 'base64'));
+  fs.writeFileSync(path.join(root, 'icons/icon-192.png'), Buffer.from(bx[192], 'base64'));
+  fs.writeFileSync(path.join(root, 'icons/icon-512.png'), Buffer.from(bx[512], 'base64'));
+  fs.writeFileSync(path.join(root, 'icons/icon-maskable.png'), Buffer.from(bx.mask, 'base64'));
   for (const [id, x] of Object.entries(out)) {
     for (const k of ['180', '192', '512']) fs.writeFileSync(path.join(root, 'icons/t', `${id}-${k}.png`), Buffer.from(x[k], 'base64'));
     fs.writeFileSync(path.join(root, 'icons/t', `${id}-maskable.png`), Buffer.from(x.mask, 'base64'));

@@ -1,28 +1,29 @@
 // Identités « Je suis… » : chaque domaine a 11 paliers qui se débloquent avec le nombre de jours pratiqués.
-// Une identité se construit et ne se perd jamais (dire « je suis un lecteur » motive plus que « je lis »).
+// Une identité se construit et ne se perd jamais (dire « je suis une lectrice » motive plus que « je lis »).
 import { isDone } from '../store.js';
 
 // 11 paliers : de 3 jours à 1 500 jours (environ 4 ans), pour qu'il reste toujours quelqu'un à devenir
 export const IDENT_AT = [3, 10, 25, 50, 100, 200, 365, 500, 730, 1000, 1500];
 export const IDENT_XP = [15, 30, 60, 100, 175, 300, 500, 650, 800, 1000, 1500];
 const NAMES = {
-  ecole: ['Élève', 'Élève régulier', 'Étudiant sérieux', 'Bosseur', 'Travailleur acharné', 'Esprit affûté', 'Expert en devenir', 'Expert', 'Maître du savoir', 'Sommité', 'Légende du savoir'],
-  echecs: ['Joueur d’échecs', 'Amateur éclairé', 'Tacticien', 'Stratège', 'Fin stratège', 'Maître tacticien', 'Grand stratège', 'Maître d’échecs', 'Grand maître', 'Génie de l’échiquier', 'Légende des échecs'],
-  sport: ['Actif', 'Sportif', 'Sportif régulier', 'Athlète', 'Athlète discipliné', 'Corps d’acier', 'Machine de guerre', 'Athlète d’élite', 'Force de la nature', 'Titan', 'Légende du sport'],
-  argent: ['Attentif à son argent', 'Gestionnaire', 'Bon gestionnaire', 'Épargnant', 'Épargnant discipliné', 'Investisseur avisé', 'Maître de ses finances', 'Bâtisseur de patrimoine', 'Stratège financier', 'Rentier en devenir', 'Légende de l’épargne'],
-  culture: ['Curieux', 'Lecteur', 'Lecteur assidu', 'Grand lecteur', 'Esprit cultivé', 'Érudit', 'Puits de culture', 'Bibliothèque vivante', 'Encyclopédie ambulante', 'Sage érudit', 'Légende de la culture'],
-  alim: ['Attentif à son assiette', 'Mangeur équilibré', 'Adepte du bien-manger', 'Corps bien nourri', 'Pro de la nutrition', 'Maître de son assiette', 'Nutrition de champion', 'Corps de champion', 'Discipline d’acier', 'Modèle de santé', 'Légende de la nutrition'],
-  medit: ['Esprit curieux', 'Méditant', 'Méditant régulier', 'Esprit calme', 'Esprit zen', 'Sage', 'Maître zen', 'Esprit lumineux', 'Paix intérieure', 'Éveillé', 'Légende zen'],
-  sommeil: ['Dormeur', 'Bon dormeur', 'Dormeur régulier', 'Gardien de ses nuits', 'Pro de la récup', 'Horloge parfaite', 'Maître du sommeil', 'Récupération d’élite', 'Rythme suisse', 'Énergie infinie', 'Légende du sommeil'],
-  ecran: ['Moins connecté', 'Détox en cours', 'Libre de son écran', 'Esprit déconnecté', 'Maître de son attention', 'Imperméable aux écrans', 'Moine numérique', 'Maître de son temps', 'Attention d’acier', 'Zen numérique', 'Légende de la détox'],
-  scroll: ['Anti-scroll', 'Résistant', 'Esprit libre', 'Attention protégée', 'Incorruptible', 'Imperméable au scroll', 'Esprit souverain', 'Concentration absolue', 'Volonté de fer', 'Inébranlable', 'Légende anti-scroll'],
-  pas: ['Marcheur', 'Bon marcheur', 'Grand marcheur', 'Randonneur', 'Infatigable', 'Arpenteur', 'Globe-trotter', 'Explorateur', 'Marathonien du quotidien', 'Tour du monde', 'Légende de la marche'],
-  journal: ['Plume', 'Plume régulière', 'Diariste', 'Introspectif', 'Chroniqueur de sa vie', 'Mémorialiste', 'Écrivain de sa vie', 'Mémoire vivante', 'Biographe', 'Auteur de sa vie', 'Légende de la plume'],
-  competence: ['Apprenant', 'Curieux de tout', 'Autodidacte', 'Touche-à-tout', 'Apprenant acharné', 'Polymathe en devenir', 'Polymathe', 'Esprit universel', 'Génie touche-à-tout', 'Maître des savoirs', 'Légende de l’apprentissage'],
-  rangement: ['Rangé', 'Organisé', 'Intérieur net', 'Pro du rangement', 'Maison impeccable', 'Maître de l’ordre', 'Zen et ordonné', 'Minimaliste', 'Ordre parfait', 'Maître du foyer', 'Légende du rangement'],
-  hygiene: ['Soigné', 'Bien entretenu', 'Rituel au point', 'Toujours frais', 'Impeccable', 'Soin parfait', 'Élégance naturelle', 'Toujours impeccable', 'Rituel sacré', 'Icône de style', 'Légende du soin'],
+  ecole: ['Élève', 'Élève régulière', 'Étudiante sérieuse', 'Bosseuse', 'Travailleuse acharnée', 'Esprit affûté', 'Experte en devenir', 'Experte', 'Reine du savoir', 'Sommité', 'Légende du savoir'],
+  sport: ['Active', 'Sportive', 'Sportive régulière', 'Athlète', 'Athlète disciplinée', 'Corps tonique', 'Énergie pure', 'Athlète accomplie', 'Force de la nature', 'Wonder Woman', 'Légende du sport'],
+  culture: ['Curieuse', 'Spectatrice', 'Spectatrice avertie', 'Amatrice d’art', 'Esprit cultivé', 'Cinéphile', 'Puits de culture', 'Muse des arts', 'Encyclopédie vivante', 'Âme d’artiste', 'Légende de la culture'],
+  lecture: ['Curieuse', 'Lectrice', 'Lectrice assidue', 'Grande lectrice', 'Dévoreuse de livres', 'Érudite', 'Rat de bibliothèque', 'Bibliothèque vivante', 'Femme de lettres', 'Sage érudite', 'Légende de la lecture'],
+  alim: ['Attentive à son assiette', 'Gourmande équilibrée', 'Adepte du bien-manger', 'Corps bien nourri', 'Pro de la nutrition', 'Reine de son assiette', 'Cuisine healthy', 'Vitalité rayonnante', 'Équilibre parfait', 'Modèle de santé', 'Légende de la nutrition'],
+  medit: ['Esprit curieux', 'Méditante', 'Méditante régulière', 'Esprit calme', 'Esprit zen', 'Sage', 'Maîtresse zen', 'Esprit lumineux', 'Paix intérieure', 'Éveillée', 'Légende zen'],
+  sommeil: ['Dormeuse', 'Bonne dormeuse', 'Dormeuse régulière', 'Gardienne de ses nuits', 'Pro de la récup', 'Horloge parfaite', 'Reine du sommeil', 'Belle au bois dormant', 'Rythme parfait', 'Énergie infinie', 'Légende du sommeil'],
+  ecran: ['Moins connectée', 'Détox en cours', 'Libre de son écran', 'Esprit déconnecté', 'Maîtresse de son attention', 'Imperméable aux écrans', 'Zen numérique', 'Maîtresse de son temps', 'Attention de soie', 'Libre et sereine', 'Légende de la détox'],
+  scroll: ['Anti-scroll', 'Résistante', 'Esprit libre', 'Attention protégée', 'Incorruptible', 'Imperméable au scroll', 'Esprit souverain', 'Concentration absolue', 'Volonté de fer', 'Inébranlable', 'Légende anti-scroll'],
+  pas: ['Marcheuse', 'Bonne marcheuse', 'Grande marcheuse', 'Randonneuse', 'Infatigable', 'Arpenteuse', 'Globe-trotteuse', 'Exploratrice', 'Marathonienne du quotidien', 'Tour du monde', 'Légende de la marche'],
+  journal: ['Plume', 'Plume régulière', 'Diariste', 'Introspective', 'Chroniqueuse de sa vie', 'Mémorialiste', 'Écrivaine de sa vie', 'Mémoire vivante', 'Biographe', 'Autrice de sa vie', 'Légende de la plume'],
+  competence: ['Apprenante', 'Curieuse de tout', 'Autodidacte', 'Touche-à-tout', 'Apprenante acharnée', 'Polymathe en devenir', 'Polymathe', 'Esprit universel', 'Génie touche-à-tout', 'Maîtresse des savoirs', 'Légende de l’apprentissage'],
+  rangement: ['Rangée', 'Organisée', 'Intérieur net', 'Pro du rangement', 'Maison impeccable', 'Reine de l’ordre', 'Zen et ordonnée', 'Minimaliste', 'Ordre parfait', 'Maîtresse du foyer', 'Légende du rangement'],
+  hygiene: ['Soignée', 'Bien dans sa peau', 'Rituel au point', 'Toujours fraîche', 'Glow naturel', 'Soin parfait', 'Élégance naturelle', 'Peau de pêche', 'Rituel sacré', 'Icône clean girl', 'Légende du soin'],
+  yoga: ['Curieuse du yoga', 'Yogi', 'Yogi régulière', 'Souple et sereine', 'Corps aligné', 'Yogi accomplie', 'Équilibre parfait', 'Maîtresse du souffle', 'Fleur de lotus', 'Âme de yogi', 'Légende du yoga'],
+  creatif: ['Créative', 'Créatrice', 'Créatrice régulière', 'Âme d’artiste', 'Artiste', 'Inventive', 'Esprit créatif', 'Artiste accomplie', 'Muse', 'Virtuose', 'Légende de la création'],
 };
-const GENERIC = ['Premiers pas', 'Habitué', 'Régulier', 'Passionné', 'Pilier', 'Expert', 'Virtuose', 'Maître', 'Grand maître', 'Légende', 'Mythe'];
+const GENERIC = ['Premiers pas', 'Habituée', 'Régulière', 'Passionnée', 'Pilier', 'Experte', 'Virtuose', 'Maîtresse', 'Grande maîtresse', 'Légende', 'Mythe'];
 export const identNames = d => NAMES[d.id] || GENERIC.map(n => `${n} · ${d.name}`);
 
 // Pour chaque domaine : palier atteint (0 = aucun), jours pratiqués, jour où chaque palier a été atteint

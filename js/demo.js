@@ -1,10 +1,10 @@
-// Compte de démonstration : 4 mois d'historique, toutes les cartes débloquées, des box à ouvrir.
+// Compte de démonstration : 4 mois d'historique, toutes les cartes débloquées, des surprises à ouvrir.
 import { defaults } from './store.js';
 import { key, today, addDays, uid } from './util.js';
 import { LINES, FORMS } from './game/roster.js';
 
-const NOTES = ['Grosse séance de sport ce matin 💪', 'Journée calme, mais j’ai tenu bon.', 'Révisions UE 4 bouclées !', 'Pas de scroll de la journée, ça fait du bien.',
-  'Bonne nuit de sommeil, enfin.', 'J’ai fini mon livre.', 'Méditation de 20 minutes, esprit clair.', 'Petite victoire : pas de soda.'];
+const NOTES = ['Séance de yoga au soleil ce matin 🧘‍♀️', 'Journée calme, mais j’ai pris soin de moi.', 'Révisions bouclées !', 'Pas de scroll de la journée, ça fait du bien.',
+  'Belle nuit de sommeil, enfin.', 'J’ai fini mon livre 📖', 'Méditation de 20 minutes, esprit clair.', 'J’ai peint tout l’après-midi 🎨'];
 
 export function makeDemo() {
   const d = defaults();
@@ -12,7 +12,7 @@ export function makeDemo() {
   d.profile.start = key(start);
   const rnd = Math.random;
   let money = 1450;
-  d.skills = [['Anglais', '🇬🇧', 3], ['Guitare', '🎸', 2], ['Code', '💻', 4]].map(([name, emoji, stars], i) => ({ id: 'sk' + i, name, emoji, stars, created: key(start), u: 1 }));
+  d.skills = [['Anglais', '🇬🇧', 3], ['Piano', '🎹', 2], ['Couture', '🧵', 4]].map(([name, emoji, stars], i) => ({ id: 'sk' + i, name, emoji, stars, created: key(start), u: 1 }));
   d.habits = [{ id: 'hb0', name: 'Sucre', emoji: '🍬', start: key(addDays(t, -50)), resets: [key(addDays(t, -20))], u: 1 }, { id: 'hb1', name: 'Réseaux le soir', emoji: '📱', start: key(addDays(t, -9)), resets: [], u: 1 }];
   for (let i = 120; i >= 1; i--) {
     const k = key(addDays(t, -i)), c = {}, x = {};
@@ -34,44 +34,43 @@ export function makeDemo() {
   }
   const ago = n => key(addDays(t, -n)), soon = n => key(addDays(t, n));
   d.goals = [
-    { id: uid(), title: 'Obtenir le DCG', emoji: '🎓', type: 'steps', horizon: 'annee', due: soon(240), created: ago(100), parent: '', value: 0, done: false, u: 1,
-      steps: ['UE 1 Droit', 'UE 4 Fiscal', 'UE 9 Compta', 'UE 10 Compta approfondie'].map((text, i) => ({ id: uid(), text, done: i < 2 })) },
+    { id: uid(), title: 'Valider mon année', emoji: '🎓', type: 'steps', horizon: 'annee', due: soon(240), created: ago(100), parent: '', value: 0, done: false, u: 1,
+      steps: ['Partiels du 1er semestre', 'Dossier de groupe', 'Stage', 'Partiels du 2e semestre'].map((text, i) => ({ id: uid(), text, done: i < 2 })) },
     { id: uid(), title: 'Lire 20 livres', emoji: '📚', type: 'count', horizon: 'annee', due: soon(66), created: ago(300), target: 20, unit: 'livres', value: 13, parent: '', done: false, steps: [], u: 1 },
-    { id: uid(), title: 'Courir un 10 km', emoji: '🏃', type: 'simple', horizon: 'mois', due: soon(20), created: ago(10), parent: '', value: 0, done: false, steps: [], u: 1 },
-    { id: uid(), title: 'Épargner 1 000 €', emoji: '💰', type: 'count', horizon: 'trimestre', due: ago(5), created: ago(95), target: 1000, unit: '€', value: 1000, parent: '', done: true, doneAt: ago(5), steps: [], u: 1 },
+    { id: uid(), title: 'Tenir la posture du corbeau', emoji: '🧘‍♀️', type: 'simple', horizon: 'mois', due: soon(20), created: ago(10), parent: '', value: 0, done: false, steps: [], u: 1 },
+    { id: uid(), title: 'Finir 3 toiles', emoji: '🎨', type: 'count', horizon: 'trimestre', due: ago(5), created: ago(95), target: 3, unit: 'toiles', value: 3, parent: '', done: true, doneAt: ago(5), steps: [], u: 1 },
   ];
-  const media = [['anime', 'Naruto Shippuden', 5], ['anime', 'Dragon Ball Z', 5], ['manga', 'One Piece', 5], ['film', 'Interstellar', 4], ['livre', 'Atomic Habits', 5],
-    ['serie', 'Breaking Bad', 5], ['film', 'Dragon Ball Super : Broly', 4], ['manga', 'Jujutsu Kaisen', 4], ['livre', 'Père riche, père pauvre', 4]];
+  const media = [['serie', 'Winx Club', 5], ['film', 'Monster High : Le film', 4], ['livre', 'Atomic Habits', 5], ['film', 'Orgueil et Préjugés', 5], ['serie', 'Gilmore Girls', 5],
+    ['livre', 'La Ménagerie de verre', 4], ['film', 'Le Diable s’habille en Prada', 4], ['anime', 'Sailor Moon', 5], ['livre', 'Le Petit Prince', 5]];
   d.media = media.map(([type, title, rating], i) => ({ id: uid(), type, title, status: 'done', rating, review: '', date: ago(5 + i * 9), cover: '', created: i, u: 1 }))
-    .concat([{ id: uid(), type: 'anime', title: 'Hunter x Hunter', status: 'doing', rating: 0, review: '', date: '', cover: '', created: 20, u: 1 },
+    .concat([{ id: uid(), type: 'serie', title: 'Emily in Paris', status: 'doing', rating: 0, review: '', date: '', cover: '', created: 20, u: 1 },
       { id: uid(), type: 'film', title: 'Your Name', status: 'todo', rating: 0, review: '', date: '', cover: '', created: 21, u: 1 }]);
-  d.vision.blocks[0].text = 'Je veux devenir quelqu’un de discipliné, qui tient ses promesses envers lui-même.\nObtenir mon DCG et être fier du chemin parcouru.';
-  d.vision.blocks[1].text = 'La régularité bat le talent. Chaque petite victoire compte.';
+  d.vision.blocks[0].text = 'Je veux devenir une femme sereine, qui prend soin d’elle et tient ses promesses envers elle-même.\nRéussir mes études et être fière du chemin parcouru.';
+  d.vision.blocks[1].text = 'La douceur et la régularité valent mieux que la perfection. Chaque petite victoire compte.';
   // Plans « si… alors… », heure de coucher, victoires notées, bilan du mois dernier
-  const plans = { ecole: ['après le dîner', '15 min de révision active'], sport: ['en rentrant à la maison', 'je pars courir 20 min'], medit: ['juste après le réveil', '5 min de respiration'], culture: ['au lit, avant de dormir', '10 pages'] };
+  const plans = { ecole: ['après le dîner', '15 min de révision active'], yoga: ['en rentrant à la maison', 'je déroule mon tapis 10 min'], medit: ['juste après le réveil', '5 min de respiration'], lecture: ['au lit, avant de dormir', '10 pages'] };
   for (const dom of d.domains.list) if (plans[dom.id]) dom.plan = { when: plans[dom.id][0], then: plans[dom.id][1] };
   d.settings.bedtime = '23:00';
-  d.wins = [{ id: uid(), k: ago(2), emoji: '⭐', text: '10 min de conversation en anglais sans bloquer', u: 1 }, { id: uid(), k: ago(12), emoji: '⭐', text: 'Premier 5 km couru sans m’arrêter', u: 1 }];
+  d.wins = [{ id: uid(), k: ago(2), emoji: '⭐', text: '10 min de conversation en anglais sans bloquer', u: 1 }, { id: uid(), k: ago(12), emoji: '⭐', text: 'Ma première robe cousue !', u: 1 }];
   const pm = new Date(t.getFullYear(), t.getMonth() - 1, 1), pmk = `${pm.getFullYear()}-${String(pm.getMonth() + 1).padStart(2, '0')}`;
-  d.reviews[pmk] = { good: 'Le sport 4 fois par semaine', bad: 'Le téléphone le soir', focus: 'Réviser le DCG tous les jours', why: 'deux', u: 1 };
+  d.reviews[pmk] = { good: 'Le yoga 4 fois par semaine', bad: 'Le téléphone le soir', focus: 'Lire avant de dormir', why: 'deux', u: 1 };
   // Une carte de chaque famille (ouvertes dans une seule « box » pour laisser des box à ouvrir), toutes les évolutions visibles
   const lines = Object.values(LINES);
   d.game.pulls = lines.map((l, i) => Object.assign({ id: uid(), b: 'demo', l: l.id, r: l.rarity, t: i + 1 }, i % 37 === 0 ? { s: 1 } : {}));
   // Des doublons à fusionner ou échanger, quelques brillantes, et deux cartes déjà éveillées
   for (let i = 0; i < 120; i++) { const l = lines[Math.floor(rnd() * lines.length)]; d.game.pulls.push(Object.assign({ id: uid(), b: 'demo2', l: l.id, r: l.rarity, t: 5000 + i }, i % 15 === 0 ? { s: 1 } : {})); }
-  const fused = [['na-itachi', 9], ['db-goku', 4], ['on-luffy', 3]].filter(([l]) => LINES[l]);
+  const fused = [['hk-hello-kitty', 9], ['wx-bloom', 4], ['mh-draculaura', 3]].filter(([l]) => LINES[l]);
   for (const [l, n] of fused) for (let i = 0; i < n; i++) d.game.pulls.push({ id: uid(), b: 'demo3', l, r: LINES[l].rarity, t: 6000 + i });
   // Une carte prête à fusionner (4 doublons)
-  if (LINES['na-kakashi']) for (let i = 0; i < 4; i++) d.game.pulls.push({ id: uid(), b: 'demo3', l: 'na-kakashi', r: LINES['na-kakashi'].rarity, t: 6500 + i });
+  if (LINES['wx-stella']) for (let i = 0; i < 4; i++) d.game.pulls.push({ id: uid(), b: 'demo3', l: 'wx-stella', r: LINES['wx-stella'].rarity, t: 6500 + i });
   d.game.fusions = fused.filter(([, n]) => n >= 3).flatMap(([l, n], j) => [{ id: uid(), l, lv: 1, t: 7000 + j * 2 }].concat(n >= 8 ? [{ id: uid(), l, lv: 2, t: 7001 + j * 2 }] : []));
   d.game.dupFrom = 0;
   // Boss, bilans et rangs de maîtrise depuis le début de la démo
   d.game.since = key(start);
   d.game.unlockAll = true;
-  const comp = LINES['db-gohan-namek'] ? 'db-gohan-namek' : Object.keys(LINES)[0];
-  d.game.comp = [{ id: uid(), line: 'pk390', from: ago(90), t: 1 }, { id: uid(), line: comp, from: ago(30), t: 2 }]
+  d.game.comp = [{ id: uid(), line: 'hk-cinnamoroll', from: ago(90), t: 1 }, { id: uid(), line: 'wx-bloom', from: ago(60), t: 2 }]
     .filter(c => LINES[c.line] && FORMS[LINES[c.line].base]);
-  d.game.rewards = [{ id: uid(), level: 10, text: 'Un resto japonais', claimed: true, u: 1 }, { id: uid(), level: 25, text: 'Un nouveau jeu vidéo', claimed: false, u: 1 },
+  d.game.rewards = [{ id: uid(), level: 10, text: 'Un brunch avec les copines', claimed: true, u: 1 }, { id: uid(), level: 25, text: 'Une séance de massage', claimed: false, u: 1 },
     { id: uid(), level: 40, text: 'Un week-end à la mer', claimed: false, u: 1 }];
   d.game.u = 1;
   return d;

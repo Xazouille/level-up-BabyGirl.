@@ -3,8 +3,8 @@
 export const MAX_LEVEL = 100;
 // [nom, couleur, emblème]
 export const RANKS = [
-  ['Novice', '#94a3b8', '🌱'], ['Apprenti', '#22c55e', '🍀'], ['Initié', '#14b8a6', '💧'], ['Confirmé', '#3b82f6', '🔷'], ['Expert', '#6366f1', '💠'],
-  ['Maître', '#a855f7', '🔮'], ['Grand maître', '#ec4899', '🌸'], ['Champion', '#f97316', '🔥'], ['Légende', '#f59e0b', '👑'], ['Mythe', '#ff3d97', '🌌'],
+  ['Novice', '#b8b2a7', '🌱'], ['Apprentie', '#9cb48a', '🍀'], ['Initiée', '#9fc1bd', '💧'], ['Confirmée', '#8aa6c1', '🔷'], ['Experte', '#9d9fd1', '💠'],
+  ['Maîtresse', '#b79fd1', '🔮'], ['Grande maîtresse', '#e3a0b4', '🌸'], ['Championne', '#e0b18f', '🌷'], ['Légende', '#d8b26e', '👑'], ['Mythe', '#d98fd0', '🌌'],
 ];
 export const levelNeed = L => 20 + 4 * L;
 export const rankOf = L => Math.min(RANKS.length - 1, Math.floor((L - 1) / 10));

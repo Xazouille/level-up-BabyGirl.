@@ -1,0 +1,33 @@
+# Cherche les images des cartes sur les wikis Fandom (depuis GitHub, qui a accès à internet),
+# enregistre js/game/cards-data.js sur la branche choisie, et des planches d'aperçu sur la branche « apercu-cartes ».
+name: Images des cartes
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  cartes:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - run: pip install pillow
+      - run: python3 tools/gen_cards.py --preview /tmp/apercu
+      - name: Enregistrer les cartes
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add js/game/cards-data.js tools/cards-report.txt
+          git diff --cached --quiet || git commit -m "Images des cartes (wikis Fandom)"
+          git push
+      - name: Planches d'aperçu
+        run: |
+          cp tools/cards-report.txt /tmp/apercu/
+          cd /tmp/apercu
+          git init -q -b apercu-cartes
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A && git commit -qm "Aperçu des cartes"
+          git push -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" apercu-cartes

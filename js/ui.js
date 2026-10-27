@@ -1,7 +1,7 @@
 // État de l'interface (onglet ouvert, fenêtre ouverte…) et petits composants partagés.
 import { todayKey, esc } from './util.js';
 
-const PFX = (() => { try { return localStorage.getItem('tdb2-demo') === '1' ? 'tdb2-demo-' : 'tdb2-'; } catch (e) { return 'tdb2-'; } })();
+const PFX = (() => { try { return localStorage.getItem('celia-demo') === '1' ? 'celia-demo-' : 'celia-'; } catch (e) { return 'celia-'; } })();
 export const pref = k => { try { return localStorage.getItem(PFX + k); } catch (e) { return null; } };
 export const setPref = (k, v) => { try { localStorage.setItem(PFX + k, v); } catch (e) {} };
 
@@ -67,7 +67,7 @@ function nextBanner() {
   if (!root) { root = document.createElement('div'); root.id = 'banners'; document.body.appendChild(root); }
   const el = document.createElement('button');
   el.className = 'ban ' + (b.cls || '');
-  el.style.setProperty('--bc', b.color || '#9b6bff');
+  el.style.setProperty('--bc', b.color || '#b7a3d6');
   el.innerHTML = `<span class="ban-ico">${b.icon || '🎉'}</span><span class="ban-txt"><b>${esc(b.title)}</b>${b.sub ? `<small>${esc(b.sub)}</small>` : ''}</span><span class="ban-shine"></span>`;
   let done = false;
   const hide = () => {

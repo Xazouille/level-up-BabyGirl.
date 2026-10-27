@@ -10,16 +10,16 @@ export function nudges() {
   const g = G(), k = todayKey(), doms = activeDomains(), n = doms.length, c = dayCount(k), out = [];
   if (!n) return out;
   const hour = new Date().getHours(), sAt = g.smallAt;
-  if (c < sAt && sAt - c <= 2) out.push({ key: 'small', p: 90, ico: '🎁', left: sAt - c, txt: `Plus que ${plural(sAt - c, 'case', 'cases')} pour ta petite box` });
+  if (c < sAt && sAt - c <= 2) out.push({ key: 'small', p: 90, ico: '🎁', left: sAt - c, txt: `Plus que ${plural(sAt - c, 'case', 'cases')} pour ta petite pochette` });
   const pn = perfectNeed(n);
-  if (c >= sAt && c < pn && pn - c <= 2) out.push({ key: 'perfect', p: 86, ico: '🏆', left: pn - c, txt: `Plus que ${plural(pn - c, 'case', 'cases')} pour une journée parfaite (box classique)` });
+  if (c >= sAt && c < pn && pn - c <= 2) out.push({ key: 'perfect', p: 86, ico: '🏆', left: pn - c, txt: `Plus que ${plural(pn - c, 'case', 'cases')} pour une journée parfaite (coffret)` });
 
   const b = g.boss.current;
   if (b) {
     const pct = Math.round((b.hp - b.dmg) / b.hp * 100), wd = doms.find(d => d.id === b.weak);
-    if (pct <= 25) out.push({ key: 'boss', p: 95, ico: '⚔️', pct, txt: `${b.name} n’a plus que ${pct} % de vie : achève-le !` });
-    else if (!b.left) out.push({ key: 'bosslast', p: 82, ico: '⏳', txt: `Dernier jour pour battre ${b.name} (encore ${pct} % de vie)` });
-    if (wd && !isDone(k, wd.id) && pct > 25) out.push({ key: 'weak', p: 38, ico: wd.emoji, txt: `${wd.name} fait double dégâts à ${b.name}` });
+    if (pct <= 25) out.push({ key: 'boss', p: 95, ico: '🪄', pct, txt: `${b.name} n’a plus que ${pct} % d’énergie : termine ce duel !` });
+    else if (!b.left) out.push({ key: 'bosslast', p: 82, ico: '⏳', txt: `Dernier jour pour ton duel contre ${b.name} (encore ${pct} % d’énergie)` });
+    if (wd && !isDone(k, wd.id) && pct > 25) out.push({ key: 'weak', p: 38, ico: wd.emoji, txt: `${wd.name} compte double contre ${b.name}` });
   }
 
   const st = globalStreak();
@@ -37,7 +37,7 @@ export function nudges() {
   }
 
   const toLv = g.lvl.need - g.lvl.into;
-  if (toLv <= 80) out.push({ key: 'level', p: 70, ico: '⭐', txt: `Encore ${toLv} XP pour le niveau ${g.lvl.level + 1} (grande box)` });
+  if (toLv <= 80) out.push({ key: 'level', p: 70, ico: '⭐', txt: `Encore ${toLv} XP pour le niveau ${g.lvl.level + 1} (grand coffret)` });
 
   // Maîtrise : un domaine à une séance d'un nouveau niveau (ou d'un nouveau rang)
   let ms = null;

@@ -104,7 +104,7 @@ function reviews() {
   const pm = monthKey(prevMonth()), keys = Object.keys(S.reviews).filter(reviewDoneKey).sort().reverse();
   return `<section class="card"><div class="c-head"><h2>🗓️ Bilans du mois</h2>${!reviewDone(S.reviews[pm]) && Object.keys(S.days).some(k => k.startsWith(pm)) ? `<button class="btn sm primary" data-act="monthOpen">Faire le bilan de ${monthName(pm).split(' ')[0]}</button>` : ''}</div>
     ${keys.length ? keys.map(k => { const r = S.reviews[k]; return `<div class="rv"><b>${monthName(k)}</b>
-      <p>✅ ${esc(r.good)}</p><p>🧱 ${esc(r.bad)}</p><p>🎯 ${esc(r.focus)}</p>${WHY[r.why] ? `<p>🤔 ${WHY[r.why]}</p>` : ''}</div>`; }).join('') : '<p class="muted small">Chaque début de mois, un bilan te pose 3 questions : ce qui a marché, ce qui a bloqué, ton focus. Le remplir rapporte une box classique et 100 XP.</p>'}
+      <p>✅ ${esc(r.good)}</p><p>🧱 ${esc(r.bad)}</p><p>🎯 ${esc(r.focus)}</p>${WHY[r.why] ? `<p>🤔 ${WHY[r.why]}</p>` : ''}</div>`; }).join('') : '<p class="muted small">Chaque début de mois, un bilan te pose 3 questions : ce qui a marché, ce qui a bloqué, ton focus. Le remplir rapporte un coffret et 100 XP.</p>'}
   </section>`;
 }
 const reviewDoneKey = k => reviewDone(S.reviews[k]);
@@ -129,7 +129,7 @@ export const actions = {
   skillStar(el) {
     const sk = skill(el.dataset.id), s = Number(el.dataset.s);
     sk.stars = sk.stars === s && s > 1 ? s - 1 : s; touch(sk); save();
-    burst(el, '#f5b700'); buzz(10);
+    burst(el, '#d8b26e'); buzz(10);
   },
   skillEmoji(el) {
     const sk = skill(el.dataset.id), i = SKILL_EMOJIS.indexOf(sk.emoji || '🧠');
@@ -142,7 +142,7 @@ export const actions = {
     const st = G().habits.find(x => x.id === h.id), n = st ? st.cur : 0;
     h.resets = [...(h.resets || []), todayKey()]; touch(h); save();
     // Une rechute n'efface pas le chemin fait : c'est la façon de la vivre qui compte pour la suite
-    toast(n >= 2 ? `Une rechute n’efface pas tes ${n} jours. Tu sais que tu en es capable : on repart demain 💪` : 'Pas grave : une rechute fait partie du chemin. On repart demain 💪');
+    toast(n >= 2 ? `Une rechute n’efface pas tes ${n} jours. Tu sais que tu en es capable : on repart demain 🌷` : 'Pas grave : une rechute fait partie du chemin. On repart demain 💪');
   },
   habitUndo(el) { const h = habit(el.dataset.id); h.resets = (h.resets || []).filter(k => k !== todayKey()); touch(h); save(); },
   habitDel(el) { const h = habit(el.dataset.id); if (confirm(`Supprimer « ${h.name} » et son compteur ?`)) del('habits', h.id); },
@@ -167,6 +167,6 @@ export const forms = {
     const name = (f.name || '').trim();
     if (!name) return false;
     S.habits.push({ id: newId(), name, emoji: HABIT_EMOJIS[S.habits.length % HABIT_EMOJIS.length], start: todayKey(), resets: [], u: Date.now() }); save();
-    toast('C’est parti : le compteur démarre aujourd’hui 💪');
+    toast('C’est parti : le compteur démarre aujourd’hui 🌱');
   },
 };

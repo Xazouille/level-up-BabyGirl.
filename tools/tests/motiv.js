@@ -3,7 +3,8 @@ const { chromium } = require('playwright');
 const fs = require('fs'), path = require('path');
 const out = process.argv[2];
 fs.mkdirSync(out, { recursive: true });
-const OLD = fs.readFileSync(path.join(__dirname, 'rules_old.js'), 'utf8');
+// Compatibilité des défis : rules_old.js = une ancienne version de rules.js (sinon on compare rules.js à lui-même)
+const OLD = fs.readFileSync(fs.existsSync(path.join(__dirname, 'rules_old.js')) ? path.join(__dirname, 'rules_old.js') : path.join(__dirname, '../../js/game/rules.js'), 'utf8');
 const act = (p, a, data = {}) => p.evaluate(([a, data]) => { const b = document.createElement('button'); b.dataset.act = a; Object.assign(b.dataset, data); document.body.appendChild(b); b.click(); b.remove(); }, [a, data]);
 const sleep = (p, ms) => p.waitForTimeout(ms);
 const shot = (p, n, full) => p.screenshot({ path: `${out}/v-${n}.png`, fullPage: !!full });
@@ -39,7 +40,7 @@ const ev = (p, fn) => p.evaluate(fn);
     const y = new Date(); y.setDate(y.getDate() - 1); days[K(y)] = { c: { culture: 1 }, note: '', u: 1 };
     const doms = ids.map(id => ({ id, name: id === 'culture' ? 'Culture & Lecture' : id, emoji: '⭐', color: '#4f8cff', hint: '', archived: false, xp: 10, m: ['ecole', 'sport'].includes(id) ? { kind: 'levels', q: '?', opts: [['15 min', 1, 15], ['30 min', 1.5, 30], ['1 h', 2, 60], ['2 h et +', 3, 120]] } : id === 'sommeil' ? { kind: 'levels', q: '?', opts: [['Moins de 6 h', 0.5], ['6 h – 7 h', 1], ['7 h – 8 h', 1.5], ['8 h et +', 2]] } : { kind: 'none' } }));
     const old = new Date(); old.setDate(old.getDate() - 60);
-    localStorage.setItem('tdb2-data', JSON.stringify({ v: 2, meta: { modified: 1 }, profile: { name: 'Aaron', start: K(old), u: 1 }, settings: { theme: 'auto', threshold: 0.5, u: 1 }, domains: { list: doms, u: 1 }, days, goals: [], media: [], vision: { blocks: [{ id: 'devenir', title: 'Qui je veux devenir', text: 'Je veux devenir quelqu’un de régulier et fier de lui.' }], u: 1 }, game: { pulls: [], trades: [], visits: {}, badges: {}, jokerDays: { [K(old)]: 1 }, comp: [], rewards: [], since: K(old), u: 1 }, dead: {} }));
+    localStorage.setItem('celia-data', JSON.stringify({ v: 2, meta: { modified: 1 }, profile: { name: 'Célia', start: K(old), u: 1 }, settings: { theme: 'auto', threshold: 0.5, u: 1 }, domains: { list: doms, u: 1 }, days, goals: [], media: [], vision: { blocks: [{ id: 'devenir', title: 'Qui je veux devenir', text: 'Je veux devenir quelqu’un de régulier et fier de lui.' }], u: 1 }, game: { pulls: [], trades: [], visits: {}, badges: {}, jokerDays: { [K(old)]: 1 }, comp: [], rewards: [], since: K(old), u: 1 }, dead: {} }));
   });
   await p.reload(); await sleep(p, 1500);
   await closeOv(p);
@@ -67,7 +68,7 @@ const ev = (p, fn) => p.evaluate(fn);
   // Plans si… alors…
   await p.click('[data-act=plansOpen]'); await sleep(p, 600);
   await shot(p, '03-plans-sheet');
-  await p.fill('input[name=w_ecole]', 'après le dîner'); await p.fill('input[name=t_ecole]', '15 min de DCG');
+  await p.fill('input[name=w_ecole]', 'après le dîner'); await p.fill('input[name=t_ecole]', '15 min de révisions');
   await p.fill('input[name=w_sport]', 'en rentrant'); await p.click('.plans-sheet .btn.primary'); await sleep(p, 700);
   console.log('plans', await ev(p, () => JSON.stringify({ hint: document.querySelector('.tile[data-id=ecole] .t-hint').textContent, card: [...document.querySelectorAll('.plans-card .plan-row')].map(x => x.textContent) })));
   await shot(p, '04-today-plans', true);
@@ -80,7 +81,7 @@ const ev = (p, fn) => p.evaluate(fn);
   await p.click('.sheet [data-act=measureSet][data-v="2"]'); await sleep(p, 1100);
   console.log('why toast', await ev(p, () => document.getElementById('toast').textContent));
   // Sommeil : couché à mon heure
-  await p.click('.tile[data-id=sommeil]'); await sleep(p, 500);
+  await closeOv(p); await p.evaluate(() => localStorage.setItem('celia-seenLevel', '999')); await p.click('.tile[data-id=sommeil]'); await sleep(p, 500);
   await p.fill('.sheet input[type=time]', '23:00'); await sleep(p, 200);
   await p.click('.sheet [data-act=sleepReg][data-v="1"]'); await sleep(p, 300);
   await shot(p, '06-sleep-sheet');

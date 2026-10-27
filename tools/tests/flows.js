@@ -10,7 +10,7 @@ const G = p => p.evaluate(async () => { const g = (await import('/js/game/rules.
 (async () => {
   const b = await chromium.launch({ proxy: { server: process.env.HTTPS_PROXY, bypass: 'localhost,127.0.0.1' } });
   const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, colorScheme: 'dark', ignoreHTTPSErrors: true });
-  await ctx.route('https://arosare.github.io/naruto-blazing-revival/**', r => { const f = path.join(NB, r.request().url().split('/naruto-blazing-revival/')[1]); fs.existsSync(f) ? r.fulfill({ path: f }) : r.abort(); });
+  await require('./imgs.js')(ctx, NB);
   const p = await ctx.newPage();
   const errors = [];
   p.on('pageerror', e => errors.push('pageerror: ' + e.message + '\n' + e.stack));
@@ -49,17 +49,17 @@ const G = p => p.evaluate(async () => { const g = (await import('/js/game/rules.
   // Fusion : 4 copies de Kakashi, puis fusion depuis la fiche
   await p.evaluate(async () => {
     const st = await import('/js/store.js');
-    for (let i = 0; i < 5; i++) st.S.game.pulls.push({ id: 'k' + i, b: 'kk', k: 'p', l: 'na-kakashi', r: 4, t: Date.now() + i });
+    for (let i = 0; i < 5; i++) st.S.game.pulls.push({ id: 'k' + i, b: 'kk', k: 'p', l: 'wx-stella', r: 4, t: Date.now() + i });
     st.save();
   });
   await sleep(p, 1200);
   for (let i = 0; i < 4 && await p.$('.overlay'); i++) { const c = await p.$('.overlay [data-ov=close]'); if (c) await c.click({ force: true }); else await p.keyboard.press('Escape'); await sleep(p, 1000); }
-  await act(p, 'cardOpen', { id: 'na-kakashi' }); await sleep(p, 700);
+  await act(p, 'cardOpen', { id: 'wx-stella' }); await sleep(p, 700);
   await shot(p, '04-card-sheet');
   await p.click('[data-act="fuse"]'); await sleep(p, 2400);
   await shot(p, '05-fusion');
   await p.keyboard.press('Escape'); await sleep(p, 800);
-  console.log('after fusion', JSON.stringify((await G(p)).awaken), 'dups', (await G(p)).dups['na-kakashi']);
+  console.log('after fusion', JSON.stringify((await G(p)).awaken), 'dups', (await G(p)).dups['wx-stella']);
   // Brillante forcée dans une petite box
   const bx = await G(p);
   console.log('boxes', JSON.stringify(bx.boxes));

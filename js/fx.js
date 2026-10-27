@@ -1,6 +1,6 @@
 // Effets : confettis, petites explosions de couleur, vibrations.
 const reduce = matchMedia('(prefers-reduced-motion: reduce)');
-const PALETTE = ['#ff4fa3', '#9b6bff', '#4f8cff', '#14c8c8', '#22c55e', '#f5b700', '#ff8a3d', '#ff5a5f'];
+const PALETTE = ['#d7a1bd', '#b7a3d6', '#8aa6c1', '#9fc1bd', '#9cb48a', '#d8b26e', '#e0b18f', '#e3a0a6'];
 
 let canvas, ctx, parts = [], raf = 0;
 function ensure() {

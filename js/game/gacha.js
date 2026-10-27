@@ -2,7 +2,7 @@
 import { S, save, touch } from '../store.js';
 import { uid, todayKey, esc } from '../util.js';
 import { G, FRAG, FUSE_COST } from './rules.js';
-import { LINES, FORMS, SERIES, RARITY, linesByRarity, bigCard } from './roster.js';
+import { LINES, FORMS, SERIES, RARITY, linesByRarity } from './roster.js';
 import { TIERS, PITY4, PITY5 } from './tiers.js';
 
 function roll(odds) {
@@ -11,10 +11,10 @@ function roll(odds) {
   return 1;
 }
 
-// Chance qu'une carte sorte brillante : 1 sur 50, 1 sur 30 dans une grande box
+// Chance qu'une carte sorte brillante : 1 sur 50, 1 sur 30 dans un grand coffret
 export const SHINY_ODDS = { p: 1 / 50, c: 1 / 50, g: 1 / 30 };
 
-// Ouvre une box du type k : tire ses cartes, les enregistre et les renvoie de la moins rare à la plus rare
+// Ouvre une surprise du type k : tire ses cartes, les enregistre et les renvoie de la moins rare à la plus rare
 export function openBox(k) {
   const g = G(), T = TIERS[k];
   if (!T || !(g.boxes[k] > 0)) return null;
@@ -112,12 +112,6 @@ export function cardHTML(formId, opts = {}) {
     + (known && opts.aw === 2 ? '<span class="cg-aw">★</span>' : '')
     + (opts.dup ? `<span class="cg-dup">×${opts.dup}</span>` : '')
     + (opts.isNew ? '<span class="cg-new">NEW</span>' : '');
-  // Pokémon obtenu : la vraie carte du jeu
-  if (known && f.card) {
-    return `<div class="card-g tcg r${r} ${cls} ${opts.size || ''}" style="--rc:${RARITY[r].color}"><div class="cg-inner">
-      <img class="tcg-img" src="${esc(opts.big ? bigCard(f.card) : f.card)}" alt="${esc(f.name)}" loading="lazy" decoding="async" referrerpolicy="no-referrer" data-art="${esc(f.img)}" onerror="this.onerror=null;this.className='tcg-img art';this.src=this.dataset.art">
-      <span class="tcg-fallback">${esc(f.name)}</span><span class="tcg-stars">${stars(r)}</span>${opts.badge ? `<div class="cg-badge">${opts.badge}</div>` : ''}${extras}</div></div>`;
-  }
   return `<div class="card-g r${r} ${known ? '' : 'unknown'} ${cls} ${opts.size || ''}" style="--rc:${RARITY[r].color}">
     <div class="cg-inner">
       <div class="cg-top"><span class="cg-series">${s.emoji}<span class="cg-sname"> ${esc(s.short)}</span></span><span class="cg-stars">${stars(r)}</span></div>

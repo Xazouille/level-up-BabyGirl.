@@ -4,41 +4,42 @@ import { todayKey, uid } from './util.js';
 import { PRESETS, DEFAULT_XP, TIME_MEASURE } from './measures.js';
 
 // Mode démo : un compte de démonstration rangé à part (les vraies données ne sont pas touchées)
-export const DEMO = (() => { try { return localStorage.getItem('tdb2-demo') === '1'; } catch (e) { return false; } })();
+export const DEMO = (() => { try { return localStorage.getItem('celia-demo') === '1'; } catch (e) { return false; } })();
 export let leaving = false;   // l'appli se recharge : plus rien ne doit être enregistré
 export function setDemo(on) {
   leaving = true;
   try {
-    if (on) localStorage.setItem('tdb2-demo', '1');
-    else Object.keys(localStorage).filter(k => k === 'tdb2-demo' || k.startsWith('tdb2-demo-')).forEach(k => localStorage.removeItem(k));
+    if (on) localStorage.setItem('celia-demo', '1');
+    else Object.keys(localStorage).filter(k => k === 'celia-demo' || k.startsWith('celia-demo-')).forEach(k => localStorage.removeItem(k));
   } catch (e) {}
   location.reload();
 }
-const KEY = DEMO ? 'tdb2-demo-data' : 'tdb2-data';
-const SYNC_KEY = 'tdb2-sync', OLD_SYNC_KEY = 'tdb-sync', SYNC_FILE = 'tableau-de-bord-v2.json';
+const KEY = DEMO ? 'celia-demo-data' : 'celia-data';
+const SYNC_KEY = 'celia-sync', SYNC_FILE = 'glow-up-celia.json';
 
-export const COLORS = ['#4f8cff', '#9b6bff', '#ff5a5f', '#f5b700', '#ff8a3d', '#22c55e', '#14c8c8', '#6c7bff', '#ff4fa3', '#00b3ff', '#e879f9', '#84cc16'];
+export const COLORS = ['#8aa6c1', '#e3a0a6', '#d9a77c', '#c7a17a', '#9cb48a', '#9fc1bd', '#a7a3cf', '#d7a1bd', '#93b5cf', '#c9a3c9', '#e0b18f', '#b7c7a3'];
 
 const DEFAULT_DOMAINS = [
-  ['ecole', 'École', '🎓', '#4f8cff', 'Réviser, avancer un cours'],
-  ['echecs', 'Échecs', '♟️', '#9b6bff', 'Puzzles ou une partie analysée'],
-  ['sport', 'Sport', '🏃', '#ff5a5f', 'Même 10 minutes, ça compte'],
-  ['argent', 'Argent', '💰', '#f5b700', 'Un point sur mes finances'],
-  ['culture', 'Culture & Lecture', '📚', '#ff8a3d', 'Lire, un film, un podcast…'],
-  ['alim', 'Alimentation', '🥗', '#22c55e', 'Manger sainement'],
-  ['medit', 'Méditation', '🧘', '#14c8c8', 'Quelques minutes au calme'],
-  ['sommeil', 'Sommeil', '😴', '#6c7bff', 'Une vraie nuit de sommeil'],
-  ['ecran', 'Écran < 2h', '📵', '#ff4fa3', 'Moins de 2 h sur le téléphone'],
-  ['scroll', 'Pas de scroll', '🙅', '#00b3ff', 'Zéro réseau en scroll infini'],
-  ['pas', 'Pas', '👟', '#84cc16', 'Marcher, bouger dans la journée'],
-  ['journal', 'Journal', '📓', '#e879f9', 'Quelques lignes sur papier'],
-  ['competence', 'Compétence', '🧠', '#6366f1', 'Apprendre ou pratiquer une compétence'],
-  ['rangement', 'Rangement', '🧹', '#14c8c8', 'Ranger, nettoyer'],
-  ['hygiene', 'Hygiène', '🪥', '#00b3ff', 'Prendre soin de moi'],
+  ['ecole', 'École', '🎓', '#8aa6c1', 'Réviser, avancer un cours'],
+  ['sport', 'Sport', '🏃‍♀️', '#e3a0a6', 'Même 10 minutes, ça compte'],
+  ['culture', 'Culture', '🎬', '#d9a77c', 'Un film, une expo, un podcast…'],
+  ['lecture', 'Lecture', '📖', '#c7a17a', 'Quelques pages, rien que pour moi'],
+  ['alim', 'Alimentation', '🥗', '#9cb48a', 'Manger sainement'],
+  ['medit', 'Méditation', '🧘‍♀️', '#9fc1bd', 'Quelques minutes au calme'],
+  ['sommeil', 'Sommeil', '😴', '#a7a3cf', 'Une vraie nuit de sommeil'],
+  ['ecran', 'Écran < 2h', '📵', '#d7a1bd', 'Moins de 2 h sur le téléphone'],
+  ['scroll', 'Pas de scroll', '🙅‍♀️', '#93b5cf', 'Zéro réseau en scroll infini'],
+  ['pas', 'Pas', '👟', '#a9bf8e', 'Marcher, bouger dans la journée'],
+  ['journal', 'Journal', '📓', '#c9a3c9', 'Quelques lignes sur papier'],
+  ['competence', 'Compétence', '🧠', '#9d9fd1', 'Apprendre ou pratiquer une compétence'],
+  ['rangement', 'Rangement', '🧺', '#a3c4bc', 'Ranger, nettoyer'],
+  ['hygiene', 'Hygiène', '🫧', '#9ec5d6', 'Prendre soin de moi'],
+  ['yoga', 'Yoga', '🧘', '#b7c7a3', 'Une séance, même courte'],
+  ['creatif', 'Activité créative', '🎨', '#e0b18f', 'Dessin, musique, DIY…'],
 ].map(([id, name, emoji, color, hint]) => ({ id, name, emoji, color, hint, archived: false, xp: DEFAULT_XP[id], m: PRESETS[id] }));
 
 // Cases arrivées avec une mise à jour (ajoutées aux données existantes)
-const NEW_DOMAINS = ['pas', 'journal', 'competence', 'rangement', 'hygiene'];
+const NEW_DOMAINS = [];
 
 const DEFAULT_VISION = [
   { id: 'devenir', title: 'Qui je veux devenir', text: '' },
@@ -49,8 +50,8 @@ export function defaults() {
   return {
     v: 2,
     meta: { modified: 0 },
-    profile: { name: 'Aaron', start: todayKey(), u: 0 },
-    settings: { theme: 'auto', threshold: 0.5, perfect: 0.8, layouts: {}, u: 0 },
+    profile: { name: 'Célia', start: todayKey(), u: 0 },
+    settings: { theme: 'auto', threshold: 0.5, perfect: 0.75, layouts: {}, u: 0 },
     domains: { list: DEFAULT_DOMAINS.map(d => ({ ...d })), added: [...NEW_DOMAINS], u: 0 },
     days: {},
     goals: [],
@@ -260,9 +261,6 @@ export let sync = (() => {
   try {
     const s = JSON.parse(localStorage.getItem(SYNC_KEY));
     if (s) return s;
-    // Reprend le dépôt et la clé de l'ancienne version du tableau de bord
-    const old = JSON.parse(localStorage.getItem(OLD_SYNC_KEY));
-    if (old && old.repo && old.token) return { repo: old.repo, token: old.token, on: !!old.on };
   } catch (e) {}
   return null;
 })();

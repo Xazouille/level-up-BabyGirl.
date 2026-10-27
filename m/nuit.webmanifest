@@ -1,0 +1,31 @@
+{
+  "id": "../",
+  "name": "Glow Up · Célia",
+  "short_name": "Glow Up",
+  "description": "Mes rituels, mes objectifs et ma collection Winx, Monster High et Hello Kitty",
+  "lang": "fr",
+  "start_url": "../",
+  "scope": "../",
+  "display": "standalone",
+  "orientation": "portrait",
+  "background_color": "#1a1614",
+  "theme_color": "#1a1614",
+  "icons": [
+    {
+      "src": "../icons/t/nuit-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "../icons/t/nuit-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "../icons/t/nuit-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ]
+}

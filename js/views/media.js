@@ -5,11 +5,11 @@ import { esc, todayKey, parseKey, fmtDate, norm, plural } from '../util.js';
 import { confetti } from '../fx.js';
 
 export const MTYPES = {
-  film: { label: 'Film', many: 'Films', emoji: '🎬', color: '#ff5a5f' },
-  livre: { label: 'Livre', many: 'Livres', emoji: '📖', color: '#ff8a3d' },
-  manga: { label: 'Manga', many: 'Mangas', emoji: '📕', color: '#ff4fa3' },
-  anime: { label: 'Animé', many: 'Animés', emoji: '🍥', color: '#9b6bff' },
-  serie: { label: 'Série', many: 'Séries', emoji: '📺', color: '#4f8cff' },
+  film: { label: 'Film', many: 'Films', emoji: '🎬', color: '#e3a0a6' },
+  livre: { label: 'Livre', many: 'Livres', emoji: '📖', color: '#e0b18f' },
+  manga: { label: 'Manga', many: 'Mangas', emoji: '📕', color: '#d7a1bd' },
+  anime: { label: 'Animé', many: 'Animés', emoji: '🍥', color: '#b7a3d6' },
+  serie: { label: 'Série', many: 'Séries', emoji: '📺', color: '#8aa6c1' },
 };
 const STATUS = [['done', 'Terminés', 'Terminé'], ['doing', 'En cours', 'En cours'], ['todo', 'À voir', 'À voir plus tard']];
 
@@ -60,7 +60,7 @@ export function sheet(s) {
   return `<form class="form" data-form="media">
     <h2>${m ? 'Modifier' : 'Ajouter à ma médiathèque'}</h2>
     <div class="f"><span>Type</span><div class="pills">${Object.entries(MTYPES).map(([id, t]) => `<label><input type="radio" name="type" value="${id}" ${v.type === id ? 'checked' : ''}><span>${t.emoji} ${t.label}</span></label>`).join('')}</div></div>
-    <label class="f">Titre<input name="title" required maxlength="120" value="${esc(v.title)}" placeholder="Ex. One Piece"></label>
+    <label class="f">Titre<input name="title" required maxlength="120" value="${esc(v.title)}" placeholder="Ex. Gilmore Girls"></label>
     <div class="f"><span>Statut</span><div class="pills">${STATUS.map(([id, , l]) => `<label><input type="radio" name="status" value="${id}" ${v.status === id ? 'checked' : ''}><span>${l}</span></label>`).join('')}</div></div>
     <div class="f"><span>Ma note</span><div class="rate">${[5, 4, 3, 2, 1].map(i => `<input type="radio" id="r${i}" name="rating" value="${i}" ${v.rating === i ? 'checked' : ''}><label for="r${i}" aria-label="${i} étoiles">★</label>`).join('')}</div></div>
     <label class="f">Mon avis<textarea name="review" rows="4" maxlength="3000" placeholder="Ce que j’en ai pensé, ce que je retiens…">${esc(v.review)}</textarea></label>

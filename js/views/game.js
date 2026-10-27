@@ -29,28 +29,30 @@ export function compMood(g = G()) {
 }
 export function avatar(g = G(), w = worn(g)) {
   const c = g.companion, mood = compMood(g);
-  return `<button class="lv-avatar fr-${w.frame.id} mood-${mood}" data-act="pet" aria-label="${c ? `Toucher ${esc(c.form.name)}` : 'Médaillon'}">
-    <span class="av-frame"></span>${c ? `<img src="${esc(c.form.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'">` : '<span>🎁</span>'}
+  return `<button class="lv-avatar fr-${w.frame.id} mood-${mood} ${c && c.halo ? 'halo-' + c.halo[1] : ''}" data-act="pet" aria-label="${c ? `Toucher ${esc(c.form.name)}` : 'Ma PP'}">
+    <span class="av-frame"></span>${c ? `<img src="${esc(c.form.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'">` : '<span>🎀</span>'}
     ${c ? `<span class="mood-ico">${MOOD_ICO[mood]}</span>` : ''}</button>`;
 }
+// Cœurs de complicité (2 offerts à chaque palier)
+export const heartsHTML = c => `<span class="hearts" aria-label="${c.hearts} cœurs sur 10">${Array.from({ length: 10 }, (_, i) => `<i class="${i < c.hearts ? 'on' : ''}">${i < c.hearts ? '♥' : '♡'}</i>`).join('')}</span>`;
 // Ce que dit le compagnon : une phrase de ta vision, un encouragement ou ce qui est à portée de main
 function petLine(g) {
   const c = g.companion, mood = compMood(g), pick = a => a[Math.floor(Math.random() * a.length)];
   const vs = visionSentences(), nd = nudges();
   const name = S.profile.name || 'toi';
   const byMood = {
-    joy: ['Journée parfaite ! Je suis trop fier de toi 🤩', `Tu es une machine, ${name} !`],
-    happy: ['Ça avance bien aujourd’hui ! 💪', 'On est sur une bonne lancée !'],
-    calm: [`Coucou ${name} ! On fait quoi aujourd’hui ?`, 'Une case après l’autre, on y va ?'],
-    worried: ['On n’a pas encore fait grand-chose aujourd’hui… on s’y met ? 🥺', 'Il est encore temps de sauver la journée !'],
-    sleep: ['Zzz… Bonne nuit, demain on remet ça 😴', 'Je dors à moitié… Va te coucher, toi aussi 💤'],
+    joy: ['Journée parfaite ! Tu rayonnes aujourd’hui ✨', `Tu es incroyable, ${name} 🤍`],
+    happy: ['Ça avance tout en douceur aujourd’hui 🌸', 'On est sur une jolie lancée !'],
+    calm: [`Coucou ${name} ! On prend soin de toi aujourd’hui ?`, 'Une case après l’autre, sans pression 🫧'],
+    worried: ['Pas grave si la journée a mal commencé : une petite case et on repart ? 🌷', 'Il reste du temps pour un joli moment rien qu’à toi.'],
+    sleep: ['Zzz… Douce nuit, demain est un nouveau jour 🌙', 'Il est tard : ton lit t’attend, à demain 💤'],
   };
   const pool = [...(byMood[mood] || byMood.calm)];
   if (vs.length) pool.push(`« ${pick(vs)} »`, `« ${pick(vs)} »`);
   if (nd.length) pool.push(nd[0].txt + ' !');
-  if (c && !c.maxed) pool.push(`Encore ${nf(c.need - c.into)} XP et j’évolue !`);
+  if (c) pool.push(c.maxed ? `Encore ${nf(c.need - c.into)} points de complicité et on passe un nouveau palier 💗` : `Encore ${nf(c.need - c.into)} points de complicité et je me transforme ✨`);
   const b = g.boss.current;
-  if (b) pool.push(`${b.name} n’a plus que ${Math.round((b.hp - b.dmg) / b.hp * 100)} % de vie, on l’achève ? ⚔️`);
+  if (b) pool.push(`${b.name} n’a plus que ${Math.round((b.hp - b.dmg) / b.hp * 100)} % d’énergie, on termine ce défi ? 🌸`);
   return pick(pool);
 }
 
@@ -75,15 +77,15 @@ export function bossCard(compact = false) {
     const last = g.boss.history[g.boss.history.length - 1];
     if (!last) return '';
     return `<button class="boss-card idle ${compact ? 'compact' : ''}" data-act="bossOpen"><span class="bc-ico">${last.won ? '🏆' : '💨'}</span>
-      <span class="bc-main"><b>${last.won ? `${esc(last.name)} est K.O. !` : `${esc(last.name)} s’est enfui…`}</b><small>Le prochain boss arrive demain.</small></span></button>`;
+      <span class="bc-main"><b>${last.won ? `Duel gagné contre ${esc(last.name)} !` : `${esc(last.name)} a filé…`}</b><small>Le prochain duel arrive demain.</small></span></button>`;
   }
   const left = Math.max(0, b.hp - b.dmg), pct = Math.round(left / b.hp * 100);
   const wd = S.domains.list.find(d => d.id === b.weak);
-  return `<button class="boss-card ${b.legendary ? 'legend' : ''} ${compact ? 'compact' : ''}" data-act="bossOpen" aria-label="Boss : ${esc(b.name)}">
+  return `<button class="boss-card ${b.legendary ? 'legend' : ''} ${compact ? 'compact' : ''}" data-act="bossOpen" aria-label="Duel : ${esc(b.name)}">
     <span class="bc-portrait"><img src="${esc(b.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"></span>
     <span class="bc-main">
       <span class="bc-top"><b>${esc(b.name)}</b>${b.legendary ? '<span class="bc-leg">Légendaire</span>' : ''}<span class="bc-day">Jour ${b.dayNo}/7</span></span>
-      <span class="bc-hp"><span class="bc-fill" style="width:${pct}%"></span><i>${nf(left)} / ${nf(b.hp)} PV</i></span>
+      <span class="bc-hp"><span class="bc-fill" style="width:${pct}%"></span><i>${nf(left)} / ${nf(b.hp)} d’énergie</i></span>
       <span class="bc-sub">Point faible : ${wd ? `${wd.emoji} ${esc(wd.name)}` : '?'} ×2 · ${b.left ? `${plural(b.left, 'jour', 'jours')} restants` : 'dernier jour !'}</span>
     </span></button>`;
 }
@@ -92,21 +94,21 @@ export function bossSheet() {
   const won = g.boss.history.filter(x => x.won).length;
   const wd = b && S.domains.list.find(d => d.id === b.weak);
   const head = b ? `<div class="bs-head ${b.legendary ? 'legend' : ''}"><span class="bc-portrait big"><img src="${esc(b.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"></span>
-      <div><p class="eyebrow">${b.legendary ? '🐉 Boss légendaire' : '⚔️ Boss'} · jour ${b.dayNo}/7</p><h2>${esc(b.name)}</h2><p class="muted small">${esc(b.why)}</p></div></div>
-      <div class="bc-hp big"><span class="bc-fill" style="width:${Math.round((b.hp - b.dmg) / b.hp * 100)}%"></span><i>${nf(b.hp - b.dmg)} / ${nf(b.hp)} PV</i></div>
+      <div><p class="eyebrow">${b.legendary ? '👑 Duel légendaire' : '🪄 Duel magique'} · jour ${b.dayNo}/7</p><h2>${esc(b.name)}</h2><p class="muted small">${esc(b.why)}</p></div></div>
+      <div class="bc-hp big"><span class="bc-fill" style="width:${Math.round((b.hp - b.dmg) / b.hp * 100)}%"></span><i>${nf(b.hp - b.dmg)} / ${nf(b.hp)} d’énergie</i></div>
       <div class="bs-days">${Array.from({ length: 7 }, (_, i) => { const d = b.days[i]; return `<span class="${d ? 'on' : ''}"><b>${d ? nf(d[1]) : '·'}</b><small>J${i + 1}</small></span>`; }).join('')}</div>`
-    : '<h2>Boss</h2><p class="muted">Le prochain boss arrive demain. Repose-toi… ou prends de l’avance !</p>';
+    : '<h2>Duel magique</h2><p class="muted">Le prochain duel arrive demain. Repose-toi… ou prends de l’avance !</p>';
   return `<div class="boss-sheet">${head}
     <ul class="bs-rules">
       <li>⚔️ Chaque case cochée lui fait autant de dégâts que son XP.</li>
-      ${wd ? `<li>${wd.emoji} Point faible : <b>${esc(wd.name)}</b>, dégâts ×2.</li>` : ''}
+      ${wd ? `<li>${wd.emoji} Point faible : <b>${esc(wd.name)}</b>, magie ×2.</li>` : ''}
       <li>💥 Journée parfaite : coup critique, dégâts ×1,5.</li>
       <li>⏳ 7 jours maximum. Battu plus tôt : le suivant arrive dès le lendemain.</li>
-      <li>🎁 Victoire : grande box (deux pour un légendaire), sa carte et de l’XP. Un boss sur 4 est légendaire.</li>
+      <li>🎁 Victoire : grand coffret (deux pour un légendaire), sa carte et de l’XP. Un boss sur 4 est légendaire.</li>
     </ul>
     <p class="eyebrow">Tableau de chasse · ${plural(won, 'victoire', 'victoires')}</p>
     ${hist.length ? `<div class="bs-hist">${hist.slice(0, 30).map(x => `<div class="bh ${x.won ? 'won' : 'lost'}"><span class="bh-img"><img src="${esc(x.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"></span>
-      <span class="bh-txt"><b>${esc(x.name)}${x.legendary ? ' 🐉' : ''}</b><small>${x.won ? `Vaincu en ${plural(x.days.length, 'jour', 'jours')}` : 'S’est enfui (il reviendra)'} · ${fmtShort(parseKey(x.endDay))}</small></span><span>${x.won ? '✅' : '💨'}</span></div>`).join('')}</div>`
+      <span class="bh-txt"><b>${esc(x.name)}${x.legendary ? ' 🐉' : ''}</b><small>${x.won ? `Gagné en ${plural(x.days.length, 'jour', 'jours')}` : 'A filé (revanche plus tard)'} · ${fmtShort(parseKey(x.endDay))}</small></span><span>${x.won ? '✅' : '💨'}</span></div>`).join('')}</div>`
       : '<p class="muted small">Ton premier combat est en cours.</p>'}
   </div>`;
 }
@@ -115,14 +117,14 @@ export function bossSheet() {
 function boxesCard() {
   const g = G(), b = g.boxes;
   return `<section class="card boxes-card ${b.total ? 'has' : ''}">
-    <div class="c-head"><h2>🎁 Mes box</h2><button class="link-btn" data-act="oddsOpen">Taux et garanties ›</button></div>
+    <div class="c-head"><h2>🎁 Mes surprises</h2><button class="link-btn" data-act="oddsOpen">Taux et garanties ›</button></div>
     <div class="bx-list">${['p', 'c', 'g'].map(k => {
       const T = TIERS[k], n = b[k];
       return `<button class="bx t-${k} ${n ? 'on' : ''}" style="--tc:${T.color}" data-act="${n ? 'openBox' : 'oddsOpen'}" data-k="${k}">
         ${chestHTML(k)}<b>${T.name}</b><small>${plural(T.cards, 'carte', 'cartes')}</small><span class="bx-n">${n ? `×${n}` : '0'}</span></button>`;
     }).join('')}</div>
-    ${b.total ? `<button class="btn primary full summon-btn" data-act="openBox">✨ Invoquer · ${plural(b.total, 'box', 'box')}</button>`
-      : `<p class="muted small center">Prochaine grande box au niveau ${g.lvl.level + 1} · encore ${nf(g.lvl.need - g.lvl.into)} XP</p>`}
+    ${b.total ? `<button class="btn primary full summon-btn" data-act="openBox">✨ Ouvrir · ${plural(b.total, 'surprise', 'surprises')}</button>`
+      : `<p class="muted small center">Prochain grand coffret au niveau ${g.lvl.level + 1} · encore ${nf(g.lvl.need - g.lvl.into)} XP</p>`}
   </section>`;
 }
 
@@ -130,32 +132,32 @@ function companionCard() {
   const g = G(), c = g.companion;
   if (!c) {
     const n = Object.keys(g.owned).length;
-    return `<section class="card comp-card empty-comp"><h2>🐾 Ton compagnon</h2>
-      <p class="muted">${n ? 'Choisis un compagnon dans ta collection : il grandira avec ta régularité et évoluera.' : 'Ouvre ta première box pour obtenir un compagnon. Il grandira avec ta régularité et évoluera.'}</p>
+    return `<section class="card comp-card empty-comp"><h2>🎀 Ma PP</h2>
+      <p class="muted">${n ? 'Choisis ta PP dans ta collection : elle s’affiche en photo de profil et votre complicité grandit avec tes vraies journées. Elle ne redescend jamais.' : 'Ouvre ta première surprise pour choisir ta PP : elle s’affiche en photo de profil et votre complicité grandit avec tes vraies journées.'}</p>
       ${n ? '<button class="btn primary" data-act="gameTab" data-t="collection">Choisir dans ma collection</button>' : ''}</section>`;
   }
-  const L = LINES[c.line], pct = c.maxed ? 100 : Math.min(100, Math.round(c.into / c.need * 100));
-  const aw = g.awaken[c.line] || 0, mood = compMood(g);
-  // Chemin d'évolution : les formes déjà atteintes, puis les suivantes possibles
+  const L = LINES[c.line], aw = g.awaken[c.line] || 0, mood = compMood(g);
+  // Chemin des formes : celles déjà atteintes, puis les suivantes
   const chain = [];
-  for (let i = 0; i <= L.depth; i++) {
+  for (let i = 0; i <= L.depth && L.depth > 0; i++) {
     const id = c.path[i];
     if (id) chain.push(`<span class="ch-step on ${i === c.stage ? 'cur' : ''}"><img src="${esc(FORMS[id].img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"></span>`);
     else chain.push('<span class="ch-step">?</span>');
   }
   const nextNames = c.maxed ? '' : FORMS[c.form.id].next.map(id => g.forms.has(id) ? FORMS[id].name : '???').join(' ou ');
-  const warn = c.badStreak >= 1 ? `<p class="comp-warn">⚠️ Hier était un jour sans (pas de révision, moins de 7 h de sommeil, rien en alimentation). Encore un aujourd’hui et ${esc(c.form.name)} ${c.stage ? 'redescend d’un stade' : 'perd sa progression'}.</p>` : '';
+  const reward = !c.maxed ? `sa forme suivante : ${esc(nextNames)}` : c.nextHalo && c.nextHalo[0] === c.level + 1 ? `le halo ${esc(c.nextHalo[2])}` : 'un nouveau palier';
   return `<section class="card comp-card" style="--rc:${RARITY[L.rarity].color}">
-    <button class="comp-art mood-${mood} ${g.owned[c.line] && g.owned[c.line].shiny ? 'shiny' : ''}" data-act="pet" aria-label="Toucher ${esc(c.form.name)}"><img src="${esc(c.form.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"><span class="mood-ico">${MOOD_ICO[mood]}</span></button>
+    <button class="comp-art mood-${mood} ${c.halo ? 'halo-' + c.halo[1] : ''} ${g.owned[c.line] && g.owned[c.line].shiny ? 'shiny' : ''}" data-act="pet" aria-label="Toucher ${esc(c.form.name)}"><img src="${esc(c.form.img)}" alt="" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"><span class="mood-ico">${MOOD_ICO[mood]}</span></button>
     <div class="comp-body">
-      <p class="eyebrow">🐾 Ton compagnon · ${'★'.repeat(L.rarity)}${aw ? ` · ${AWAKEN[aw].name}` : ''}</p>
+      <p class="eyebrow">🎀 Ma PP · ${'★'.repeat(L.rarity)}${aw ? ` · ${AWAKEN[aw].name}` : ''}</p>
       <h2>${esc(c.form.name)}</h2>
-      <div class="chain">${chain.join('<span class="ch-arrow">›</span>')}</div>
-      ${c.maxed ? '<p class="muted small">Forme finale atteinte 🏆 Garde le rythme pour qu’il reste à ce stade.</p>'
-        : `<div class="xpbar alt"><span style="width:${pct}%"></span></div><p class="muted small">${nf(c.into)} / ${nf(c.need)} XP avant d’évoluer en ${esc(nextNames)}${aw ? ` · grandit ${Math.round((AWAKEN[aw].mult - 1) * 100)} % plus vite` : ''}</p>`}
-      ${warn}
-      <p class="muted small">Touche-le pour lui parler 💬</p>
-      <button class="btn sm" data-act="gameTab" data-t="collection">Changer de compagnon</button>
+      <p class="comp-lv">💗 Complicité niveau ${c.level}${c.halo ? ` · halo ${esc(c.halo[2])}` : ''}</p>
+      ${heartsHTML(c)}
+      <p class="muted small">${nf(c.into)} / ${nf(c.need)} points · prochain palier : ${reward}${aw ? ` · grandit ${Math.round((AWAKEN[aw].mult - 1) * 100)} % plus vite` : ''}</p>
+      ${chain.length ? `<div class="chain">${chain.join('<span class="ch-arrow">›</span>')}</div>` : ''}
+      ${c.nextHalo ? `<p class="muted small">✨ Halo ${esc(c.nextHalo[2])} au niveau ${c.nextHalo[0]} de complicité</p>` : ''}
+      <p class="muted small">La complicité ne redescend jamais. Touche ta PP pour lui parler 💬</p>
+      <button class="btn sm" data-act="gameTab" data-t="collection">Changer de PP</button>
     </div></section>`;
 }
 
@@ -241,8 +243,8 @@ function rewardsCard() {
 
 function xpCard() {
   const b = G().breakdown;
-  const rows = [['✅', 'Cases cochées', b.cases], ['⭐', 'Bonus (journées parfaites, phrases, connexion)', b.bonus], ['🎯', 'Objectifs', b.goals], ['🍿', 'Médiathèque', b.media], ['🏅', 'Badges', b.badges], ['📅', 'Défis', b.challenges], ['⚔️', 'Boss', b.boss], ['🌱', 'Compétences et habitudes', b.growth], ['🪪', 'Identités', b.identity], ['🗓️', 'Bilans du mois', b.reviews]];
-  return `<section class="card"><h2>⚡ D’où vient ton XP</h2>${rows.map(([e, l, v]) => `<div class="xp-row"><span>${e} ${l}</span><b>${nf(v)}</b></div>`).join('')}</section>`;
+  const rows = [['✅', 'Cases cochées', b.cases], ['⭐', 'Bonus (journées parfaites, phrases, connexion)', b.bonus], ['🎯', 'Objectifs', b.goals], ['🍿', 'Médiathèque', b.media], ['🏅', 'Badges', b.badges], ['📅', 'Défis', b.challenges], ['🪄', 'Duels magiques', b.boss], ['🌱', 'Compétences et habitudes', b.growth], ['🪪', 'Identités', b.identity], ['🗓️', 'Bilans du mois', b.reviews]];
+  return `<section class="card"><h2>✨ D’où vient ton XP</h2>${rows.map(([e, l, v]) => `<div class="xp-row"><span>${e} ${l}</span><b>${nf(v)}</b></div>`).join('')}</section>`;
 }
 
 function profil() {
@@ -285,30 +287,30 @@ function cardsView(g) {
   const total = list.length, limit = ui.collLimit || 120;
   list = list.slice(0, limit);
   const nNew = all.filter(test.new).length, nDup = Object.keys(g.dups).length, nAw = Object.keys(g.awaken).length;
-  const serChips = [['all', 'Toutes', '#9b6bff']].concat(Object.entries(SERIES).map(([k, s]) => [k, `${s.emoji} ${s.name}`, s.color]))
+  const serChips = [['all', 'Toutes', '#b7a3d6']].concat(Object.entries(SERIES).map(([k, s]) => [k, `${s.emoji} ${s.name}`, s.color]))
     .map(([k, l, c]) => `<button class="chip ${ser === k ? 'on' : ''}" style="--c:${c}" data-act="collSeries" data-s="${k}">${esc(l)}</button>`).join('');
-  const rarChips = [0, 1, 2, 3, 4, 5].map(r => `<button class="chip ${rar === r ? 'on' : ''}" style="--c:${r ? RARITY[r].color : '#9b6bff'}" data-act="collRarity" data-r="${r}">${r ? '★'.repeat(r) : 'Toutes'}</button>`).join('');
+  const rarChips = [0, 1, 2, 3, 4, 5].map(r => `<button class="chip ${rar === r ? 'on' : ''}" style="--c:${r ? RARITY[r].color : '#b7a3d6'}" data-act="collRarity" data-r="${r}">${r ? '★'.repeat(r) : 'Toutes'}</button>`).join('');
   const filChips = [['', 'Tout'], ['owned', '✓ Obtenues'], ['new', `🆕 Nouvelles ${nNew}`], ['shiny', `✨ Brillantes ${g.shinies}`], ['dups', `🃏 Doublons ${nDup}`], ['aw', `🔮 Éveillées ${nAw}`]]
     .map(([k, l]) => `<button class="chip ${fil === k ? 'on' : ''}" data-act="collFilter" data-f="${k}">${l}</button>`).join('');
   return `<section class="coll-head"><div><b>${ownedForms}</b> / ${all.length} cartes${g.shinies ? ` · ✨ ${g.shinies} brillantes` : ''}</div><div class="xpbar"><span style="width:${Math.round(ownedForms / all.length * 100)}%"></span></div></section>
-    <div class="coll-tools"><input class="coll-search" type="search" data-input="collQ" value="${esc(ui.collQ || '')}" placeholder="🔎 Chercher une carte (Goku, Itachi, Pikachu…)" autocomplete="off">
+    <div class="coll-tools"><input class="coll-search" type="search" data-input="collQ" value="${esc(ui.collQ || '')}" placeholder="🔎 Chercher une carte (Bloom, Draculaura, Kuromi…)" autocomplete="off">
       <div class="chips scroll-x">${SORTS.map(([k, l]) => `<button class="chip ${sort === k ? 'on' : ''}" data-act="collSort" data-s="${k}">${k === sort ? '⇅ ' : ''}${l}</button>`).join('')}</div></div>
     <div class="chips scroll-x">${filChips}</div>
     <div class="chips scroll-x">${serChips}</div>
     <div class="chips scroll-x">${rarChips}</div>
     ${list.length ? `<div class="coll-grid">${list.map(f => {
       const ow = o(f), known = g.forms.has(f.id), base = isBase(f);
-      return `<button class="coll-item" data-act="cardOpen" data-id="${f.id}">${cardHTML(f.id, { known, size: 'sm', badge: g.companion && g.companion.form.id === f.id ? '🐾' : '',
+      return `<button class="coll-item" data-act="cardOpen" data-id="${f.id}">${cardHTML(f.id, { known, size: 'sm', badge: g.companion && g.companion.form.id === f.id ? '🎀' : '',
         shiny: ow && ow.shiny, aw: g.awaken[f.line] || 0, dup: base ? g.dups[f.line] || 0 : 0, isNew: base && !!ow && ow.t > since })}</button>`;
     }).join('')}</div>`
-      : `<p class="muted center pad">${q ? 'Aucune carte à ce nom.' : 'Aucune carte ici pour l’instant. Ouvre des box !'}</p>`}
+      : `<p class="muted center pad">${q ? 'Aucune carte à ce nom.' : 'Aucune carte ici pour l’instant. Ouvre des surprises !'}</p>`}
     ${total > limit ? `<button class="btn ghost full" data-act="collMore">Afficher plus (${total - limit})</button>` : ''}`;
 }
 function albumsView(g) {
   const list = [...g.albums].sort((a, b) => (a.done - b.done) || (b.have / b.lines.length - a.have / a.lines.length));
-  return `<p class="muted small center">Complète un album : <b>une grande box</b> et un <b>titre</b> à porter.</p>
+  return `<p class="muted small center">Complète un album : <b>un grand coffret</b> et un <b>titre</b> à porter.</p>
     <div class="albums">${list.map(a => `<section class="album ${a.done ? 'done' : ''}">
-      <div class="al-head"><span class="al-emoji">${a.emoji}</span><div class="al-t"><b>${esc(a.name)}</b><small>${a.done ? `✓ Complété · titre « ${esc(a.title)} »` : `Titre « ${esc(a.title)} » + grande box`}</small></div><span class="al-n">${a.have}/${a.lines.length}</span></div>
+      <div class="al-head"><span class="al-emoji">${a.emoji}</span><div class="al-t"><b>${esc(a.name)}</b><small>${a.done ? `✓ Complété · titre « ${esc(a.title)} »` : `Titre « ${esc(a.title)} » + grand coffret`}</small></div><span class="al-n">${a.have}/${a.lines.length}</span></div>
       <div class="d-bar"><span style="width:${Math.round(a.have / a.lines.length * 100)}%"></span></div>
       <div class="al-cards">${a.lines.map(l => { const own = g.owned[l], f = FORMS[l]; return `<button class="al-card ${own ? 'on' : ''} ${own && own.shiny ? 'shiny' : ''}" data-act="cardOpen" data-id="${l}" style="--rc:${RARITY[LINES[l].rarity].color}">
         <img src="${esc(f.img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"><small>${own ? esc(f.name) : '???'}</small></button>`; }).join('')}</div>
@@ -320,7 +322,7 @@ function masteryView() {
   const g = G(), doms = activeDomains().map(d => ({ d, m: g.mastery[d.id] })).filter(x => x.m).sort((a, b) => b.m.points - a.m.points);
   const total = doms.reduce((a, x) => a + x.m.level, 0);
   return `<section class="card ms-intro"><h2>⭐ Maîtrise</h2>
-      <p class="muted">Chaque jour où tu fais un domaine, il gagne des points (jusqu’à 3 fois plus quand tu y passes du temps). <b>100 niveaux</b> par domaine, un <b>nouveau rang tous les 10 niveaux</b> : chaque rang rapporte une grande box, et certains un titre. Il faut environ 3 ans de régularité pour le niveau 100.</p>
+      <p class="muted">Chaque jour où tu fais un domaine, il gagne des points (jusqu’à 3 fois plus quand tu y passes du temps). <b>100 niveaux</b> par domaine, un <b>nouveau rang tous les 10 niveaux</b> : chaque rang rapporte un grand coffret, et certains un titre. Il faut environ 3 ans de régularité pour le niveau 100.</p>
       <div class="ms-ranks">${RANKS.map(([n, c, e], i) => `<span style="--rk:${c}" title="Niveaux ${i * 10 + 1} à ${i * 10 + 10}">${e}<small>${n}</small></span>`).join('')}</div>
       <p class="muted small center">Total : ${nf(total)} niveaux de maîtrise</p></section>
     <div class="ms-list">${doms.map(({ d, m }) => {
@@ -338,7 +340,7 @@ function badges() {
   const got = S.game.badges, defs = badgeDefs();
   const cats = [...new Set(defs.map(b => b.cat))];
   const n = defs.filter(b => got[b.id]).length;
-  return `<p class="muted center">${n} / ${defs.length} badges · chaque badge rapporte de l’XP, certains une box</p>` + cats.map(c => `<h2 class="sec">${c}</h2><div class="badges">${defs.filter(b => b.cat === c).map(b => `
+  return `<p class="muted center">${n} / ${defs.length} badges · chaque badge rapporte de l’XP, certains une surprise</p>` + cats.map(c => `<h2 class="sec">${c}</h2><div class="badges">${defs.filter(b => b.cat === c).map(b => `
     <div class="badge ${got[b.id] ? 'on' : ''}"><span class="b-emoji">${b.emoji}</span><b>${esc(b.name)}</b><small>${esc(b.desc)}</small>
       <span class="b-xp">${got[b.id] ? `✓ ${fmtShort(parseKey(got[b.id]))}` : `+${b.xp} XP${b.box ? ` · ${TIERS[b.box].name}` : ''}`}</span></div>`).join('')}</div>`).join('');
 }
@@ -366,17 +368,17 @@ export function sheet(s) {
       ${cost ? `<button class="btn ${dup >= cost ? 'primary' : ''} full" ${dup >= cost ? `data-act="fuse" data-line="${L.id}"` : 'disabled'}>🔮 Fusionner ${cost} doublons → ${AWAKEN[nextLv].name}${dup < cost ? ` (${dup}/${cost})` : ''}</button>`
         : '<p class="tag-ok">🌈 Stade ultime atteint</p>'}
       ${dup ? `<button class="btn full" data-act="recycle" data-line="${L.id}">💎 Échanger ${plural(dup, 'doublon', 'doublons')} → +${recycleValue(g, L.id)} fragments</button>` : ''}
-      <p class="muted small">3 doublons → éveillée (cadre doré), puis 5 → ultime (arc-en-ciel). Un compagnon éveillé grandit plus vite.</p>
+      <p class="muted small">3 doublons → éveillée (cadre doré), puis 5 → ultime (arc-en-ciel). Une PP éveillée gagne la complicité plus vite.</p>
     </div>` : '';
   return `<div class="card-sheet">
     ${cardHTML(f.id, { known, size: 'lg', shiny: own && own.shiny, aw })}
     <div class="cs-info">
       <p class="eyebrow">${SERIES[f.series].emoji} ${esc(SERIES[f.series].name)} · ${'★'.repeat(L.rarity)} ${RARITY[L.rarity].name}</p>
       <h2>${known ? esc(f.name) : '???'}</h2>
-      ${own ? `<p class="muted">Obtenue ${own.count > 1 ? `${own.count} fois` : '1 fois'}</p>` : '<p class="muted">Pas encore obtenue : elle peut sortir d’une box.</p>'}
+      ${own ? `<p class="muted">Obtenue ${own.count > 1 ? `${own.count} fois` : '1 fois'}</p>` : '<p class="muted">Pas encore obtenue : elle peut sortir d’une surprise.</p>'}
       ${L.forms.length > 1 ? `<p class="eyebrow" style="margin-top:12px">Famille</p><div class="fam">${L.forms.map(id => `<button class="fam-item ${g.forms.has(id) ? '' : 'unknown'} ${id === f.id ? 'cur' : ''}" data-act="cardOpen" data-id="${id}"><img src="${esc(FORMS[id].img)}" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.visibility='hidden'"><small>${g.forms.has(id) ? esc(FORMS[id].name) : '???'}</small></button>`).join('')}</div>
-        <p class="muted small">On obtient toujours le premier stade. Les évolutions se débloquent en faisant grandir le compagnon (${nf(compThreshold(L.id))} XP par stade).</p>` : ''}
-      ${own ? (isComp ? '<p class="tag-ok">🐾 C’est ton compagnon</p>' : `${g.compStates[L.id] && g.compStates[L.id].stage ? `<p class="tag-ok">🐾 Il t’attend au stade ${g.compStates[L.id].stage + 1} (${esc(g.compStates[L.id].form.name)}) : il repartira de là.</p>` : ''}<button class="btn primary" data-act="compSet" data-line="${L.id}">🐾 Choisir comme compagnon</button>`) : ''}
+        <p class="muted small">On obtient toujours la première forme. Les suivantes se débloquent avec la complicité, quand ce personnage est ta PP (${nf(compThreshold(L.id))} points par palier, 2 cœurs offerts à chaque fois).</p>` : ''}
+      ${own ? (isComp ? '<p class="tag-ok">🎀 C’est ta PP</p>' : `${g.compStates[L.id] && g.compStates[L.id].level ? `<p class="tag-ok">💗 Complicité niveau ${g.compStates[L.id].level} (${esc(g.compStates[L.id].form.name)}) : elle repartira de là.</p>` : ''}<button class="btn primary" data-act="compSet" data-line="${L.id}">🎀 Choisir comme PP</button>`) : ''}
       ${dupBox}
     </div></div>`;
 }
@@ -386,8 +388,8 @@ export function oddsSheet() {
   const g = G();
   const bar = (left, max) => `<div class="xpbar alt"><span style="width:${Math.round((max - left) / max * 100)}%"></span></div>`;
   const left4 = Math.max(1, PITY4 - g.since4), left5 = Math.max(1, PITY5 - g.since5);
-  return `<div class="odds-sheet"><h2>Taux des box</h2>
-    <p class="muted small">Chance d’obtenir chaque rareté, pour chaque carte. Chaque carte a aussi 1 chance sur 50 d’être brillante (1 sur 30 dans une grande box).</p>
+  return `<div class="odds-sheet"><h2>Taux des surprises</h2>
+    <p class="muted small">Chance d’obtenir chaque rareté, pour chaque carte. Chaque carte a aussi 1 chance sur 50 d’être brillante (1 sur 30 dans un grand coffret).</p>
     <div class="odds-wrap"><table class="odds"><thead><tr><th></th>${[1, 2, 3, 4, 5].map(r => `<th style="color:${RARITY[r].color}">${r}★</th>`).join('')}</tr></thead>
       <tbody>${TIER_KEYS.map(k => `<tr><th><span class="od-name">${chestHTML(k, 'mini')}${TIERS[k].name}</span></th>${TIERS[k].odds.map(o => `<td>${o ? `${o} %` : '–'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
     <div class="odds-how">${TIER_KEYS.map(k => {
@@ -396,8 +398,8 @@ export function oddsSheet() {
         ${T.min > 1 ? `<small>Au moins une carte ${T.min}★ garantie</small>` : '<small>Pas de 5★ dedans</small>'}
         <ul>${T.how.map(h => `<li>${esc(h)}</li>`).join('')}</ul></div></div>`;
     }).join('')}</div>
-    <p class="muted small">Grandes box aussi : chaque boss battu, chaque album complété, chaque nouveau rang de maîtrise, et la note S au bilan de la semaine (A : box classique, B : petite box).</p>
-    <p class="eyebrow">Garanties des box classiques et grandes</p>
+    <p class="muted small">Grands coffrets aussi : chaque duel gagné, chaque album complété, chaque nouveau rang de maîtrise, et la note S au bilan de la semaine (A : coffret, B : petite pochette).</p>
+    <p class="eyebrow">Garanties des coffrets et grands coffrets</p>
     <div class="pity"><div class="pity-row"><span>Une 4★ ou mieux</span>${bar(left4, PITY4)}<small>dans ${plural(left4, 'carte', 'cartes')} max</small></div>
       <div class="pity-row"><span>Une 5★</span>${bar(left5, PITY5)}<small>dans ${plural(left5, 'carte', 'cartes')} max</small></div></div>
   </div>`;
@@ -410,7 +412,7 @@ export function shopSheet() {
   const low = pick(2), mid = pick(3);
   const sumN = l => l.reduce((a, [, n]) => a + n, 0), sumV = l => l.reduce((a, [k, n]) => a + recycleValue(g, k, n), 0);
   return `<div class="shop-sheet"><h2>💎 Boutique</h2>
-    <p class="muted">Tes doublons restent sur leurs cartes : fusionne-les, ou échange-les ici contre des fragments, puis des box.</p>
+    <p class="muted">Tes doublons restent sur leurs cartes : fusionne-les, ou échange-les ici contre des fragments, puis des surprises.</p>
     <p class="shop-bal">💎 <b>${nf(Math.max(0, g.frags))}</b> fragments</p>
     <div class="shop-list">${TIER_KEYS.map(k => {
       const T = TIERS[k], ok = g.frags >= T.cost;
@@ -439,7 +441,7 @@ export const actions = {
     const pick = [...(chalPick(ws).length ? chalPick(ws) : [0, 0, 0])];
     pick[Number(el.dataset.lv)] = Number(el.dataset.i);
     S.game.chal[wk] = { pick, u: Date.now() }; touch(S.game); save();
-    burst(el, '#f5b700'); ui.sheet = { ...ui.sheet };
+    burst(el, '#d8b26e'); ui.sheet = { ...ui.sheet };
   },
   // Valider : les défis par défaut comptent comme choisis (le rappel du lundi disparaît)
   chalConfirm() {
@@ -456,7 +458,7 @@ export const actions = {
   pet(el) {
     const g = G();
     el.classList.remove('pet'); void el.offsetWidth; el.classList.add('pet');
-    if (!g.companion) { speech(el, 'Ouvre une box pour obtenir ton compagnon 🎁'); return; }
+    if (!g.companion) { speech(el, 'Ouvre une surprise pour choisir ta PP 🎀'); return; }
     speech(el, petLine(g));
     burst(el, '#ff6ad5');
   },
@@ -484,7 +486,7 @@ export const actions = {
   collMode(el) { ui.collMode = el.dataset.m; },
   collMore() { ui.collLimit = (ui.collLimit || 120) + 240; },
   cardOpen(el) { openSheet({ kind: 'card', id: el.dataset.id }); },
-  compSet(el) { setCompanion(el.dataset.line); closeSheet(); ui.gameTab = 'profil'; toast('🐾 Nouveau compagnon !'); },
+  compSet(el) { setCompanion(el.dataset.line); closeSheet(); ui.gameTab = 'profil'; toast('🎀 Nouvelle PP !'); },
   rewardClaim(el) { const r = S.game.rewards.find(x => x.id === el.dataset.id); r.claimed = true; touch(r); touch(S.game); save(); toast('🎉 Profite bien !'); },
   rewardDel(el) {
     if (!confirm('Supprimer cette récompense ?')) return;

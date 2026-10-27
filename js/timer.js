@@ -60,7 +60,7 @@ function finish(t, mins) {
   let lvl = -1;
   d.m.opts.forEach((_, i) => { const m = optMinutes(d, i); if (m && mins >= m) lvl = i; });
   if (lvl < 0) {
-    banner({ icon: '⏱️', title: 'Séance trop courte', sub: `${plural(mins, 'minute', 'minutes')} : il faut au moins ${optMinutes(d, 0)} min pour cocher ${d.name}`, color: '#64748b' });
+    banner({ icon: '⏱️', title: 'Séance trop courte', sub: `${plural(mins, 'minute', 'minutes')} : il faut au moins ${optMinutes(d, 0)} min pour cocher ${d.name}`, color: '#a09486' });
     rerender(); return;
   }
   const k = t.day || todayKey();

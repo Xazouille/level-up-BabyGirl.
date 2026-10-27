@@ -9,8 +9,8 @@ const sleep = (p, ms) => p.waitForTimeout(ms);
 const shot = (p, n, full) => p.screenshot({ path: `${out}/${tag}-${n}.png`, fullPage: !!full });
 (async () => {
   const b = await chromium.launch({ proxy: { server: process.env.HTTPS_PROXY, bypass: 'localhost,127.0.0.1' } });
-  const ctx = await b.newContext({ viewport: desk ? { width: 1280, height: 860 } : { width: 390, height: 844 }, deviceScaleFactor: desk ? 1 : 2, colorScheme: 'dark', ignoreHTTPSErrors: true });
-  await ctx.route('https://arosare.github.io/naruto-blazing-revival/**', r => { const f = path.join(NB, r.request().url().split('/naruto-blazing-revival/')[1]); fs.existsSync(f) ? r.fulfill({ path: f }) : r.abort(); });
+  const ctx = await b.newContext({ viewport: desk ? { width: 1280, height: 860 } : { width: 390, height: 844 }, deviceScaleFactor: desk ? 1 : 2, colorScheme: process.env.SCHEME || 'light', ignoreHTTPSErrors: true });
+  await require('./imgs.js')(ctx, NB);
   const p = await ctx.newPage();
   const errors = [];
   p.on('pageerror', e => errors.push('pageerror: ' + e.message + '\n' + e.stack));
@@ -22,7 +22,7 @@ const shot = (p, n, full) => p.screenshot({ path: `${out}/${tag}-${n}.png`, full
   await shot(p, 's01-today-fresh');
   console.log('fresh G', await p.evaluate(async () => { const g = (await import('/js/game/rules.js')).G(); return JSON.stringify({ boss: g.boss.current && { name: g.boss.current.name, hp: g.boss.current.hp, weak: g.boss.current.weak }, hist: g.boss.history.length, mastery: Object.keys(g.mastery).length, albums: g.albums.length, boxes: g.boxes }); }));
   // Démo
-  await p.evaluate(() => { localStorage.setItem('tdb2-demo', '1'); });
+  await p.evaluate(() => { localStorage.setItem('celia-demo', '1'); });
   await p.reload(); await sleep(p, 2500);
   for (let i = 0; i < 4 && await p.$('.overlay'); i++) { await shot(p, `s02-overlay${i}`); await p.keyboard.press('Escape'); await sleep(p, 900); }
   await sleep(p, 500);

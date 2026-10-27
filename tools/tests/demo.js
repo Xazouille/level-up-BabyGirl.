@@ -5,7 +5,7 @@ const act = (p, a, data = {}) => p.evaluate(([a, data]) => { const b = document.
 (async () => {
   const b = await chromium.launch({ proxy: { server: process.env.HTTPS_PROXY, bypass: 'localhost,127.0.0.1' } });
   const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, colorScheme: 'dark', ignoreHTTPSErrors: true });
-  await ctx.route('https://arosare.github.io/naruto-blazing-revival/**', r => { const f = path.join(NB, r.request().url().split('/naruto-blazing-revival/')[1]); fs.existsSync(f) ? r.fulfill({ path: f }) : r.abort(); });
+  await require('./imgs.js')(ctx, NB);
   const p = await ctx.newPage();
   const errors = [];
   p.on('pageerror', e => errors.push('pageerror: ' + e.message + '\n' + e.stack));
@@ -14,7 +14,7 @@ const act = (p, a, data = {}) => p.evaluate(([a, data]) => { const b = document.
   await p.goto('http://localhost:8765/'); await p.waitForTimeout(500);
   // Vraies données de départ
   await p.locator('.tile').first().click(); await p.waitForTimeout(400); await p.keyboard.press('Escape'); await p.waitForTimeout(300);
-  const realBefore = await p.evaluate(() => localStorage.getItem('tdb2-data'));
+  const realBefore = await p.evaluate(() => localStorage.getItem('celia-data'));
   await act(p, 'tab', { tab: 'settings' }); await p.waitForTimeout(300);
   await p.click('[data-act=demoOn]'); await p.waitForTimeout(2500);
   await p.screenshot({ path: `${out}/demo-start.png` });
@@ -25,11 +25,11 @@ const act = (p, a, data = {}) => p.evaluate(([a, data]) => { const b = document.
   await p.screenshot({ path: `${out}/demo-game.png`, fullPage: true });
   await act(p, 'gameTab', { t: 'collection' }); await act(p, 'collSeries', { s: 'onepiece' }); await p.waitForTimeout(2500);
   await p.screenshot({ path: `${out}/demo-coll-op.png` });
-  const info = await p.evaluate(async () => { const r = await import('/js/game/rules.js'); const g = r.G(); return { lvl: g.lvl.level, boxes: g.boxes, forms: g.forms.size, comp: g.companion && g.companion.form.name, badges: Object.keys(JSON.parse(localStorage.getItem('tdb2-demo-data')).game.badges).length }; });
+  const info = await p.evaluate(async () => { const r = await import('/js/game/rules.js'); const g = r.G(); return { lvl: g.lvl.level, boxes: g.boxes, forms: g.forms.size, comp: g.companion && g.companion.form.name, badges: Object.keys(JSON.parse(localStorage.getItem('celia-demo-data')).game.badges).length }; });
   console.log(JSON.stringify(info));
   await p.click('.demo-bar'); await p.waitForTimeout(1500);
-  const realAfter = await p.evaluate(() => localStorage.getItem('tdb2-data'));
-  const left = await p.evaluate(() => Object.keys(localStorage).filter(k => k.startsWith('tdb2-demo')));
+  const realAfter = await p.evaluate(() => localStorage.getItem('celia-data'));
+  const left = await p.evaluate(() => Object.keys(localStorage).filter(k => k.startsWith('celia-demo')));
   console.log(left.join(','));console.log('vraies données intactes :', realBefore === realAfter, '· clés démo restantes :', left.length, '· bandeau :', !!(await p.$('.demo-bar')));
   console.log(errors.length ? errors.join('\n') : 'OK no errors');
   await b.close();
