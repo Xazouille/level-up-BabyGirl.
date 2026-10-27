@@ -165,7 +165,11 @@ def make_sheets(items, folder):
             x, y = (i % COLS) * W, (i // COLS) * H
             try:
                 req = urllib.request.Request(url, headers={'User-Agent': UA})
-                th = Image.open(io.BytesIO(urllib.request.urlopen(req, timeout=30).read())).convert('RGBA')
+                raw = urllib.request.urlopen(req, timeout=30).read()
+                os.makedirs(os.path.join(folder, 'img'), exist_ok=True)
+                with open(os.path.join(folder, 'img', fid), 'wb') as fh:   # copie locale pour les captures d'écran des tests
+                    fh.write(raw)
+                th = Image.open(io.BytesIO(raw)).convert('RGBA')
                 th.thumbnail((W - 10, H - 30))
                 bg = Image.new('RGBA', th.size, 'white'); bg.alpha_composite(th)
                 im.paste(bg.convert('RGB'), (x + (W - th.width) // 2, y + 4))
