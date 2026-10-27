@@ -90,7 +90,7 @@ export function startBox(k) {
       <h2>Quelle surprise ouvrir ?</h2>
       <div class="alt-list">${['g', 'c', 'p'].map((t, i) => `<button class="alt-item t-${t} ${b[t] ? '' : 'empty'}" ${b[t] ? `data-ov="pick" data-k="${t}"` : 'disabled'} style="--tc:${TIERS[t].color};--i:${i}">
         ${chestHTML(t)}<span class="alt-txt"><b>${TIERS[t].name}</b><small>${plural(TIERS[t].cards, 'carte', 'cartes')}${t === 'g' ? ' · les plus rares' : ''}</small></span><span class="alt-n">×${b[t]}</span></button>`).join('')}</div>
-      <p class="ov-tip">Plus la box est grande, plus les cartes rares tombent souvent.</p>
+      <p class="ov-tip">Plus la surprise est grande, plus les cartes rares tombent souvent.</p>
       ${CLOSE}</div>`, 'altar-ov');
 }
 
@@ -107,7 +107,7 @@ function summon(k) {
         <p class="sm-up" aria-live="polite"></p>
       </div>
       <div class="sm-dots"><i></i><i></i><i></i></div>
-      <p class="sm-hint">Touche la box 3 fois pour l’ouvrir</p>
+      <p class="sm-hint">Touche la surprise 3 fois pour l’ouvrir</p>
       <div class="sm-flash"></div>
       ${CLOSE}</div>`, 'summon-ov');
 }

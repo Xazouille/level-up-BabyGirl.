@@ -243,7 +243,7 @@ function rewardsCard() {
 
 function xpCard() {
   const b = G().breakdown;
-  const rows = [['✅', 'Cases cochées', b.cases], ['⭐', 'Bonus (journées parfaites, phrases, connexion)', b.bonus], ['🎯', 'Objectifs', b.goals], ['🍿', 'Médiathèque', b.media], ['🏅', 'Badges', b.badges], ['📅', 'Défis', b.challenges], ['⚔️', 'Boss', b.boss], ['🌱', 'Compétences et habitudes', b.growth], ['🪪', 'Identités', b.identity], ['🗓️', 'Bilans du mois', b.reviews]];
+  const rows = [['✅', 'Cases cochées', b.cases], ['⭐', 'Bonus (journées parfaites, phrases, connexion)', b.bonus], ['🎯', 'Objectifs', b.goals], ['🍿', 'Médiathèque', b.media], ['🏅', 'Badges', b.badges], ['📅', 'Défis', b.challenges], ['🪄', 'Duels magiques', b.boss], ['🌱', 'Compétences et habitudes', b.growth], ['🪪', 'Identités', b.identity], ['🗓️', 'Bilans du mois', b.reviews]];
   return `<section class="card"><h2>✨ D’où vient ton XP</h2>${rows.map(([e, l, v]) => `<div class="xp-row"><span>${e} ${l}</span><b>${nf(v)}</b></div>`).join('')}</section>`;
 }
 
@@ -388,7 +388,7 @@ export function oddsSheet() {
   const g = G();
   const bar = (left, max) => `<div class="xpbar alt"><span style="width:${Math.round((max - left) / max * 100)}%"></span></div>`;
   const left4 = Math.max(1, PITY4 - g.since4), left5 = Math.max(1, PITY5 - g.since5);
-  return `<div class="odds-sheet"><h2>Taux des box</h2>
+  return `<div class="odds-sheet"><h2>Taux des surprises</h2>
     <p class="muted small">Chance d’obtenir chaque rareté, pour chaque carte. Chaque carte a aussi 1 chance sur 50 d’être brillante (1 sur 30 dans un grand coffret).</p>
     <div class="odds-wrap"><table class="odds"><thead><tr><th></th>${[1, 2, 3, 4, 5].map(r => `<th style="color:${RARITY[r].color}">${r}★</th>`).join('')}</tr></thead>
       <tbody>${TIER_KEYS.map(k => `<tr><th><span class="od-name">${chestHTML(k, 'mini')}${TIERS[k].name}</span></th>${TIERS[k].odds.map(o => `<td>${o ? `${o} %` : '–'}</td>`).join('')}</tr>`).join('')}</tbody></table></div>
@@ -398,8 +398,8 @@ export function oddsSheet() {
         ${T.min > 1 ? `<small>Au moins une carte ${T.min}★ garantie</small>` : '<small>Pas de 5★ dedans</small>'}
         <ul>${T.how.map(h => `<li>${esc(h)}</li>`).join('')}</ul></div></div>`;
     }).join('')}</div>
-    <p class="muted small">Grandes box aussi : chaque boss battu, chaque album complété, chaque nouveau rang de maîtrise, et la note S au bilan de la semaine (A : coffret, B : petite pochette).</p>
-    <p class="eyebrow">Garanties des coffrets et grandes</p>
+    <p class="muted small">Grands coffrets aussi : chaque duel gagné, chaque album complété, chaque nouveau rang de maîtrise, et la note S au bilan de la semaine (A : coffret, B : petite pochette).</p>
+    <p class="eyebrow">Garanties des coffrets et grands coffrets</p>
     <div class="pity"><div class="pity-row"><span>Une 4★ ou mieux</span>${bar(left4, PITY4)}<small>dans ${plural(left4, 'carte', 'cartes')} max</small></div>
       <div class="pity-row"><span>Une 5★</span>${bar(left5, PITY5)}<small>dans ${plural(left5, 'carte', 'cartes')} max</small></div></div>
   </div>`;
@@ -412,7 +412,7 @@ export function shopSheet() {
   const low = pick(2), mid = pick(3);
   const sumN = l => l.reduce((a, [, n]) => a + n, 0), sumV = l => l.reduce((a, [k, n]) => a + recycleValue(g, k, n), 0);
   return `<div class="shop-sheet"><h2>💎 Boutique</h2>
-    <p class="muted">Tes doublons restent sur leurs cartes : fusionne-les, ou échange-les ici contre des fragments, puis des box.</p>
+    <p class="muted">Tes doublons restent sur leurs cartes : fusionne-les, ou échange-les ici contre des fragments, puis des surprises.</p>
     <p class="shop-bal">💎 <b>${nf(Math.max(0, g.frags))}</b> fragments</p>
     <div class="shop-list">${TIER_KEYS.map(k => {
       const T = TIERS[k], ok = g.frags >= T.cost;

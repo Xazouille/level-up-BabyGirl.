@@ -8,7 +8,7 @@ export const TIERS = {
     how: ['Chaque niveau gagné', 'Défi difficile de la semaine', 'Niveaux 10, 20, 30… : une deuxième', 'Certains badges'] },
 };
 export const TIER_KEYS = ['p', 'c', 'g'];
-// Garanties (coffrets et grandes) : un 4★ au moins toutes les 15 cartes, un 5★ toutes les 80
+// Garanties (coffrets et grands coffrets) : un 4★ au moins toutes les 15 cartes, un 5★ toutes les 80
 export const PITY4 = 15, PITY5 = 80;
 // Les box d'avant (3 cartes) comptent comme des coffrets
 export const kindOf = p => (p && TIERS[p.k] ? p.k : 'c');

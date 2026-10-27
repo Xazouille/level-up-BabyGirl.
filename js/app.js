@@ -287,7 +287,7 @@ function announceBoss(g) {
   if (!b || pref('bossCur') === String(b.n)) return;
   setPref('bossCur', b.n);
   const wd = S.domains.list.find(d => d.id === b.weak);
-  banner({ icon: b.legendary ? '👑' : '🪄', title: `${b.legendary ? 'Duel légendaire' : 'Nouveau duel'} : ${b.name} !`, sub: `${b.hp.toLocaleString('fr-FR')} d’énergie · point faible ${wd ? wd.emoji + ' ' + wd.name : ''} · 7 jours pour le battre`,
+  banner({ icon: b.legendary ? '👑' : '🪄', title: `${b.legendary ? 'Duel légendaire' : 'Nouveau duel'} : ${b.name} !`, sub: `${b.hp.toLocaleString('fr-FR')} d’énergie · point faible ${wd ? wd.emoji + ' ' + wd.name : ''} · 7 jours pour gagner le duel`,
     color: b.legendary ? '#d4a373' : '#d98b8f', onTap: () => { ui.sheet = { kind: 'boss' }; render(); } });
 }
 setRender(render);
