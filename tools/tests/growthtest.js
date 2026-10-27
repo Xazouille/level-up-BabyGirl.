@@ -23,7 +23,7 @@ const closeOv = async p => { for (let i = 0; i < 6 && await p.$('.overlay'); i++
     const days = {};
     for (let i = 1; i <= 5; i++) { const d = new Date(); d.setDate(d.getDate() - i); const k = `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`; days[k] = { c: Object.fromEntries(ids.map(x => [x, 1])), note: '', u: 1 }; }
     const doms = ids.map(id => ({ id, name: id, emoji: '⭐', color: '#4f8cff', hint: '', archived: false, xp: 10, m: id === 'ecole' ? { kind: 'levels', q: '?', opts: [['15 min', 1], ['30 min', 1.5], ['1 h', 2], ['2 h et +', 3]] } : { kind: 'none' } }));
-    localStorage.setItem('tdb2-data', JSON.stringify({ v: 2, meta: { modified: 1 }, profile: { name: 'Aaron', start: '2026-10-01', u: 1 }, settings: { theme: 'auto', threshold: 0.5, u: 1 }, domains: { list: doms, u: 1 }, days, goals: [], media: [], vision: { blocks: [], u: 1 }, game: { pulls: [], trades: [], visits: {}, badges: {}, jokerDays: {}, comp: [], rewards: [], u: 1 }, dead: {} }));
+    localStorage.setItem('celia-data', JSON.stringify({ v: 2, meta: { modified: 1 }, profile: { name: 'Aaron', start: '2026-10-01', u: 1 }, settings: { theme: 'auto', threshold: 0.5, u: 1 }, domains: { list: doms, u: 1 }, days, goals: [], media: [], vision: { blocks: [], u: 1 }, game: { pulls: [], trades: [], visits: {}, badges: {}, jokerDays: {}, comp: [], rewards: [], u: 1 }, dead: {} }));
   });
   await p.reload(); await sleep(p, 1500);
   await closeOv(p);
@@ -60,9 +60,9 @@ const closeOv = async p => { for (let i = 0; i < 6 && await p.$('.overlay'); i++
   await shot(p, '07-timer');
   await act(p, 'closeSheet'); await sleep(p, 400);
   await shot(p, '08-timer-pill');
-  await p.evaluate(() => { const k = 'tdb2-timer', t = JSON.parse(localStorage.getItem(k)); t.start -= 16 * 60000; localStorage.setItem(k, JSON.stringify(t)); });
+  await p.evaluate(() => { const k = 'celia-timer', t = JSON.parse(localStorage.getItem(k)); t.start -= 16 * 60000; localStorage.setItem(k, JSON.stringify(t)); });
   await sleep(p, 2200);
-  console.log('medit after timer', await p.evaluate(async () => { const st = await import('/js/store.js'), u = await import('/js/util.js'); return JSON.stringify({ done: st.isDone(u.todayKey(), 'ecole'), v: st.valOf(u.todayKey(), 'ecole'), timer: localStorage.getItem('tdb2-timer') }); }));
+  console.log('medit after timer', await p.evaluate(async () => { const st = await import('/js/store.js'), u = await import('/js/util.js'); return JSON.stringify({ done: st.isDone(u.todayKey(), 'ecole'), v: st.valOf(u.todayKey(), 'ecole'), timer: localStorage.getItem('celia-timer') }); }));
   await shot(p, '09-timer-done');
   // Bilan du mois
   await act(p, 'monthOpen'); await sleep(p, 1200);

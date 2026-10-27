@@ -14,7 +14,7 @@ const sleep = (p, ms) => p.waitForTimeout(ms);
     p.on('console', m => { if (m.type() === 'error' && !/vibrate|Failed to load resource|ERR_/.test(m.text())) errors.push('console: ' + m.text()); });
     p.on('dialog', d => d.accept());
     await p.goto('http://localhost:8765/');
-    await p.evaluate(() => { localStorage.clear(); localStorage.setItem('tdb2-demo', '1'); });
+    await p.evaluate(() => { localStorage.clear(); localStorage.setItem('celia-demo', '1'); });
     await p.reload(); await sleep(p, 2500);
     for (let i = 0; i < 5 && await p.$('.overlay'); i++) { await p.keyboard.press('Escape'); await sleep(p, 900); }
     await p.evaluate(() => { document.getElementById('banners') && document.getElementById('banners').remove(); });

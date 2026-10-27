@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
   const b = await chromium.launch({ proxy: { server: process.env.HTTPS_PROXY, bypass: 'localhost,127.0.0.1' } });
   const p = await (await b.newContext({ ignoreHTTPSErrors: true })).newPage(), errors = [];
   p.on('pageerror', e => errors.push(e.message));
-  await p.goto('http://localhost:8765/'); await p.evaluate(() => { localStorage.clear(); localStorage.setItem('tdb2-demo', '1'); }); await p.reload(); await p.waitForTimeout(2500);
+  await p.goto('http://localhost:8765/'); await p.evaluate(() => { localStorage.clear(); localStorage.setItem('celia-demo', '1'); }); await p.reload(); await p.waitForTimeout(2500);
   console.log(await p.evaluate(async () => {
     const st = await import('/js/store.js'), r = await import('/js/game/rules.js'), u = await import('/js/util.js');
     const g0 = r.G(), lines = Object.keys(g0.owned).filter(l => l.startsWith('pk')).slice(0, 2), [A, B] = lines;

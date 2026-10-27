@@ -14,7 +14,7 @@ const act = (p, a, data = {}) => p.evaluate(([a, data]) => { const b = document.
   await p.goto('http://localhost:8765/'); await p.waitForTimeout(500);
   // Vraies données de départ
   await p.locator('.tile').first().click(); await p.waitForTimeout(400); await p.keyboard.press('Escape'); await p.waitForTimeout(300);
-  const realBefore = await p.evaluate(() => localStorage.getItem('tdb2-data'));
+  const realBefore = await p.evaluate(() => localStorage.getItem('celia-data'));
   await act(p, 'tab', { tab: 'settings' }); await p.waitForTimeout(300);
   await p.click('[data-act=demoOn]'); await p.waitForTimeout(2500);
   await p.screenshot({ path: `${out}/demo-start.png` });
@@ -25,11 +25,11 @@ const act = (p, a, data = {}) => p.evaluate(([a, data]) => { const b = document.
   await p.screenshot({ path: `${out}/demo-game.png`, fullPage: true });
   await act(p, 'gameTab', { t: 'collection' }); await act(p, 'collSeries', { s: 'onepiece' }); await p.waitForTimeout(2500);
   await p.screenshot({ path: `${out}/demo-coll-op.png` });
-  const info = await p.evaluate(async () => { const r = await import('/js/game/rules.js'); const g = r.G(); return { lvl: g.lvl.level, boxes: g.boxes, forms: g.forms.size, comp: g.companion && g.companion.form.name, badges: Object.keys(JSON.parse(localStorage.getItem('tdb2-demo-data')).game.badges).length }; });
+  const info = await p.evaluate(async () => { const r = await import('/js/game/rules.js'); const g = r.G(); return { lvl: g.lvl.level, boxes: g.boxes, forms: g.forms.size, comp: g.companion && g.companion.form.name, badges: Object.keys(JSON.parse(localStorage.getItem('celia-demo-data')).game.badges).length }; });
   console.log(JSON.stringify(info));
   await p.click('.demo-bar'); await p.waitForTimeout(1500);
-  const realAfter = await p.evaluate(() => localStorage.getItem('tdb2-data'));
-  const left = await p.evaluate(() => Object.keys(localStorage).filter(k => k.startsWith('tdb2-demo')));
+  const realAfter = await p.evaluate(() => localStorage.getItem('celia-data'));
+  const left = await p.evaluate(() => Object.keys(localStorage).filter(k => k.startsWith('celia-demo')));
   console.log(left.join(','));console.log('vraies données intactes :', realBefore === realAfter, '· clés démo restantes :', left.length, '· bandeau :', !!(await p.$('.demo-bar')));
   console.log(errors.length ? errors.join('\n') : 'OK no errors');
   await b.close();

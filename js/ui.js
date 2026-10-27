@@ -1,7 +1,7 @@
 // État de l'interface (onglet ouvert, fenêtre ouverte…) et petits composants partagés.
 import { todayKey, esc } from './util.js';
 
-const PFX = (() => { try { return localStorage.getItem('tdb2-demo') === '1' ? 'tdb2-demo-' : 'tdb2-'; } catch (e) { return 'tdb2-'; } })();
+const PFX = (() => { try { return localStorage.getItem('celia-demo') === '1' ? 'celia-demo-' : 'celia-'; } catch (e) { return 'celia-'; } })();
 export const pref = k => { try { return localStorage.getItem(PFX + k); } catch (e) { return null; } };
 export const setPref = (k, v) => { try { localStorage.setItem(PFX + k, v); } catch (e) {} };
 

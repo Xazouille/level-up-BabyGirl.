@@ -5,7 +5,7 @@ const act = (p, a, data = {}) => p.evaluate(([a, data]) => { const b = document.
   const ctx = await b.newContext({ viewport: { width: 390, height: 844 }, deviceScaleFactor: 2, colorScheme: 'dark', ignoreHTTPSErrors: true });
   const p = await ctx.newPage(), errors = [];
   p.on('pageerror', e => errors.push(e.message)); p.on('dialog', d => d.accept());
-  await p.goto('http://localhost:8765/'); await p.evaluate(() => { localStorage.clear(); localStorage.setItem('tdb2-demo', '1'); }); await p.reload(); await p.waitForTimeout(2500);
+  await p.goto('http://localhost:8765/'); await p.evaluate(() => { localStorage.clear(); localStorage.setItem('celia-demo', '1'); }); await p.reload(); await p.waitForTimeout(2500);
   for (let i = 0; i < 5 && await p.$('.overlay'); i++) { await p.keyboard.press('Escape'); await p.waitForTimeout(900); }
   const links = () => p.evaluate(() => ['icon', 'apple-touch-icon', 'manifest'].map(r => { const l = document.querySelector(`link[rel="${r}"]`); return r + '=' + (l.href.startsWith('data:') ? 'data:svg(' + l.href.length + ')' : l.getAttribute('href')); }).join(' | '));
   console.log('neon  ', await links());

@@ -1,7 +1,8 @@
 // Service worker : rend l'appli utilisable hors ligne.
 // Les fichiers de l'appli sont d'abord demandés au réseau (pour recevoir les mises à jour), puis au cache si pas de connexion.
-const CACHE = 'levelup-v14';
-const IMG_CACHE = 'levelup-img-v1';
+// Noms préfixés « celia- » : l'appli d'Aaron est sur le même site (xazouille.github.io), on ne touche jamais à ses caches
+const CACHE = 'celia-v1';
+const IMG_CACHE = 'celia-img-v1';
 const IMG_MAX = 250;   // images gardées hors ligne ; les plus anciennes sont effacées
 const ASSETS = [
   './', './index.html', './manifest.webmanifest', './css/app.css',
@@ -18,7 +19,7 @@ self.addEventListener('install', e => {
 
 self.addEventListener('activate', e => {
   e.waitUntil(caches.keys()
-    .then(keys => Promise.all(keys.filter(k => k !== CACHE && k !== IMG_CACHE).map(k => caches.delete(k))))
+    .then(keys => Promise.all(keys.filter(k => k.startsWith('celia-') && k !== CACHE && k !== IMG_CACHE).map(k => caches.delete(k))))
     .then(() => self.clients.claim()));
 });
 

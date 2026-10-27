@@ -146,7 +146,7 @@ export function sheet(s) {
 }
 
 async function exportData() {
-  const name = `tableau-de-bord-${todayKey()}.json`;
+  const name = `glow-up-celia-${todayKey()}.json`;
   const blob = new Blob([JSON.stringify(S)], { type: 'application/json' });
   // Sur téléphone, le téléchargement direct ne marche pas toujours : on passe par le menu de partage
   if (/iphone|ipad|ipod|android/i.test(navigator.userAgent) && navigator.canShare) {
@@ -209,7 +209,7 @@ export const inputs = {
   domKind(el) { el.form.dataset.type = el.value; },
   name(el) { S.profile.name = el.value.trim(); touch(S.profile); save(); },
   threshold(el) { S.settings.threshold = Number(el.value) / 100; touch(S.settings); save(); },
-  // Journée parfaite : enregistrée en proportion (12 sur 15 = 80 %), pour rester juste si on ajoute des cases
+  // Journée parfaite : enregistrée en proportion (12 sur 16 = 75 %), pour rester juste si on ajoute des cases
   perfectAt(el) { const n = S.domains.list.filter(d => !d.archived).length; S.settings.perfect = Number(el.value) / n; touch(S.settings); save(); },
 };
 export const forms = {
