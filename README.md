@@ -11,7 +11,7 @@ Le tableau de bord de développement personnel de Célia, sur téléphone et ord
 - **Jeu** (doux) :
   - XP et niveaux (Débutante → Apprentie → … → Muse → Divine) ;
   - **surprises** à ouvrir : *petite pochette* (1 carte, 5 cases cochées), *coffret* (3 cartes, journée parfaite = 12 cases sur 16), *grand coffret* (5 cartes, chaque niveau) ;
-  - **cartes** : Winx Club (avec leurs transformations : Charmix, Enchantix, Believix… Cosmix), Monster High (générations 1, 2 et 3) et Hello Kitty & ses amis ; brillantes, doublons à fusionner ou échanger, 16 albums à compléter ;
+  - **cartes** : Winx Club (avec leurs transformations : Charmix, Enchantix, Believix… Cosmix), Monster High (générations 1, 2 et 3) et Hello Kitty & ses amis ; 250 personnages aux images choisies une à une, brillantes, doublons à fusionner ou échanger, 28 albums à compléter ;
   - **sa PP** : un personnage choisi dans sa collection devient sa photo de profil. La **complicité** 💗 grandit avec ses vraies journées et **ne redescend jamais** ; chaque palier débloque la forme suivante (transformation, génération) puis des halos (perle, nacre, holographique…) ; 2 cœurs offerts à chaque palier ; un petit mot de la PP chaque dimanche ;
   - **duels magiques** : une méchante (les Trix, Valtor, Kuromi, Toralei…) à affronter en 7 jours avec ses cases, point faible ×2 ;
   - maîtrise par case, badges, défis de la semaine au choix, jokers, récompenses à s'offrir en vrai.
