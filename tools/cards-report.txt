@@ -1,63 +1,9 @@
 wx-bloom                           image imposée
-wx-bloom-charmix                   image imposée
-wx-bloom-enchantix                 image imposée
-wx-bloom-believix                  image imposée
-wx-bloom-harmonix                  image imposée
-wx-bloom-sirenix                   image imposée
-wx-bloom-bloomix                   image imposée
-wx-bloom-mythix                    image imposée
-wx-bloom-butterflix                image imposée
-wx-bloom-cosmix                    image imposée
 wx-stella                          image imposée
-wx-stella-charmix                  image imposée
-wx-stella-enchantix                image imposée
-wx-stella-believix                 image imposée
-wx-stella-harmonix                 image imposée
-wx-stella-sirenix                  image imposée
-wx-stella-bloomix                  image imposée
-wx-stella-mythix                   image imposée
-wx-stella-butterflix               image imposée
-wx-stella-cosmix                   image imposée
 wx-flora                           image imposée
-wx-flora-charmix                   image imposée
-wx-flora-enchantix                 image imposée
-wx-flora-believix                  image imposée
-wx-flora-harmonix                  image imposée
-wx-flora-sirenix                   image imposée
-wx-flora-bloomix                   image imposée
-wx-flora-mythix                    image imposée
-wx-flora-butterflix                image imposée
-wx-flora-cosmix                    image imposée
 wx-musa                            image imposée
-wx-musa-charmix                    image imposée
-wx-musa-enchantix                  image imposée
-wx-musa-believix                   image imposée
-wx-musa-harmonix                   image imposée
-wx-musa-sirenix                    image imposée
-wx-musa-bloomix                    image imposée
-wx-musa-mythix                     image imposée
-wx-musa-butterflix                 image imposée
-wx-musa-cosmix                     image imposée
 wx-tecna                           image imposée
-wx-tecna-charmix                   image imposée
-wx-tecna-enchantix                 image imposée
-wx-tecna-believix                  image imposée
-wx-tecna-harmonix                  image imposée
-wx-tecna-sirenix                   image imposée
-wx-tecna-bloomix                   image imposée
-wx-tecna-mythix                    image imposée
-wx-tecna-butterflix                image imposée
-wx-tecna-cosmix                    image imposée
 wx-aisha                           image imposée
-wx-aisha-charmix                   image imposée
-wx-aisha-enchantix                 image imposée
-wx-aisha-believix                  image imposée
-wx-aisha-harmonix                  image imposée
-wx-aisha-sirenix                   image imposée
-wx-aisha-bloomix                   image imposée
-wx-aisha-mythix                    image imposée
-wx-aisha-butterflix                image imposée
-wx-aisha-cosmix                    image imposée
 wx-roxy                            image imposée
 wx-daphne                          image imposée
 wx-faragonda                       image imposée
@@ -78,11 +24,8 @@ wx-digit                           image imposée
 wx-piff                            image imposée
 wx-kiko                            image imposée
 wx-icy                             image imposée
-wx-icy-dark-sirenix                image imposée
 wx-darcy                           image imposée
-wx-darcy-dark-sirenix              image imposée
 wx-stormy                          image imposée
-wx-stormy-dark-sirenix             image imposée
 wx-valtor                          image imposée
 wx-darkar                          image imposée
 wx-sorcieres                       image imposée
@@ -92,229 +35,83 @@ wx-selina                          image imposée
 wx-politea                         image imposée
 wx-ogron                           image imposée
 wx-mandragora                      image imposée
-wx-duman                           image imposée
-wx-gantlos                         image imposée
-wx-anagan                          image imposée
-wx-brafilius                       image imposée
-wx-acheron                         image imposée
-wx-griffin                         image imposée
-wx-reine-marion                    winx.fandom.com · page Marion → Miriam.PNG
-wx-roi-oritel                      winx.fandom.com · page Oritel → Oritel524-1.png
-wx-roi-radius                      winx.fandom.com · page Radius → Radius_S8E17.png
-wx-reine-luna                      winx.fandom.com · page Luna (Solaria) → Luna_S8E17.png
-wx-roi-erendor                     winx.fandom.com · page Erendor → ErendorEp814.png
-wx-krystal                         image imposée
-wx-galatea                         image imposée
-wx-nebula                          image imposée
-wx-morgana                         image imposée
-wx-ligea                           image imposée
-wx-avalon                          image imposée
-wx-andy                            image imposée
-wx-mitzi                           image imposée
-wx-vanessa                         image imposée
-wx-mike                            image imposée
-wx-ortensia                        image imposée
-wx-lucy                            image imposée
-wx-romina                          image imposée
-wx-roy                             image imposée
-wx-thoren                          image imposée
-wx-saladin                         image imposée
-wx-codatorta                       image imposée
-wx-wizgiz                          image imposée
-wx-palladium                       image imposée
-wx-knut                            image imposée
-wx-tressa                          image imposée
-wx-concorda                        image imposée
-wx-ediltrude                       image imposée
-wx-ninfea                          image imposée
-wx-livy                            image imposée
-wx-zing                            image imposée
-wx-cherie                          image imposée
-wx-caramel                         image imposée
-wx-jolly                           image imposée
-wx-amentia                         image imposée
-wx-eldora                          image imposée
-wx-diana                           image imposée
-wx-nex                             winx.fandom.com · page Nex → Nex_S8E1.png
-wx-ho-boe                          winx.fandom.com · page Ho-Boe → Season_8_Ho-Boe.jpg
-mh-frankie                         monsterhigh.fandom.com · page Frankie Stein (G1) → Frankie_Stein™.png
-mh-frankie-g2                      monsterhigh.fandom.com · fichier File:MH-G2 - Frankie Stein 29.png
-mh-frankie-g3                      monsterhigh.fandom.com · fichier File:MH-G3 - Frankie Stein (2D) -1-.png
-mh-draculaura                      monsterhigh.fandom.com · page Draculaura (G1) → Draculaura™.png
-mh-draculaura-g2                   monsterhigh.fandom.com · fichier File:MH-G2 - Draculaura 29.png
-mh-draculaura-g3                   monsterhigh.fandom.com · fichier File:MH-G3 - Draculaura (2D) -1-.png
-mh-clawdeen                        monsterhigh.fandom.com · page Clawdeen Wolf (G1) → Profile_art_-_Basic_Clawdeen_I.jpg
-mh-clawdeen-g2                     monsterhigh.fandom.com · fichier File:MH-G2 - Clawdeen Wolf 29.png
-mh-clawdeen-g3                     monsterhigh.fandom.com · fichier File:MH-G3 - Clawdeen Wolf (2D) -1-.png
-mh-cleo                            monsterhigh.fandom.com · page Cleo de Nile (G1) → Profile_art_-_Cleo_de_Nile.jpg
-mh-cleo-g2                         monsterhigh.fandom.com · fichier File:MH-G2 - Cleo de Nile 29.png
-mh-cleo-g3                         monsterhigh.fandom.com · fichier File:MH-G3 - Cleo de Nile (2D) -1-.png
-mh-lagoona                         monsterhigh.fandom.com · page Lagoona Blue (G1) → Profile_art_-_Lagoona_Blue.jpg
-mh-lagoona-g2                      monsterhigh.fandom.com · fichier File:MH-G2 - Lagoona Blue 29.png
-mh-lagoona-g3                      monsterhigh.fandom.com · fichier File:MH-G3 - Lagoona Blue (2D) -1-.png
-mh-ghoulia                         monsterhigh.fandom.com · page Ghoulia Yelps (G1) → Ghoulia_Yelps™.png
-mh-ghoulia-g2                      AUCUNE IMAGE (file:MH-G2 Ghoulia Yelps | file:Ghoulia Yelps G2)
-mh-ghoulia-g3                      monsterhigh.fandom.com · fichier File:MH-G3 - Ghoulia Yelps (3D) -1-.png
-mh-abbey                           monsterhigh.fandom.com · page Abbey Bominable (G1) → Abbey_Bominable™.png
-mh-spectra                         monsterhigh.fandom.com · page Spectra Vondergeist (G1) → Spectra_Vondergeist™.png
-mh-operetta                        monsterhigh.fandom.com · page Operetta (G2) → Adventures_of_the_Ghoul_Squad_-_Operetta_full.jpg
-mh-toralei                         monsterhigh.fandom.com · page Toralei Stripe (G3) → ToraleiStripeG3.png
-mh-venus                           monsterhigh.fandom.com · page Venus McFlytrap (G1) → Venus_McFlytrap_v2.png
-mh-robecca                         monsterhigh.fandom.com · page Robecca Steam (G1) → Robecca_Steam™.png
-mh-rochelle                        monsterhigh.fandom.com · page Rochelle Goyle (G1) → Rochelle_Goyle™.png
-mh-twyla                           monsterhigh.fandom.com · page Twyla Boogeyman (G1) → Profile_art_-_Twyla.png
-mh-catty                           monsterhigh.fandom.com · page Catty Noir (G1) → Catty_Noir..png
-mh-skelita                         monsterhigh.fandom.com · page Skelita Calaveras (G1) → Skelita_Calaveras™.png
-mh-cupid                           monsterhigh.fandom.com · page C.A. Cupid (G1) → Profileart_-_C.A_Cupid.png
-mh-nefera                          monsterhigh.fandom.com · page Nefera de Nile (G1) → Nefera_de_Nile.4.png
-mh-elissabat                       monsterhigh.fandom.com · page Elissabat (G1) → Elissabat™.png
-mh-howleen                         monsterhigh.fandom.com · page Howleen Wolf's 13 Wishes diary → Icon_-_Howleen_Wolf.jpg
-mh-jinafire                        monsterhigh.fandom.com · page Jinafire Long (G3) → Jinafire_Long_2024_Profile_artwork.png
-mh-gigi                            monsterhigh.fandom.com · page Gigi Grant (G1) → Gigi_Grant™.png
-mh-honey                           monsterhigh.fandom.com · page Honey Swamp (G1) → Honey_Swamp™.png
-mh-kiyomi                          monsterhigh.fandom.com · page Kiyomi Haunterly (G1) → Kiyomi_Haunterly™.png
-mh-deuce                           monsterhigh.fandom.com · page Deuce Gorgon (G1) → Deuce_Gorgon™.png
-mh-clawd                           monsterhigh.fandom.com · page Clawd Wolf (G1) → Clawd_Wolf™.png
-mh-heath                           monsterhigh.fandom.com · page Heath Burns (G3) → HeathBurnsG3Artwork.png
-mh-bloodgood                       monsterhigh.fandom.com · page Headmistress Bloodgood (G3) → Bloodgood_Render.png
-mh-manny                           monsterhigh.fandom.com · page Manny Taur (G1) → Tumblr_neo3ipMaL91sis95eo1_1280.png
-mh-purrsephone                     monsterhigh.fandom.com · page Purrsephone (G1) → Purrsephone_Profile_Art.png
-mh-meowlody                        monsterhigh.fandom.com · page Meowlody (G1) → Meowlody_Profile_Art.png
-mh-count-fabulous                  monsterhigh.fandom.com · page Count Fabulous (G1) → Profile_art_-_Count_Fabulous.jpg
-mh-watzit                          monsterhigh.fandom.com · page Watzit (G1) → Profile_art_-_Watzit.jpg
-mh-crescent                        monsterhigh.fandom.com · page Crescent (G1) → Profile_art_-_Crescent.jpg
-mh-sweet-fang                      monsterhigh.fandom.com · page Sweet Fangs (G1) → Profile_art_-_Sweet_Fangs.png
-mh-neptuna                         monsterhigh.fandom.com · page Neptuna (G1) → Profile_art_-_Neptuna.jpg
+mh-frankie                         image imposée
+mh-draculaura                      image imposée
+mh-clawdeen                        image imposée
+mh-cleo                            image imposée
+mh-lagoona                         image imposée
+mh-ghoulia                         image imposée
+mh-abbey                           image imposée
+mh-spectra                         image imposée
+mh-operetta                        image imposée
+mh-toralei                         image imposée
+mh-venus                           image imposée
+mh-robecca                         image imposée
+mh-rochelle                        image imposée
+mh-twyla                           image imposée
+mh-catty                           image imposée
+mh-skelita                         image imposée
+mh-cupid                           image imposée
+mh-nefera                          image imposée
+mh-elissabat                       image imposée
+mh-howleen                         image imposée
+mh-jinafire                        image imposée
+mh-gigi                            image imposée
+mh-honey                           image imposée
+mh-kiyomi                          image imposée
+mh-deuce                           image imposée
+mh-clawd                           image imposée
+mh-heath                           image imposée
+mh-bloodgood                       image imposée
+mh-manny                           image imposée
+mh-purrsephone                     image imposée
+mh-meowlody                        image imposée
+mh-count-fabulous                  image imposée
+mh-watzit                          image imposée
+mh-crescent                        image imposée
+mh-sweet-fang                      image imposée
+mh-neptuna                         image imposée
 mh-hissette                        AUCUNE IMAGE (page:Hissette)
 mh-hissette                        FAMILLE RETIRÉE (pas d'image de base)
-mh-perseus                         monsterhigh.fandom.com · page Perseus (G1) → Profile_art_-_Perseus.jpg
-mh-jackson-jekyll                  image imposée
-mh-holt-hyde                       image imposée
-mh-kieran-valentine                image imposée
-mh-wydowna-spider                  image imposée
-mh-amanita-nightshade              image imposée
-mh-jane-boolittle                  image imposée
-mh-marisol-coxi                    image imposée
-mh-scarah-screams                  image imposée
-mh-gil-webber                      image imposée
-mh-bonita-femur                    image imposée
-mh-casta-fierce                    image imposée
-mh-iris-clops                      image imposée
-mh-gooliope-jellington             image imposée
-mh-invisi-billy                    image imposée
-mh-sirena-von-boo                  image imposée
-mh-catrine-demew                   image imposée
-mh-finnegan-wake                   image imposée
-mh-hoodude-voodoo                  image imposée
-mh-silvi-timberwolf                image imposée
-mh-ari-hauntington                 image imposée
-mh-fangelica-vanbat                image imposée
-mh-avea-trotter                    image imposée
-mh-gilda-goldstag                  image imposée
-mh-rockseena                       image imposée
-mh-kala-mer-ri                     image imposée
-mh-slo-mo-deadan                   image imposée
-mh-lorna-mcnessie                  image imposée
-mh-mouscedes-king                  image imposée
-mh-elle-eedee                      image imposée
-mh-batsy-claro                     image imposée
-mh-viperine-gorgon                 image imposée
-mh-clawdia-wolf                    image imposée
-mh-peri-pearl-serpentine           image imposée
-mh-posea-reef                      image imposée
-mh-isi-dawndancer                  image imposée
-mh-treesa-thornwillow              image imposée
-mh-moanica-d-kay                   image imposée
-mh-porter-geiss                    image imposée
-mh-neighthan-rot                   image imposée
-mh-captain-penny                   image imposée
-mh-sir-hoots-a-lot                 image imposée
-mh-memphis-longlegs                image imposée
-mh-shiver                          image imposée
-mh-rhuen                           image imposée
-mh-qing                            image imposée
-mh-nightmare                       image imposée
-mh-river-styxx                     monsterhigh.fandom.com · page River Styxx (G1) → Profile_art_-_River_Styxx.jpg
-mh-vandala-doubloons               monsterhigh.fandom.com · page Vandala Doubloons (G1) → Vandala_Doubloons™.png
-mh-lagoonafire                     monsterhigh.fandom.com · page Lagoonafire's Freaky Fusion - Freaky Fusions diary → Icon_-_Lagoonafire.jpg
-mh-johnny-spirit                   monsterhigh.fandom.com · page Johnny Spirit (G1)/cartoon → Playing_the_Boos_-_Johnny_vs_Bloodgood.jpg
-mh-cy-clops                        monsterhigh.fandom.com · page Cy Clops (G1) → Gf_0409.jpg
-mh-lilith-van-hellscream           monsterhigh.fandom.com · page Lilith Van Hellscream → Lilith_Van_Hellscream.png
-hk-hello-kitty                     hellokitty.fandom.com · page Hello Kitty → Sanrio_Characters_Hello_Kitty_Image026.png
-hk-kuromi                          hellokitty.fandom.com · page Kuromi → List-kuromi.png
-hk-my-melody                       hellokitty.fandom.com · page My Melody → Sanrio_Characters_My_Melody_Image030.png
-hk-cinnamoroll                     hellokitty.fandom.com · page Cinnamoroll → Mv-cinnamon.png
-hk-little-twin-stars               hellokitty.fandom.com · page Little Twin Stars → Sanrio_Characters_Kiki_Image001.png
-hk-mimmy                           hellokitty.fandom.com · page Mimmy → Sanrio_Characters_Mimmy_Infobox.png
-hk-dear-daniel                     hellokitty.fandom.com · page Dear Daniel → Sanrio_Characters_Dear_Daniel_Image008.png
-hk-pompompurin                     hellokitty.fandom.com · page Pompompurin → Sanrio_Characters_Pompompurin_Image006.png
-hk-pochacco                        hellokitty.fandom.com · page Pochacco → List-Pochacco.png
-hk-keroppi                         hellokitty.fandom.com · page Kerokerokeroppi → List-kerokerokeroppi.png
-hk-badtz-maru                      hellokitty.fandom.com · page Bad Badtz-Maru → List-badtzmaru-1.png
-hk-chococat                        hellokitty.fandom.com · page Chococat → List-chococat.png
-hk-charmmy-kitty                   hellokitty.fandom.com · page Charmmy Kitty → Sanrio_Characters_Charmmy_Kitty_Image008.png
-hk-aggretsuko                      hellokitty.fandom.com · page Aggretsuko → Mv-retsuko.png
-hk-gudetama                        hellokitty.fandom.com · page Gudetama → Sanrio_Characters_Gudetama_Image005.png
-hk-hangyodon                       hellokitty.fandom.com · page Hangyodon → Sanrio_Characters_Hangyodon_Image004.png
-hk-tuxedosam                       hellokitty.fandom.com · page Tuxedo Sam → List-Tuxedo.png
-hk-my-sweet-piano                  hellokitty.fandom.com · page My Sweet Piano → List-mysweetpiano.png
-hk-wish-me-mell                    hellokitty.fandom.com · page Wish me mell → Mv-wishmemell.png
-hk-marron-cream                    hellokitty.fandom.com · page Marroncream → Marroncream_infobox.png
-hk-usahana                         hellokitty.fandom.com · page U*SA*HA*NA → Sanrio_Characters_Usahana_Image002.png
-hk-cogimyun                        hellokitty.fandom.com · page Cogimyun → Sanrio_Characters_Cogimyun_Image001.png
-hk-pekkle                          hellokitty.fandom.com · page Ahirunopekkle → Sanrio_Characters_Pekkle_Image002.png
-hk-kirimi-chan                     hellokitty.fandom.com · page KIRIMIchan. → Sanrio_Characters_Kirimichan_Image004.png
-hk-corocorokuririn                 hellokitty.fandom.com · page Corocorokuririn → List-kuririn-1.png
-hk-pandapple                       hellokitty.fandom.com · page Pandapple → Sanrio_Characters_Pandapple_Image001.png
-hk-bonbonribbon                    hellokitty.fandom.com · page Bonbonribbon → Sanrio_Characters_Bonbonribbon_Image005.png
-hk-tabo                            hellokitty.fandom.com · page MINNA NO TABO → List-tabo.png
-hk-monkichi                        image imposée
-hk-patty-jimmy                     image imposée
-hk-tiny-chum                       image imposée
-hk-mocha                           image imposée
-hk-chiffon                         image imposée
-hk-cappuccino                      image imposée
-hk-milk                            image imposée
-hk-espresso                        image imposée
-hk-fifi                            image imposée
-hk-tracy                           image imposée
-hk-joey                            image imposée
-hk-jodie                           image imposée
-hk-tippy                           image imposée
-hk-flat                            image imposée
-hk-baku                            image imposée
-hk-rhythm                          image imposée
-hk-muffin                          image imposée
-hk-scone                           image imposée
-hk-bagel                           image imposée
-hk-keroleen                        image imposée
-hk-hana-maru                       image imposée
-hk-kurousa-shirousa                image imposée
-hk-hummingmint                     image imposée
-hk-fenneko                         image imposée
-hk-haida                           image imposée
-hk-ruby                            image imposée
-hk-garnet                          image imposée
-hk-sapphie                         image imposée
-hk-cheery-chums                    image imposée
-hk-button-nose                     image imposée
-hk-tiny-poem                       image imposée
-hk-spottie-dottie                  image imposée
-hk-winkipinki                      image imposée
-hk-coro-chan                       image imposée
-hk-picke-bicke                     image imposée
-hk-shinkansen                      image imposée
-hk-zashikibuta                     image imposée
-hk-marumofubiyori                  image imposée
-hk-lloromannic                     image imposée
-hk-nya-ni-nyu-nye-nyon             image imposée
-hk-masyumaro                       image imposée
-hk-george-white                    image imposée
-hk-mary-white                      image imposée
-hk-anthony-white                   image imposée
-hk-cocoa-vanilla                   hellokitty.fandom.com · page Cocoa and Vanilla → Sanrio_Characters_Cocoa_Image001.png
-hk-chibimaru                       hellokitty.fandom.com · page Chibimaru → Sanrio_Characters_Chibimaru_Image003.png
-hk-goropikadon                     hellokitty.fandom.com · page Goropikadon → Sanrio_Characters_Goro_(Goropikadon)_Image001.png
-hk-pannapitta                      hellokitty.fandom.com · page Pannapitta → Sanrio_Characters_Pannapitta_Image008.png
-hk-sugarminuet                     hellokitty.fandom.com · page Sugarminuet → Sanrio_Characters_Balletusa--Primausa_Image011.png
-hk-noranekoland                    hellokitty.fandom.com · page Noranekoland → Sanrio_Characters_Noranekoland_Image003.png
+mh-perseus                         image imposée
+hk-hello-kitty                     image imposée
+hk-kuromi                          image imposée
+hk-my-melody                       image imposée
+hk-cinnamoroll                     image imposée
+hk-little-twin-stars               image imposée
+hk-mimmy                           image imposée
+hk-dear-daniel                     image imposée
+hk-pompompurin                     image imposée
+hk-pochacco                        image imposée
+hk-keroppi                         image imposée
+hk-badtz-maru                      image imposée
+hk-chococat                        image imposée
+hk-charmmy-kitty                   image imposée
+hk-aggretsuko                      image imposée
+hk-gudetama                        image imposée
+hk-hangyodon                       image imposée
+hk-tuxedosam                       image imposée
+hk-my-sweet-piano                  image imposée
+hk-wish-me-mell                    image imposée
+hk-marron-cream                    image imposée
+hk-usahana                         image imposée
+hk-cogimyun                        image imposée
+hk-pekkle                          image imposée
+hk-kirimi-chan                     image imposée
+hk-corocorokuririn                 image imposée
+hk-pandapple                       image imposée
+hk-bonbonribbon                    image imposée
+hk-tabo                            image imposée
+na-nana-osaki                      image imposée
+na-hachi                           image imposée
+na-ren                             image imposée
+na-takumi                          image imposée
+na-nobu                            image imposée
+na-shin                            image imposée
+na-yasu                            image imposée
+na-reira                           image imposée
+na-naoki                           image imposée
+na-junko                           image imposée
+na-kyosuke                         image imposée
+na-shoji                           image imposée
+na-sachiko                         image imposée
